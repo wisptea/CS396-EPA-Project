@@ -1,1332 +1,1332 @@
-facility_id,facility_name,state,county
-3,Barry,AL,Mobile County
-9,Copper Station,TX,El Paso County
-10,Greene County,AL,Greene County
-26,E C Gaston,AL,Shelby County
-47,Colbert,AL,Colbert County
-54,Smith Generating Facility,KY,Clark County
-56,Charles R Lowman,AL,Washington County
-59,Platte,NE,Hall County
-60,Gerald Whelan Energy Center,NE,Adams County
-108,Holcomb,KS,Finney County
-113,Cholla,AZ,Navajo County
-116,Ocotillo Power Plant,AZ,Maricopa County
-117,APS West Phoenix Power Plant,AZ,Maricopa County
-118,APS Saguaro Power Plant,AZ,Pinal County
-120,Yucca Power Plant,AZ,Yuma County
-124,De Moss Petrie Generating Station,AZ,Pima County
-126,Irvington Generating Station,AZ,Pima County
-127,Oklaunion Power Station,TX,Wilbarger County
-130,Cross,SC,Berkeley County
-136,Seminole (136),FL,Putnam County
-141,Agua Fria Generating Station,AZ,Maricopa County
-147,Kyrene Generating Station,AZ,Maricopa County
-160,Apache Station,AZ,Cochise County
-165,Grand River Dam Authority,OK,Mayes County
-170,Lake Catherine,AR,Hot Spring County
-201,Thomas Fitzhugh,AR,Franklin County
-202,Carl Bailey,AR,Woodruff County
-203,McClellan,AR,Ouachita County
-260,Moss Landing Power Plant,CA,Monterey County
-298,Limestone,TX,Limestone County
-302,Cabrillo Power I Encina Power Station,CA,San Diego County
-315,AES Alamitos,CA,Los Angeles County
-330,El Segundo,CA,Los Angeles County
-335,AES Huntington Beach,CA,Orange County
-341,Long Beach Generating Station,CA,Los Angeles County
-350,"Ormond Beach Power, LLC.",CA,Ventura County
-358,Mountainview Generating Station,CA,San Bernardino County
-377,Grayson Power Plant,CA,Los Angeles County
-389,El Centro,CA,Imperial County
-399,Harbor Generating Station,CA,Los Angeles County
-400,Haynes Generating Station,CA,Los Angeles County
-404,Scattergood Generating Station,CA,Los Angeles County
-408,Valley Generating Station,CA,Los Angeles County
-422,Glenarm,CA,Los Angeles County
-469,Cherokee,CO,Adams County
-470,Comanche (470),CO,Pueblo County
-492,Martin Drake,CO,El Paso County
-525,Hayden,CO,Routt County
-533,McWilliams,AL,Covington County
-540,Branford,CT,New Haven County
-542,Cos Cob,CT,Fairfield County
-544,Devon,CT,New Haven County
-546,Montville,CT,New London County
-561,Franklin Drive,CT,Litchfield County
-562,Middletown,CT,Middlesex County
-564,Curtis H. Stanton Energy Center,FL,Orange County
-565,Torrington Terminal,CT,Litchfield County
-568,Bridgeport Harbor Station,CT,Fairfield County
-589,J C McNeil,VT,Chittenden County
-591,Christiana Substation,DE,New Castle County
-592,Delaware City,DE,New Castle County
-593,Edge Moor,DE,New Castle County
-594,Indian River,DE,Sussex County
-597,West Substation,DE,New Castle County
-602,Brandon Shores,MD,Anne Arundel County
-607,Fredonia Generating Station,WA,Skagit County
-609,Cape Canaveral,FL,Brevard County
-612,Fort Myers,FL,Lee County
-613,Lauderdale,FL,Broward County
-617,Port Everglades,FL,Broward County
-619,Riviera Beach Energy Center,FL,Palm Beach County
-620,Sanford,FL,Volusia County
-621,Turkey Point,FL,Miami-Dade County
-628,Crystal River,FL,Citrus County
-634,P L Bartow,FL,Pinellas County
-641,Gulf Clean Energy Center,FL,Escambia County
-643,Lansing Smith Generating Plant,FL,Bay County
-645,Big Bend,FL,Hillsborough County
-663,Deerhaven,FL,Alachua County
-664,J R Kelly,FL,Alachua County
-666,J D Kennedy,FL,Duval County
-667,Northside,FL,Duval County
-673,Tom G Smith,FL,Palm Beach County
-675,Charles Larsen Memorial Power Plant,FL,Polk County
-676,C D McIntosh Jr Power Plant,FL,Polk County
-683,Indian River (683),FL,Brevard County
-688,Arvah B Hopkins,FL,Leon County
-689,S O Purdom,FL,Wakulla County
-703,Bowen,GA,Bartow County
-710,Jack McDonough,GA,Cobb County
-715,McManus,GA,Glynn County
-728,Yates,GA,Coweta County
-762,Ponca,OK,Kay County
-765,Kahe Generating Station,HI,Honolulu County
-766,Waiau Generating Station,HI,Honolulu County
-876,Kincaid Generating Station,IL,Christian County
-879,Powerton,IL,Tazewell County
-883,Waukegan,IL,Lake County
-886,Fisk,IL,Cook County
-889,Baldwin Energy Complex,IL,Randolph County
-913,Venice,IL,Madison County
-963,Dallman,IL,Sangamon County
-976,Marion,IL,Williamson County
-983,Clifty Creek,IN,Jefferson County
-990,IPL - Harding Street Station (EW Stout),IN,Marion County
-991,IPL - Eagle Valley Generating Station,IN,Morgan County
-992,C. C. Perry K Steam Plant,IN,Marion County
-994,IPL - Petersburg Generating Station,IN,Pike County
-997,Michigan City Generating Station,IN,LaPorte County
-1001,Cayuga,IN,Vermillion County
-1004,Edwardsport Generating Station,IN,Knox County
-1007,Noblesville,IN,Hamilton County
-1012,F B Culley Generating Station,IN,Warrick County
-1016,Butler-Warner Generation Plant,NC,Cumberland County
-1040,Whitewater Valley,IN,Wayne County
-1068,Marshalltown CTs,IA,Marshall County
-1073,Prairie Creek,IA,Linn County
-1082,Walter Scott Jr. Energy Center,IA,Pottawattamie County
-1091,George Neal North,IA,Woodbury County
-1104,Burlington (IA),IA,Des Moines County
-1122,Ames,IA,Story County
-1131,Streeter Station,IA,Black Hawk County
-1167,Muscatine,IA,Muscatine County
-1206,Summit Lake,IA,Union County
-1217,Earl F Wisdom,IA,Clay County
-1230,Cimarron River,KS,Seward County
-1233,Fort Dodge aka Judson Large,KS,Ford County
-1235,Great Bend Station aka Arthur Mullergren,KS,Barton County
-1239,Riverton,KS,Cherokee County
-1240,Gordon Evans Energy Center,KS,Sedgwick County
-1241,La Cygne,KS,Linn County
-1248,Hutchinson Energy Center,KS,Reno County
-1250,Lawrence Energy Center,KS,Douglas County
-1268,Chanute 2,KS,Neosho County
-1271,Coffeyville,KS,Montgomery County
-1295,Quindaro,KS,Wyandotte County
-1305,McPherson 2,KS,McPherson County
-1336,Garden City,KS,Finney County
-1353,Big Sandy,KY,Lawrence County
-1355,E W Brown,KY,Mercer County
-1356,Ghent,KY,Carroll County
-1363,Cane Run,KY,Jefferson County
-1364,Mill Creek,KY,Jefferson County
-1366,Paddy's Run,KY,Jefferson County
-1378,Paradise,KY,Muhlenberg County
-1379,Shawnee,KY,McCracken County
-1383,Robert Reid,KY,Webster County
-1384,John S. Cooper,KY,Pulaski County
-1391,Louisiana 1,LA,East Baton Rouge Parish
-1393,R S Nelson,LA,Calcasieu Parish
-1396,Coughlin Power Station,LA,Evangeline Parish
-1400,Teche Power Station,LA,St. Mary Parish
-1402,Little Gypsy,LA,St. Charles Parish
-1403,Ninemile Point,LA,Jefferson Parish
-1404,Sterlington,LA,Ouachita Parish
-1416,Arsenal Hill Power Plant,LA,Caddo Parish
-1417,Lieberman Power Plant,LA,Caddo Parish
-1439,Houma,LA,Terrebonne Parish
-1464,Big Cajun 1,LA,Pointe Coupee Parish
-1507,William F Wyman,ME,Cumberland County
-1554,Herbert A Wagner,MD,Anne Arundel County
-1556,Perryman,MD,Harford County
-1564,Vienna,MD,Dorchester County
-1571,Chalk Point,MD,Prince George's County
-1572,Dickerson,MD,Montgomery County
-1573,Morgantown,MD,Charles County
-1586,Framingham Station,MA,Middlesex County
-1592,Medway Station,MA,Norfolk County
-1594,Blackstone,MA,Middlesex County
-1595,Kendall Green Energy LLC,MA,Middlesex County
-1599,Canal Station,MA,Barnstable County
-1660,Potter,MA,Norfolk County
-1678,Waters River,MA,Essex County
-1682,Cleary Flood,MA,Bristol County
-1702,Dan E Karn,MI,Bay County
-1710,J H Campbell,MI,Ottawa County
-1728,Delray,MI,Wayne County
-1730,Hancock Peakers,MI,Oakland County
-1733,Monroe,MI,Monroe County
-1866,Wyandotte,MI,Wayne County
-1891,Laskin Energy Center,MN,St. Louis County
-1893,Boswell Energy Center,MN,Itasca County
-1897,Hibbard Energy Center,MN,St. Louis County
-1904,Black Dog,MN,Dakota County
-1912,High Bridge,MN,Ramsey County
-1913,Inver Hills,MN,Dakota County
-1915,Allen S King,MN,Washington County
-1927,Riverside (1927),MN,Hennepin County
-2001,New Ulm,MN,Brown County
-2038,Cambridge Station,MN,Isanti County
-2039,Elk River,MN,Sherburne County
-2042,Maple Lake Station,MN,Wright County
-2047,Chevron Cogenerating Station,MS,Jackson County
-2048,Sweatt Electric Generating Plant,MS,Lauderdale County
-2049,Watson Electric Generating Plant,MS,Harrison County
-2070,Moselle Generation Complex,MS,Jones County
-2079,Hawthorn,MO,Jackson County
-2081,Northeast Generating Station,MO,Jackson County
-2082,Fairgrounds,MO,Cole County
-2092,Ralph Green Station,MO,Cass County
-2098,Lake Road,MO,Buchanan County
-2103,Labadie,MO,Franklin County
-2107,Sioux,MO,St. Charles County
-2122,Chillicothe,MO,Livingston County
-2123,Columbia,MO,Boone County
-2131,Higginsville Municipal Power Plant,MO,Lafayette County
-2161,James River,MO,Greene County
-2167,New Madrid Power Plant,MO,New Madrid County
-2168,Thomas Hill Energy Center,MO,Randolph County
-2176,Glendive Generating Station,MT,Dawson County
-2226,Canaday,NE,Gosper County
-2240,Lon D Wright Power Plant,NE,Dodge County
-2241,C W Burdick,NE,Hall County
-2250,J Street,NE,Lancaster County
-2265,Hallam Peaking,NE,Lancaster County
-2266,Hebron Peaking,NE,Thayer County
-2271,McCook Peaking,NE,Red Willow County
-2277,Sheldon,NE,Lancaster County
-2290,Jones Street,NE,Douglas County
-2291,North Omaha Station,NE,Douglas County
-2292,Sarpy County Station,NE,Sarpy County
-2322,Clark,NV,Clark County
-2330,Fort Churchill,NV,Lyon County
-2336,Tracy,NV,Storey County
-2362,Lost Nation,NH,Coos County
-2364,Merrimack,NH,Merrimack County
-2367,Schiller,NH,Rockingham County
-2369,White Lake,NH,Carroll County
-2390,Sayreville,NJ,Middlesex County
-2393,Gilbert Generating Station,NJ,Hunterdon County
-2398,Bergen Generating Station,NJ,Bergen County
-2399,Burlington Generating Station,NJ,Burlington County
-2404,Kearny Generating Station,NJ,Hudson County
-2406,Linden Generating Station,NJ,Union County
-2410,Salem Generating Station,NJ,Salem County
-2411,Sewaren Generating Station,NJ,Middlesex County
-2434,Howard M Down,NJ,Cumberland County
-2442,Four Corners Steam Elec Station,NM,San Juan County
-2444,Rio Grande,NM,Dona Ana County
-2446,Maddox,NM,Lea County
-2450,Reeves Generating Station,NM,Bernalillo County
-2454,Cunningham,NM,Lea County
-2480,Danskammer Generating Station,NY,Orange County
-2490,Arthur Kill,NY,Richmond County
-2493,East River,NY,New York County
-2494,Gowanus Generating Station,NY,Kings County
-2499,Narrows Generating Station,NY,Kings County
-2500,Ravenswood Generating Station,NY,Queens County
-2503,59th Street,NY,New York County
-2504,74th Street,NY,New York County
-2511,E F Barrett,NY,Nassau County
-2512,East Hampton Facility,NY,Suffolk County
-2514,Glenwood,NY,Nassau County
-2516,Northport,NY,Suffolk County
-2517,Port Jefferson Energy Center,NY,Suffolk County
-2521,West Babylon Facility,NY,Suffolk County
-2527,Greenidge Generation LLC,NY,Yates County
-2539,Bethlehem Energy Center (Albany),NY,Albany County
-2594,Oswego Harbor Power,NY,Oswego County
-2625,Bowline Generating Station,NY,Rockland County
-2628,Hillburn,NY,Rockland County
-2632,Shoemaker,NY,Orange County
-2679,Freeport Power Plant No. 2,NY,Nassau County
-2682,S A Carlson,NY,Chautauqua County
-2706,Asheville,NC,Buncombe County
-2707,Blewett,NC,Anson County
-2709,H F Lee Steam Electric Plant,NC,Wayne County
-2712,Roxboro,NC,Person County
-2713,L V Sutton,NC,New Hanover County
-2716,W H Weatherspoon,NC,Robeson County
-2720,Buck,NC,Rowan County
-2721,Cliffside,NC,Cleveland County
-2723,Dan River,NC,Rockingham County
-2727,Marshall,NC,Catawba County
-2790,R M Heskett,ND,Morton County
-2817,Leland Olds,ND,Mercer County
-2823,Milton R Young,ND,Oliver County
-2828,Cardinal,OH,Jefferson County
-2831,Dicks Creek Power Company LLC,OH,Butler County
-2832,Miami Fort Power Station,OH,Hamilton County
-2847,Frank M Tait Station,OH,Montgomery County
-2848,O H Hutchings,OH,Montgomery County
-2861,Niles,OH,Trumbull County
-2869,West Lorain,OH,Lorain County
-2876,Kyger Creek,OH,Gallia County
-2878,Bay Shore,OH,Lucas County
-2880,Richland Peaking Station,OH,Defiance County
-2951,Horseshoe Lake,OK,Oklahoma County
-2952,Muskogee,OK,Muskogee County
-2953,Mustang,OK,Canadian County
-2956,Seminole (2956),OK,Seminole County
-2963,Northeastern,OK,Rogers County
-2964,Southwestern,OK,Caddo County
-2965,Tulsa,OK,Tulsa County
-2966,Weleetka,OK,Okfuskee County
-3006,Anadarko,OK,Caddo County
-3008,Mooreland,OK,Woodward County
-3096,Brunot Island Power Station,PA,Allegheny County
-3111,Mountain,PA,Cumberland County
-3113,Portland,PA,Northampton County
-3116,Tolna,PA,York County
-3118,Conemaugh,PA,Indiana County
-3130,Seward,PA,Indiana County
-3131,Shawville,PA,Clearfield County
-3132,Warren,PA,Warren County
-3136,Keystone,PA,Armstrong County
-3138,New Castle,PA,Lawrence County
-3140,"Brunner Island, LLC",PA,York County
-3148,"Martins Creek, LLC",PA,Northampton County
-3149,"Montour, LLC",PA,Montour County
-3161,Eddystone Generating Station,PA,Delaware County
-3168,Richmond,PA,Philadelphia County
-3176,Hunlock Creek Generating LLC,PA,Luzerne County
-3236,Manchester Street Station,RI,Providence County
-3250,Darlington County,SC,Darlington County
-3264,W S Lee,SC,Anderson County
-3285,Hagood,SC,Charleston County
-3287,McMeekin,SC,Lexington County
-3291,Parr Combustion Turbine Facility,SC,Fairfield County
-3295,Urquhart,SC,Aiken County
-3297,Wateree,SC,Richland County
-3298,Williams,SC,Berkeley County
-3318,Hilton Head Gas Turbine Site,SC,Beaufort County
-3320,Myrtle Beach Gas Turbine Site,SC,Horry County
-3338,Aberdeen Generating Station,SD,Brown County
-3393,Allen,TN,Shelby County
-3399,Cumberland,TN,Stewart County
-3403,Gallatin,TN,Sumner County
-3405,John Sevier,TN,Hawkins County
-3406,Johnsonville,TN,Humphreys County
-3407,Kingston,TN,Roane County
-3439,Laredo,TX,Webb County
-3441,Nueces Bay,TX,Nueces County
-3443,Victoria Power Station,TX,Victoria County
-3452,Lake Hubbard,TX,Dallas County
-3453,Mountain Creek Generating Station,TX,Dallas County
-3456,Newman Power Station,TX,El Paso County
-3457,Lewis Creek,TX,Montgomery County
-3459,Sabine,TX,Orange County
-3460,Cedar Bayou,TX,Chambers County
-3464,Greens Bayou,TX,Harris County
-3469,T H Wharton,TX,Harris County
-3470,W A Parish,TX,Fort Bend County
-3476,Knox Lee Power Plant,TX,Gregg County
-3478,Wilkes Power Plant,TX,Marion County
-3482,Jones Station,TX,Lubbock County
-3484,Nichols Station,TX,Potter County
-3485,Plant X,TX,Lamb County
-3490,Graham,TX,Young County
-3491,Handley Generating Station,TX,Tarrant County
-3492,Morgan Creek,TX,Mitchell County
-3494,Permian Basin,TX,Ward County
-3504,Stryker Creek,TX,Cherokee County
-3507,Trinidad,TX,Henderson County
-3548,Decker Creek,TX,Travis County
-3559,Silas Ray,TX,Cameron County
-3576,Ray Olinger,TX,Collin County
-3601,Sim Gideon,TX,Bastrop County
-3604,J Robert Massengale Generating Station,TX,Lubbock County
-3609,Leon Creek,TX,Bexar County
-3611,O W Sommers,TX,Bexar County
-3612,V H Braunig,TX,Bexar County
-3628,R W Miller,TX,Palo Pinto County
-3631,Sam Rayburn Plant,TX,Victoria County
-3648,Gadsby,UT,Salt Lake County
-3734,Berlin 5,VT,Washington County
-3754,Penny Lane Gas Turbine,VT,Chittenden County
-3775,Clinch River,VA,Russell County
-3785,Tasley Energy Center,VA,Accomack County
-3797,Chesterfield Power Station,VA,Chesterfield County
-3804,Possum Point Power Station,VA,Prince William County
-3845,Centralia,WA,Lewis County
-3935,John E Amos,WV,Putnam County
-3943,Fort Martin Power Station,WV,Monongalia County
-3944,Harrison Power Station,WV,Harrison County
-3946,Willow Island Power Station,WV,Pleasants County
-3948,Mitchell (WV),WV,Marshall County
-3954,Mount Storm Power Station,WV,Grant County
-3982,Bay Front,WI,Ashland County
-3991,Fitchburg Generating Station,WI,Dane County
-3992,Blount Street,WI,Dane County
-4005,French Island,WI,La Crosse County
-4014,Wheaton Generating Plant,WI,Chippewa County
-4040,Port Washington Generating Station,WI,Ozaukee County
-4041,South Oak Creek,WI,Milwaukee County
-4042,Valley (WEPCO),WI,Milwaukee County
-4050,Edgewater (4050),WI,Sheboygan County
-4072,Pulliam,WI,Brown County
-4076,West Marinette,WI,Marinette County
-4078,Weston,WI,Marathon County
-4125,Manitowoc,WI,Manitowoc County
-4158,Dave Johnston,WY,Converse County
-4162,Naughton,WY,Lincoln County
-4195,Power Lane Steam Plant,TX,Hunt County
-4266,Spencer,TX,Denton County
-4271,J P Madgett,WI,Buffalo County
-4937,T C Ferguson Power Plant,TX,Llano County
-4939,Barney M. Davis,TX,Nueces County
-4940,Riverside (4940),OK,Tulsa County
-5083,Cumberland Energy Center,NJ,Cumberland County
-6002,James H Miller Jr,AL,Jefferson County
-6004,Pleasants Power Station,WV,Pleasants County
-6009,White Bluff,AR,Jefferson County
-6013,Olive,CA,Los Angeles County
-6017,Newton,IL,Jasper County
-6018,East Bend,KY,Boone County
-6021,Craig,CO,Moffat County
-6030,Coal Creek,ND,McLean County
-6034,Belle River,MI,St. Clair County
-6035,Greenwood,MI,St. Clair County
-6041,H L Spurlock,KY,Mason County
-6042,Manatee,FL,Manatee County
-6043,Martin,FL,Martin County
-6046,Debary,FL,Volusia County
-6055,Big Cajun 2,LA,Pointe Coupee Parish
-6058,Cascade Creek,MN,Olmsted County
-6061,R D Morrow Senior Generating Plant,MS,Lamar County
-6063,Electrifarm,IA,Black Hawk County
-6064,Nearman Creek,KS,Wyandotte County
-6065,Iatan,MO,Platte County
-6068,Jeffrey Energy Center,KS,Pottawatomie County
-6071,Trimble County,KY,Trimble County
-6073,Daniel Electric Generating Plant,MS,Jackson County
-6074,Greenwood Energy Center,MO,Jackson County
-6076,Colstrip,MT,Rosebud County
-6077,Gerald Gentleman Station,NE,Lincoln County
-6081,Stony Brook Energy Center,MA,Hampden County
-6085,R M Schahfer Generating Station,IN,Jasper County
-6090,Sherburne County,MN,Sherburne County
-6095,Sooner,OK,Noble County
-6096,Nebraska City Station,NE,Otoe County
-6098,Big Stone,SD,Grant County
-6101,Wyodak,WY,Campbell County
-6112,Fort St. Vrain,CO,Weld County
-6113,Gibson,IN,Gibson County
-6124,McIntosh (6124),GA,Effingham County
-6137,A B Brown Generating Station,IN,Posey County
-6138,Flint Creek Power Plant,AR,Benton County
-6139,Welsh Power Plant,TX,Titus County
-6146,Martin Lake,TX,Rusk County
-6156,New Haven Harbor,CT,New Haven County
-6165,Hunter,UT,Emery County
-6166,Rockport,IN,Spencer County
-6177,Coronado Generating Station,AZ,Apache County
-6178,Coleto Creek,TX,Goliad County
-6179,Sam Seymour,TX,Fayette County
-6180,Oak Grove,TX,Robertson County
-6183,San Miguel,TX,Atascosa County
-6190,Brame Energy Center,LA,Rapides Parish
-6193,Harrington Station,TX,Potter County
-6194,Tolk Station,TX,Lamb County
-6195,John Twitty Energy Center,MO,Greene County
-6204,Laramie River,WY,Platte County
-6213,Merom,IN,Sullivan County
-6223,Empire District Elec Co Energy Ctr,MO,Jasper County
-6243,Roland C. Dansby Power Plant,TX,Brazos County
-6248,Pawnee,CO,Morgan County
-6249,Winyah,SC,Georgetown County
-6250,Mayo,NC,Person County
-6253,Germantown Power Plant,WI,Washington County
-6254,Ottumwa,IA,Wapello County
-6257,Scherer,GA,Monroe County
-6258,Allen B Wilson Combustion Turbine Plant,GA,Burke County
-6264,Mountaineer (1301),WV,Mason County
-6288,Healy Power Plant,AK,Denali Borough
-6358,Hutchinson - Plant 2,MN,McLeod County
-6373,Rokeby,NE,Lancaster County
-6463,Dayton Avenue Substation,IA,Story County
-6469,Antelope Valley,ND,Mercer County
-6481,Intermountain,UT,Millard County
-6584,Stock Island,FL,Monroe County
-6635,Alfred L Pierce Generating Station,CT,New Haven County
-6639,R D Green,KY,Webster County
-6641,Independence,AR,Independence County
-6650,Mexico,MO,Audrain County
-6651,Moberly,MO,Randolph County
-6652,Moreau,MO,Cole County
-6664,Louisa,IA,Louisa County
-6705,Alcoa Allowance Management Inc,IN,Warrick County
-6741,Rock Lake Station,MN,Pine County
-6761,Rawhide Energy Station,CO,Larimer County
-6768,Sikeston,MO,Scott County
-6772,Hugo,OK,Choctaw County
-6823,D B Wilson,KY,Ohio County
-6824,St. Bonifacius Station,MN,Carver County
-7013,East 12th Street,KS,Cowley County
-7030,Twin Oaks,TX,Robertson County
-7032,Gravel Neck Combustion Turbine,VA,Surry County
-7063,McIntosh (7063),AL,Washington County
-7082,Harry Allen,NV,Clark County
-7097,J K Spruce,TX,Bexar County
-7138,Forked River Power,NJ,Ocean County
-7145,Pleasant Hill Energy Center,IA,Polk County
-7146,Wading River Facility,NY,Suffolk County
-7153,Hay Road,DE,New Castle County
-7155,Lime Creek,IA,Cerro Gordo County
-7158,Woodsdale,OH,Butler County
-7159,Concord,WI,Jefferson County
-7203,South Fond Du Lac,WI,Fond du Lac County
-7210,Cope Station,SC,Orangeburg County
-7212,Darbytown Combustion Turbine,VA,Henrico County
-7213,Clover Power Station,VA,Halifax County
-7237,Angus Anson,SD,Minnehaha County
-7238,Cane Island,FL,Osceola County
-7242,Polk,FL,Polk County
-7258,48th Street Peaking Station,MI,Allegan County
-7266,Woodland Generation Station,CA,Stanislaus County
-7270,Paris,WI,Kenosha County
-7277,Lincoln Combustion Turbine,NC,Lincoln County
-7288,Sherman Avenue,NJ,Cumberland County
-7296,State Line (MO),MO,Jasper County
-7302,Hines Energy Complex,FL,Polk County
-7307,Redding Power Plant,CA,Shasta County
-7314,Richard M Flynn (Holtsville),NY,Suffolk County
-7315,Almond Power Plant,CA,Stanislaus County
-7318,Van Sant,DE,Kent County
-7325,San Jacinto Steam Electric Station,TX,Harris County
-7335,Richmond (IN),IN,Wayne County
-7336,Anderson,IN,Madison County
-7343,George Neal South,IA,Woodbury County
-7345,University of Florida,FL,Alachua County
-7348,Robins,GA,Houston County
-7350,Coyote Springs,OR,Morrow County
-7380,Midulla Generating Station,FL,Hardee County
-7425,Interstate,IL,Sangamon County
-7449,NCPA Combustion Turbine Project #2,CA,San Joaquin County
-7456,Rathdrum Combustion Turbine Project,ID,Kootenai County
-7504,Neil Simpson II,WY,Campbell County
-7515,McPherson Municipal Power Plant #3,KS,McPherson County
-7527,Carson Power Plant,CA,Sacramento County
-7551,Procter and Gamble Power Plant,CA,Sacramento County
-7552,Campbell Power Plant,CA,Sacramento County
-7604,St. Francis Power Plant,MO,Dunklin County
-7605,River Road,WA,Clark County
-7697,Washington County Cogen (Olin),AL,Washington County
-7698,SABIC Innovative Plastics - Burkville,AL,Lowndes County
-7699,Tiger Bay,FL,Polk County
-7710,Plant H. Allen Franklin,AL,Lee County
-7721,Theodore Cogeneration,AL,Mobile County
-7749,Essex Power Plant,MO,Stoddard County
-7754,Nodaway Power Plant,MO,Nodaway County
-7757,Chouteau Power Plant,OK,Mayes County
-7759,Georgetown Substation,IN,Marion County
-7760,Tilton Power Station,IL,Vermilion County
-7762,Calpine Hidalgo Energy Center,TX,Hidalgo County
-7763,Henry County Generating Station,IN,Henry County
-7764,MPC Generating,GA,Walton County
-7765,Dahlberg (Jackson County),GA,Jackson County
-7768,Sowega Power Project,GA,Mitchell County
-7782,Omega JV2 Hamilton,OH,Butler County
-7783,Omega JV2 Bowling Green,OH,Wood County
-7790,Bonanza,UT,Uintah County
-7805,Richmond County Plant,NC,Richmond County
-7813,Sewell Creek Energy,GA,Polk County
-7818,Alsey Station,IL,Scott County
-7825,Fulton,AR,Hempstead County
-7826,Plant Rowan County,NC,Rowan County
-7829,Smarr Energy Facility,GA,Monroe County
-7834,John S. Rainey Generating Station,SC,Anderson County
-7835,Rock Springs Generating Facility,MD,Cecil County
-7836,Marsh Run Generation Facility,VA,Fauquier County
-7837,Louisa Generation Facility,VA,Louisa County
-7838,Remington Combustion Turbine Station,VA,Fauquier County
-7839,Ladysmith Combustion Turbine Sta,VA,Caroline County
-7843,Pleasant Valley Station,MN,Mower County
-7844,Minnesota River Station,MN,Carver County
-7845,Lagoon Creek,TN,Haywood County
-7846,Brandy Branch,FL,Duval County
-7848,Holden Power Plant,MO,Johnson County
-7863,Elk Mound Generating Station,WI,Chippewa County
-7869,Glenwood Landing Energy Center,NY,Nassau County
-7870,Encogen Generating Station,WA,Whatcom County
-7872,Robert P Mone,OH,Van Wert County
-7873,Bayside Power Station,FL,Hillsborough County
-7887,Terry Bundy Generating Station,NE,Lancaster County
-7897,E B Harris Generating Plant,AL,Autauga County
-7900,Sand Hill Energy Center,TX,Travis County
-7903,McCartney Generating Station,MO,Greene County
-7909,Vernon Boulevard,NY,Queens County
-7910,23rd and 3rd,NY,Kings County
-7912,Brentwood,NY,Suffolk County
-7913,Hell Gate,NY,Bronx County
-7914,Harlem River Yard,NY,Bronx County
-7915,North 1st,NY,Kings County
-7916,Talbot Energy Facility,GA,Talbot County
-7917,Chattahoochee Energy Facility,GA,Heard County
-7925,Lakefield Junction Generating,MN,Martin County
-7928,Osawatomie Generating Station,KS,Miami County
-7929,West Gardner Generating Station,KS,Johnson County
-7946,Wansley (7946),GA,Heard County
-7947,Solway Plant,MN,Beltrami County
-7948,Hoosier Energy Lawrence Co Station,IN,Lawrence County
-7953,Evander Andrews Power Complex,ID,Elmore County
-7960,Kemper County,MS,Kemper County
-7962,Warren F. Sam Beasley Pwr Station,DE,Kent County
-7964,Peno Creek Energy Center,MO,Pike County
-7967,Lordsburg Generating Station,NM,Hidalgo County
-7972,Sumpter Plant,MI,Wayne County
-7975,Pyramid Generating Station,NM,Hidalgo County
-7981,Mill Creek Combustion Turbine Station,SC,Cherokee County
-7984,Kalkaska CT Project #1,MI,Kalkaska County
-7985,Greater Des Moines Energy Center,IA,Polk County
-7987,Lake,CA,Los Angeles County
-7988,Silver Creek Generating Plant,MS,Jefferson Davis County
-7989,Sylvarena Generating Plant,MS,Smith County
-7991,West Campus Cogeneration Facility,WI,Dane County
-7999,Grays Harbor Energy Center,WA,Grays Harbor County
-8000,Beatrice,NE,Gage County
-8002,Newington,NH,Rockingham County
-8006,Roseton Generating LLC,NY,Orange County
-8007,Holtsville Facility,NY,Suffolk County
-8012,Croydon Generating Station,PA,Bucks County
-8016,Factory Gas Turbine,IL,Sangamon County
-8023,Columbia,WI,Columbia County
-8027,Blue Lake Generating Plant,MN,Scott County
-8029,Sycamore Combustion Turbine,IA,Polk County
-8031,Emery Station,IA,Cerro Gordo County
-8037,Clifton Station,KS,Washington County
-8042,Belews Creek,NC,Stokes County
-8048,Anclote,FL,Pasco County
-8049,Intercession City,FL,Osceola County
-8053,Pouch Terminal,NY,Richmond County
-8054,Gerald Andrus,MS,Washington County
-8056,Waterford 1 & 2,LA,St. Charles Parish
-8059,Comanche (8059),OK,Comanche County
-8063,Decordova,TX,Hood County
-8066,Jim Bridger,WY,Sweetwater County
-8068,Santan,AZ,Maricopa County
-8069,Huntington,UT,Emery County
-8102,Gen J M Gavin,OH,Gallia County
-8219,Ray D Nixon,CO,El Paso County
-8222,Coyote,ND,Mercer County
-8223,Springerville Generating Station,AZ,Apache County
-8224,North Valmy,NV,Humboldt County
-8906,Astoria Generating Station,NY,Queens County
-10017,RockTenn West Point Mill,VA,King William County
-10025,"RED-Rochester, LLC-Eastman Business Park",NY,Monroe County
-10030,Energy Center Dover LLC,DE,Kent County
-10034,"Calpine Gilroy Cogen, LP",CA,Santa Clara County
-10113,Gilberton Power Company,PA,Schuylkill County
-10143,Colver Green Energy,PA,Cambria County
-10151,Grant Town Power Plant,WV,Marion County
-10156,"Fresno Cogeneration Partners, LP",CA,Fresno County
-10169,Carson Cogeneration Company,CA,Los Angeles County
-10176,MBTA South Boston Power Facility,MA,Suffolk County
-10190,"Castleton Power, LLC",NY,Rensselaer County
-10244,Pixelle Specialty Solutions LLC,OH,Ross County
-10294,King City Power Plant,CA,Monterey County
-10298,Air Liquide Bayport Complex,TX,Harris County
-10307,Bellingham,MA,Norfolk County
-10308,Sayreville Power LP,NJ,Middlesex County
-10328,T B Simon Power Plant,MI,Ingham County
-10343,Mt. Carmel Cogeneration,PA,Northumberland County
-10349,Yuba City Energy Center,CA,Sutter County
-10350,Greenleaf One,CA,Sutter County
-10405,Kingsburg Cogen Facility,CA,Fresno County
-10525,Craven County Wood Energy,NC,Craven County
-10567,"Ahlstrom Power Windsor Locks, LLC",CT,Hartford County
-10603,Ebensburg Power Company,PA,Cambria County
-10617,"Beaver Falls, LLC",NY,Lewis County
-10619,Allegany Station No. 133,NY,Allegany County
-10620,Carthage Energy,NY,Jefferson County
-10621,"Syracuse, LLC",NY,Onondaga County
-10633,Hopewell Cogeneration Facility,VA,Hopewell city
-10649,Bear Mountain Limited,CA,Kern County
-10650,Badger Creek Limited,CA,Kern County
-10671,River Valley,OK,Le Flore County
-10682,Brush Power Projects,CO,Morgan County
-10725,Selkirk Cogen Partners,NY,Albany County
-10726,MASSPOWER,MA,Hampden County
-10743,Morgantown Energy Facility,WV,Monongalia County
-10745,Midland Cogeneration Venture,MI,Midland County
-10751,"Camden Plant Holding, LLC",NJ,Camden County
-10761,Las Vegas Generating Station,NV,Clark County
-10771,Hopewell Power Station,VA,Hopewell city
-10773,Altavista Power Station,VA,Campbell County
-10774,Southampton Power Station,VA,Southampton County
-10776,E. F. Oxnard Energy Facility,CA,Ventura County
-10784,Colstrip Energy Limited Partnership,MT,Rosebud County
-10788,Chemours Belle Plant,WV,Kanawha County
-10803,AG - Energy,NY,St. Lawrence County
-10805,"E F Kenilworth, Inc.",NJ,Union County
-10822,Grayling Generating Station,MI,Crawford County
-10823,Deer Island Treatment,MA,Suffolk County
-10849,Northshore Mining Silver Bay Power,MN,Lake County
-10865,Archer Daniels Midland Co.,IL,Macon County
-10866,"BioUrja Renewables - Peoria, IL",IL,Peoria County
-10870,Hazleton Generation,PA,Luzerne County
-50002,Pittsfield Generating,MA,Berkshire County
-50006,Linden Cogeneration Facility,NJ,Union County
-50030,Nelson Industrial Steam Company,LA,Calcasieu Parish
-50044,McCracken Power House,OH,Franklin County
-50109,Paris Energy Center,TX,Lamar County
-50137,New Gulf Power Facility,TX,Wharton County
-50151,UCC South Charleston Plant,WV,Kanawha County
-50188,International Paper New Bern Mill,NC,Craven County
-50240,Purdue University-Wade Utility,IN,Tippecanoe County
-50243,Bucksport Generation LLC,ME,Hancock County
-50254,"WestRock Kraft Paper, Roanoke Rapids",NC,Halifax County
-50279,PEI Power Corporation,PA,Lackawanna County
-50292,Bethpage Energy Center,NY,Nassau County
-50368,Cornell University Ithaca Campus,NY,Tompkins County
-50397,Pixelle Specialty Solutions,PA,York County
-50449,Indeck-Silver Springs Energy Center,NY,Wyoming County
-50450,Indeck-Oswego Energy Center,NY,Oswego County
-50451,Indeck-Yerkes Energy Center,NY,Erie County
-50458,Indeck-Corinth Energy Center,NY,Saratoga County
-50463,Procter & Gamble Paper Products,PA,Wyoming County
-50472,Covanta Niagara,NY,Niagara County
-50479,"GP Big Island, LLC",VA,Bedford County
-50481,Eastman Chemical Company,TN,Sullivan County
-50491,Axiall Corporation Natrium Plant,WV,Marshall County
-50555,Rosemary Power Station,NC,Halifax County
-50558,Frontier Generating Station,OK,Oklahoma County
-50561,Eagle Point Power Generation,NJ,Gloucester County
-50607,Vicinity Energy Philadelphia- Schuylkill,PA,Philadelphia County
-50611,"Rausch Creek Generation, LLC",PA,Schuylkill County
-50612,McKittrick Limited,CA,Kern County
-50625,ExxonMobil Beaumont Refinery,TX,Jefferson County
-50627,Exxonmobil Oil Corporation,IL,Will County
-50628,Paulsboro Refining Company LLC,NJ,Gloucester County
-50707,J M Shafer,CO,Weld County
-50729,US Steel (Clairton Coke),PA,Allegheny County
-50732,US Steel (Edgar Thomson),PA,Allegheny County
-50733,US Steel Corp - Gary Works,IN,Lake County
-50744,Sterling Power Plant,NY,Oneida County
-50776,Panther Creek Energy Facility,PA,Carbon County
-50815,"Odyssey Energy Altura Cogen, LLC",TX,Harris County
-50835,TES Filer City Station,MI,Manistee County
-50865,Salinas River Cogeneration Facility,CA,Monterey County
-50888,Northampton Generating Plant,PA,Northampton County
-50900,WestRock Virginia Corp Covington Ops,VA,Alleghany County
-50931,Yellowstone Energy Limited Partnership,MT,Yellowstone County
-50949,Hardee Power Station,FL,Hardee County
-50951,Sunnyside Cogeneration Associates,UT,Carbon County
-50974,Scrubgrass Generating Plant,PA,Venango County
-50978,Carr Street Generating Station,NY,Onondaga County
-51026,Ryegate Associates,VT,Caledonia County
-51030,Ocean State Power,RI,Providence County
-52019,Doswell Limited Partnership,VA,Hanover County
-52026,Dartmouth Power,MA,Bristol County
-52087,Elizabeth River Combustion Turbine Sta,VA,Chesapeake city
-52088,Texas City Cogeneration,TX,Galveston County
-52089,Celanese Acetate LLC,VA,Giles County
-52130,BP Whiting Business Unit,IN,Lake County
-52149,Merck & Company - West Point,PA,Montgomery County
-52168,Riverbay Corp. - Co-Op City,NY,Bronx County
-52176,C. R. Wing Cogeneration Plant,TX,Howard County
-52193,Delaware City Refinery,DE,New Castle County
-54034,Rensselaer Cogen,NY,Rensselaer County
-54041,Lockport,NY,Niagara County
-54076,Indeck-Olean Energy Center,NY,Cattaraugus County
-54081,"Spruance Operating Services, LLC",VA,Richmond city
-54099,Ticonderoga Mill,NY,Essex County
-54114,KIAC Cogeneration,NY,Queens County
-54131,"World Generation X, LLC",NY,Niagara County
-54149,Nissequogue Energy Center,NY,Suffolk County
-54238,DTE Stockton,CA,San Joaquin County
-54271,Saguaro,NV,Clark County
-54276,University of NC Chapel Hill,NC,Orange County
-54324,Ocean State Power II,RI,Providence County
-54350,Nevada Cogeneration Associates #1,NV,Clark County
-54365,Orange Cogeneration Facility,FL,Polk County
-54415,Cadillac Renewable Energy,MI,Wexford County
-54426,Mulberry Cogeneration Facility,FL,Polk County
-54466,Orlando CoGen,FL,Orange County
-54476,Sumas Generating Station,WA,Whatcom County
-54537,Ferndale Generating Station,WA,Whatcom County
-54547,Independence,NY,Oswego County
-54556,Ingredion Incorporated Argo Plant,IL,Cook County
-54574,"Saranac Power Partners, LP",NY,Clinton County
-54592,Massena Energy Facility,NY,St. Lawrence County
-54593,Batavia Energy,NY,Genesee County
-54605,"Pratt & Whitney, East Hartford",CT,Hartford County
-54634,St. Nicholas Cogeneration Project,PA,Schuylkill County
-54638,"Domtar Paper Company, LLC",PA,Elk County
-54640,Lakewood,NJ,Ocean County
-54676,Oyster Creek Unit VIII,TX,Brazoria County
-54694,Yuma Cogeneration Associates,AZ,Yuma County
-54748,Port Neches Plant,TX,Jefferson County
-54749,Goal Line,CA,San Diego County
-54751,Genesee Power Station,MI,Genesee County
-54761,Hermiston,OR,Umatilla County
-54768,Live Oak Limited,CA,Kern County
-54785,Grays Ferry Cogen Partnership,PA,Philadelphia County
-54795,"American Sugar Refining, Inc.",MD,Baltimore city
-54805,"Milford Power, LLC",MA,Worcester County
-54817,Johnson County Generation Facility,TX,Johnson County
-54832,Brandywine Power Facility,MD,Prince George's County
-54844,Gordonsville Power Station,VA,Louisa County
-54854,Sun Peak Generating Station,NV,Clark County
-54914,Brooklyn Navy Yard Cogeneration,NY,Kings County
-54915,Michigan Power Limited Partnership,MI,Mason County
-55010,Cottage Grove Cogeneration,MN,Washington County
-55011,Whitewater Cogeneration Facility,WI,Jefferson County
-55015,Sweeny Cogeneration Facility,TX,Brazoria County
-55026,Dighton,MA,Bristol County
-55029,Depere Energy Center,WI,Brown County
-55039,Rio Bravo Generating Station,NM,Bernalillo County
-55040,Mid-Georgia Cogeneration,GA,Houston County
-55041,Berkshire Power,MA,Hampden County
-55042,Bridgeport Energy,CT,Fairfield County
-55043,Cherokee County Cogen,SC,Cherokee County
-55047,Pasadena Power Plant,TX,Harris County
-55048,"Tiverton Power, LLC",RI,Newport County
-55061,Tenaska Georgia Generating Station,GA,Heard County
-55062,Tenaska Frontier Generating Station,TX,Grimes County
-55063,Batesville Generation Facility,MS,Panola County
-55064,Blackhawk Station,TX,Hutchinson County
-55065,Mustang Station,TX,Yoakum County
-55068,Maine Independence Station,ME,Penobscot County
-55075,Pine Bluff Energy Center,AR,Jefferson County
-55076,Red Hills Generation Facility,MS,Choctaw County
-55077,Desert Star Energy Center,NV,Clark County
-55079,Millennium Power,MA,Worcester County
-55081,Brownsville Combustion Turbine Plant,TN,Haywood County
-55086,Gregory Power Facility,TX,San Patricio County
-55087,Zeeland Generating Station,MI,Ottawa County
-55088,Dearborn Industrial Generation,MI,Wayne County
-55089,Taft Cogeneration Facility,LA,St. Charles Parish
-55091,Midlothian Energy,TX,Ellis County
-55096,Portside Energy,IN,Porter County
-55097,Lamar Power Plant,TX,Lamar County
-55098,Frontera Generation Facility,TX,Hidalgo County
-55100,Rumford Power,ME,Oxford County
-55101,Kalamazoo River Generating Station,MI,Kalamazoo County
-55102,Livingston Generating Station,MI,Otsego County
-55103,Klamath Cogeneration Project,OR,Klamath County
-55107,Rhode Island State Energy Center,RI,Providence County
-55109,"Rocky Road Power, LLC",IL,Kane County
-55110,Madison Generating Station,OH,Butler County
-55111,Vermillion Generating Station,IN,Vermillion County
-55112,Calpine Sutter Energy Center,CA,Sutter County
-55116,Rockingham County Combustion Turbine,NC,Rockingham County
-55117,R S Cogen LLC,LA,Calcasieu Parish
-55120,SRO Cogen Limited Partnership,TX,Orange County
-55122,NAFTA Region Olefins Complex,TX,Jefferson County
-55123,Magic Valley Generating Station,TX,Hidalgo County
-55124,Griffith Energy Project,AZ,Mohave County
-55126,Milford Power Company LLC,CT,New Haven County
-55127,Manchief Generating Station,CO,Morgan County
-55128,Walton County Power,GA,Walton County
-55129,Desert Basin Generating Station,AZ,Pinal County
-55131,Kendall Energy Facility,IL,Kendall County
-55132,Tenaska Gateway Generating Station,TX,Rusk County
-55135,Neenah Energy Facility,WI,Winnebago County
-55137,"Rio Nogales Power Project, LP",TX,Guadalupe County
-55138,Walton Discover Power Facility,AL,Lee County
-55139,Wolf Hollow Generating Station,TX,Hood County
-55141,Hawk Road Energy Facility,GA,Heard County
-55144,Hays Energy Facility,TX,Hays County
-55146,"Green Country Energy, LLC",OK,Tulsa County
-55148,Worthington Generation,IN,Greene County
-55149,Lake Road Generating Company,CT,Windham County
-55151,La Paloma Generating Plant,CA,Kern County
-55153,Guadalupe Generating Station,TX,Guadalupe County
-55154,Lost Pines 1,TX,Bastrop County
-55164,Bluegrass Generating Station,KY,Oldham County
-55165,Calcasieu Plant,LA,Calcasieu Parish
-55166,Broad River Energy Center,SC,Cherokee County
-55168,Bastrop Clean Energy Center,TX,Bastrop County
-55170,Granite Ridge Energy,NH,Rockingham County
-55172,Bosque County Power Plant,TX,Bosque County
-55173,Acadia Power Station,LA,Acadia Parish
-55176,Eastman Cogeneration Facility,TX,Harrison County
-55177,"South Point Energy Center, LLC",AZ,Mohave County
-55178,Dogwood Energy Facility,MO,Cass County
-55179,"Rathdrum Power, LLC",ID,Kootenai County
-55182,Sunrise Power Company,CA,Kern County
-55183,Nelson Energy Center,IL,Lee County
-55187,Channelview Cogeneration Facility,TX,Harris County
-55188,Cordova Energy Company,IL,Rock Island County
-55192,Osceola,FL,Osceola County
-55193,Ontelaunee Energy Center,PA,Berks County
-55196,Springdale Generating Station (55196),PA,Allegheny County
-55197,Caledonia,MS,Lowndes County
-55198,Riverside Generating Company,KY,Lawrence County
-55199,Elwood Energy Facility,IL,Will County
-55200,Arapahoe Combustion Turbine Facility,CO,Denver County
-55201,"Gibson City Energy Center, LLC",IL,Ford County
-55202,Pinckneyville Power Plant,IL,Perry County
-55204,Kinmundy Power Plant,IL,Marion County
-55206,Corpus Christi Energy Center,TX,Nueces County
-55207,Valmont Combustion Turbine Facility,CO,Boulder County
-55210,Afton Generating Station,NM,Dona Ana County
-55211,Bellingham Power Generation LLC,MA,Norfolk County
-55212,Blackstone Power Generation LLC,MA,Worcester County
-55215,Odessa Ector Generating Station,TX,Ector County
-55216,"Morris Cogeneration, LLC",IL,Grundy County
-55217,"Los Medanos Energy Center, LLC",CA,Contra Costa County
-55218,Hinds Energy Facility,MS,Hinds County
-55220,Attala Generating Plant,MS,Attala County
-55221,Oswald Generating Station,AR,Pulaski County
-55222,Lincoln Generating Facility,IL,Will County
-55223,"Ennis Power Company, LLC",TX,Ellis County
-55224,Wheatland Generating Facility LLC,IN,Knox County
-55225,Oneta Energy Center,OK,Wagoner County
-55226,Freestone Power Generation,TX,Freestone County
-55228,Greenville Electric Gen Station,OH,Darke County
-55229,Montpelier Electric Gen Station,IN,Wells County
-55230,Jack County Generation Facility,TX,Jack County
-55231,Liberty Electric Power Plant,PA,Delaware County
-55232,Marshall County,KY,Marshall County
-55233,Handsome Lake Energy,PA,Venango County
-55234,Audrain Power Plant,MO,Audrain County
-55236,"Lee County Generating Station, LLC",IL,Lee County
-55237,Shelby County,IL,Shelby County
-55238,Rockford Energy Center,IL,Winnebago County
-55239,"Red Oak Power, LLC",NJ,Middlesex County
-55241,Hog Bayou Energy Center,AL,Mobile County
-55242,Santa Rosa Energy Center,FL,Santa Rosa County
-55244,Doyle Energy Facility,GA,Walton County
-55247,Darby Electric Generating Station,OH,Pickaway County
-55248,Tait Electric Generating Station,OH,Montgomery County
-55250,University Park Energy,IL,Will County
-55251,Gleason Combustion Turbine Plant,TN,Weakley County
-55253,Crete Energy Park,IL,Will County
-55259,"Whiting Clean Energy, Inc.",IN,Lake County
-55262,AMP-Ohio Gas Turbines Bowling Green,OH,Wood County
-55263,AMP-Ohio Gas Turbines Galion,OH,Crawford County
-55264,AMP-Ohio Gas Turbines Napoleon,OH,Henry County
-55267,Edward L Addison Generating Plant,GA,Upson County
-55269,Southaven Combined Cycle Plant,MS,DeSoto County
-55270,Jackson Generating Station,MI,Jackson County
-55271,Lindsay Hill Generating Station,AL,Autauga County
-55276,Ceredo Generating Station,WV,Wayne County
-55279,Aurora,IL,DuPage County
-55282,Arlington Valley Energy Facility,AZ,Maricopa County
-55283,Front Range Power Plant,CO,El Paso County
-55284,Big Sandy Peaker Plant,WV,Wayne County
-55285,Wolf Hills Energy,VA,Washington County
-55286,Oleander Power Project,FL,Brevard County
-55292,Decatur Energy Center,AL,Morgan County
-55293,Morgan Energy Center,AL,Morgan County
-55294,Westbrook Energy Center,ME,Cumberland County
-55295,Blythe Energy,CA,Riverside County
-55296,"Calumet Energy Team, LLC",IL,Cook County
-55297,Covert Generating Station,MI,Van Buren County
-55298,Fairless Energy Center,PA,Bucks County
-55299,Channel Energy Center,TX,Harris County
-55304,Baconton Power,GA,Mitchell County
-55306,Gila River Power Station,AZ,Maricopa County
-55308,"DTE Calvert City, LLC",KY,Marshall County
-55317,Fore River Energy Center,MA,Norfolk County
-55320,"Wise County Power Company, LLC",TX,Wise County
-55322,Chuck Lenzie Generating Station,NV,Clark County
-55327,Baytown Energy Center,TX,Chambers County
-55328,Hermiston Power Plant,OR,Umatilla County
-55332,Washington County Power,GA,Washington County
-55333,"Delta Energy Center, LLC",CA,Contra Costa County
-55334,Holland Energy Facility,IL,Shelby County
-55337,Helix Ironwood LLC,PA,Lebanon County
-55340,Dell Power Plant,AR,Mississippi County
-55343,Luna Energy Facility,NM,Luna County
-55345,"Otay Mesa Energy Center, LLC",CA,San Diego County
-55347,"Armstrong Power, LLC",PA,Armstrong County
-55348,"Troy Energy, LLC",OH,Wood County
-55349,"Pleasants Energy, LLC",WV,Pleasants County
-55350,Dresden Energy Facility,OH,Muskingum County
-55357,"Brazos Valley Energy, LP",TX,Fort Bend County
-55358,Cottonwood Energy Project,TX,Newton County
-55364,Sugar Creek Generating Station,IN,Vigo County
-55365,LaPorte Generating Station,TX,Harris County
-55372,New Harquahala Generating Company,AZ,Maricopa County
-55375,Astoria Energy,NY,Queens County
-55377,Gans Generating Facility,PA,Fayette County
-55380,Union Power Station,AR,Union County
-55381,Commonwealth Chesapeake,VA,Accomack County
-55382,Thomas A. Smith Energy Facility,GA,Murray County
-55386,Columbia Energy Center (SC),SC,Calhoun County
-55391,Rockgen Energy Center,WI,Dane County
-55392,Zion Energy Center,IL,Lake County
-55393,Metcalf Energy Center,CA,Santa Clara County
-55395,Crossroads Energy Center (CPU),MS,Coahoma County
-55397,Washington Power Company LLC,OH,Washington County
-55400,Elk Hills Power,CA,Kern County
-55401,Rolling Hills Generating LLC,OH,Vinton County
-55402,Renaissance Power,MI,Montcalm County
-55404,Carville Energy Center,LA,Iberville Parish
-55405,Athens Generating Company,NY,Greene County
-55406,Bobby C. Smith Jr. Energy Facility,GA,Effingham County
-55409,Calhoun Generating Facility,AL,Calhoun County
-55411,Hillabee Energy Center,AL,Tallapoosa County
-55412,Osprey Energy Center,FL,Polk County
-55414,Shady Hills,FL,Pasco County
-55415,Vandolah Power Project,FL,Hardee County
-55417,Raccoon Creek Power Plant,IL,Clay County
-55418,Hot Spring Energy Facility,AR,Hot Spring County
-55419,Plaquemine Cogen Facility,LA,Iberville Parish
-55433,Bayou Cove Peaking Power Plant,LA,Acadia Parish
-55438,"Elgin Energy Center, LLC",IL,Cook County
-55439,Tenaska Virginia Generating Station,VA,Fluvanna County
-55440,Central Alabama Gen Station,AL,Autauga County
-55447,Columbia Energy Center (MO),MO,Boone County
-55451,Magnolia Combined Cycle Plant,MS,Benton County
-55453,Fountain Valley Power Plant,CO,El Paso County
-55455,Redhawk Generating Facility,AZ,Maricopa County
-55457,McClain Energy Facility,OK,McClain County
-55460,Indeck-Niles Energy Center,MI,Cass County
-55463,Redbud Power Plant,OK,Oklahoma County
-55464,Deer Park Energy Center,TX,Harris County
-55467,Ouachita Plant,LA,Ouachita Parish
-55470,South Houston Green Power Site,TX,Galveston County
-55477,Neil Simpson II (CT2),WY,Campbell County
-55478,Lange,SD,Pennington County
-55479,Wygen I,WY,Campbell County
-55480,Forney Power Plant,TX,Kaufman County
-55481,Mesquite Generating Station,AZ,Maricopa County
-55482,Goldendale Generating Station,WA,Klickitat County
-55486,Washington Parish Energy Center,LA,Washington Parish
-55496,Goose Creek Power Plant,IL,Piatt County
-55499,CalPeak Power - Vaca Dixon,CA,Solano County
-55501,Tenaska Kiamichi Generating Station,OK,Pittsburg County
-55502,Lawrenceburg Energy Facility,IN,Dearborn County
-55503,Waterford Plant,OH,Washington County
-55504,Limon Generating Station,CO,Lincoln County
-55505,Frank Knutson Station,CO,Adams County
-55508,CalPeak Power - Panoche,CA,Fresno County
-55510,CalPeak Power - Border,CA,San Diego County
-55512,Cuyamaca Peak Energy,CA,San Diego County
-55513,CalPeak Power - Enterprise,CA,San Diego County
-55514,Apex Generating Station,NV,Clark County
-55516,Fayette Power Company LLC,PA,Fayette County
-55517,"Wallingford Energy, LLC",CT,New Haven County
-55518,High Desert Power Project,CA,San Bernardino County
-55522,Sundance Power Plant,AZ,Pinal County
-55524,York Energy Center,PA,York County
-55538,"Escondido Energy Center, LLC",CA,San Diego County
-55540,Chula Vista Energy Center,CA,San Diego County
-55541,Indigo Generation Facility,CA,Riverside County
-55542,Larkspur Energy Facility,CA,San Diego County
-55544,Klamath Generation Peakers,OR,Klamath County
-55558,McKinley Paper and Packaging Company,WI,Outagamie County
-55620,Perryville Power Station,LA,Ouachita Parish
-55622,West Valley Power Plant,UT,Salt Lake County
-55625,Creed Energy Center,CA,Solano County
-55626,Lambie Energy Center,CA,Solano County
-55627,Goose Haven Energy Center,CA,Solano County
-55640,"LSP University Park, LLC",IL,Will County
-55641,Riverside Energy Center,WI,Rock County
-55645,Blue Spruce Energy Center,CO,Adams County
-55651,Spring Creek Power Plant,OK,Logan County
-55654,Chambersburg Units 12 & 13,PA,Franklin County
-55656,Pastoria Energy Facility,CA,Kern County
-55661,Newington Energy,NH,Rockingham County
-55662,Chehalis Generation Facility,WA,Lewis County
-55664,Harrison County Power Project,TX,Harrison County
-55667,"Lower Mount Bethel Energy, LLC",PA,Northampton County
-55672,AL Sandersville Energy Facility,GA,Washington County
-55687,Walter M. Higgins III Generating Station,NV,Clark County
-55690,Bethlehem Power Plant,PA,Northampton County
-55694,Ackerman Combined Cycle Plant,MS,Choctaw County
-55698,Hanford Energy Park Peaker,CA,Kings County
-55699,Bayswater Peaking Facility,NY,Queens County
-55700,Mint Farm Generating Station,WA,Cowlitz County
-55701,Fremont Energy Center,OH,Sandusky County
-55703,"Valero Refining Company-Tennessee, LLC",TN,Shelby County
-55706,Choctaw County,MS,Choctaw County
-55708,Nacogdoches Generating Facility,TX,Nacogdoches County
-55710,Springdale Generating Station (55710),PA,Allegheny County
-55714,Magnet Cove Generating Station,AR,Hot Spring County
-55718,Dean Peakers,MI,St. Clair County
-55733,Bennett Mountain Power Project,ID,Elmore County
-55736,Hanging Rock Power Company LLC,OH,Lawrence County
-55738,Buchanan Units 1 & 2,VA,Buchanan County
-55748,Los Esteros Critical Energy Facility,CA,Santa Clara County
-55749,Hardin Generating Station,MT,Big Horn County
-55786,Edgewood Energy,NY,Suffolk County
-55787,Shoreham Energy,NY,Suffolk County
-55799,"Otsego Paper, Inc.",MI,Allegan County
-55801,"Marcus Hook Energy, LP",PA,Delaware County
-55802,Valencia Power Plant,NM,Valencia County
-55807,Henrietta Peaker Plant,CA,Kings County
-55810,"Gilroy Energy Center, LLC",CA,Santa Clara County
-55818,Frederickson Power LP,WA,Pierce County
-55821,Stanton A,FL,Orange County
-55835,Rocky Mountain Energy Center,CO,Weld County
-55836,Island Street Peaking Plant,WI,Outagamie County
-55841,Silverhawk Generating Station,NV,Clark County
-55847,Feather River Energy Center,CA,Sutter County
-55855,Wolfskill Energy Center,CA,Solano County
-55856,Prairie State Generating Station,IL,Washington County
-55927,Jasper County Generating Facility,SC,Jasper County
-55933,Tracy Combined Cycle Power Plant,CA,San Joaquin County
-55936,Rockford II Energy Center,IL,Winnebago County
-55938,Ocean Peaking Power,NJ,Ocean County
-55939,Warren County Power Station,VA,Warren County
-55951,Agua Mansa Power,CA,San Bernardino County
-55963,Riverview Energy Center,CA,Contra Costa County
-55965,Wansley CC (55965),GA,Heard County
-55969,"Hawkeye Energy Greenport, LLC",NY,Suffolk County
-55970,Cosumnes Power Plant,CA,Sacramento County
-55972,Cass County Station,NE,Cass County
-55976,Hunterstown Combined Cycle,PA,Adams County
-55977,Bluffview Power Plant,NM,San Juan County
-55985,Palomar Energy Center,CA,San Diego County
-56013,Exira Station,IA,Audubon County
-56015,Walton Bainbridge Power Facility,GA,Decatur County
-56018,AMEA Sylacauga Plant,AL,Talladega County
-56026,Donald Von Raesfeld,CA,Santa Clara County
-56031,Fox Energy Center,WI,Outagamie County
-56032,Equus  Power I,NY,Nassau County
-56041,Malburg Generating Station,CA,Los Angeles County
-56046,Magnolia Power Project,CA,Los Angeles County
-56047,CPV Towantic Energy Center,CT,New Haven County
-56068,Elm Road Generating Station,WI,Milwaukee County
-56078,Walnut Energy Center,CA,Stanislaus County
-56102,Currant Creek Power Project,UT,Juab County
-56104,Mankato Energy Center,MN,Blue Earth County
-56108,T J Labbe Electric Generating Station,LA,Lafayette Parish
-56135,Ripon Generation Station,CA,Stanislaus County
-56143,Riverside Energy Resource Center,CA,Riverside County
-56150,McIntosh Combined Cycle Facility,GA,Effingham County
-56151,South Harper Peaking Facility,MO,Cass County
-56164,Faribault Energy Park,MN,Rice County
-56166,Sheboygan Falls Energy Facility,WI,Sheboygan County
-56177,Nebo Power Station,UT,Utah County
-56188,Pinelawn Power,NY,Suffolk County
-56189,"Waterside Power, LLC",CT,Fairfield County
-56196,Poletti 500 MW CC,NY,Queens County
-56224,TS Power Plant,NV,Eureka County
-56227,Port Westward,OR,Columbia County
-56232,Miramar Energy Facility,CA,San Diego County
-56234,Caithness Long Island Energy Center,NY,Suffolk County
-56237,Lake Side Power Plant,UT,Utah County
-56238,Groton Generating Station,SD,Brown County
-56239,Malaga Power,CA,Fresno County
-56241,Cannon Falls Energy Center,MN,Goodhue County
-56249,NCEMC Anson Plant,NC,Anson County
-56253,Millcreek Power,UT,Washington County
-56259,"Empire Generating Co, LLC",NY,Rensselaer County
-56283,Hargis-Hebert Electric Generating Statio,LA,Lafayette Parish
-56292,NCEMC Hamlet Plant,NC,Richmond County
-56298,Roseville Energy Park,CA,Placer County
-56319,Wygen II,WY,Campbell County
-56326,Mustang Station (56326),TX,Yoakum County
-56328,Harry D. Mattison Power Plant,AR,Washington County
-56349,Quail Run Energy Center,TX,Ector County
-56350,Colorado Bend Energy Center,TX,Wharton County
-56397,Hunlock Unit 4,PA,Luzerne County
-56400,Treasure Coast Energy Center,FL,St. Lucie County
-56407,West County Energy Center,FL,Palm Beach County
-56445,Spindle Hill Energy Center,CO,Weld County
-56456,Plum Point Energy Station,AR,Mississippi County
-56458,Hobbs Generating Station,NM,Lea County
-56467,Russell City Energy Company LLC,CA,Alameda County
-56471,McGrath Generating Station,CA,Ventura County
-56472,Grapeland Generating Station,CA,San Bernardino County
-56473,Mira Loma Generating Station,CA,San Bernardino County
-56474,Barre Generating Station,CA,Orange County
-56475,Center Generating Station,CA,Los Angeles County
-56476,Gateway Generating Station,CA,Contra Costa County
-56480,Marshfield Utilities Combustion Turbine,WI,Wood County
-56482,Black Mountain Generating Station,AZ,Mohave County
-56502,Emporia Energy Center,KS,Lyon County
-56505,City Water & Light - City of Jonesboro,AR,Craighead County
-56532,Colusa Generating Station,CA,Colusa County
-56556,Paducah Power Systems Plant 1,KY,McCracken County
-56564,John W. Turk Jr. Power Plant,AR,Hempstead County
-56569,Niland Gas Turbine Plant,CA,Imperial County
-56596,Wygen III,WY,Campbell County
-56603,San Jacinto County Peaking Facility,TX,San Jacinto County
-56604,Hardin County Peaking Facility,TX,Hardin County
-56606,Culbertson Station,MT,Roosevelt County
-56609,Dry Fork Station,WY,Campbell County
-56610,Deer Creek Station,SD,Brown County
-56611,Sandy Creek Energy Station,TX,McLennan County
-56629,Waterbury Generation,CT,New Haven County
-56639,Midway Peaking,CA,Fresno County
-56668,NIH Cogeneration Facility,MD,Montgomery County
-56671,Longview Power,WV,Monongalia County
-56674,Winchester Power Park,TX,Fayette County
-56786,Spiritwood Station,ND,Stutsman County
-56798,Kleen Energy Systems Project,CT,Middlesex County
-56799,Greenland Energy Center,FL,Duval County
-56803,Panoche Energy Center,CA,Fresno County
-56806,Cedar Bayou 4,TX,Chambers County
-56807,Bear Garden Generating Station,VA,Buckingham County
-56808,Virginia City Hybrid Energy Center,VA,Wise County
-56846,CPV St. Charles Energy Center,MD,Charles County
-56908,Dave Gates Generating Station,MT,Deer Lodge County
-56914,Orange Grove Project,CA,San Diego County
-56940,Valley Energy Center,NY,Orange County
-56948,Coolidge Generating Station,AZ,Pinal County
-56963,West Deptford Energy Station,NJ,Gloucester County
-56964,Bayonne Energy Center,NJ,Hudson County
-56998,Pueblo Airport Generating Station,CO,Pueblo County
-57001,El Cajon Energy Center,CA,San Diego County
-57027,Canyon Power Plant,CA,Orange County
-57028,Langley Gulch Power Plant,ID,Payette County
-57029,Cleveland County Generating Facility,NC,Cleveland County
-57037,David M Ratcliffe,MS,Kemper County
-57073,Ivanpah 2,CA,San Bernardino County
-57074,Ivanpah 1,CA,San Bernardino County
-57075,Ivanpah 3,CA,San Bernardino County
-57185,Cricket Valley Energy Center,NY,Dutchess County
-57241,Deerhaven Renewable Energy Center,FL,Alachua County
-57267,Marsh Landing Generating Station,CA,Contra Costa County
-57349,Garrison Energy Center,DE,Kent County
-57482,"Sentinel Energy Center, LLC",CA,Riverside County
-57483,Mariposa Energy Project,CA,Alameda County
-57515,Walnut Creek Energy Park,CA,Los Angeles County
-57555,Pio Pico Energy Center LLC,CA,San Diego County
-57564,Algonquin Power Sanger,CA,Fresno County
-57703,Cheyenne Prairie Generating Station,WY,Laramie County
-57794,St. Joseph Energy Center LLC,IN,St. Joseph County
-57839,Woodbridge Energy Center,NJ,Middlesex County
-57842,Wabash River Highland Plant,IN,Vigo County
-57865,Antelope Elk Energy Center,TX,Hale County
-57881,Pioneer Generating Station,ND,Williams County
-57943,Lonesome Creek Station,ND,McKenzie County
-57978,Lodi Energy Center,CA,San Joaquin County
-58001,Temple Power Station,TX,Bell County
-58005,Rayburn Energy Station,TX,Grayson County
-58054,Burgess BioPower,NH,Coos County
-58079,Newark Energy Center,NJ,Essex County
-58122,"Delano Energy Center, LLC",CA,Tulare County
-58124,Rothschild Biomass Cogeneration Facility,WI,Marathon County
-58235,Clayville,NJ,Cumberland County
-58236,Marshalltown Generating Station,IA,Marshall County
-58260,Brunswick County Power Station,VA,Brunswick County
-58284,La Luz Energy Center,NM,Valencia County
-58325,Charles D Lamb Energy Center,OK,Kay County
-58378,Carbon Capture Plant,TX,Fort Bend County
-58413,Copper Crossing Energy & Research Center,AZ,Pinal County
-58420,Hamilton Liberty Generation Plant,PA,Bradford County
-58426,Hamilton Patriot Generation Plant,PA,Lycoming County
-58427,Lansing BWL REO Town Plant,MI,Ingham County
-58471,Ector County Energy Center,TX,Ector County
-58478,LEPA Unit No. 1,LA,St. Mary Parish
-58503,Carty Generating Station,OR,Morrow County
-58562,Montana Power Station,TX,El Paso County
-58933,Shell Chemical Appalachia LLC,PA,Beaver County
-59004,"Potomac Energy Center, LLC",VA,Loudoun County
-59073,Cove Point LNG Terminal,MD,Calvert County
-59093,Holland Energy Park,MI,Ottawa County
-59220,Wildcat Point Generation Facility,MD,Cecil County
-59325,Kings Mountain Energy Center,NC,Cleveland County
-59326,Middletown Energy Center,OH,Butler County
-59764,Oregon Clean Energy Center,OH,Lucas County
-59773,Carroll County Energy,OH,Carroll County
-59812,Wolf Hollow II,TX,Hood County
-59882,Exelon West Medway II,MA,Norfolk County
-59906,Moxie Freedom Generation Plant,PA,Luzerne County
-59913,Greensville County Power Station,VA,Greensville County
-59926,Alpine Power Plant,MI,Otsego County
-60122,Colorado Bend II,TX,Wharton County
-60264,Bacliff Generating Station,TX,Galveston County
-60302,Keys Energy Center,MD,Prince George's County
-60340,Albany Green Energy LLC,GA,Dougherty County
-60345,Okeechobee Clean Energy Center,FL,Okeechobee County
-60356,"South Field Energy, LLC",OH,Columbiana County
-60357,Lackawanna Energy Center,PA,Lackawanna County
-60368,Hummel Station,PA,Snyder County
-60376,"Clean Energy Future - Lordstown, LLC",OH,Trumbull County
-60387,Invenergy Nelson Expansion LLC,IL,Lee County
-60459,Port Comfort Peaking Facility,TX,Calhoun County
-60460,"Chamon Power, LLC",TX,Harris County
-60464,Tenaska Westmoreland Generating Station,PA,Westmoreland County
-60468,Tejas Power Generation Unit 1,TX,Harris County
-60589,"CPV Fairview, LLC",PA,Cambria County
-60698,Stanton Energy Reliability Center,CA,Orange County
-60903,Salem Harbor Station NGCC,MA,Essex County
-60910,NET Power La Porte Station,TX,Harris County
-60925,Montgomery County Power Station,TX,Montgomery County
-60926,St. Charles Power Station,LA,St. Charles Parish
-60927,Lake Charles Power Station,LA,Calcasieu Parish
-61028,Hickory Run Energy Station,PA,Lawrence County
-61035,Birdsboro Power,PA,Berks County
-61144,Astoria Station,SD,Deuel County
-61241,Victoria City Peaking Facility,TX,Victoria County
-61242,Victoria Port Peaking Facility,TX,Victoria County
-61322,Long Ridge Energy Generation,OH,Monroe County
-61966,Victoria Port Power II Peaking Facility,TX,Victoria County
-62192,Blue Water Energy Center,MI,St. Clair County
-62548,SJRR Power Peaking Facility,TX,Harris County
-62565,Hill Top Energy Center,PA,Greene County
-62926,"Jackson Generation, LLC",IL,Will County
-62949,Guernsey Power Station,OH,Guernsey County
-63259,Delta Energy Park,MI,Eaton County
-63335,HO Clarke Generating,TX,Harris County
-63559,MMWEC Simple Cycle Gas Turbine,MA,Essex County
-63628,Tinker,OK,Oklahoma County
-63688,Topaz Generating,TX,Galveston County
-63931,CPV Three Rivers Energy Center,IL,Grundy County
-64383,Braes Bayou Plant,TX,Fort Bend County
-64547,Turtle Creek Station,NE,Sarpy County
-64854,Primient,IN,Tippecanoe County
-65372,Mark One Power Station,TX,Brazoria County
-65373,Brotman Power Station,TX,Brazoria County
-66600,Bushy Park Combustion Turbine Facility,SC,Berkeley County
-66604,Remy Jade Power Station,TX,Harris County
-66918,Trumbull Energy Center,OH,Trumbull County
-68386,Mountain Peak Power Station,CO,Weld County
-70454,Hartwell Energy Facility,GA,Hart County
-880004,GSA Central Heating,DC,District of Columbia
-880006,Vicinity Energy Philadelphia Edison Sta,PA,Philadelphia County
-880007,AdvanSix Resins & Chemicals LLC,PA,Philadelphia County
-880023,Kneeland Station,MA,Suffolk County
-880024,Momentive Performance Materials,NY,Saratoga County
-880025,Trainer Refinery,PA,Delaware County
-880029,Marathon Petroleum Company LP,MI,Wayne County
-880030,Ohio Refining Company LLC,OH,Lucas County
-880031,Corteva Agriscience LLC,MI,Midland County
-880038,"Catlettsburg Refining, LLC",KY,Boyd County
-880041,Ascend (Decatur Plant),AL,Morgan County
-880042,Cleveland-Cliffs Steel - Middletown,OH,Butler County
-880045,University of Michigan,MI,Washtenaw County
-880053,Altivia Services Institute Facility,WV,Kanawha County
-880065,Phoenix Paper Wickliffe LLC,KY,Ballard County
-880067,Wood River Refinery,IL,Madison County
-880071,Armagh Compressor Station,PA,Indiana County
-880072,Entriken Compressor Station,PA,Huntingdon County
-880076,Lemont Refinery,IL,Will County
-880079,Tate & Lyle-Loudon,TN,Loudon County
-880083,Lima Refinery,OH,Allen County
-880086,"Alto Central, LLC",IL,Tazewell County
-880088,Marathon Petroleum Company LP,IL,Crawford County
-880089,"INEOS Joliet, LLC",IL,Will County
-880093,AdvanSix Resins and Chemicals - Hopewell,VA,Prince George County
-880099,United Refining Company,PA,Warren County
-880100,Ravenswood Steam Plant,NY,Queens County
-880102,"AES Puerto Rico, LP",PR,Guayama Municipio
-880103,Palo Seco Steam Power Plant,PR,Toa Baja Municipio
-880104,Costa Sur Steam Power Plant,PR,Guayanilla Municipio
-880105,Aguirre Steam Power Plant,PR,Salinas Municipio
-880106,San Juan Steam Power Plant,PR,San Juan Municipio
-880107,ETMT Marcus Hook Terminal,PA,Delaware County
-880108,Grain Processing Corporation,IN,Daviess County
-880109,Pratt Paper (OH),OH,Auglaize County
-880110,Holston Army Ammunition Plant,TN,Hawkins County
+facility_id,facility_name,state,county,latitude,longitude,source_category
+3,Barry,AL,Mobile County,31.0069,-88.0103,Electric Utility
+9,Copper Station,TX,El Paso County,31.7569,-106.375,Electric Utility
+10,Greene County,AL,Greene County,32.6017,-87.7811,Electric Utility
+26,E C Gaston,AL,Shelby County,33.2442,-86.4567,Electric Utility
+47,Colbert,AL,Colbert County,34.7439,-87.8486,Electric Utility
+54,Smith Generating Facility,KY,Clark County,37.8824,-84.1025,Electric Utility
+56,Charles R Lowman,AL,Washington County,31.4858,-87.9106,Electric Utility
+59,Platte,NE,Hall County,40.8538,-98.3481,Electric Utility
+60,Gerald Whelan Energy Center,NE,Adams County,40.5806,-98.3106,Electric Utility
+108,Holcomb,KS,Finney County,37.9306,-100.9725,Electric Utility
+113,Cholla,AZ,Navajo County,34.9394,-110.3033,Electric Utility
+116,Ocotillo Power Plant,AZ,Maricopa County,33.4225,-111.9122,Electric Utility
+117,APS West Phoenix Power Plant,AZ,Maricopa County,33.4417,-112.1583,Electric Utility
+118,APS Saguaro Power Plant,AZ,Pinal County,32.5517,-111.3,Electric Utility
+120,Yucca Power Plant,AZ,Yuma County,32.7214,-114.7097,Electric Utility
+124,De Moss Petrie Generating Station,AZ,Pima County,32.2511,-110.9889,Electric Utility
+126,Irvington Generating Station,AZ,Pima County,32.16,-110.9047,Electric Utility
+127,Oklaunion Power Station,TX,Wilbarger County,34.0825,-99.1753,Electric Utility
+130,Cross,SC,Berkeley County,33.3692,-80.1119,Electric Utility
+136,Seminole (136),FL,Putnam County,29.7333,-81.6339,Electric Utility
+141,Agua Fria Generating Station,AZ,Maricopa County,33.5542,-112.2161,Electric Utility
+147,Kyrene Generating Station,AZ,Maricopa County,33.3544,-111.9364,Electric Utility
+160,Apache Station,AZ,Cochise County,32.0619,-109.8931,Electric Utility
+165,Grand River Dam Authority,OK,Mayes County,36.1906,-95.2889,Electric Utility
+170,Lake Catherine,AR,Hot Spring County,34.4341,-92.9046,Electric Utility
+201,Thomas Fitzhugh,AR,Franklin County,35.4617,-93.8053,Electric Utility
+202,Carl Bailey,AR,Woodruff County,35.2597,-91.3631,Electric Utility
+203,McClellan,AR,Ouachita County,33.5648,-92.7917,Electric Utility
+260,Moss Landing Power Plant,CA,Monterey County,36.8042,-121.7775,Electric Utility
+298,Limestone,TX,Limestone County,31.4219,-96.2525,Electric Utility
+302,Cabrillo Power I Encina Power Station,CA,San Diego County,33.1408,-117.3342,Electric Utility
+315,AES Alamitos,CA,Los Angeles County,33.7688,-118.1009,Electric Utility
+330,El Segundo,CA,Los Angeles County,33.9106,-118.425,Electric Utility
+335,AES Huntington Beach,CA,Orange County,33.6436,-117.9788,Electric Utility
+341,Long Beach Generating Station,CA,Los Angeles County,33.7641,-118.2248,Electric Utility
+350,"Ormond Beach Power, LLC.",CA,Ventura County,34.1292,-119.1689,Electric Utility
+358,Mountainview Generating Station,CA,San Bernardino County,34.0836,-117.2408,Electric Utility
+377,Grayson Power Plant,CA,Los Angeles County,34.1556,-118.2782,Electric Utility
+389,El Centro,CA,Imperial County,32.8022,-115.54,Electric Utility
+399,Harbor Generating Station,CA,Los Angeles County,33.7691,-118.2662,Electric Utility
+400,Haynes Generating Station,CA,Los Angeles County,33.7639,-118.0942,Electric Utility
+404,Scattergood Generating Station,CA,Los Angeles County,33.9175,-118.4258,Electric Utility
+408,Valley Generating Station,CA,Los Angeles County,34.2481,-118.3903,Electric Utility
+422,Glenarm,CA,Los Angeles County,34.1256,-118.1474,Electric Utility
+469,Cherokee,CO,Adams County,39.8078,-104.9648,Electric Utility
+470,Comanche (470),CO,Pueblo County,38.2081,-104.5747,Electric Utility
+492,Martin Drake,CO,El Paso County,38.8244,-104.8331,Electric Utility
+525,Hayden,CO,Routt County,40.4856,-107.185,Electric Utility
+533,McWilliams,AL,Covington County,31.4001,-86.4767,Electric Utility
+540,Branford,CT,New Haven County,41.2925,-72.7942,Electric Utility
+542,Cos Cob,CT,Fairfield County,41.0289,-73.5989,Electric Utility
+544,Devon,CT,New Haven County,41.2083,-73.1092,Electric Utility
+546,Montville,CT,New London County,41.4281,-72.1019,Electric Utility
+561,Franklin Drive,CT,Litchfield County,41.7994,-73.1156,Electric Utility
+562,Middletown,CT,Middlesex County,41.5544,-72.5793,Electric Utility
+564,Curtis H. Stanton Energy Center,FL,Orange County,28.4836,-81.1686,Electric Utility
+565,Torrington Terminal,CT,Litchfield County,41.7761,-73.1219,Electric Utility
+568,Bridgeport Harbor Station,CT,Fairfield County,41.1706,-73.1843,Electric Utility
+589,J C McNeil,VT,Chittenden County,44.4917,-73.2081,Electric Utility
+591,Christiana Substation,DE,New Castle County,39.7302,-75.5371,Electric Utility
+592,Delaware City,DE,New Castle County,39.5959,-75.6324,Electric Utility
+593,Edge Moor,DE,New Castle County,39.7372,-75.5033,Electric Utility
+594,Indian River,DE,Sussex County,38.5857,-75.2341,Electric Utility
+597,West Substation,DE,New Castle County,39.7283,-75.6289,Electric Utility
+602,Brandon Shores,MD,Anne Arundel County,39.1792,-76.5383,Electric Utility
+607,Fredonia Generating Station,WA,Skagit County,48.4553,-122.435,Electric Utility
+609,Cape Canaveral,FL,Brevard County,28.4694,-80.7642,Electric Utility
+612,Fort Myers,FL,Lee County,26.6967,-81.7831,Electric Utility
+613,Lauderdale,FL,Broward County,26.0681,-80.1983,Electric Utility
+617,Port Everglades,FL,Broward County,26.0856,-80.1253,Electric Utility
+619,Riviera Beach Energy Center,FL,Palm Beach County,26.7653,-80.0528,Electric Utility
+620,Sanford,FL,Volusia County,28.8419,-81.3256,Electric Utility
+621,Turkey Point,FL,Miami-Dade County,25.4356,-80.3308,Electric Utility
+628,Crystal River,FL,Citrus County,28.9594,-82.7003,Electric Utility
+634,P L Bartow,FL,Pinellas County,27.8613,-82.6012,Electric Utility
+641,Gulf Clean Energy Center,FL,Escambia County,30.5661,-87.2289,Electric Utility
+643,Lansing Smith Generating Plant,FL,Bay County,30.2689,-85.7003,Electric Utility
+645,Big Bend,FL,Hillsborough County,27.7944,-82.4036,Electric Utility
+663,Deerhaven,FL,Alachua County,29.7586,-82.3883,Electric Utility
+664,J R Kelly,FL,Alachua County,29.6467,-82.3219,Electric Utility
+666,J D Kennedy,FL,Duval County,30.3644,-81.6236,Electric Utility
+667,Northside,FL,Duval County,30.4172,-81.5525,Electric Utility
+673,Tom G Smith,FL,Palm Beach County,26.6125,-80.0678,Electric Utility
+675,Charles Larsen Memorial Power Plant,FL,Polk County,28.0491,-81.9238,Electric Utility
+676,C D McIntosh Jr Power Plant,FL,Polk County,28.0809,-81.9256,Electric Utility
+683,Indian River (683),FL,Brevard County,28.4933,-80.7825,Electric Utility
+688,Arvah B Hopkins,FL,Leon County,30.4522,-84.4,Electric Utility
+689,S O Purdom,FL,Wakulla County,30.1619,-84.2014,Electric Utility
+703,Bowen,GA,Bartow County,34.1256,-84.9192,Electric Utility
+710,Jack McDonough,GA,Cobb County,33.8244,-84.475,Electric Utility
+715,McManus,GA,Glynn County,31.2125,-81.5458,Electric Utility
+728,Yates,GA,Coweta County,33.4622,-84.8986,Electric Utility
+762,Ponca,OK,Kay County,36.7205,-97.0868,Electric Utility
+765,Kahe Generating Station,HI,Honolulu County,21.3567,-158.1283,Electric Utility
+766,Waiau Generating Station,HI,Honolulu County,21.3887,-157.9612,Electric Utility
+876,Kincaid Generating Station,IL,Christian County,39.5906,-89.4964,Electric Utility
+879,Powerton,IL,Tazewell County,40.5408,-89.6786,Electric Utility
+883,Waukegan,IL,Lake County,42.3833,-87.8133,Electric Utility
+886,Fisk,IL,Cook County,41.8508,-87.6533,Small Power Producer
+889,Baldwin Energy Complex,IL,Randolph County,38.205,-89.855,Electric Utility
+913,Venice,IL,Madison County,38.6642,-90.1764,Electric Utility
+963,Dallman,IL,Sangamon County,39.7539,-89.6011,Electric Utility
+976,Marion,IL,Williamson County,37.6206,-88.955,Electric Utility
+983,Clifty Creek,IN,Jefferson County,38.7383,-85.4192,Electric Utility
+990,IPL - Harding Street Station (EW Stout),IN,Marion County,39.7119,-86.1975,Electric Utility
+991,IPL - Eagle Valley Generating Station,IN,Morgan County,39.4851,-86.4176,Electric Utility
+992,C. C. Perry K Steam Plant,IN,Marion County,39.7622,-86.1667,Industrial Boiler
+994,IPL - Petersburg Generating Station,IN,Pike County,38.5267,-87.2525,Electric Utility
+997,Michigan City Generating Station,IN,LaPorte County,41.7203,-86.9097,Electric Utility
+1001,Cayuga,IN,Vermillion County,39.9239,-87.4272,Electric Utility
+1004,Edwardsport Generating Station,IN,Knox County,38.8067,-87.2472,Electric Utility
+1007,Noblesville,IN,Hamilton County,40.0969,-85.9714,Electric Utility
+1012,F B Culley Generating Station,IN,Warrick County,37.91,-87.3267,Electric Utility
+1016,Butler-Warner Generation Plant,NC,Cumberland County,35.0986,-78.8294,Electric Utility
+1040,Whitewater Valley,IN,Wayne County,39.8028,-84.8953,Electric Utility
+1068,Marshalltown CTs,IA,Marshall County,42.0474,-92.8594,Electric Utility
+1073,Prairie Creek,IA,Linn County,41.9439,-91.6386,Electric Utility
+1082,Walter Scott Jr. Energy Center,IA,Pottawattamie County,41.18,-95.8408,Electric Utility
+1091,George Neal North,IA,Woodbury County,42.3251,-96.3797,Electric Utility
+1104,Burlington (IA),IA,Des Moines County,40.7412,-91.1168,Electric Utility
+1122,Ames,IA,Story County,42.0247,-93.6069,Electric Utility
+1131,Streeter Station,IA,Black Hawk County,42.5267,-92.4394,Electric Utility
+1167,Muscatine,IA,Muscatine County,41.3917,-91.0569,Electric Utility
+1206,Summit Lake,IA,Union County,41.1141,-94.3499,Electric Utility
+1217,Earl F Wisdom,IA,Clay County,43.1606,-95.2569,Electric Utility
+1230,Cimarron River,KS,Seward County,37.1611,-100.7619,Electric Utility
+1233,Fort Dodge aka Judson Large,KS,Ford County,37.7328,-99.9497,Electric Utility
+1235,Great Bend Station aka Arthur Mullergren,KS,Barton County,38.41,-98.8689,Electric Utility
+1239,Riverton,KS,Cherokee County,37.0719,-94.6986,Electric Utility
+1240,Gordon Evans Energy Center,KS,Sedgwick County,37.7903,-97.5217,Electric Utility
+1241,La Cygne,KS,Linn County,38.3472,-94.6389,Electric Utility
+1248,Hutchinson Energy Center,KS,Reno County,38.0906,-97.8747,Electric Utility
+1250,Lawrence Energy Center,KS,Douglas County,39.0072,-95.2692,Electric Utility
+1268,Chanute 2,KS,Neosho County,37.6953,-95.4586,Electric Utility
+1271,Coffeyville,KS,Montgomery County,37.0456,-95.6076,Electric Utility
+1295,Quindaro,KS,Wyandotte County,39.1486,-94.6405,Electric Utility
+1305,McPherson 2,KS,McPherson County,38.3634,-97.6834,Electric Utility
+1336,Garden City,KS,Finney County,37.9703,-100.8956,Electric Utility
+1353,Big Sandy,KY,Lawrence County,38.1707,-82.6176,Electric Utility
+1355,E W Brown,KY,Mercer County,37.7889,-84.7139,Electric Utility
+1356,Ghent,KY,Carroll County,38.7497,-85.035,Electric Utility
+1363,Cane Run,KY,Jefferson County,38.1828,-85.8894,Electric Utility
+1364,Mill Creek,KY,Jefferson County,38.0531,-85.91,Electric Utility
+1366,Paddy's Run,KY,Jefferson County,38.2147,-85.8453,Electric Utility
+1378,Paradise,KY,Muhlenberg County,37.2608,-86.9783,Electric Utility
+1379,Shawnee,KY,McCracken County,37.1517,-88.775,Electric Utility
+1383,Robert Reid,KY,Webster County,37.6467,-87.5033,Electric Utility
+1384,John S. Cooper,KY,Pulaski County,37.0,-84.5917,Electric Utility
+1391,Louisiana 1,LA,East Baton Rouge Parish,30.4903,-91.1875,Electric Utility
+1393,R S Nelson,LA,Calcasieu Parish,30.2861,-93.2917,Electric Utility
+1396,Coughlin Power Station,LA,Evangeline Parish,30.8442,-92.2606,Electric Utility
+1400,Teche Power Station,LA,St. Mary Parish,29.8223,-91.5427,Electric Utility
+1402,Little Gypsy,LA,St. Charles Parish,30.0033,-90.4611,Electric Utility
+1403,Ninemile Point,LA,Jefferson Parish,29.9472,-90.1458,Electric Utility
+1404,Sterlington,LA,Ouachita Parish,32.7047,-92.0792,Electric Utility
+1416,Arsenal Hill Power Plant,LA,Caddo Parish,32.5181,-93.7611,Electric Utility
+1417,Lieberman Power Plant,LA,Caddo Parish,32.7047,-93.9597,Electric Utility
+1439,Houma,LA,Terrebonne Parish,29.5808,-90.7222,Electric Utility
+1464,Big Cajun 1,LA,Pointe Coupee Parish,30.6736,-91.3525,Electric Utility
+1507,William F Wyman,ME,Cumberland County,43.75,-70.1569,Electric Utility
+1554,Herbert A Wagner,MD,Anne Arundel County,39.1781,-76.5268,Electric Utility
+1556,Perryman,MD,Harford County,39.4422,-76.2208,Electric Utility
+1564,Vienna,MD,Dorchester County,38.4878,-75.8208,Electric Utility
+1571,Chalk Point,MD,Prince George's County,38.5444,-76.6861,Electric Utility
+1572,Dickerson,MD,Montgomery County,39.2086,-77.4644,Electric Utility
+1573,Morgantown,MD,Charles County,38.3592,-76.9767,Electric Utility
+1586,Framingham Station,MA,Middlesex County,42.2672,-71.3983,Electric Utility
+1592,Medway Station,MA,Norfolk County,42.1364,-71.4478,Electric Utility
+1594,Blackstone,MA,Middlesex County,42.3636,-71.1161,Cogeneration
+1595,Kendall Green Energy LLC,MA,Middlesex County,42.3633,-71.0792,Electric Utility
+1599,Canal Station,MA,Barnstable County,41.7694,-70.5097,Electric Utility
+1660,Potter,MA,Norfolk County,42.235,-70.9672,Electric Utility
+1678,Waters River,MA,Essex County,42.5428,-70.9236,Electric Utility
+1682,Cleary Flood,MA,Bristol County,41.8653,-71.1061,Electric Utility
+1702,Dan E Karn,MI,Bay County,43.6425,-83.8431,Electric Utility
+1710,J H Campbell,MI,Ottawa County,42.9103,-86.2036,Electric Utility
+1728,Delray,MI,Wayne County,42.2947,-83.1019,Electric Utility
+1730,Hancock Peakers,MI,Oakland County,42.5497,-83.4425,Electric Utility
+1733,Monroe,MI,Monroe County,41.8917,-83.3461,Electric Utility
+1866,Wyandotte,MI,Wayne County,42.2081,-83.1453,Electric Utility
+1891,Laskin Energy Center,MN,St. Louis County,47.5306,-92.1619,Electric Utility
+1893,Boswell Energy Center,MN,Itasca County,47.2603,-93.6531,Electric Utility
+1897,Hibbard Energy Center,MN,St. Louis County,46.7356,-92.1531,Cogeneration
+1904,Black Dog,MN,Dakota County,44.8108,-93.2501,Electric Utility
+1912,High Bridge,MN,Ramsey County,44.9331,-93.1075,Electric Utility
+1913,Inver Hills,MN,Dakota County,44.781,-93.042,Electric Utility
+1915,Allen S King,MN,Washington County,45.03,-92.7786,Electric Utility
+1927,Riverside (1927),MN,Hennepin County,45.0203,-93.2753,Electric Utility
+2001,New Ulm,MN,Brown County,44.3159,-94.4578,Electric Utility
+2038,Cambridge Station,MN,Isanti County,45.601,-93.2081,Electric Utility
+2039,Elk River,MN,Sherburne County,45.2958,-93.5542,Electric Utility
+2042,Maple Lake Station,MN,Wright County,45.229,-94.0097,Electric Utility
+2047,Chevron Cogenerating Station,MS,Jackson County,30.34,-88.492,Cogeneration
+2048,Sweatt Electric Generating Plant,MS,Lauderdale County,32.2925,-88.7461,Electric Utility
+2049,Watson Electric Generating Plant,MS,Harrison County,30.4408,-89.0265,Electric Utility
+2070,Moselle Generation Complex,MS,Jones County,31.5289,-89.2992,Electric Utility
+2079,Hawthorn,MO,Jackson County,39.1306,-94.4778,Electric Utility
+2081,Northeast Generating Station,MO,Jackson County,39.1231,-94.5605,Electric Utility
+2082,Fairgrounds,MO,Cole County,38.5935,-92.2203,Electric Utility
+2092,Ralph Green Station,MO,Cass County,38.7865,-94.2768,Electric Utility
+2098,Lake Road,MO,Buchanan County,39.7246,-94.8773,Electric Utility
+2103,Labadie,MO,Franklin County,38.5583,-90.8361,Electric Utility
+2107,Sioux,MO,St. Charles County,38.9158,-90.2917,Electric Utility
+2122,Chillicothe,MO,Livingston County,39.784,-93.562,Electric Utility
+2123,Columbia,MO,Boone County,38.9658,-92.3175,Electric Utility
+2131,Higginsville Municipal Power Plant,MO,Lafayette County,39.0721,-93.721,Electric Utility
+2161,James River,MO,Greene County,37.1086,-93.2592,Electric Utility
+2167,New Madrid Power Plant,MO,New Madrid County,36.5147,-89.5617,Electric Utility
+2168,Thomas Hill Energy Center,MO,Randolph County,39.5531,-92.6392,Electric Utility
+2176,Glendive Generating Station,MT,Dawson County,47.0539,-104.74,Electric Utility
+2226,Canaday,NE,Gosper County,40.6941,-99.7005,Electric Utility
+2240,Lon D Wright Power Plant,NE,Dodge County,41.4275,-96.4619,Electric Utility
+2241,C W Burdick,NE,Hall County,40.9228,-98.3269,Electric Utility
+2250,J Street,NE,Lancaster County,40.8078,-96.7107,Electric Utility
+2265,Hallam Peaking,NE,Lancaster County,40.5587,-96.7862,Electric Utility
+2266,Hebron Peaking,NE,Thayer County,40.1879,-97.5779,Electric Utility
+2271,McCook Peaking,NE,Red Willow County,40.2209,-100.6511,Electric Utility
+2277,Sheldon,NE,Lancaster County,40.5589,-96.7842,Electric Utility
+2290,Jones Street,NE,Douglas County,41.2517,-95.9235,Electric Utility
+2291,North Omaha Station,NE,Douglas County,41.3297,-95.9458,Electric Utility
+2292,Sarpy County Station,NE,Sarpy County,41.1706,-95.9692,Electric Utility
+2322,Clark,NV,Clark County,36.0875,-115.0507,Electric Utility
+2330,Fort Churchill,NV,Lyon County,39.1281,-119.1319,Electric Utility
+2336,Tracy,NV,Storey County,39.5625,-119.525,Electric Utility
+2362,Lost Nation,NH,Coos County,44.5942,-71.4943,Electric Utility
+2364,Merrimack,NH,Merrimack County,43.1411,-71.4692,Electric Utility
+2367,Schiller,NH,Rockingham County,43.0978,-70.7842,Electric Utility
+2369,White Lake,NH,Carroll County,43.8478,-71.2069,Electric Utility
+2390,Sayreville,NJ,Middlesex County,40.4753,-74.3552,Electric Utility
+2393,Gilbert Generating Station,NJ,Hunterdon County,40.5661,-75.165,Electric Utility
+2398,Bergen Generating Station,NJ,Bergen County,40.8375,-74.0244,Electric Utility
+2399,Burlington Generating Station,NJ,Burlington County,40.0753,-74.8781,Electric Utility
+2404,Kearny Generating Station,NJ,Hudson County,40.7375,-74.1,Electric Utility
+2406,Linden Generating Station,NJ,Union County,40.6225,-74.2097,Electric Utility
+2410,Salem Generating Station,NJ,Salem County,39.4625,-75.5333,Electric Utility
+2411,Sewaren Generating Station,NJ,Middlesex County,40.5564,-74.2461,Electric Utility
+2434,Howard M Down,NJ,Cumberland County,39.4889,-75.0347,Electric Utility
+2442,Four Corners Steam Elec Station,NM,San Juan County,36.69,-108.4814,Electric Utility
+2444,Rio Grande,NM,Dona Ana County,31.8047,-106.5472,Electric Utility
+2446,Maddox,NM,Lea County,32.7142,-103.3015,Electric Utility
+2450,Reeves Generating Station,NM,Bernalillo County,35.1716,-106.6019,Electric Utility
+2454,Cunningham,NM,Lea County,32.7131,-103.3533,Electric Utility
+2480,Danskammer Generating Station,NY,Orange County,41.573,-73.9646,Electric Utility
+2490,Arthur Kill,NY,Richmond County,40.5915,-74.2027,Electric Utility
+2493,East River,NY,New York County,40.7281,-73.9742,Cogeneration
+2494,Gowanus Generating Station,NY,Kings County,40.6635,-74.0051,Electric Utility
+2499,Narrows Generating Station,NY,Kings County,40.6486,-74.0209,Electric Utility
+2500,Ravenswood Generating Station,NY,Queens County,40.7585,-73.9451,Electric Utility
+2503,59th Street,NY,New York County,40.7711,-73.9911,Electric Utility
+2504,74th Street,NY,New York County,40.768,-73.9515,Electric Utility
+2511,E F Barrett,NY,Nassau County,40.6169,-73.6486,Electric Utility
+2512,East Hampton Facility,NY,Suffolk County,40.9619,-72.2095,Electric Utility
+2514,Glenwood,NY,Nassau County,40.8269,-73.6479,Electric Utility
+2516,Northport,NY,Suffolk County,40.9231,-73.3417,Electric Utility
+2517,Port Jefferson Energy Center,NY,Suffolk County,40.9503,-73.0786,Electric Utility
+2521,West Babylon Facility,NY,Suffolk County,40.6953,-73.3497,Electric Utility
+2527,Greenidge Generation LLC,NY,Yates County,42.6789,-76.9483,Electric Utility
+2539,Bethlehem Energy Center (Albany),NY,Albany County,42.5905,-73.7636,Electric Utility
+2594,Oswego Harbor Power,NY,Oswego County,43.46,-76.53,Electric Utility
+2625,Bowline Generating Station,NY,Rockland County,41.2044,-73.9689,Electric Utility
+2628,Hillburn,NY,Rockland County,41.1269,-74.1653,Electric Utility
+2632,Shoemaker,NY,Orange County,41.4278,-74.4186,Electric Utility
+2679,Freeport Power Plant No. 2,NY,Nassau County,40.6447,-73.5683,Electric Utility
+2682,S A Carlson,NY,Chautauqua County,42.0917,-79.2417,Electric Utility
+2706,Asheville,NC,Buncombe County,35.4714,-82.5431,Electric Utility
+2707,Blewett,NC,Anson County,34.9815,-79.8771,Electric Utility
+2709,H F Lee Steam Electric Plant,NC,Wayne County,35.3775,-78.0875,Electric Utility
+2712,Roxboro,NC,Person County,36.4833,-79.0731,Electric Utility
+2713,L V Sutton,NC,New Hanover County,34.2824,-77.9864,Electric Utility
+2716,W H Weatherspoon,NC,Robeson County,34.5889,-78.975,Electric Utility
+2720,Buck,NC,Rowan County,35.7133,-80.3767,Electric Utility
+2721,Cliffside,NC,Cleveland County,35.22,-81.7594,Electric Utility
+2723,Dan River,NC,Rockingham County,36.4862,-79.7208,Electric Utility
+2727,Marshall,NC,Catawba County,35.5975,-80.9658,Electric Utility
+2790,R M Heskett,ND,Morton County,46.8669,-100.8839,Electric Utility
+2817,Leland Olds,ND,Mercer County,47.2819,-101.3194,Electric Utility
+2823,Milton R Young,ND,Oliver County,47.0664,-101.2139,Electric Utility
+2828,Cardinal,OH,Jefferson County,40.2522,-80.6486,Electric Utility
+2831,Dicks Creek Power Company LLC,OH,Butler County,39.465,-84.3775,Electric Utility
+2832,Miami Fort Power Station,OH,Hamilton County,39.1131,-84.8031,Electric Utility
+2847,Frank M Tait Station,OH,Montgomery County,39.7281,-84.2103,Electric Utility
+2848,O H Hutchings,OH,Montgomery County,39.6094,-84.2931,Electric Utility
+2861,Niles,OH,Trumbull County,41.1667,-80.75,Electric Utility
+2869,West Lorain,OH,Lorain County,41.4297,-82.2633,Electric Utility
+2876,Kyger Creek,OH,Gallia County,38.9161,-82.1281,Electric Utility
+2878,Bay Shore,OH,Lucas County,41.6925,-83.4375,Electric Utility
+2880,Richland Peaking Station,OH,Defiance County,41.3033,-84.3386,Electric Utility
+2951,Horseshoe Lake,OK,Oklahoma County,35.5089,-97.1789,Electric Utility
+2952,Muskogee,OK,Muskogee County,35.7617,-95.2847,Electric Utility
+2953,Mustang,OK,Canadian County,35.4711,-97.6733,Electric Utility
+2956,Seminole (2956),OK,Seminole County,34.9678,-96.7242,Electric Utility
+2963,Northeastern,OK,Rogers County,36.4317,-95.7008,Electric Utility
+2964,Southwestern,OK,Caddo County,35.1009,-98.3524,Electric Utility
+2965,Tulsa,OK,Tulsa County,36.1125,-95.9917,Electric Utility
+2966,Weleetka,OK,Okfuskee County,35.3233,-96.1352,Electric Utility
+3006,Anadarko,OK,Caddo County,35.0847,-98.23,Electric Utility
+3008,Mooreland,OK,Woodward County,36.4375,-99.2208,Electric Utility
+3096,Brunot Island Power Station,PA,Allegheny County,40.4638,-80.044,Electric Utility
+3111,Mountain,PA,Cumberland County,40.1219,-77.1761,Electric Utility
+3113,Portland,PA,Northampton County,40.91,-75.0789,Electric Utility
+3116,Tolna,PA,York County,39.7636,-76.6345,Electric Utility
+3118,Conemaugh,PA,Indiana County,40.3842,-79.0611,Electric Utility
+3130,Seward,PA,Indiana County,40.4081,-79.0339,Electric Utility
+3131,Shawville,PA,Clearfield County,41.067,-78.3656,Electric Utility
+3132,Warren,PA,Warren County,41.8358,-79.19,Electric Utility
+3136,Keystone,PA,Armstrong County,40.6604,-79.3411,Electric Utility
+3138,New Castle,PA,Lawrence County,40.9378,-80.3681,Electric Utility
+3140,"Brunner Island, LLC",PA,York County,40.097,-76.6962,Electric Utility
+3148,"Martins Creek, LLC",PA,Northampton County,40.796,-75.107,Electric Utility
+3149,"Montour, LLC",PA,Montour County,41.0714,-76.6672,Electric Utility
+3161,Eddystone Generating Station,PA,Delaware County,39.858,-75.323,Electric Utility
+3168,Richmond,PA,Philadelphia County,39.9853,-75.0733,Electric Utility
+3176,Hunlock Creek Generating LLC,PA,Luzerne County,41.2033,-76.0683,Electric Utility
+3236,Manchester Street Station,RI,Providence County,41.8167,-71.4042,Electric Utility
+3250,Darlington County,SC,Darlington County,34.4185,-80.1657,Electric Utility
+3264,W S Lee,SC,Anderson County,34.6022,-82.435,Electric Utility
+3285,Hagood,SC,Charleston County,32.8265,-79.9634,Electric Utility
+3287,McMeekin,SC,Lexington County,34.0533,-81.2178,Electric Utility
+3291,Parr Combustion Turbine Facility,SC,Fairfield County,34.2644,-81.33,Electric Utility
+3295,Urquhart,SC,Aiken County,33.435,-81.9111,Electric Utility
+3297,Wateree,SC,Richland County,33.8264,-80.6218,Electric Utility
+3298,Williams,SC,Berkeley County,33.0163,-79.9285,Electric Utility
+3318,Hilton Head Gas Turbine Site,SC,Beaufort County,32.2089,-80.6994,Electric Utility
+3320,Myrtle Beach Gas Turbine Site,SC,Horry County,33.7089,-78.9233,Electric Utility
+3338,Aberdeen Generating Station,SD,Brown County,45.4287,-98.4932,Electric Utility
+3393,Allen,TN,Shelby County,35.0742,-90.1439,Electric Utility
+3399,Cumberland,TN,Stewart County,36.3903,-87.6539,Electric Utility
+3403,Gallatin,TN,Sumner County,36.3156,-86.4006,Electric Utility
+3405,John Sevier,TN,Hawkins County,36.3767,-82.9639,Electric Utility
+3406,Johnsonville,TN,Humphreys County,36.0278,-87.9861,Industrial Boiler
+3407,Kingston,TN,Roane County,35.8992,-84.5194,Electric Utility
+3439,Laredo,TX,Webb County,27.5667,-99.5083,Electric Utility
+3441,Nueces Bay,TX,Nueces County,27.8182,-97.4189,Electric Utility
+3443,Victoria Power Station,TX,Victoria County,28.7883,-97.01,Electric Utility
+3452,Lake Hubbard,TX,Dallas County,32.8364,-96.5464,Electric Utility
+3453,Mountain Creek Generating Station,TX,Dallas County,32.7253,-96.9361,Electric Utility
+3456,Newman Power Station,TX,El Paso County,31.9858,-106.4322,Electric Utility
+3457,Lewis Creek,TX,Montgomery County,30.4364,-95.5215,Electric Utility
+3459,Sabine,TX,Orange County,30.0242,-93.875,Electric Utility
+3460,Cedar Bayou,TX,Chambers County,29.7483,-94.9272,Electric Utility
+3464,Greens Bayou,TX,Harris County,29.8208,-95.2194,Electric Utility
+3469,T H Wharton,TX,Harris County,29.9414,-95.5333,Electric Utility
+3470,W A Parish,TX,Fort Bend County,29.4783,-95.6358,Electric Utility
+3476,Knox Lee Power Plant,TX,Gregg County,32.3766,-94.6415,Electric Utility
+3478,Wilkes Power Plant,TX,Marion County,32.8486,-94.5469,Electric Utility
+3482,Jones Station,TX,Lubbock County,33.5239,-101.7392,Electric Utility
+3484,Nichols Station,TX,Potter County,35.2825,-101.7458,Electric Utility
+3485,Plant X,TX,Lamb County,34.1661,-102.4114,Electric Utility
+3490,Graham,TX,Young County,33.135,-98.6117,Electric Utility
+3491,Handley Generating Station,TX,Tarrant County,32.7278,-97.2186,Electric Utility
+3492,Morgan Creek,TX,Mitchell County,32.3358,-100.9158,Electric Utility
+3494,Permian Basin,TX,Ward County,31.5839,-102.9636,Electric Utility
+3504,Stryker Creek,TX,Cherokee County,31.9381,-94.9883,Electric Utility
+3507,Trinidad,TX,Henderson County,32.1264,-96.1014,Electric Utility
+3548,Decker Creek,TX,Travis County,30.3036,-97.6128,Electric Utility
+3559,Silas Ray,TX,Cameron County,25.9131,-97.5214,Electric Utility
+3576,Ray Olinger,TX,Collin County,33.0667,-96.4519,Electric Utility
+3601,Sim Gideon,TX,Bastrop County,30.1456,-97.2708,Electric Utility
+3604,J Robert Massengale Generating Station,TX,Lubbock County,33.6039,-101.8408,Cogeneration
+3609,Leon Creek,TX,Bexar County,29.3511,-98.5753,Electric Utility
+3611,O W Sommers,TX,Bexar County,29.3078,-98.3244,Electric Utility
+3612,V H Braunig,TX,Bexar County,29.2575,-98.3828,Electric Utility
+3628,R W Miller,TX,Palo Pinto County,32.6581,-98.3103,Electric Utility
+3631,Sam Rayburn Plant,TX,Victoria County,28.8947,-97.1347,Electric Utility
+3648,Gadsby,UT,Salt Lake County,40.7686,-111.9289,Electric Utility
+3734,Berlin 5,VT,Washington County,44.2498,-72.6035,Electric Utility
+3754,Penny Lane Gas Turbine,VT,Chittenden County,44.4817,-73.2241,Electric Utility
+3775,Clinch River,VA,Russell County,36.9333,-82.1997,Electric Utility
+3785,Tasley Energy Center,VA,Accomack County,37.7061,-75.7031,Electric Utility
+3797,Chesterfield Power Station,VA,Chesterfield County,37.3822,-77.3833,Electric Utility
+3804,Possum Point Power Station,VA,Prince William County,38.5367,-77.2806,Electric Utility
+3845,Centralia,WA,Lewis County,46.7559,-122.8578,Electric Utility
+3935,John E Amos,WV,Putnam County,38.4731,-81.8233,Electric Utility
+3943,Fort Martin Power Station,WV,Monongalia County,39.7107,-79.9275,Electric Utility
+3944,Harrison Power Station,WV,Harrison County,39.3844,-80.3325,Electric Utility
+3946,Willow Island Power Station,WV,Pleasants County,39.3672,-81.3006,Electric Utility
+3948,Mitchell (WV),WV,Marshall County,39.8297,-80.8153,Electric Utility
+3954,Mount Storm Power Station,WV,Grant County,39.2014,-79.2667,Electric Utility
+3982,Bay Front,WI,Ashland County,46.5869,-90.9017,Electric Utility
+3991,Fitchburg Generating Station,WI,Dane County,43.0149,-89.4603,Electric Utility
+3992,Blount Street,WI,Dane County,43.0792,-89.3739,Electric Utility
+4005,French Island,WI,La Crosse County,43.8298,-91.26,Electric Utility
+4014,Wheaton Generating Plant,WI,Chippewa County,44.8864,-91.5158,Electric Utility
+4040,Port Washington Generating Station,WI,Ozaukee County,43.3842,-87.8689,Electric Utility
+4041,South Oak Creek,WI,Milwaukee County,42.8457,-87.8294,Electric Utility
+4042,Valley (WEPCO),WI,Milwaukee County,43.0303,-87.9233,Electric Utility
+4050,Edgewater (4050),WI,Sheboygan County,43.715,-87.7094,Electric Utility
+4072,Pulliam,WI,Brown County,44.5397,-88.0083,Electric Utility
+4076,West Marinette,WI,Marinette County,45.0869,-87.6881,Electric Utility
+4078,Weston,WI,Marathon County,44.8606,-89.6553,Electric Utility
+4125,Manitowoc,WI,Manitowoc County,44.082,-87.6558,Electric Utility
+4158,Dave Johnston,WY,Converse County,42.8378,-105.7769,Electric Utility
+4162,Naughton,WY,Lincoln County,41.7572,-110.5986,Electric Utility
+4195,Power Lane Steam Plant,TX,Hunt County,33.1707,-96.1264,Electric Utility
+4266,Spencer,TX,Denton County,33.1978,-97.1067,Electric Utility
+4271,J P Madgett,WI,Buffalo County,44.3026,-91.9126,Electric Utility
+4937,T C Ferguson Power Plant,TX,Llano County,30.558,-98.3705,Electric Utility
+4939,Barney M. Davis,TX,Nueces County,27.6067,-97.3119,Electric Utility
+4940,Riverside (4940),OK,Tulsa County,35.9978,-95.9567,Electric Utility
+5083,Cumberland Energy Center,NJ,Cumberland County,39.3757,-74.9654,Electric Utility
+6002,James H Miller Jr,AL,Jefferson County,33.6319,-87.0597,Electric Utility
+6004,Pleasants Power Station,WV,Pleasants County,39.3668,-81.2944,Electric Utility
+6009,White Bluff,AR,Jefferson County,34.4236,-92.1392,Electric Utility
+6013,Olive,CA,Los Angeles County,34.1775,-118.3147,Electric Utility
+6017,Newton,IL,Jasper County,38.9361,-88.2778,Electric Utility
+6018,East Bend,KY,Boone County,38.9031,-84.8511,Electric Utility
+6021,Craig,CO,Moffat County,40.4627,-107.5912,Electric Utility
+6030,Coal Creek,ND,McLean County,47.3761,-101.1567,Electric Utility
+6034,Belle River,MI,St. Clair County,42.7748,-82.4945,Electric Utility
+6035,Greenwood,MI,St. Clair County,43.1056,-82.6964,Electric Utility
+6041,H L Spurlock,KY,Mason County,38.7,-83.8175,Electric Utility
+6042,Manatee,FL,Manatee County,27.6058,-82.3456,Electric Utility
+6043,Martin,FL,Martin County,27.0536,-80.5628,Electric Utility
+6046,Debary,FL,Volusia County,28.9047,-81.3319,Electric Utility
+6055,Big Cajun 2,LA,Pointe Coupee Parish,30.7261,-91.3669,Electric Utility
+6058,Cascade Creek,MN,Olmsted County,44.0322,-92.4908,Electric Utility
+6061,R D Morrow Senior Generating Plant,MS,Lamar County,31.2194,-89.3933,Electric Utility
+6063,Electrifarm,IA,Black Hawk County,42.4407,-92.4205,Electric Utility
+6064,Nearman Creek,KS,Wyandotte County,39.1714,-94.6958,Electric Utility
+6065,Iatan,MO,Platte County,39.4472,-94.98,Electric Utility
+6068,Jeffrey Energy Center,KS,Pottawatomie County,39.2825,-96.1153,Electric Utility
+6071,Trimble County,KY,Trimble County,38.5847,-85.4117,Electric Utility
+6073,Daniel Electric Generating Plant,MS,Jackson County,30.5335,-88.5574,Electric Utility
+6074,Greenwood Energy Center,MO,Jackson County,38.8615,-94.2982,Electric Utility
+6076,Colstrip,MT,Rosebud County,45.8831,-106.614,Electric Utility
+6077,Gerald Gentleman Station,NE,Lincoln County,41.0808,-101.1408,Electric Utility
+6081,Stony Brook Energy Center,MA,Hampden County,42.1977,-72.5103,Electric Utility
+6085,R M Schahfer Generating Station,IN,Jasper County,41.2175,-87.0239,Electric Utility
+6090,Sherburne County,MN,Sherburne County,45.3792,-93.8958,Electric Utility
+6095,Sooner,OK,Noble County,36.4537,-97.0527,Electric Utility
+6096,Nebraska City Station,NE,Otoe County,40.6215,-95.7765,Electric Utility
+6098,Big Stone,SD,Grant County,45.3047,-96.5103,Electric Utility
+6101,Wyodak,WY,Campbell County,44.2886,-105.3847,Electric Utility
+6112,Fort St. Vrain,CO,Weld County,40.2461,-104.8742,Electric Utility
+6113,Gibson,IN,Gibson County,38.3722,-87.7661,Electric Utility
+6124,McIntosh (6124),GA,Effingham County,32.3558,-81.1683,Electric Utility
+6137,A B Brown Generating Station,IN,Posey County,37.9053,-87.715,Electric Utility
+6138,Flint Creek Power Plant,AR,Benton County,36.2561,-94.5241,Electric Utility
+6139,Welsh Power Plant,TX,Titus County,33.0583,-94.844,Electric Utility
+6146,Martin Lake,TX,Rusk County,32.2597,-94.5703,Electric Utility
+6156,New Haven Harbor,CT,New Haven County,41.2836,-72.9042,Electric Utility
+6165,Hunter,UT,Emery County,39.1747,-111.0289,Electric Utility
+6166,Rockport,IN,Spencer County,37.9256,-87.0372,Industrial Boiler
+6177,Coronado Generating Station,AZ,Apache County,34.5778,-109.2717,Electric Utility
+6178,Coleto Creek,TX,Goliad County,28.7128,-97.2142,Electric Utility
+6179,Sam Seymour,TX,Fayette County,29.9172,-96.7506,Electric Utility
+6180,Oak Grove,TX,Robertson County,31.185,-96.4853,Electric Utility
+6183,San Miguel,TX,Atascosa County,28.7044,-98.4781,Electric Utility
+6190,Brame Energy Center,LA,Rapides Parish,31.395,-92.7167,Electric Utility
+6193,Harrington Station,TX,Potter County,35.2972,-101.7475,Electric Utility
+6194,Tolk Station,TX,Lamb County,34.1847,-102.5686,Electric Utility
+6195,John Twitty Energy Center,MO,Greene County,37.1519,-93.3892,Electric Utility
+6204,Laramie River,WY,Platte County,42.1103,-104.8828,Electric Utility
+6213,Merom,IN,Sullivan County,39.0694,-87.5108,Electric Utility
+6223,Empire District Elec Co Energy Ctr,MO,Jasper County,37.1385,-94.1041,Electric Utility
+6243,Roland C. Dansby Power Plant,TX,Brazos County,30.7217,-96.4599,Electric Utility
+6248,Pawnee,CO,Morgan County,40.2217,-103.6803,Electric Utility
+6249,Winyah,SC,Georgetown County,33.3303,-79.3611,Electric Utility
+6250,Mayo,NC,Person County,36.5278,-78.8917,Electric Utility
+6253,Germantown Power Plant,WI,Washington County,43.1952,-88.1496,Electric Utility
+6254,Ottumwa,IA,Wapello County,41.0961,-92.5556,Electric Utility
+6257,Scherer,GA,Monroe County,33.0583,-83.8072,Electric Utility
+6258,Allen B Wilson Combustion Turbine Plant,GA,Burke County,33.138,-81.748,Electric Utility
+6264,Mountaineer (1301),WV,Mason County,38.9794,-81.9344,Electric Utility
+6288,Healy Power Plant,AK,Denali Borough,63.8542,-148.95,Electric Utility
+6358,Hutchinson - Plant 2,MN,McLeod County,44.8889,-94.35,Electric Utility
+6373,Rokeby,NE,Lancaster County,40.7316,-96.7364,Electric Utility
+6463,Dayton Avenue Substation,IA,Story County,42.0269,-93.5828,Electric Utility
+6469,Antelope Valley,ND,Mercer County,47.3714,-101.8344,Electric Utility
+6481,Intermountain,UT,Millard County,39.5035,-112.5811,Electric Utility
+6584,Stock Island,FL,Monroe County,24.5636,-81.7342,Electric Utility
+6635,Alfred L Pierce Generating Station,CT,New Haven County,41.4485,-72.834,Electric Utility
+6639,R D Green,KY,Webster County,37.6467,-87.5006,Electric Utility
+6641,Independence,AR,Independence County,35.6733,-91.4083,Electric Utility
+6650,Mexico,MO,Audrain County,39.1481,-91.8306,Electric Utility
+6651,Moberly,MO,Randolph County,39.4244,-92.4837,Electric Utility
+6652,Moreau,MO,Cole County,38.5553,-92.102,Electric Utility
+6664,Louisa,IA,Louisa County,41.3153,-91.0936,Electric Utility
+6705,Alcoa Allowance Management Inc,IN,Warrick County,37.915,-87.3328,Industrial Boiler
+6741,Rock Lake Station,MN,Pine County,45.8054,-92.9718,Electric Utility
+6761,Rawhide Energy Station,CO,Larimer County,40.8611,-105.0206,Electric Utility
+6768,Sikeston,MO,Scott County,36.8791,-89.6209,Electric Utility
+6772,Hugo,OK,Choctaw County,34.0158,-95.3206,Electric Utility
+6823,D B Wilson,KY,Ohio County,37.4497,-87.0803,Electric Utility
+6824,St. Bonifacius Station,MN,Carver County,44.905,-93.821,Electric Utility
+7013,East 12th Street,KS,Cowley County,37.2376,-96.9619,Electric Utility
+7030,Twin Oaks,TX,Robertson County,31.0932,-96.6965,Electric Utility
+7032,Gravel Neck Combustion Turbine,VA,Surry County,37.1575,-76.6911,Electric Utility
+7063,McIntosh (7063),AL,Washington County,31.2546,-88.0299,Electric Utility
+7082,Harry Allen,NV,Clark County,36.425,-114.9,Electric Utility
+7097,J K Spruce,TX,Bexar County,29.3091,-98.3205,Electric Utility
+7138,Forked River Power,NJ,Ocean County,39.8154,-74.2098,Electric Utility
+7145,Pleasant Hill Energy Center,IA,Polk County,41.5572,-93.5242,Electric Utility
+7146,Wading River Facility,NY,Suffolk County,40.9569,-72.8774,Electric Utility
+7153,Hay Road,DE,New Castle County,39.7436,-75.5072,Electric Utility
+7155,Lime Creek,IA,Cerro Gordo County,43.2481,-93.2046,Electric Utility
+7158,Woodsdale,OH,Butler County,39.4492,-84.4611,Electric Utility
+7159,Concord,WI,Jefferson County,43.1669,-88.69,Electric Utility
+7203,South Fond Du Lac,WI,Fond du Lac County,43.7353,-88.4968,Electric Utility
+7210,Cope Station,SC,Orangeburg County,33.3642,-81.03,Electric Utility
+7212,Darbytown Combustion Turbine,VA,Henrico County,37.4978,-77.368,Electric Utility
+7213,Clover Power Station,VA,Halifax County,36.8692,-78.7046,Electric Utility
+7237,Angus Anson,SD,Minnehaha County,43.6033,-96.6369,Electric Utility
+7238,Cane Island,FL,Osceola County,28.2764,-81.533,Electric Utility
+7242,Polk,FL,Polk County,27.7286,-81.9897,Electric Utility
+7258,48th Street Peaking Station,MI,Allegan County,42.7553,-86.0853,Electric Utility
+7266,Woodland Generation Station,CA,Stanislaus County,37.6528,-121.0172,Electric Utility
+7270,Paris,WI,Kenosha County,42.6658,-88.0131,Electric Utility
+7277,Lincoln Combustion Turbine,NC,Lincoln County,35.4317,-81.0347,Electric Utility
+7288,Sherman Avenue,NJ,Cumberland County,39.451,-75.0578,Electric Utility
+7296,State Line (MO),MO,Jasper County,37.0659,-94.614,Electric Utility
+7302,Hines Energy Complex,FL,Polk County,27.7886,-81.8694,Electric Utility
+7307,Redding Power Plant,CA,Shasta County,40.5083,-122.4253,Electric Utility
+7314,Richard M Flynn (Holtsville),NY,Suffolk County,40.8153,-73.0644,Electric Utility
+7315,Almond Power Plant,CA,Stanislaus County,37.5739,-120.9854,Electric Utility
+7318,Van Sant,DE,Kent County,39.15,-75.5466,Electric Utility
+7325,San Jacinto Steam Electric Station,TX,Harris County,29.6967,-95.0411,Electric Utility
+7335,Richmond (IN),IN,Wayne County,39.8383,-84.9665,Electric Utility
+7336,Anderson,IN,Madison County,40.0529,-85.7389,Electric Utility
+7343,George Neal South,IA,Woodbury County,42.3022,-96.3622,Electric Utility
+7345,University of Florida,FL,Alachua County,29.6397,-82.3486,Cogeneration
+7348,Robins,GA,Houston County,32.5806,-83.5831,Electric Utility
+7350,Coyote Springs,OR,Morrow County,45.8486,-119.6744,Electric Utility
+7380,Midulla Generating Station,FL,Hardee County,27.6417,-81.9625,Electric Utility
+7425,Interstate,IL,Sangamon County,39.8233,-89.5888,Electric Utility
+7449,NCPA Combustion Turbine Project #2,CA,San Joaquin County,38.088,-121.3871,Electric Utility
+7456,Rathdrum Combustion Turbine Project,ID,Kootenai County,47.8034,-116.869,Electric Utility
+7504,Neil Simpson II,WY,Campbell County,44.2853,-105.3841,Electric Utility
+7515,McPherson Municipal Power Plant #3,KS,McPherson County,38.3864,-97.61,Electric Utility
+7527,Carson Power Plant,CA,Sacramento County,38.4461,-121.4614,Cogeneration
+7551,Procter and Gamble Power Plant,CA,Sacramento County,38.5306,-121.399,Cogeneration
+7552,Campbell Power Plant,CA,Sacramento County,38.511,-121.4735,Cogeneration
+7604,St. Francis Power Plant,MO,Dunklin County,36.5852,-90.1779,Electric Utility
+7605,River Road,WA,Clark County,45.65,-122.7231,Electric Utility
+7697,Washington County Cogen (Olin),AL,Washington County,31.2642,-88.0027,Cogeneration
+7698,SABIC Innovative Plastics - Burkville,AL,Lowndes County,32.3102,-86.5242,Cogeneration
+7699,Tiger Bay,FL,Polk County,27.7447,-81.85,Cogeneration
+7710,Plant H. Allen Franklin,AL,Lee County,32.6094,-85.0961,Electric Utility
+7721,Theodore Cogeneration,AL,Mobile County,30.5248,-88.1289,Cogeneration
+7749,Essex Power Plant,MO,Stoddard County,36.8678,-89.8397,Electric Utility
+7754,Nodaway Power Plant,MO,Nodaway County,40.2877,-94.7913,Electric Utility
+7757,Chouteau Power Plant,OK,Mayes County,36.2206,-95.2756,Electric Utility
+7759,Georgetown Substation,IN,Marion County,39.9022,-86.2439,Electric Utility
+7760,Tilton Power Station,IL,Vermilion County,40.1063,-87.6539,Electric Utility
+7762,Calpine Hidalgo Energy Center,TX,Hidalgo County,26.3389,-98.1708,Electric Utility
+7763,Henry County Generating Station,IN,Henry County,39.9528,-85.5039,Electric Utility
+7764,MPC Generating,GA,Walton County,33.8122,-83.6954,Electric Utility
+7765,Dahlberg (Jackson County),GA,Jackson County,34.0386,-83.3972,Electric Utility
+7768,Sowega Power Project,GA,Mitchell County,31.3869,-84.0814,Electric Utility
+7782,Omega JV2 Hamilton,OH,Butler County,39.3528,-84.5183,Electric Utility
+7783,Omega JV2 Bowling Green,OH,Wood County,41.3883,-83.6406,Electric Utility
+7790,Bonanza,UT,Uintah County,40.0864,-109.2844,Electric Utility
+7805,Richmond County Plant,NC,Richmond County,34.8422,-79.7444,Electric Utility
+7813,Sewell Creek Energy,GA,Polk County,33.9486,-85.2769,Electric Utility
+7818,Alsey Station,IL,Scott County,39.5697,-90.4362,Electric Utility
+7825,Fulton,AR,Hempstead County,33.6094,-93.7924,Electric Utility
+7826,Plant Rowan County,NC,Rowan County,35.7325,-80.6019,Electric Utility
+7829,Smarr Energy Facility,GA,Monroe County,32.9856,-83.8464,Electric Utility
+7834,John S. Rainey Generating Station,SC,Anderson County,34.3477,-82.776,Electric Utility
+7835,Rock Springs Generating Facility,MD,Cecil County,39.7183,-76.1606,Electric Utility
+7836,Marsh Run Generation Facility,VA,Fauquier County,38.5283,-77.7681,Electric Utility
+7837,Louisa Generation Facility,VA,Louisa County,38.1181,-78.2139,Electric Utility
+7838,Remington Combustion Turbine Station,VA,Fauquier County,38.5447,-77.7707,Electric Utility
+7839,Ladysmith Combustion Turbine Sta,VA,Caroline County,38.0725,-77.5141,Electric Utility
+7843,Pleasant Valley Station,MN,Mower County,43.7997,-92.6819,Electric Utility
+7844,Minnesota River Station,MN,Carver County,44.795,-93.5808,Electric Utility
+7845,Lagoon Creek,TN,Haywood County,35.6578,-89.3964,Electric Utility
+7846,Brandy Branch,FL,Duval County,30.3206,-81.9486,Electric Utility
+7848,Holden Power Plant,MO,Johnson County,38.7538,-93.9983,Electric Utility
+7863,Elk Mound Generating Station,WI,Chippewa County,44.9019,-91.5678,Electric Utility
+7869,Glenwood Landing Energy Center,NY,Nassau County,40.8275,-73.6478,Electric Utility
+7870,Encogen Generating Station,WA,Whatcom County,48.746,-122.486,Electric Utility
+7872,Robert P Mone,OH,Van Wert County,40.9297,-84.7392,Electric Utility
+7873,Bayside Power Station,FL,Hillsborough County,27.9072,-82.4231,Electric Utility
+7887,Terry Bundy Generating Station,NE,Lancaster County,40.9108,-96.6147,Electric Utility
+7897,E B Harris Generating Plant,AL,Autauga County,32.3814,-86.5736,Electric Utility
+7900,Sand Hill Energy Center,TX,Travis County,30.2091,-97.6139,Electric Utility
+7903,McCartney Generating Station,MO,Greene County,37.2479,-93.1709,Electric Utility
+7909,Vernon Boulevard,NY,Queens County,40.7539,-73.9506,Electric Utility
+7910,23rd and 3rd,NY,Kings County,40.663,-74.0,Electric Utility
+7912,Brentwood,NY,Suffolk County,40.787,-73.2933,Electric Utility
+7913,Hell Gate,NY,Bronx County,40.7988,-73.9093,Electric Utility
+7914,Harlem River Yard,NY,Bronx County,40.7989,-73.9147,Electric Utility
+7915,North 1st,NY,Kings County,40.7168,-73.9665,Electric Utility
+7916,Talbot Energy Facility,GA,Talbot County,32.5892,-84.6917,Electric Utility
+7917,Chattahoochee Energy Facility,GA,Heard County,33.407,-85.0387,Electric Utility
+7925,Lakefield Junction Generating,MN,Martin County,43.7984,-94.8415,Electric Utility
+7928,Osawatomie Generating Station,KS,Miami County,38.5325,-94.9042,Electric Utility
+7929,West Gardner Generating Station,KS,Johnson County,38.7878,-94.985,Electric Utility
+7946,Wansley (7946),GA,Heard County,33.4082,-85.0399,Electric Utility
+7947,Solway Plant,MN,Beltrami County,47.5444,-95.1297,Electric Utility
+7948,Hoosier Energy Lawrence Co Station,IN,Lawrence County,38.8003,-86.4511,Electric Utility
+7953,Evander Andrews Power Complex,ID,Elmore County,43.1794,-115.7328,Electric Utility
+7960,Kemper County,MS,Kemper County,32.7976,-88.6057,Electric Utility
+7962,Warren F. Sam Beasley Pwr Station,DE,Kent County,39.2798,-75.6246,Electric Utility
+7964,Peno Creek Energy Center,MO,Pike County,39.3531,-91.2295,Electric Utility
+7967,Lordsburg Generating Station,NM,Hidalgo County,32.3494,-108.6975,Electric Utility
+7972,Sumpter Plant,MI,Wayne County,42.167,-83.5318,Electric Utility
+7975,Pyramid Generating Station,NM,Hidalgo County,32.2363,-108.5494,Electric Utility
+7981,Mill Creek Combustion Turbine Station,SC,Cherokee County,35.1597,-81.4306,Electric Utility
+7984,Kalkaska CT Project #1,MI,Kalkaska County,44.6889,-85.2019,Electric Utility
+7985,Greater Des Moines Energy Center,IA,Polk County,41.5563,-93.5283,Electric Utility
+7987,Lake,CA,Los Angeles County,34.1775,-118.3147,Electric Utility
+7988,Silver Creek Generating Plant,MS,Jefferson Davis County,31.6004,-89.9468,Electric Utility
+7989,Sylvarena Generating Plant,MS,Smith County,31.9842,-89.4131,Electric Utility
+7991,West Campus Cogeneration Facility,WI,Dane County,43.0751,-89.4251,Cogeneration
+7999,Grays Harbor Energy Center,WA,Grays Harbor County,46.9688,-123.48,Electric Utility
+8000,Beatrice,NE,Gage County,40.3286,-96.8067,Electric Utility
+8002,Newington,NH,Rockingham County,43.0974,-70.7834,Electric Utility
+8006,Roseton Generating LLC,NY,Orange County,41.5711,-73.9747,Electric Utility
+8007,Holtsville Facility,NY,Suffolk County,40.8153,-73.0664,Electric Utility
+8012,Croydon Generating Station,PA,Bucks County,40.08,-74.8917,Electric Utility
+8016,Factory Gas Turbine,IL,Sangamon County,39.8266,-89.6368,Electric Utility
+8023,Columbia,WI,Columbia County,43.4864,-89.4203,Electric Utility
+8027,Blue Lake Generating Plant,MN,Scott County,44.7855,-93.4315,Electric Utility
+8029,Sycamore Combustion Turbine,IA,Polk County,41.6722,-93.6769,Electric Utility
+8031,Emery Station,IA,Cerro Gordo County,43.094,-93.2922,Electric Utility
+8037,Clifton Station,KS,Washington County,39.6125,-97.2778,Electric Utility
+8042,Belews Creek,NC,Stokes County,36.2811,-80.0603,Electric Utility
+8048,Anclote,FL,Pasco County,28.1844,-82.7887,Electric Utility
+8049,Intercession City,FL,Osceola County,28.2628,-81.5486,Electric Utility
+8053,Pouch Terminal,NY,Richmond County,40.6188,-74.069,Electric Utility
+8054,Gerald Andrus,MS,Washington County,33.3503,-91.1181,Electric Utility
+8056,Waterford 1 & 2,LA,St. Charles Parish,29.9994,-90.4758,Electric Utility
+8059,Comanche (8059),OK,Comanche County,34.5431,-98.3244,Electric Utility
+8063,Decordova,TX,Hood County,32.4033,-97.6986,Electric Utility
+8066,Jim Bridger,WY,Sweetwater County,41.7378,-108.7875,Electric Utility
+8068,Santan,AZ,Maricopa County,33.3333,-111.751,Electric Utility
+8069,Huntington,UT,Emery County,39.3792,-111.0781,Electric Utility
+8102,Gen J M Gavin,OH,Gallia County,38.9347,-82.1158,Electric Utility
+8219,Ray D Nixon,CO,El Paso County,38.6306,-104.7056,Electric Utility
+8222,Coyote,ND,Mercer County,47.2217,-101.8139,Electric Utility
+8223,Springerville Generating Station,AZ,Apache County,34.3186,-109.1636,Electric Utility
+8224,North Valmy,NV,Humboldt County,40.8831,-117.1542,Electric Utility
+8906,Astoria Generating Station,NY,Queens County,40.7869,-73.9122,Electric Utility
+10017,RockTenn West Point Mill,VA,King William County,37.5392,-76.8053,Pulp & Paper Mill
+10025,"RED-Rochester, LLC-Eastman Business Park",NY,Monroe County,43.1969,-77.6289,Industrial Boiler
+10030,Energy Center Dover LLC,DE,Kent County,39.1467,-75.5461,Electric Utility
+10034,"Calpine Gilroy Cogen, LP",CA,Santa Clara County,37.0001,-121.5367,Cogeneration
+10113,Gilberton Power Company,PA,Schuylkill County,40.79,-76.1984,Cogeneration
+10143,Colver Green Energy,PA,Cambria County,40.55,-78.8,Electric Utility
+10151,Grant Town Power Plant,WV,Marion County,39.5611,-80.1642,Small Power Producer
+10156,"Fresno Cogeneration Partners, LP",CA,Fresno County,36.6183,-120.1,Electric Utility
+10169,Carson Cogeneration Company,CA,Los Angeles County,33.8759,-118.2491,Electric Utility
+10176,MBTA South Boston Power Facility,MA,Suffolk County,42.3414,-71.0311,Electric Utility
+10190,"Castleton Power, LLC",NY,Rensselaer County,42.5375,-73.7433,Electric Utility
+10244,Pixelle Specialty Solutions LLC,OH,Ross County,39.3265,-82.9744,Pulp & Paper Mill
+10294,King City Power Plant,CA,Monterey County,36.225,-121.1278,Electric Utility
+10298,Air Liquide Bayport Complex,TX,Harris County,29.6225,-95.0458,Cogeneration
+10307,Bellingham,MA,Norfolk County,42.0925,-71.4833,Electric Utility
+10308,Sayreville Power LP,NJ,Middlesex County,40.439,-74.3444,Cogeneration
+10328,T B Simon Power Plant,MI,Ingham County,42.7178,-84.4836,Cogeneration
+10343,Mt. Carmel Cogeneration,PA,Northumberland County,40.8092,-76.4539,Cogeneration
+10349,Yuba City Energy Center,CA,Sutter County,39.1365,-121.6397,Electric Utility
+10350,Greenleaf One,CA,Sutter County,39.0536,-121.6942,Electric Utility
+10405,Kingsburg Cogen Facility,CA,Fresno County,36.547,-119.578,Electric Utility
+10525,Craven County Wood Energy,NC,Craven County,35.1285,-77.17,Electric Utility
+10567,"Ahlstrom Power Windsor Locks, LLC",CT,Hartford County,41.9227,-72.6255,Cogeneration
+10603,Ebensburg Power Company,PA,Cambria County,40.455,-78.7472,Cogeneration
+10617,"Beaver Falls, LLC",NY,Lewis County,43.8861,-75.4342,Cogeneration
+10619,Allegany Station No. 133,NY,Allegany County,42.5083,-78.0661,Electric Utility
+10620,Carthage Energy,NY,Jefferson County,43.9842,-75.6225,Cogeneration
+10621,"Syracuse, LLC",NY,Onondaga County,43.0667,-76.2246,Electric Utility
+10633,Hopewell Cogeneration Facility,VA,Hopewell city,37.2914,-77.2821,Cogeneration
+10649,Bear Mountain Limited,CA,Kern County,35.4192,-118.9266,Electric Utility
+10650,Badger Creek Limited,CA,Kern County,35.4837,-119.0299,Electric Utility
+10671,River Valley,OK,Le Flore County,35.1931,-94.6458,Electric Utility
+10682,Brush Power Projects,CO,Morgan County,40.2415,-103.631,Electric Utility
+10725,Selkirk Cogen Partners,NY,Albany County,42.5744,-73.8592,Cogeneration
+10726,MASSPOWER,MA,Hampden County,42.156,-72.5292,Cogeneration
+10743,Morgantown Energy Facility,WV,Monongalia County,39.6397,-79.9606,Cogeneration
+10745,Midland Cogeneration Venture,MI,Midland County,43.5861,-84.2242,Cogeneration
+10751,"Camden Plant Holding, LLC",NJ,Camden County,39.9175,-75.1192,Cogeneration
+10761,Las Vegas Generating Station,NV,Clark County,36.2317,-115.1235,Electric Utility
+10771,Hopewell Power Station,VA,Hopewell city,37.2969,-77.2833,Electric Utility
+10773,Altavista Power Station,VA,Campbell County,37.1183,-79.2726,Electric Utility
+10774,Southampton Power Station,VA,Southampton County,36.6525,-76.9953,Electric Utility
+10776,E. F. Oxnard Energy Facility,CA,Ventura County,34.1963,-119.1663,Electric Utility
+10784,Colstrip Energy Limited Partnership,MT,Rosebud County,45.9753,-106.6554,Electric Utility
+10788,Chemours Belle Plant,WV,Kanawha County,38.2431,-81.556,Industrial Boiler
+10803,AG - Energy,NY,St. Lawrence County,44.7258,-75.4417,Electric Utility
+10805,"E F Kenilworth, Inc.",NJ,Union County,40.6781,-74.2744,Cogeneration
+10822,Grayling Generating Station,MI,Crawford County,44.6062,-84.6901,Electric Utility
+10823,Deer Island Treatment,MA,Suffolk County,42.3497,-70.9601,Industrial Turbine
+10849,Northshore Mining Silver Bay Power,MN,Lake County,47.286,-91.26,Cogeneration
+10865,Archer Daniels Midland Co.,IL,Macon County,39.8675,-88.885,Cogeneration
+10866,"BioUrja Renewables - Peoria, IL",IL,Peoria County,40.6776,-89.6069,Industrial Boiler
+10870,Hazleton Generation,PA,Luzerne County,40.9282,-76.0416,Cogeneration
+50002,Pittsfield Generating,MA,Berkshire County,42.4564,-73.2181,Electric Utility
+50006,Linden Cogeneration Facility,NJ,Union County,40.6322,-74.2156,Cogeneration
+50030,Nelson Industrial Steam Company,LA,Calcasieu Parish,30.2861,-93.2917,Cogeneration
+50044,McCracken Power House,OH,Franklin County,40.0008,-83.0158,Industrial Boiler
+50109,Paris Energy Center,TX,Lamar County,33.6968,-95.5577,Electric Utility
+50137,New Gulf Power Facility,TX,Wharton County,29.2639,-95.8997,Electric Utility
+50151,UCC South Charleston Plant,WV,Kanawha County,38.3688,-81.6786,Industrial Boiler
+50188,International Paper New Bern Mill,NC,Craven County,35.2081,-77.1242,Pulp & Paper Mill
+50240,Purdue University-Wade Utility,IN,Tippecanoe County,40.4172,-86.9117,Institutional
+50243,Bucksport Generation LLC,ME,Hancock County,44.5739,-68.8033,Cogeneration
+50254,"WestRock Kraft Paper, Roanoke Rapids",NC,Halifax County,36.4769,-77.6414,Pulp & Paper Mill
+50279,PEI Power Corporation,PA,Lackawanna County,41.4844,-75.5403,Electric Utility
+50292,Bethpage Energy Center,NY,Nassau County,40.7469,-73.4994,Electric Utility
+50368,Cornell University Ithaca Campus,NY,Tompkins County,42.4428,-76.4764,Institutional
+50397,Pixelle Specialty Solutions,PA,York County,39.8717,-76.8664,Pulp & Paper Mill
+50449,Indeck-Silver Springs Energy Center,NY,Wyoming County,42.6544,-78.0772,Cogeneration
+50450,Indeck-Oswego Energy Center,NY,Oswego County,43.4682,-76.4965,Cogeneration
+50451,Indeck-Yerkes Energy Center,NY,Erie County,42.9671,-78.9182,Cogeneration
+50458,Indeck-Corinth Energy Center,NY,Saratoga County,43.25,-73.8125,Cogeneration
+50463,Procter & Gamble Paper Products,PA,Wyoming County,41.573,-76.0426,Cogeneration
+50472,Covanta Niagara,NY,Niagara County,43.0839,-79.0056,Industrial Boiler
+50479,"GP Big Island, LLC",VA,Bedford County,37.534,-79.357,Pulp & Paper Mill
+50481,Eastman Chemical Company,TN,Sullivan County,36.5192,-82.535,Industrial Boiler
+50491,Axiall Corporation Natrium Plant,WV,Marshall County,39.7475,-80.8547,Industrial Boiler
+50555,Rosemary Power Station,NC,Halifax County,36.4525,-77.6594,Electric Utility
+50558,Frontier Generating Station,OK,Oklahoma County,35.442,-97.6477,Electric Utility
+50561,Eagle Point Power Generation,NJ,Gloucester County,39.8746,-75.1592,Electric Utility
+50607,Vicinity Energy Philadelphia- Schuylkill,PA,Philadelphia County,39.9422,-75.1875,Industrial Boiler
+50611,"Rausch Creek Generation, LLC",PA,Schuylkill County,40.6191,-76.45,Electric Utility
+50612,McKittrick Limited,CA,Kern County,35.3195,-119.662,Electric Utility
+50625,ExxonMobil Beaumont Refinery,TX,Jefferson County,30.0639,-94.0703,Cogeneration
+50627,Exxonmobil Oil Corporation,IL,Will County,41.4167,-88.1833,Petroleum Refinery
+50628,Paulsboro Refining Company LLC,NJ,Gloucester County,39.84,-75.2583,Petroleum Refinery
+50707,J M Shafer,CO,Weld County,40.0979,-104.7745,Cogeneration
+50729,US Steel (Clairton Coke),PA,Allegheny County,40.3097,-79.8819,Iron & Steel
+50732,US Steel (Edgar Thomson),PA,Allegheny County,40.3925,-79.8564,Iron & Steel
+50733,US Steel Corp - Gary Works,IN,Lake County,41.6133,-87.3281,Industrial Boiler
+50744,Sterling Power Plant,NY,Oneida County,43.0803,-75.6003,Cogeneration
+50776,Panther Creek Energy Facility,PA,Carbon County,40.8556,-75.8781,Small Power Producer
+50815,"Odyssey Energy Altura Cogen, LLC",TX,Harris County,29.8169,-95.1086,Cogeneration
+50835,TES Filer City Station,MI,Manistee County,44.217,-86.2906,Cogeneration
+50865,Salinas River Cogeneration Facility,CA,Monterey County,35.9515,-120.8679,Cogeneration
+50888,Northampton Generating Plant,PA,Northampton County,40.6917,-75.4792,Cogeneration
+50900,WestRock Virginia Corp Covington Ops,VA,Alleghany County,37.7997,-79.9946,Industrial Boiler
+50931,Yellowstone Energy Limited Partnership,MT,Yellowstone County,45.8117,-108.4278,Cogeneration
+50949,Hardee Power Station,FL,Hardee County,27.6364,-81.9636,Electric Utility
+50951,Sunnyside Cogeneration Associates,UT,Carbon County,39.5472,-110.3917,Cogeneration
+50974,Scrubgrass Generating Plant,PA,Venango County,41.2678,-79.8114,Small Power Producer
+50978,Carr Street Generating Station,NY,Onondaga County,43.0611,-76.0819,Electric Utility
+51026,Ryegate Associates,VT,Caledonia County,44.2131,-72.0572,Electric Utility
+51030,Ocean State Power,RI,Providence County,42.0099,-71.6701,Electric Utility
+52019,Doswell Limited Partnership,VA,Hanover County,37.8181,-77.4478,Electric Utility
+52026,Dartmouth Power,MA,Bristol County,41.6728,-70.9989,Electric Utility
+52087,Elizabeth River Combustion Turbine Sta,VA,Chesapeake city,36.7743,-76.3119,Electric Utility
+52088,Texas City Cogeneration,TX,Galveston County,29.3787,-94.944,Cogeneration
+52089,Celanese Acetate LLC,VA,Giles County,37.3451,-80.764,Industrial Boiler
+52130,BP Whiting Business Unit,IN,Lake County,41.6703,-87.4803,Petroleum Refinery
+52149,Merck & Company - West Point,PA,Montgomery County,40.2128,-75.3022,Industrial Turbine
+52168,Riverbay Corp. - Co-Op City,NY,Bronx County,40.8697,-73.8258,Institutional
+52176,C. R. Wing Cogeneration Plant,TX,Howard County,32.2722,-101.4222,Electric Utility
+52193,Delaware City Refinery,DE,New Castle County,39.5936,-75.6337,Petroleum Refinery
+54034,Rensselaer Cogen,NY,Rensselaer County,42.63,-73.75,Electric Utility
+54041,Lockport,NY,Niagara County,43.1622,-78.7453,Cogeneration
+54076,Indeck-Olean Energy Center,NY,Cattaraugus County,42.0875,-78.4578,Cogeneration
+54081,"Spruance Operating Services, LLC",VA,Richmond city,37.4556,-77.4308,Cogeneration
+54099,Ticonderoga Mill,NY,Essex County,43.8914,-73.3961,Pulp & Paper Mill
+54114,KIAC Cogeneration,NY,Queens County,40.6417,-73.7778,Cogeneration
+54131,"World Generation X, LLC",NY,Niagara County,43.0483,-78.8539,Cogeneration
+54149,Nissequogue Energy Center,NY,Suffolk County,40.9168,-73.1292,Cogeneration
+54238,DTE Stockton,CA,San Joaquin County,37.9416,-121.3273,Electric Utility
+54271,Saguaro,NV,Clark County,36.0422,-115.0118,Electric Utility
+54276,University of NC Chapel Hill,NC,Orange County,35.9069,-79.0617,Cogeneration
+54324,Ocean State Power II,RI,Providence County,42.0099,-71.6701,Electric Utility
+54350,Nevada Cogeneration Associates #1,NV,Clark County,36.3432,-114.9207,Electric Utility
+54365,Orange Cogeneration Facility,FL,Polk County,27.8708,-81.8253,Cogeneration
+54415,Cadillac Renewable Energy,MI,Wexford County,44.2634,-85.4348,Small Power Producer
+54426,Mulberry Cogeneration Facility,FL,Polk County,27.8489,-81.8775,Cogeneration
+54466,Orlando CoGen,FL,Orange County,28.4422,-81.4119,Cogeneration
+54476,Sumas Generating Station,WA,Whatcom County,48.9905,-122.2733,Electric Utility
+54537,Ferndale Generating Station,WA,Whatcom County,48.8283,-122.6853,Electric Utility
+54547,Independence,NY,Oswego County,43.495,-76.4508,Cogeneration
+54556,Ingredion Incorporated Argo Plant,IL,Cook County,41.7775,-87.8233,Industrial Boiler
+54574,"Saranac Power Partners, LP",NY,Clinton County,44.7132,-73.4557,Cogeneration
+54592,Massena Energy Facility,NY,St. Lawrence County,44.9503,-74.8928,Cogeneration
+54593,Batavia Energy,NY,Genesee County,42.9828,-78.1592,Cogeneration
+54605,"Pratt & Whitney, East Hartford",CT,Hartford County,41.75,-72.6347,Cogeneration
+54634,St. Nicholas Cogeneration Project,PA,Schuylkill County,40.8222,-76.1736,Small Power Producer
+54638,"Domtar Paper Company, LLC",PA,Elk County,41.4908,-78.6767,Pulp & Paper Mill
+54640,Lakewood,NJ,Ocean County,40.0613,-74.1686,Cogeneration
+54676,Oyster Creek Unit VIII,TX,Brazoria County,28.9801,-95.3421,Cogeneration
+54694,Yuma Cogeneration Associates,AZ,Yuma County,32.7286,-114.6542,Cogeneration
+54748,Port Neches Plant,TX,Jefferson County,29.9788,-93.9523,Cogeneration
+54749,Goal Line,CA,San Diego County,33.1185,-117.0995,Cogeneration
+54751,Genesee Power Station,MI,Genesee County,43.0841,-83.6743,Cogeneration
+54761,Hermiston,OR,Umatilla County,45.8042,-119.37,Electric Utility
+54768,Live Oak Limited,CA,Kern County,35.4837,-119.0298,Electric Utility
+54785,Grays Ferry Cogen Partnership,PA,Philadelphia County,39.9417,-75.1883,Cogeneration
+54795,"American Sugar Refining, Inc.",MD,Baltimore city,39.2749,-76.5945,Cogeneration
+54805,"Milford Power, LLC",MA,Worcester County,42.1292,-71.5122,Electric Utility
+54817,Johnson County Generation Facility,TX,Johnson County,32.3994,-97.4078,Electric Utility
+54832,Brandywine Power Facility,MD,Prince George's County,38.6681,-76.8678,Cogeneration
+54844,Gordonsville Power Station,VA,Louisa County,38.1245,-78.2031,Electric Utility
+54854,Sun Peak Generating Station,NV,Clark County,36.1392,-115.034,Electric Utility
+54914,Brooklyn Navy Yard Cogeneration,NY,Kings County,40.6994,-73.9758,Cogeneration
+54915,Michigan Power Limited Partnership,MI,Mason County,43.94,-86.4247,Cogeneration
+55010,Cottage Grove Cogeneration,MN,Washington County,44.7956,-92.9119,Cogeneration
+55011,Whitewater Cogeneration Facility,WI,Jefferson County,42.8543,-88.7297,Cogeneration
+55015,Sweeny Cogeneration Facility,TX,Brazoria County,29.0728,-95.745,Cogeneration
+55026,Dighton,MA,Bristol County,41.8312,-71.1239,Electric Utility
+55029,Depere Energy Center,WI,Brown County,44.4489,-88.0731,Electric Utility
+55039,Rio Bravo Generating Station,NM,Bernalillo County,35.026,-106.644,Electric Utility
+55040,Mid-Georgia Cogeneration,GA,Houston County,32.4853,-83.6036,Cogeneration
+55041,Berkshire Power,MA,Hampden County,42.0476,-72.6478,Electric Utility
+55042,Bridgeport Energy,CT,Fairfield County,41.1692,-73.1844,Electric Utility
+55043,Cherokee County Cogen,SC,Cherokee County,35.0727,-81.613,Cogeneration
+55047,Pasadena Power Plant,TX,Harris County,29.7233,-95.1769,Cogeneration
+55048,"Tiverton Power, LLC",RI,Newport County,41.6417,-71.17,Electric Utility
+55061,Tenaska Georgia Generating Station,GA,Heard County,33.3516,-84.9996,Electric Utility
+55062,Tenaska Frontier Generating Station,TX,Grimes County,30.5924,-95.9178,Electric Utility
+55063,Batesville Generation Facility,MS,Panola County,34.3345,-89.9272,Electric Utility
+55064,Blackhawk Station,TX,Hutchinson County,35.6957,-101.36,Cogeneration
+55065,Mustang Station,TX,Yoakum County,32.9728,-102.7417,Electric Utility
+55068,Maine Independence Station,ME,Penobscot County,44.8236,-68.7106,Electric Utility
+55075,Pine Bluff Energy Center,AR,Jefferson County,34.2181,-91.9025,Cogeneration
+55076,Red Hills Generation Facility,MS,Choctaw County,33.3761,-89.2183,Electric Utility
+55077,Desert Star Energy Center,NV,Clark County,35.7867,-114.9928,Electric Utility
+55079,Millennium Power,MA,Worcester County,42.1127,-72.0152,Electric Utility
+55081,Brownsville Combustion Turbine Plant,TN,Haywood County,35.5438,-89.198,Electric Utility
+55086,Gregory Power Facility,TX,San Patricio County,27.8881,-97.2572,Cogeneration
+55087,Zeeland Generating Station,MI,Ottawa County,42.82,-85.9988,Cogeneration
+55088,Dearborn Industrial Generation,MI,Wayne County,42.3026,-83.154,Electric Utility
+55089,Taft Cogeneration Facility,LA,St. Charles Parish,29.9861,-90.4575,Cogeneration
+55091,Midlothian Energy,TX,Ellis County,32.4302,-97.0537,Electric Utility
+55096,Portside Energy,IN,Porter County,41.6317,-87.1728,Cogeneration
+55097,Lamar Power Plant,TX,Lamar County,33.6314,-95.589,Electric Utility
+55098,Frontera Generation Facility,TX,Hidalgo County,26.208,-98.3992,Electric Utility
+55100,Rumford Power,ME,Oxford County,44.5303,-70.5219,Electric Utility
+55101,Kalamazoo River Generating Station,MI,Kalamazoo County,42.2797,-85.4922,Electric Utility
+55102,Livingston Generating Station,MI,Otsego County,45.0291,-84.7332,Electric Utility
+55103,Klamath Cogeneration Project,OR,Klamath County,42.174,-121.8112,Cogeneration
+55107,Rhode Island State Energy Center,RI,Providence County,41.8017,-71.5186,Electric Utility
+55109,"Rocky Road Power, LLC",IL,Kane County,42.0931,-88.2397,Electric Utility
+55110,Madison Generating Station,OH,Butler County,39.4522,-84.465,Electric Utility
+55111,Vermillion Generating Station,IN,Vermillion County,39.9208,-87.445,Electric Utility
+55112,Calpine Sutter Energy Center,CA,Sutter County,39.0531,-121.6939,Electric Utility
+55116,Rockingham County Combustion Turbine,NC,Rockingham County,36.3297,-79.8297,Electric Utility
+55117,R S Cogen LLC,LA,Calcasieu Parish,30.221,-93.2826,Cogeneration
+55120,SRO Cogen Limited Partnership,TX,Orange County,30.0561,-93.7539,Cogeneration
+55122,NAFTA Region Olefins Complex,TX,Jefferson County,29.9631,-93.8867,Cogeneration
+55123,Magic Valley Generating Station,TX,Hidalgo County,26.3403,-98.19,Electric Utility
+55124,Griffith Energy Project,AZ,Mohave County,35.0517,-114.1334,Electric Utility
+55126,Milford Power Company LLC,CT,New Haven County,41.2239,-73.1,Electric Utility
+55127,Manchief Generating Station,CO,Morgan County,40.2201,-103.679,Electric Utility
+55128,Walton County Power,GA,Walton County,33.8147,-83.6969,Electric Utility
+55129,Desert Basin Generating Station,AZ,Pinal County,32.9042,-111.7889,Electric Utility
+55131,Kendall Energy Facility,IL,Kendall County,41.4797,-88.2581,Electric Utility
+55132,Tenaska Gateway Generating Station,TX,Rusk County,32.0164,-94.6189,Electric Utility
+55135,Neenah Energy Facility,WI,Winnebago County,44.1934,-88.5055,Electric Utility
+55137,"Rio Nogales Power Project, LP",TX,Guadalupe County,29.5932,-97.9724,Electric Utility
+55138,Walton Discover Power Facility,AL,Lee County,32.5412,-85.0384,Electric Utility
+55139,Wolf Hollow Generating Station,TX,Hood County,32.3347,-97.7344,Electric Utility
+55141,Hawk Road Energy Facility,GA,Heard County,33.3577,-84.9912,Electric Utility
+55144,Hays Energy Facility,TX,Hays County,29.7806,-97.9894,Electric Utility
+55146,"Green Country Energy, LLC",OK,Tulsa County,35.9833,-95.9346,Electric Utility
+55148,Worthington Generation,IN,Greene County,39.0717,-87.0128,Electric Utility
+55149,Lake Road Generating Company,CT,Windham County,41.8736,-71.8947,Electric Utility
+55151,La Paloma Generating Plant,CA,Kern County,35.2956,-119.5919,Electric Utility
+55153,Guadalupe Generating Station,TX,Guadalupe County,29.6237,-98.1395,Cogeneration
+55154,Lost Pines 1,TX,Bastrop County,30.1478,-97.27,Electric Utility
+55164,Bluegrass Generating Station,KY,Oldham County,38.3902,-85.4133,Electric Utility
+55165,Calcasieu Plant,LA,Calcasieu Parish,30.1603,-93.3458,Electric Utility
+55166,Broad River Energy Center,SC,Cherokee County,35.0786,-81.575,Electric Utility
+55168,Bastrop Clean Energy Center,TX,Bastrop County,30.1458,-97.55,Electric Utility
+55170,Granite Ridge Energy,NH,Rockingham County,42.9043,-71.4251,Electric Utility
+55172,Bosque County Power Plant,TX,Bosque County,31.8594,-97.3586,Electric Utility
+55173,Acadia Power Station,LA,Acadia Parish,30.4284,-92.4112,Electric Utility
+55176,Eastman Cogeneration Facility,TX,Harrison County,32.4472,-94.6917,Cogeneration
+55177,"South Point Energy Center, LLC",AZ,Mohave County,34.8678,-114.5317,Electric Utility
+55178,Dogwood Energy Facility,MO,Cass County,38.7931,-94.3006,Electric Utility
+55179,"Rathdrum Power, LLC",ID,Kootenai County,47.7861,-116.9214,Electric Utility
+55182,Sunrise Power Company,CA,Kern County,35.2097,-119.585,Electric Utility
+55183,Nelson Energy Center,IL,Lee County,41.7749,-89.6067,Electric Utility
+55187,Channelview Cogeneration Facility,TX,Harris County,29.8356,-95.1242,Electric Utility
+55188,Cordova Energy Company,IL,Rock Island County,41.7146,-90.2802,Electric Utility
+55192,Osceola,FL,Osceola County,28.1289,-81.0978,Electric Utility
+55193,Ontelaunee Energy Center,PA,Berks County,40.4219,-75.9353,Electric Utility
+55196,Springdale Generating Station (55196),PA,Allegheny County,40.5447,-79.7678,Electric Utility
+55197,Caledonia,MS,Lowndes County,33.6464,-88.2717,Electric Utility
+55198,Riverside Generating Company,KY,Lawrence County,38.1933,-82.6042,Electric Utility
+55199,Elwood Energy Facility,IL,Will County,41.4388,-88.1236,Electric Utility
+55200,Arapahoe Combustion Turbine Facility,CO,Denver County,39.6692,-105.0018,Electric Utility
+55201,"Gibson City Energy Center, LLC",IL,Ford County,40.4705,-88.3987,Electric Utility
+55202,Pinckneyville Power Plant,IL,Perry County,38.1114,-89.3467,Electric Utility
+55204,Kinmundy Power Plant,IL,Marion County,38.7619,-89.0128,Electric Utility
+55206,Corpus Christi Energy Center,TX,Nueces County,27.8139,-97.4283,Cogeneration
+55207,Valmont Combustion Turbine Facility,CO,Boulder County,40.0197,-105.202,Electric Utility
+55210,Afton Generating Station,NM,Dona Ana County,32.1134,-106.848,Electric Utility
+55211,Bellingham Power Generation LLC,MA,Norfolk County,42.1113,-71.4529,Electric Utility
+55212,Blackstone Power Generation LLC,MA,Worcester County,42.0575,-71.5172,Electric Utility
+55215,Odessa Ector Generating Station,TX,Ector County,31.8378,-102.3278,Electric Utility
+55216,"Morris Cogeneration, LLC",IL,Grundy County,41.4092,-88.3292,Cogeneration
+55217,"Los Medanos Energy Center, LLC",CA,Contra Costa County,38.03,-121.8708,Cogeneration
+55218,Hinds Energy Facility,MS,Hinds County,32.3781,-90.2169,Electric Utility
+55220,Attala Generating Plant,MS,Attala County,33.0142,-89.6758,Electric Utility
+55221,Oswald Generating Station,AR,Pulaski County,34.5923,-92.2166,Electric Utility
+55222,Lincoln Generating Facility,IL,Will County,41.3937,-87.9437,Electric Utility
+55223,"Ennis Power Company, LLC",TX,Ellis County,32.3194,-96.6739,Electric Utility
+55224,Wheatland Generating Facility LLC,IN,Knox County,38.6716,-87.2931,Electric Utility
+55225,Oneta Energy Center,OK,Wagoner County,36.0119,-95.6967,Electric Utility
+55226,Freestone Power Generation,TX,Freestone County,31.8907,-96.1128,Cogeneration
+55228,Greenville Electric Gen Station,OH,Darke County,40.0747,-84.6147,Electric Utility
+55229,Montpelier Electric Gen Station,IN,Wells County,40.6206,-85.3057,Electric Utility
+55230,Jack County Generation Facility,TX,Jack County,33.101,-97.9574,Electric Utility
+55231,Liberty Electric Power Plant,PA,Delaware County,39.8622,-75.3361,Electric Utility
+55232,Marshall County,KY,Marshall County,37.0286,-88.3958,Electric Utility
+55233,Handsome Lake Energy,PA,Venango County,41.2908,-79.8061,Electric Utility
+55234,Audrain Power Plant,MO,Audrain County,39.3092,-91.5369,Electric Utility
+55236,"Lee County Generating Station, LLC",IL,Lee County,41.8287,-89.4054,Electric Utility
+55237,Shelby County,IL,Shelby County,39.2794,-88.4772,Electric Utility
+55238,Rockford Energy Center,IL,Winnebago County,42.2403,-89.1025,Electric Utility
+55239,"Red Oak Power, LLC",NJ,Middlesex County,40.4481,-74.3497,Electric Utility
+55241,Hog Bayou Energy Center,AL,Mobile County,30.7478,-88.0575,Electric Utility
+55242,Santa Rosa Energy Center,FL,Santa Rosa County,30.5661,-87.115,Electric Utility
+55244,Doyle Energy Facility,GA,Walton County,33.8376,-83.6996,Electric Utility
+55247,Darby Electric Generating Station,OH,Pickaway County,39.7139,-83.1778,Electric Utility
+55248,Tait Electric Generating Station,OH,Montgomery County,39.7286,-84.2106,Electric Utility
+55250,University Park Energy,IL,Will County,41.4405,-87.7528,Electric Utility
+55251,Gleason Combustion Turbine Plant,TN,Weakley County,36.2454,-88.612,Electric Utility
+55253,Crete Energy Park,IL,Will County,41.4297,-87.6187,Electric Utility
+55259,"Whiting Clean Energy, Inc.",IN,Lake County,41.6739,-87.4778,Cogeneration
+55262,AMP-Ohio Gas Turbines Bowling Green,OH,Wood County,41.3989,-83.6411,Electric Utility
+55263,AMP-Ohio Gas Turbines Galion,OH,Crawford County,40.7167,-82.789,Electric Utility
+55264,AMP-Ohio Gas Turbines Napoleon,OH,Henry County,41.4077,-84.1092,Electric Utility
+55267,Edward L Addison Generating Plant,GA,Upson County,32.911,-84.3059,Electric Utility
+55269,Southaven Combined Cycle Plant,MS,DeSoto County,34.9939,-90.039,Electric Utility
+55270,Jackson Generating Station,MI,Jackson County,42.2488,-84.3767,Electric Utility
+55271,Lindsay Hill Generating Station,AL,Autauga County,32.6514,-86.7386,Electric Utility
+55276,Ceredo Generating Station,WV,Wayne County,38.3681,-82.5339,Electric Utility
+55279,Aurora,IL,DuPage County,41.8151,-88.2265,Electric Utility
+55282,Arlington Valley Energy Facility,AZ,Maricopa County,33.3417,-112.8897,Electric Utility
+55283,Front Range Power Plant,CO,El Paso County,38.6281,-104.7069,Electric Utility
+55284,Big Sandy Peaker Plant,WV,Wayne County,38.3441,-82.5938,Electric Utility
+55285,Wolf Hills Energy,VA,Washington County,36.6644,-82.1044,Electric Utility
+55286,Oleander Power Project,FL,Brevard County,28.3661,-80.7947,Electric Utility
+55292,Decatur Energy Center,AL,Morgan County,34.6292,-87.0214,Electric Utility
+55293,Morgan Energy Center,AL,Morgan County,34.6397,-87.0639,Electric Utility
+55294,Westbrook Energy Center,ME,Cumberland County,43.6576,-70.3772,Electric Utility
+55295,Blythe Energy,CA,Riverside County,33.6157,-114.6865,Electric Utility
+55296,"Calumet Energy Team, LLC",IL,Cook County,41.6835,-87.5563,Electric Utility
+55297,Covert Generating Station,MI,Van Buren County,42.3231,-86.2925,Electric Utility
+55298,Fairless Energy Center,PA,Bucks County,40.1464,-74.7406,Electric Utility
+55299,Channel Energy Center,TX,Harris County,29.7189,-95.2319,Cogeneration
+55304,Baconton Power,GA,Mitchell County,31.3869,-84.0819,Electric Utility
+55306,Gila River Power Station,AZ,Maricopa County,32.9761,-112.694,Electric Utility
+55308,"DTE Calvert City, LLC",KY,Marshall County,37.0467,-88.3506,Industrial Boiler
+55317,Fore River Energy Center,MA,Norfolk County,42.2417,-70.9653,Electric Utility
+55320,"Wise County Power Company, LLC",TX,Wise County,33.0583,-97.9103,Electric Utility
+55322,Chuck Lenzie Generating Station,NV,Clark County,36.3853,-114.9228,Electric Utility
+55327,Baytown Energy Center,TX,Chambers County,29.7731,-94.9019,Cogeneration
+55328,Hermiston Power Plant,OR,Umatilla County,45.7934,-119.313,Electric Utility
+55332,Washington County Power,GA,Washington County,33.0917,-82.9803,Electric Utility
+55333,"Delta Energy Center, LLC",CA,Contra Costa County,38.0167,-121.8439,Electric Utility
+55334,Holland Energy Facility,IL,Shelby County,39.2242,-88.7594,Electric Utility
+55337,Helix Ironwood LLC,PA,Lebanon County,40.3509,-76.3658,Electric Utility
+55340,Dell Power Plant,AR,Mississippi County,35.8619,-90.0253,Electric Utility
+55343,Luna Energy Facility,NM,Luna County,32.2983,-107.78,Electric Utility
+55345,"Otay Mesa Energy Center, LLC",CA,San Diego County,32.5733,-116.9153,Electric Utility
+55347,"Armstrong Power, LLC",PA,Armstrong County,40.6383,-79.3503,Electric Utility
+55348,"Troy Energy, LLC",OH,Wood County,41.4774,-83.4616,Electric Utility
+55349,"Pleasants Energy, LLC",WV,Pleasants County,39.3328,-81.3639,Electric Utility
+55350,Dresden Energy Facility,OH,Muskingum County,40.0935,-82.0267,Electric Utility
+55357,"Brazos Valley Energy, LP",TX,Fort Bend County,29.4731,-95.6244,Cogeneration
+55358,Cottonwood Energy Project,TX,Newton County,30.2588,-93.7353,Electric Utility
+55364,Sugar Creek Generating Station,IN,Vigo County,39.3922,-87.5103,Electric Utility
+55365,LaPorte Generating Station,TX,Harris County,29.702,-95.071,Electric Utility
+55372,New Harquahala Generating Company,AZ,Maricopa County,33.4759,-113.1133,Electric Utility
+55375,Astoria Energy,NY,Queens County,40.7825,-73.8964,Electric Utility
+55377,Gans Generating Facility,PA,Fayette County,39.7475,-79.8388,Electric Utility
+55380,Union Power Station,AR,Union County,33.2961,-92.5933,Electric Utility
+55381,Commonwealth Chesapeake,VA,Accomack County,37.9892,-75.54,Electric Utility
+55382,Thomas A. Smith Energy Facility,GA,Murray County,34.7094,-84.9182,Electric Utility
+55386,Columbia Energy Center (SC),SC,Calhoun County,33.8692,-81.0183,Electric Utility
+55391,Rockgen Energy Center,WI,Dane County,42.9767,-89.0492,Electric Utility
+55392,Zion Energy Center,IL,Lake County,42.4776,-87.895,Electric Utility
+55393,Metcalf Energy Center,CA,Santa Clara County,37.2169,-121.7439,Electric Utility
+55395,Crossroads Energy Center (CPU),MS,Coahoma County,34.183,-90.5621,Electric Utility
+55397,Washington Power Company LLC,OH,Washington County,39.5798,-81.6571,Electric Utility
+55400,Elk Hills Power,CA,Kern County,35.2802,-119.4699,Industrial Turbine
+55401,Rolling Hills Generating LLC,OH,Vinton County,39.0839,-82.3328,Electric Utility
+55402,Renaissance Power,MI,Montcalm County,43.1864,-84.8429,Electric Utility
+55404,Carville Energy Center,LA,Iberville Parish,30.2292,-91.065,Cogeneration
+55405,Athens Generating Company,NY,Greene County,42.2728,-73.8492,Electric Utility
+55406,Bobby C. Smith Jr. Energy Facility,GA,Effingham County,32.2792,-81.2842,Electric Utility
+55409,Calhoun Generating Facility,AL,Calhoun County,33.5883,-85.9731,Electric Utility
+55411,Hillabee Energy Center,AL,Tallapoosa County,33.0,-85.9031,Electric Utility
+55412,Osprey Energy Center,FL,Polk County,28.0525,-81.8083,Electric Utility
+55414,Shady Hills,FL,Pasco County,28.3665,-82.5591,Electric Utility
+55415,Vandolah Power Project,FL,Hardee County,27.5242,-81.9236,Electric Utility
+55417,Raccoon Creek Power Plant,IL,Clay County,38.6996,-88.5392,Electric Utility
+55418,Hot Spring Energy Facility,AR,Hot Spring County,34.2963,-92.8683,Electric Utility
+55419,Plaquemine Cogen Facility,LA,Iberville Parish,30.3215,-91.2392,Cogeneration
+55433,Bayou Cove Peaking Power Plant,LA,Acadia Parish,30.2825,-92.5994,Electric Utility
+55438,"Elgin Energy Center, LLC",IL,Cook County,41.9997,-88.2445,Electric Utility
+55439,Tenaska Virginia Generating Station,VA,Fluvanna County,37.8667,-78.3813,Electric Utility
+55440,Central Alabama Gen Station,AL,Autauga County,32.6503,-86.7386,Electric Utility
+55447,Columbia Energy Center (MO),MO,Boone County,39.0183,-92.2633,Electric Utility
+55451,Magnolia Combined Cycle Plant,MS,Benton County,34.8358,-89.2017,Electric Utility
+55453,Fountain Valley Power Plant,CO,El Paso County,38.5569,-104.6875,Electric Utility
+55455,Redhawk Generating Facility,AZ,Maricopa County,33.33,-112.84,Electric Utility
+55457,McClain Energy Facility,OK,McClain County,35.2979,-97.5896,Electric Utility
+55460,Indeck-Niles Energy Center,MI,Cass County,41.8621,-86.2213,Electric Utility
+55463,Redbud Power Plant,OK,Oklahoma County,35.6853,-97.2242,Electric Utility
+55464,Deer Park Energy Center,TX,Harris County,29.7153,-95.1361,Cogeneration
+55467,Ouachita Plant,LA,Ouachita Parish,32.7056,-92.0697,Electric Utility
+55470,South Houston Green Power Site,TX,Galveston County,29.3775,-94.9328,Cogeneration
+55477,Neil Simpson II (CT2),WY,Campbell County,44.2853,-105.3841,Electric Utility
+55478,Lange,SD,Pennington County,44.1212,-103.2608,Electric Utility
+55479,Wygen I,WY,Campbell County,44.2862,-105.3843,Electric Utility
+55480,Forney Power Plant,TX,Kaufman County,32.7563,-96.4916,Electric Utility
+55481,Mesquite Generating Station,AZ,Maricopa County,33.3451,-112.8638,Electric Utility
+55482,Goldendale Generating Station,WA,Klickitat County,45.8114,-120.833,Electric Utility
+55486,Washington Parish Energy Center,LA,Washington Parish,30.7914,-89.9092,Electric Utility
+55496,Goose Creek Power Plant,IL,Piatt County,40.1083,-88.5986,Electric Utility
+55499,CalPeak Power - Vaca Dixon,CA,Solano County,38.3989,-121.9239,Electric Utility
+55501,Tenaska Kiamichi Generating Station,OK,Pittsburg County,34.6831,-95.9349,Electric Utility
+55502,Lawrenceburg Energy Facility,IN,Dearborn County,39.0913,-84.8667,Electric Utility
+55503,Waterford Plant,OH,Washington County,39.5314,-81.7172,Electric Utility
+55504,Limon Generating Station,CO,Lincoln County,39.2038,-103.7005,Electric Utility
+55505,Frank Knutson Station,CO,Adams County,39.9414,-104.6817,Electric Utility
+55508,CalPeak Power - Panoche,CA,Fresno County,36.6531,-120.5797,Electric Utility
+55510,CalPeak Power - Border,CA,San Diego County,32.5622,-116.9433,Electric Utility
+55512,Cuyamaca Peak Energy,CA,San Diego County,32.7971,-116.972,Electric Utility
+55513,CalPeak Power - Enterprise,CA,San Diego County,33.1221,-117.117,Electric Utility
+55514,Apex Generating Station,NV,Clark County,36.4178,-114.9622,Electric Utility
+55516,Fayette Power Company LLC,PA,Fayette County,39.8592,-79.9182,Electric Utility
+55517,"Wallingford Energy, LLC",CT,New Haven County,41.4486,-72.8358,Electric Utility
+55518,High Desert Power Project,CA,San Bernardino County,34.5953,-117.3647,Electric Utility
+55522,Sundance Power Plant,AZ,Pinal County,32.9285,-111.5899,Electric Utility
+55524,York Energy Center,PA,York County,39.738,-76.3072,Electric Utility
+55538,"Escondido Energy Center, LLC",CA,San Diego County,33.1261,-117.1172,Electric Utility
+55540,Chula Vista Energy Center,CA,San Diego County,32.5914,-117.0586,Electric Utility
+55541,Indigo Generation Facility,CA,Riverside County,33.9114,-116.5533,Electric Utility
+55542,Larkspur Energy Facility,CA,San Diego County,32.5672,-116.9444,Electric Utility
+55544,Klamath Generation Peakers,OR,Klamath County,42.1727,-121.8144,Electric Utility
+55558,McKinley Paper and Packaging Company,WI,Outagamie County,44.2717,-88.3011,Electric Utility
+55620,Perryville Power Station,LA,Ouachita Parish,32.6914,-92.0192,Electric Utility
+55622,West Valley Power Plant,UT,Salt Lake County,40.6663,-112.031,Electric Utility
+55625,Creed Energy Center,CA,Solano County,38.2419,-121.8551,Electric Utility
+55626,Lambie Energy Center,CA,Solano County,38.2216,-121.8683,Electric Utility
+55627,Goose Haven Energy Center,CA,Solano County,38.2271,-121.844,Electric Utility
+55640,"LSP University Park, LLC",IL,Will County,41.4426,-87.7515,Electric Utility
+55641,Riverside Energy Center,WI,Rock County,42.5835,-89.0351,Electric Utility
+55645,Blue Spruce Energy Center,CO,Adams County,39.7436,-104.68,Electric Utility
+55651,Spring Creek Power Plant,OK,Logan County,35.7422,-97.655,Electric Utility
+55654,Chambersburg Units 12 & 13,PA,Franklin County,39.8668,-77.6859,Electric Utility
+55656,Pastoria Energy Facility,CA,Kern County,34.9556,-118.844,Electric Utility
+55661,Newington Energy,NH,Rockingham County,43.1047,-70.8044,Electric Utility
+55662,Chehalis Generation Facility,WA,Lewis County,46.6226,-122.9145,Electric Utility
+55664,Harrison County Power Project,TX,Harrison County,32.3958,-94.4361,Electric Utility
+55667,"Lower Mount Bethel Energy, LLC",PA,Northampton County,40.8011,-75.105,Electric Utility
+55672,AL Sandersville Energy Facility,GA,Washington County,33.1189,-82.8608,Electric Utility
+55687,Walter M. Higgins III Generating Station,NV,Clark County,35.6139,-115.3561,Electric Utility
+55690,Bethlehem Power Plant,PA,Northampton County,40.6175,-75.3147,Electric Utility
+55694,Ackerman Combined Cycle Plant,MS,Choctaw County,33.38,-89.2091,Electric Utility
+55698,Hanford Energy Park Peaker,CA,Kings County,36.2689,-119.6469,Electric Utility
+55699,Bayswater Peaking Facility,NY,Queens County,40.6106,-73.7614,Electric Utility
+55700,Mint Farm Generating Station,WA,Cowlitz County,46.1403,-122.9842,Electric Utility
+55701,Fremont Energy Center,OH,Sandusky County,41.3781,-83.1647,Electric Utility
+55703,"Valero Refining Company-Tennessee, LLC",TN,Shelby County,35.0836,-90.0825,Petroleum Refinery
+55706,Choctaw County,MS,Choctaw County,33.2881,-89.4201,Electric Utility
+55708,Nacogdoches Generating Facility,TX,Nacogdoches County,31.8326,-94.9006,Electric Utility
+55710,Springdale Generating Station (55710),PA,Allegheny County,40.5456,-79.7669,Electric Utility
+55714,Magnet Cove Generating Station,AR,Hot Spring County,34.4304,-92.8333,Electric Utility
+55718,Dean Peakers,MI,St. Clair County,42.774,-82.4818,Electric Utility
+55733,Bennett Mountain Power Project,ID,Elmore County,43.147,-115.6671,Electric Utility
+55736,Hanging Rock Power Company LLC,OH,Lawrence County,38.5731,-82.7833,Electric Utility
+55738,Buchanan Units 1 & 2,VA,Buchanan County,37.1753,-81.9617,Electric Utility
+55748,Los Esteros Critical Energy Facility,CA,Santa Clara County,37.425,-121.9319,Electric Utility
+55749,Hardin Generating Station,MT,Big Horn County,45.7578,-107.6,Electric Utility
+55786,Edgewood Energy,NY,Suffolk County,40.7861,-73.2931,Electric Utility
+55787,Shoreham Energy,NY,Suffolk County,40.9572,-72.8664,Electric Utility
+55799,"Otsego Paper, Inc.",MI,Allegan County,42.4641,-85.6941,Cogeneration
+55801,"Marcus Hook Energy, LP",PA,Delaware County,39.8083,-75.4225,Cogeneration
+55802,Valencia Power Plant,NM,Valencia County,34.6063,-106.732,Electric Utility
+55807,Henrietta Peaker Plant,CA,Kings County,36.2397,-119.9044,Electric Utility
+55810,"Gilroy Energy Center, LLC",CA,Santa Clara County,36.999,-121.5363,Electric Utility
+55818,Frederickson Power LP,WA,Pierce County,47.0864,-122.3644,Electric Utility
+55821,Stanton A,FL,Orange County,28.4881,-81.1675,Electric Utility
+55835,Rocky Mountain Energy Center,CO,Weld County,40.0911,-104.5947,Electric Utility
+55836,Island Street Peaking Plant,WI,Outagamie County,44.2761,-88.2656,Electric Utility
+55841,Silverhawk Generating Station,NV,Clark County,36.4078,-114.9603,Electric Utility
+55847,Feather River Energy Center,CA,Sutter County,39.1088,-121.6133,Electric Utility
+55855,Wolfskill Energy Center,CA,Solano County,38.2282,-122.076,Electric Utility
+55856,Prairie State Generating Station,IL,Washington County,38.2792,-89.667,Electric Utility
+55927,Jasper County Generating Facility,SC,Jasper County,32.3592,-81.1236,Electric Utility
+55933,Tracy Combined Cycle Power Plant,CA,San Joaquin County,37.7107,-121.4906,Electric Utility
+55936,Rockford II Energy Center,IL,Winnebago County,42.2383,-89.1014,Electric Utility
+55938,Ocean Peaking Power,NJ,Ocean County,40.0606,-74.1672,Electric Utility
+55939,Warren County Power Station,VA,Warren County,38.9705,-78.1777,Electric Utility
+55951,Agua Mansa Power,CA,San Bernardino County,34.0414,-117.3603,Electric Utility
+55963,Riverview Energy Center,CA,Contra Costa County,38.0145,-121.7901,Electric Utility
+55965,Wansley CC (55965),GA,Heard County,33.4063,-85.0373,Electric Utility
+55969,"Hawkeye Energy Greenport, LLC",NY,Suffolk County,41.1056,-72.3767,Electric Utility
+55970,Cosumnes Power Plant,CA,Sacramento County,38.3383,-121.1239,Electric Utility
+55972,Cass County Station,NE,Cass County,40.9472,-95.9667,Electric Utility
+55976,Hunterstown Combined Cycle,PA,Adams County,39.8725,-77.1672,Electric Utility
+55977,Bluffview Power Plant,NM,San Juan County,36.7164,-108.2153,Electric Utility
+55985,Palomar Energy Center,CA,San Diego County,33.1192,-117.118,Electric Utility
+56013,Exira Station,IA,Audubon County,41.5131,-94.9189,Electric Utility
+56015,Walton Bainbridge Power Facility,GA,Decatur County,30.9111,-84.5472,Electric Utility
+56018,AMEA Sylacauga Plant,AL,Talladega County,33.1661,-86.2825,Electric Utility
+56026,Donald Von Raesfeld,CA,Santa Clara County,37.3767,-121.9508,Electric Utility
+56031,Fox Energy Center,WI,Outagamie County,44.3204,-88.2089,Electric Utility
+56032,Equus  Power I,NY,Nassau County,40.6447,-73.5683,Electric Utility
+56041,Malburg Generating Station,CA,Los Angeles County,33.9983,-118.2219,Electric Utility
+56046,Magnolia Power Project,CA,Los Angeles County,34.1788,-118.3153,Electric Utility
+56047,CPV Towantic Energy Center,CT,New Haven County,41.4841,-73.1229,Electric Utility
+56068,Elm Road Generating Station,WI,Milwaukee County,42.8445,-87.829,Electric Utility
+56078,Walnut Energy Center,CA,Stanislaus County,37.4878,-120.8956,Electric Utility
+56102,Currant Creek Power Project,UT,Juab County,39.8223,-111.894,Electric Utility
+56104,Mankato Energy Center,MN,Blue Earth County,44.1965,-94.0099,Electric Utility
+56108,T J Labbe Electric Generating Station,LA,Lafayette Parish,30.2554,-92.0433,Electric Utility
+56135,Ripon Generation Station,CA,Stanislaus County,37.7315,-121.116,Electric Utility
+56143,Riverside Energy Resource Center,CA,Riverside County,33.9636,-117.4528,Electric Utility
+56150,McIntosh Combined Cycle Facility,GA,Effingham County,32.3478,-81.1828,Electric Utility
+56151,South Harper Peaking Facility,MO,Cass County,38.6803,-94.4824,Electric Utility
+56164,Faribault Energy Park,MN,Rice County,44.3353,-93.2894,Electric Utility
+56166,Sheboygan Falls Energy Facility,WI,Sheboygan County,43.7519,-87.8783,Electric Utility
+56177,Nebo Power Station,UT,Utah County,40.0614,-111.7294,Electric Utility
+56188,Pinelawn Power,NY,Suffolk County,40.7358,-73.3881,Electric Utility
+56189,"Waterside Power, LLC",CT,Fairfield County,41.0372,-73.5564,Electric Utility
+56196,Poletti 500 MW CC,NY,Queens County,40.7881,-73.9056,Electric Utility
+56224,TS Power Plant,NV,Eureka County,40.7458,-116.5297,Electric Utility
+56227,Port Westward,OR,Columbia County,46.1792,-123.1717,Electric Utility
+56232,Miramar Energy Facility,CA,San Diego County,32.8769,-117.1664,Electric Utility
+56234,Caithness Long Island Energy Center,NY,Suffolk County,40.8142,-72.9403,Electric Utility
+56237,Lake Side Power Plant,UT,Utah County,40.3311,-111.7547,Electric Utility
+56238,Groton Generating Station,SD,Brown County,45.3718,-98.1032,Electric Utility
+56239,Malaga Power,CA,Fresno County,36.6894,-119.7399,Electric Utility
+56241,Cannon Falls Energy Center,MN,Goodhue County,44.5364,-92.9147,Electric Utility
+56249,NCEMC Anson Plant,NC,Anson County,34.9708,-79.9208,Electric Utility
+56253,Millcreek Power,UT,Washington County,37.1124,-113.5155,Electric Utility
+56259,"Empire Generating Co, LLC",NY,Rensselaer County,42.6296,-73.749,Electric Utility
+56283,Hargis-Hebert Electric Generating Statio,LA,Lafayette Parish,30.1694,-91.9923,Electric Utility
+56292,NCEMC Hamlet Plant,NC,Richmond County,34.8422,-79.7367,Electric Utility
+56298,Roseville Energy Park,CA,Placer County,38.7926,-121.3823,Electric Utility
+56319,Wygen II,WY,Campbell County,44.2911,-105.3815,Electric Utility
+56326,Mustang Station (56326),TX,Yoakum County,32.9748,-102.7432,Electric Utility
+56328,Harry D. Mattison Power Plant,AR,Washington County,36.1855,-94.2841,Electric Utility
+56349,Quail Run Energy Center,TX,Ector County,31.8414,-102.315,Electric Utility
+56350,Colorado Bend Energy Center,TX,Wharton County,29.2878,-96.0683,Electric Utility
+56397,Hunlock Unit 4,PA,Luzerne County,41.2033,-76.0683,Electric Utility
+56400,Treasure Coast Energy Center,FL,St. Lucie County,27.3839,-80.3775,Electric Utility
+56407,West County Energy Center,FL,Palm Beach County,26.6986,-80.3747,Electric Utility
+56445,Spindle Hill Energy Center,CO,Weld County,40.0914,-104.8819,Electric Utility
+56456,Plum Point Energy Station,AR,Mississippi County,35.6626,-89.9469,Electric Utility
+56458,Hobbs Generating Station,NM,Lea County,32.7282,-103.3095,Electric Utility
+56467,Russell City Energy Company LLC,CA,Alameda County,37.6341,-122.1326,Electric Utility
+56471,McGrath Generating Station,CA,Ventura County,34.2054,-119.2478,Electric Utility
+56472,Grapeland Generating Station,CA,San Bernardino County,34.09,-117.534,Electric Utility
+56473,Mira Loma Generating Station,CA,San Bernardino County,34.0054,-117.5604,Electric Utility
+56474,Barre Generating Station,CA,Orange County,33.8073,-117.9833,Electric Utility
+56475,Center Generating Station,CA,Los Angeles County,33.9297,-118.1047,Electric Utility
+56476,Gateway Generating Station,CA,Contra Costa County,38.0167,-121.7592,Electric Utility
+56480,Marshfield Utilities Combustion Turbine,WI,Wood County,44.635,-90.135,Electric Utility
+56482,Black Mountain Generating Station,AZ,Mohave County,35.0361,-114.1594,Electric Utility
+56502,Emporia Energy Center,KS,Lyon County,38.4464,-96.0651,Electric Utility
+56505,City Water & Light - City of Jonesboro,AR,Craighead County,35.8481,-90.7257,Electric Utility
+56532,Colusa Generating Station,CA,Colusa County,39.3648,-122.268,Electric Utility
+56556,Paducah Power Systems Plant 1,KY,McCracken County,37.0339,-88.6161,Electric Utility
+56564,John W. Turk Jr. Power Plant,AR,Hempstead County,33.6497,-93.8119,Electric Utility
+56569,Niland Gas Turbine Plant,CA,Imperial County,33.2432,-115.498,Electric Utility
+56596,Wygen III,WY,Campbell County,44.2892,-105.3795,Electric Utility
+56603,San Jacinto County Peaking Facility,TX,San Jacinto County,30.42,-95.0114,Electric Utility
+56604,Hardin County Peaking Facility,TX,Hardin County,30.3039,-94.2527,Electric Utility
+56606,Culbertson Station,MT,Roosevelt County,48.2104,-104.3919,Electric Utility
+56609,Dry Fork Station,WY,Campbell County,44.3901,-105.4591,Electric Utility
+56610,Deer Creek Station,SD,Brown County,44.3961,-96.5333,Electric Utility
+56611,Sandy Creek Energy Station,TX,McLennan County,31.4753,-96.9564,Electric Utility
+56629,Waterbury Generation,CT,New Haven County,41.5444,-73.0416,Electric Utility
+56639,Midway Peaking,CA,Fresno County,36.654,-120.5797,Small Power Producer
+56668,NIH Cogeneration Facility,MD,Montgomery County,38.9982,-77.1026,Cogeneration
+56671,Longview Power,WV,Monongalia County,39.7078,-79.9588,Electric Utility
+56674,Winchester Power Park,TX,Fayette County,30.0253,-96.9945,Electric Utility
+56786,Spiritwood Station,ND,Stutsman County,46.925,-98.5,Cogeneration
+56798,Kleen Energy Systems Project,CT,Middlesex County,41.5526,-72.597,Electric Utility
+56799,Greenland Energy Center,FL,Duval County,30.1603,-81.5164,Electric Utility
+56803,Panoche Energy Center,CA,Fresno County,36.6513,-120.5833,Electric Utility
+56806,Cedar Bayou 4,TX,Chambers County,29.752,-94.923,Electric Utility
+56807,Bear Garden Generating Station,VA,Buckingham County,37.6961,-78.2848,Electric Utility
+56808,Virginia City Hybrid Energy Center,VA,Wise County,36.9161,-82.3381,Electric Utility
+56846,CPV St. Charles Energy Center,MD,Charles County,38.5686,-76.8919,Electric Utility
+56908,Dave Gates Generating Station,MT,Deer Lodge County,46.1066,-112.8755,Electric Utility
+56914,Orange Grove Project,CA,San Diego County,33.359,-117.111,Electric Utility
+56940,Valley Energy Center,NY,Orange County,41.413,-74.435,Electric Utility
+56948,Coolidge Generating Station,AZ,Pinal County,32.9175,-111.5041,Electric Utility
+56963,West Deptford Energy Station,NJ,Gloucester County,39.8418,-75.2214,Electric Utility
+56964,Bayonne Energy Center,NJ,Hudson County,40.6529,-74.0916,Electric Utility
+56998,Pueblo Airport Generating Station,CO,Pueblo County,38.322,-104.533,Electric Utility
+57001,El Cajon Energy Center,CA,San Diego County,32.7971,-116.972,Electric Utility
+57027,Canyon Power Plant,CA,Orange County,33.8581,-117.8616,Electric Utility
+57028,Langley Gulch Power Plant,ID,Payette County,43.9046,-116.8181,Electric Utility
+57029,Cleveland County Generating Facility,NC,Cleveland County,35.1706,-81.4161,Electric Utility
+57037,David M Ratcliffe,MS,Kemper County,32.6538,-88.7574,Electric Utility
+57073,Ivanpah 2,CA,San Bernardino County,35.5561,-115.4686,Electric Utility
+57074,Ivanpah 1,CA,San Bernardino County,35.5356,-115.4515,Electric Utility
+57075,Ivanpah 3,CA,San Bernardino County,35.5808,-115.4825,Electric Utility
+57185,Cricket Valley Energy Center,NY,Dutchess County,41.6762,-73.5806,Electric Utility
+57241,Deerhaven Renewable Energy Center,FL,Alachua County,29.7675,-82.3964,Electric Utility
+57267,Marsh Landing Generating Station,CA,Contra Costa County,38.0171,-121.7651,Electric Utility
+57349,Garrison Energy Center,DE,Kent County,39.1882,-75.4999,Electric Utility
+57482,"Sentinel Energy Center, LLC",CA,Riverside County,33.9366,-116.5722,Electric Utility
+57483,Mariposa Energy Project,CA,Alameda County,37.7965,-121.6049,Electric Utility
+57515,Walnut Creek Energy Park,CA,Los Angeles County,34.0078,-117.9425,Electric Utility
+57555,Pio Pico Energy Center LLC,CA,San Diego County,32.5739,-116.9178,Electric Utility
+57564,Algonquin Power Sanger,CA,Fresno County,36.6842,-119.5522,Electric Utility
+57703,Cheyenne Prairie Generating Station,WY,Laramie County,41.1229,-104.7214,Electric Utility
+57794,St. Joseph Energy Center LLC,IN,St. Joseph County,41.6996,-86.4814,Electric Utility
+57839,Woodbridge Energy Center,NJ,Middlesex County,40.515,-74.3192,Electric Utility
+57842,Wabash River Highland Plant,IN,Vigo County,39.5326,-87.4262,Electric Utility
+57865,Antelope Elk Energy Center,TX,Hale County,33.8657,-101.8437,Electric Utility
+57881,Pioneer Generating Station,ND,Williams County,48.2325,-103.9528,Electric Utility
+57943,Lonesome Creek Station,ND,McKenzie County,47.7966,-103.5783,Electric Utility
+57978,Lodi Energy Center,CA,San Joaquin County,38.088,-121.3867,Electric Utility
+58001,Temple Power Station,TX,Bell County,31.0558,-97.3172,Electric Utility
+58005,Rayburn Energy Station,TX,Grayson County,33.5756,-96.6158,Electric Utility
+58054,Burgess BioPower,NH,Coos County,44.4719,-71.1753,Electric Utility
+58079,Newark Energy Center,NJ,Essex County,40.7082,-74.1284,Electric Utility
+58122,"Delano Energy Center, LLC",CA,Tulare County,35.7909,-119.2945,Electric Utility
+58124,Rothschild Biomass Cogeneration Facility,WI,Marathon County,44.8878,-89.6298,Cogeneration
+58235,Clayville,NJ,Cumberland County,39.4245,-75.0201,Electric Utility
+58236,Marshalltown Generating Station,IA,Marshall County,42.04,-92.87,Electric Utility
+58260,Brunswick County Power Station,VA,Brunswick County,36.7637,-77.7112,Electric Utility
+58284,La Luz Energy Center,NM,Valencia County,34.6178,-106.817,Electric Utility
+58325,Charles D Lamb Energy Center,OK,Kay County,36.8138,-97.1252,Electric Utility
+58378,Carbon Capture Plant,TX,Fort Bend County,29.4753,-95.6341,Cogeneration
+58413,Copper Crossing Energy & Research Center,AZ,Pinal County,33.1567,-111.4714,Electric Utility
+58420,Hamilton Liberty Generation Plant,PA,Bradford County,41.7674,-76.3899,Electric Utility
+58426,Hamilton Patriot Generation Plant,PA,Lycoming County,41.1808,-76.8392,Electric Utility
+58427,Lansing BWL REO Town Plant,MI,Ingham County,42.7197,-84.5518,Cogeneration
+58471,Ector County Energy Center,TX,Ector County,32.0694,-102.5856,Electric Utility
+58478,LEPA Unit No. 1,LA,St. Mary Parish,29.6913,-91.193,Electric Utility
+58503,Carty Generating Station,OR,Morrow County,45.699,-119.8131,Electric Utility
+58562,Montana Power Station,TX,El Paso County,31.8239,-106.2119,Electric Utility
+58933,Shell Chemical Appalachia LLC,PA,Beaver County,40.6717,-80.3364,Cogeneration
+59004,"Potomac Energy Center, LLC",VA,Loudoun County,39.0578,-77.5425,Electric Utility
+59073,Cove Point LNG Terminal,MD,Calvert County,38.387,-76.408,Industrial Turbine
+59093,Holland Energy Park,MI,Ottawa County,42.793,-86.0925,Electric Utility
+59220,Wildcat Point Generation Facility,MD,Cecil County,39.7194,-76.1616,Electric Utility
+59325,Kings Mountain Energy Center,NC,Cleveland County,35.1986,-81.3604,Electric Utility
+59326,Middletown Energy Center,OH,Butler County,39.4679,-84.3531,Electric Utility
+59764,Oregon Clean Energy Center,OH,Lucas County,41.6679,-83.4437,Electric Utility
+59773,Carroll County Energy,OH,Carroll County,40.6048,-81.0592,Electric Utility
+59812,Wolf Hollow II,TX,Hood County,32.3377,-97.7346,Electric Utility
+59882,Exelon West Medway II,MA,Norfolk County,42.1375,-71.444,Electric Utility
+59906,Moxie Freedom Generation Plant,PA,Luzerne County,41.1117,-76.16,Electric Utility
+59913,Greensville County Power Station,VA,Greensville County,36.7184,-77.6523,Electric Utility
+59926,Alpine Power Plant,MI,Otsego County,45.0624,-84.8261,Electric Utility
+60122,Colorado Bend II,TX,Wharton County,29.2878,-96.0656,Electric Utility
+60264,Bacliff Generating Station,TX,Galveston County,29.4922,-94.9844,Electric Utility
+60302,Keys Energy Center,MD,Prince George's County,38.6955,-76.8278,Electric Utility
+60340,Albany Green Energy LLC,GA,Dougherty County,31.5492,-84.1114,Cogeneration
+60345,Okeechobee Clean Energy Center,FL,Okeechobee County,27.6342,-80.7911,Electric Utility
+60356,"South Field Energy, LLC",OH,Columbiana County,40.635,-80.6793,Electric Utility
+60357,Lackawanna Energy Center,PA,Lackawanna County,41.4711,-75.5436,Electric Utility
+60368,Hummel Station,PA,Snyder County,40.839,-76.8255,Electric Utility
+60376,"Clean Energy Future - Lordstown, LLC",OH,Trumbull County,41.1489,-80.8516,Electric Utility
+60387,Invenergy Nelson Expansion LLC,IL,Lee County,41.7747,-89.6062,Electric Utility
+60459,Port Comfort Peaking Facility,TX,Calhoun County,28.648,-96.5457,Electric Utility
+60460,"Chamon Power, LLC",TX,Harris County,29.8833,-95.1113,Electric Utility
+60464,Tenaska Westmoreland Generating Station,PA,Westmoreland County,40.1764,-79.6934,Electric Utility
+60468,Tejas Power Generation Unit 1,TX,Harris County,29.6464,-95.4518,Electric Utility
+60589,"CPV Fairview, LLC",PA,Cambria County,40.4125,-78.8561,Electric Utility
+60698,Stanton Energy Reliability Center,CA,Orange County,33.807,-117.9864,Electric Utility
+60903,Salem Harbor Station NGCC,MA,Essex County,42.5256,-70.8784,Electric Utility
+60910,NET Power La Porte Station,TX,Harris County,29.6468,-95.0541,Electric Utility
+60925,Montgomery County Power Station,TX,Montgomery County,30.4358,-95.5206,Electric Utility
+60926,St. Charles Power Station,LA,St. Charles Parish,30.0051,-90.4617,Electric Utility
+60927,Lake Charles Power Station,LA,Calcasieu Parish,30.2706,-93.2886,Electric Utility
+61028,Hickory Run Energy Station,PA,Lawrence County,40.9951,-80.4301,Electric Utility
+61035,Birdsboro Power,PA,Berks County,40.2683,-75.8,Electric Utility
+61144,Astoria Station,SD,Deuel County,44.5812,-96.565,Electric Utility
+61241,Victoria City Peaking Facility,TX,Victoria County,28.7853,-97.0093,Electric Utility
+61242,Victoria Port Peaking Facility,TX,Victoria County,28.6958,-96.9454,Electric Utility
+61322,Long Ridge Energy Generation,OH,Monroe County,39.7025,-80.8455,Electric Utility
+61966,Victoria Port Power II Peaking Facility,TX,Victoria County,28.6967,-96.9449,Electric Utility
+62192,Blue Water Energy Center,MI,St. Clair County,42.7763,-82.4813,Electric Utility
+62548,SJRR Power Peaking Facility,TX,Harris County,29.8819,-95.1114,Electric Utility
+62565,Hill Top Energy Center,PA,Greene County,39.8931,-79.9308,Electric Utility
+62926,"Jackson Generation, LLC",IL,Will County,41.4388,-88.111,Electric Utility
+62949,Guernsey Power Station,OH,Guernsey County,39.9387,-81.5363,Electric Utility
+63259,Delta Energy Park,MI,Eaton County,42.6906,-84.6578,Electric Utility
+63335,HO Clarke Generating,TX,Harris County,29.6454,-95.4517,Electric Utility
+63559,MMWEC Simple Cycle Gas Turbine,MA,Essex County,42.5429,-70.927,Electric Utility
+63628,Tinker,OK,Oklahoma County,35.4147,-97.3734,Electric Utility
+63688,Topaz Generating,TX,Galveston County,29.4262,-94.9767,Electric Utility
+63931,CPV Three Rivers Energy Center,IL,Grundy County,41.3722,-88.2844,Electric Utility
+64383,Braes Bayou Plant,TX,Fort Bend County,29.4803,-95.6203,Electric Utility
+64547,Turtle Creek Station,NE,Sarpy County,41.0963,-96.1692,Electric Utility
+64854,Primient,IN,Tippecanoe County,40.3763,-86.8437,Cogeneration
+65372,Mark One Power Station,TX,Brazoria County,29.2286,-95.4311,Electric Utility
+65373,Brotman Power Station,TX,Brazoria County,29.3642,-95.4351,Electric Utility
+66600,Bushy Park Combustion Turbine Facility,SC,Berkeley County,33.0163,-79.9285,Electric Utility
+66604,Remy Jade Power Station,TX,Harris County,29.8462,-95.0172,Electric Utility
+66918,Trumbull Energy Center,OH,Trumbull County,41.1476,-80.8525,Electric Utility
+68386,Mountain Peak Power Station,CO,Weld County,40.1472,-104.543,Electric Utility
+70454,Hartwell Energy Facility,GA,Hart County,34.3387,-82.8207,Electric Utility
+880004,GSA Central Heating,DC,District of Columbia,38.8856,-77.0244,Industrial Boiler
+880006,Vicinity Energy Philadelphia Edison Sta,PA,Philadelphia County,39.949,-75.1557,Industrial Boiler
+880007,AdvanSix Resins & Chemicals LLC,PA,Philadelphia County,40.0067,-75.0686,Industrial Boiler
+880023,Kneeland Station,MA,Suffolk County,42.35,-71.0583,Industrial Boiler
+880024,Momentive Performance Materials,NY,Saratoga County,42.8158,-73.6728,Industrial Boiler
+880025,Trainer Refinery,PA,Delaware County,39.8228,-75.4033,Industrial Boiler
+880029,Marathon Petroleum Company LP,MI,Wayne County,42.165,-83.091,Industrial Boiler
+880030,Ohio Refining Company LLC,OH,Lucas County,41.6786,-83.4539,Petroleum Refinery
+880031,Corteva Agriscience LLC,MI,Midland County,43.6025,-84.2404,Industrial Boiler
+880038,"Catlettsburg Refining, LLC",KY,Boyd County,38.375,-82.6042,Petroleum Refinery
+880041,Ascend (Decatur Plant),AL,Morgan County,34.6339,-87.0244,Industrial Boiler
+880042,Cleveland-Cliffs Steel - Middletown,OH,Butler County,39.4968,-84.3901,Iron & Steel
+880045,University of Michigan,MI,Washtenaw County,42.2808,-83.7342,Industrial Boiler
+880053,Altivia Services Institute Facility,WV,Kanawha County,38.3845,-81.7764,Industrial Boiler
+880065,Phoenix Paper Wickliffe LLC,KY,Ballard County,36.9461,-89.0792,Pulp & Paper Mill
+880067,Wood River Refinery,IL,Madison County,38.8375,-90.0675,Petroleum Refinery
+880071,Armagh Compressor Station,PA,Indiana County,40.4319,-79.085,Industrial Turbine
+880072,Entriken Compressor Station,PA,Huntingdon County,40.3086,-78.1389,Industrial Turbine
+880076,Lemont Refinery,IL,Will County,41.6439,-88.0467,Petroleum Refinery
+880079,Tate & Lyle-Loudon,TN,Loudon County,35.7433,-84.3208,Industrial Boiler
+880083,Lima Refinery,OH,Allen County,40.7234,-84.1133,Petroleum Refinery
+880086,"Alto Central, LLC",IL,Tazewell County,40.555,-89.6628,Industrial Boiler
+880088,Marathon Petroleum Company LP,IL,Crawford County,39.0,-87.7222,Industrial Boiler
+880089,"INEOS Joliet, LLC",IL,Will County,41.4417,-88.1728,Industrial Boiler
+880093,AdvanSix Resins and Chemicals - Hopewell,VA,Prince George County,37.1815,-77.1621,Industrial Boiler
+880099,United Refining Company,PA,Warren County,41.8359,-79.1374,Petroleum Refinery
+880100,Ravenswood Steam Plant,NY,Queens County,40.76,-73.75,Industrial Boiler
+880102,"AES Puerto Rico, LP",PR,Guayama Municipio,17.9477,-66.154,Electric Utility
+880103,Palo Seco Steam Power Plant,PR,Toa Baja Municipio,18.4556,-66.1489,Electric Utility
+880104,Costa Sur Steam Power Plant,PR,Guayanilla Municipio,18.0009,-66.753,Electric Utility
+880105,Aguirre Steam Power Plant,PR,Salinas Municipio,17.9495,-66.2315,Electric Utility
+880106,San Juan Steam Power Plant,PR,San Juan Municipio,18.4263,-66.1037,Electric Utility
+880107,ETMT Marcus Hook Terminal,PA,Delaware County,39.8076,-75.4239,Industrial Boiler
+880108,Grain Processing Corporation,IN,Daviess County,38.6552,-87.1814,Industrial Boiler
+880109,Pratt Paper (OH),OH,Auglaize County,40.5426,-84.1916,Industrial Boiler
+880110,Holston Army Ammunition Plant,TN,Hawkins County,36.5493,-82.6342,Industrial Boiler
