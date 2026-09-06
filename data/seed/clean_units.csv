@@ -1,0 +1,4059 @@
+facility_id,unit_id,unit_type
+3,1,Tangentially-fired
+3,2,Tangentially-fired
+3,4,Tangentially-fired
+3,5,Tangentially-fired
+3,6A,Combined cycle
+3,6B,Combined cycle
+3,7A,Combined cycle
+3,7B,Combined cycle
+3,8,Combined cycle
+9,CTG-1,Combustion turbine
+10,1,Cell burner boiler
+10,2,Dry bottom wall-fired boiler
+10,CT10,Combustion turbine
+10,CT2,Combustion turbine
+10,CT3,Combustion turbine
+10,CT4,Combustion turbine
+10,CT5,Combustion turbine
+10,CT6,Combustion turbine
+10,CT7,Combustion turbine
+10,CT8,Combustion turbine
+10,CT9,Combustion turbine
+26,1,Dry bottom wall-fired boiler
+26,2,Dry bottom wall-fired boiler
+26,3,Dry bottom wall-fired boiler
+26,4,Dry bottom wall-fired boiler
+26,5,Tangentially-fired
+47,CCT1,Combustion turbine
+47,CCT10,Combustion turbine
+47,CCT11,Combustion turbine
+47,CCT2,Combustion turbine
+47,CCT3,Combustion turbine
+47,CCT4,Combustion turbine
+47,CCT5,Combustion turbine
+47,CCT6,Combustion turbine
+47,CCT7,Combustion turbine
+47,CCT8,Combustion turbine
+47,CCT9,Combustion turbine
+54,SCT1,Combustion turbine
+54,SCT10,Combustion turbine
+54,SCT2,Combustion turbine
+54,SCT3,Combustion turbine
+54,SCT4,Combustion turbine
+54,SCT5,Combustion turbine
+54,SCT6,Combustion turbine
+54,SCT7,Combustion turbine
+54,SCT9,Combustion turbine
+56,CC1,Combined cycle
+59,1,Tangentially-fired
+60,1,Tangentially-fired
+60,2,Dry bottom wall-fired boiler
+108,SGU1,Dry bottom wall-fired boiler
+113,1,Tangentially-fired
+113,3,Tangentially-fired
+116,GT3,Combustion turbine
+116,GT4,Combustion turbine
+116,GT5,Combustion turbine
+116,GT6,Combustion turbine
+116,GT7,Combustion turbine
+117,CC4,Combined cycle
+117,CC5A,Combined cycle
+117,CC5B,Combined cycle
+118,CT3,Combustion turbine
+120,1,Tangentially-fired
+120,CT5,Combustion turbine
+120,CT6,Combustion turbine
+124,GT1,Combustion turbine
+126,3,Tangentially-fired
+126,4,Dry bottom wall-fired boiler
+127,1,Dry bottom wall-fired boiler
+130,1,Dry bottom wall-fired boiler
+130,2,Tangentially-fired
+130,3,Tangentially-fired
+130,4,Tangentially-fired
+136,2,Dry bottom wall-fired boiler
+136,CT1,Combined cycle
+136,CT2,Combined cycle
+141,1,Dry bottom wall-fired boiler
+141,2,Dry bottom wall-fired boiler
+141,3,Dry bottom turbo-fired boiler
+141,7,Combustion turbine
+141,8,Combustion turbine
+147,K-7,Combined cycle
+160,1,Dry bottom wall-fired boiler
+160,2,Dry bottom turbo-fired boiler
+160,3,Dry bottom turbo-fired boiler
+160,4,Combustion turbine
+160,5,"Combustion turbine (Started May 19, 2025)"
+160,6,"Combustion turbine (Started May 19, 2025)"
+165,1,Dry bottom wall-fired boiler
+165,2,Dry bottom wall-fired boiler
+165,3,Combined cycle
+170,4,Dry bottom wall-fired boiler
+201,2,Combined cycle
+202,01,Dry bottom wall-fired boiler
+203,01,Dry bottom wall-fired boiler
+260,1A,Combined cycle
+260,2A,Combined cycle
+260,3A,Combined cycle
+260,4A,Combined cycle
+298,LIM1,Tangentially-fired
+298,LIM2,Tangentially-fired
+302,10,Combustion turbine
+302,6,Combustion turbine
+302,7,Combustion turbine
+302,8,Combustion turbine
+302,9,Combustion turbine
+315,3,Tangentially-fired
+315,4,Tangentially-fired
+315,5,Dry bottom wall-fired boiler
+315,CT1,Combined cycle
+315,CT2,Combined cycle
+330,5,Combined cycle
+330,7,Combined cycle
+335,2,Dry bottom wall-fired boiler
+335,CT1,Combined cycle
+335,CT2,Combined cycle
+341,1,Combustion turbine
+341,2,Combustion turbine
+341,3,Combustion turbine
+341,4,Combustion turbine
+350,1,Dry bottom wall-fired boiler
+350,2,Dry bottom wall-fired boiler
+358,3-1,Combined cycle
+358,3-2,Combined cycle
+358,4-1,Combined cycle
+358,4-2,Combined cycle
+377,9,Combustion turbine
+389,2-2,Combined cycle
+389,3-1,Combined cycle
+389,3-2,Combined cycle
+389,4,Dry bottom wall-fired boiler
+399,10,Combustion turbine
+399,**10A,Combined cycle
+399,**10B,Combined cycle
+399,11,Combustion turbine
+399,12,Combustion turbine
+399,13,Combustion turbine
+399,14,Combustion turbine
+400,1,Dry bottom wall-fired boiler
+400,10,Combined cycle
+400,11,Combustion turbine
+400,12,Combustion turbine
+400,13,Combustion turbine
+400,14,Combustion turbine
+400,15,Combustion turbine
+400,16,Combustion turbine
+400,2,Dry bottom wall-fired boiler
+400,9,Combined cycle
+404,1,Dry bottom wall-fired boiler
+404,2,Dry bottom wall-fired boiler
+404,4,Combined cycle
+404,6,Combustion turbine
+404,7,Combustion turbine
+408,5,Combustion turbine
+408,6,Combined cycle
+408,7,Combined cycle
+422,GT3,Combustion turbine
+422,GT4,Combustion turbine
+422,GT5,Combined cycle
+469,4,Tangentially-fired
+469,5,Combined cycle
+469,6,Combined cycle
+470,2,Dry bottom wall-fired boiler
+470,3,Tangentially-fired
+492,A1,Combustion turbine
+492,A2,Combustion turbine
+492,A3,Combustion turbine
+492,A4,Combustion turbine
+492,A5,Combustion turbine
+492,A6,Combustion turbine
+525,H1,Dry bottom wall-fired boiler
+525,H2,Tangentially-fired
+533,**4,Combined cycle
+533,**V1,Combined cycle
+533,**V2,Combined cycle
+540,10,Combustion turbine
+542,10,Combustion turbine
+542,11,Combustion turbine
+542,12,Combustion turbine
+542,13,Combustion turbine
+542,14,Combustion turbine
+544,10,Combustion turbine
+544,11,Combustion turbine
+544,12,Combustion turbine
+544,13,Combustion turbine
+544,14,Combustion turbine
+544,15,Combustion turbine
+544,16,Combustion turbine
+544,17,Combustion turbine
+544,18,Combustion turbine
+546,5,Tangentially-fired
+546,6,Tangentially-fired
+561,10,Combustion turbine
+562,10,Combustion turbine
+562,12,Combustion turbine
+562,13,Combustion turbine
+562,14,Combustion turbine
+562,15,Combustion turbine
+562,2,Dry bottom wall-fired boiler
+562,3,Cyclone boiler
+562,4,Tangentially-fired
+564,1,Dry bottom wall-fired boiler
+564,2,Dry bottom wall-fired boiler
+564,CCB,Combined cycle
+565,10,Combustion turbine
+568,BHB5,Combined cycle
+589,1,Other boiler
+591,11,Combustion turbine
+591,14,Combustion turbine
+592,10,Combustion turbine
+593,10,Combustion turbine
+593,3,Tangentially-fired
+593,4,Tangentially-fired
+593,5,Dry bottom wall-fired boiler
+594,10,Combustion turbine
+594,4,Dry bottom turbo-fired boiler
+597,10,Combustion turbine
+602,1,Dry bottom wall-fired boiler
+602,2,Dry bottom wall-fired boiler
+607,CT3,Combustion turbine
+607,CT4,Combustion turbine
+609,CCCT3A,Combined cycle
+609,CCCT3B,Combined cycle
+609,CCCT3C,Combined cycle
+612,FMCT2A,Combined cycle
+612,FMCT2B,Combined cycle
+612,FMCT2C,Combined cycle
+612,FMCT2D,Combined cycle
+612,FMCT2E,Combined cycle
+612,FMCT2F,Combined cycle
+612,PFM3A,Combustion turbine
+612,PFM3B,Combustion turbine
+612,PFM3C,Combustion turbine
+612,PFM3D,Combustion turbine
+613,PFL6A,Combustion turbine
+613,PFL6B,Combustion turbine
+613,PFL6C,Combustion turbine
+613,PFL6D,Combustion turbine
+613,PFL6E,Combustion turbine
+613,PFL7A,Combined cycle
+613,PFL7B,Combined cycle
+617,PECT5A,Combined cycle
+617,PECT5B,Combined cycle
+617,PECT5C,Combined cycle
+619,RBCT5A,Combined cycle
+619,RBCT5B,Combined cycle
+619,RBCT5C,Combined cycle
+620,SNCT4A,Combined cycle
+620,SNCT4B,Combined cycle
+620,SNCT4C,Combined cycle
+620,SNCT4D,Combined cycle
+620,SNCT5A,Combined cycle
+620,SNCT5B,Combined cycle
+620,SNCT5C,Combined cycle
+620,SNCT5D,Combined cycle
+621,TPCT5A,Combined cycle
+621,TPCT5B,Combined cycle
+621,TPCT5C,Combined cycle
+621,TPCT5D,Combined cycle
+628,1GTA,Combined cycle
+628,1GTB,Combined cycle
+628,2GTA,Combined cycle
+628,2GTB,Combined cycle
+628,4,Dry bottom wall-fired boiler
+628,5,Dry bottom wall-fired boiler
+634,4A,Combined cycle
+634,4B,Combined cycle
+634,4C,Combined cycle
+634,4D,Combined cycle
+641,4,Tangentially-fired
+641,5,Tangentially-fired
+641,6,Dry bottom wall-fired boiler
+641,7,Dry bottom wall-fired boiler
+641,8A,Combustion turbine
+641,8B,Combustion turbine
+641,8C,Combustion turbine
+641,8D,Combustion turbine
+643,4,Combined cycle
+643,5,Combined cycle
+645,BB04,Tangentially-fired
+645,BB05,Combined cycle
+645,BB06,Combined cycle
+645,CT4A,Combustion turbine
+645,CT4B,Combustion turbine
+663,B1,Dry bottom wall-fired boiler
+663,B2,Dry bottom wall-fired boiler
+663,CT3,Combustion turbine
+664,CC1,Combined cycle
+666,7,Combustion turbine
+666,CT8,Combustion turbine
+667,1A,Circulating fluidized bed boiler
+667,2A,Circulating fluidized bed boiler
+667,3,Dry bottom wall-fired boiler
+673,S-3,Dry bottom wall-fired boiler
+675,**8,Combined cycle
+676,5,Combined cycle
+676,MGT2,Combustion turbine
+683,**C,Combustion turbine
+683,**D,Combustion turbine
+688,2A,Combined cycle
+688,HC3,Combustion turbine
+688,HC4,Combustion turbine
+689,8,Combined cycle
+703,1BLR,Tangentially-fired
+703,2BLR,Tangentially-fired
+703,3BLR,Tangentially-fired
+703,4BLR,Tangentially-fired
+710,3AA,Combustion turbine
+710,3AB,Combustion turbine
+710,3BA,Combustion turbine
+710,3BB,Combustion turbine
+710,4A,Combined cycle
+710,4B,Combined cycle
+710,5A,Combined cycle
+710,5B,Combined cycle
+710,6A,Combined cycle
+710,6B,Combined cycle
+715,3A,Combustion turbine
+715,3B,Combustion turbine
+715,3C,Combustion turbine
+715,4A,Combustion turbine
+715,4B,Combustion turbine
+715,4C,Combustion turbine
+715,4D,Combustion turbine
+715,4E,Combustion turbine
+715,4F,Combustion turbine
+728,Y6BR,Tangentially-fired
+728,Y7BR,Tangentially-fired
+762,2,Dry bottom wall-fired boiler
+762,3,Combined cycle
+762,4,Combustion turbine
+765,1,Dry bottom wall-fired boiler
+765,2,Dry bottom wall-fired boiler
+765,3,Tangentially-fired
+765,4,Tangentially-fired
+765,5,Dry bottom wall-fired boiler
+765,6,Dry bottom wall-fired boiler
+766,3,Dry bottom wall-fired boiler
+766,4,Dry bottom wall-fired boiler
+766,5,Dry bottom wall-fired boiler
+766,6,Dry bottom wall-fired boiler
+766,7,Tangentially-fired
+766,8,Tangentially-fired
+876,1,Cyclone boiler
+876,2,Cyclone boiler
+879,51,Cyclone boiler
+879,52,Cyclone boiler
+879,61,Cyclone boiler
+879,62,Cyclone boiler
+883,311,Combustion turbine
+883,312,Combustion turbine
+883,321,Combustion turbine
+883,322,Combustion turbine
+886,311,Combustion turbine
+886,312,Combustion turbine
+886,321,Combustion turbine
+886,322,Combustion turbine
+886,331,Combustion turbine
+886,332,Combustion turbine
+886,341,Combustion turbine
+886,342,Combustion turbine
+889,1,Cyclone boiler
+889,2,Cyclone boiler
+913,CT03,Combustion turbine
+913,CT04,Combustion turbine
+913,CT05,Combustion turbine
+913,CT2A,Combustion turbine
+913,CT2B,Combustion turbine
+963,4,Wet bottom wall-fired boiler
+976,123,Circulating fluidized bed boiler
+976,5,Combustion turbine
+976,6,Combustion turbine
+983,1,Wet bottom wall-fired boiler
+983,2,Wet bottom wall-fired boiler
+983,3,Wet bottom wall-fired boiler
+983,4,Wet bottom wall-fired boiler
+983,5,Wet bottom wall-fired boiler
+983,6,Wet bottom wall-fired boiler
+990,50,Tangentially-fired
+990,60,Tangentially-fired
+990,70,Tangentially-fired
+990,GT4,Combustion turbine
+990,GT5,Combustion turbine
+990,GT6,Combustion turbine
+991,GT1,Combined cycle
+991,GT2,Combined cycle
+992,11,Dry bottom wall-fired boiler
+992,12,Dry bottom wall-fired boiler
+992,13,Dry bottom wall-fired boiler
+992,14,Dry bottom wall-fired boiler
+992,16,Stoker
+994,3,Tangentially-fired
+994,4,Tangentially-fired
+997,12,Cyclone boiler
+1001,1,Tangentially-fired
+1001,2,Tangentially-fired
+1001,4,Combustion turbine
+1004,CTG1,Integrated gasification combined cycle
+1004,CTG2,Integrated gasification combined cycle
+1007,CT3,Combined cycle
+1007,CT4,Combined cycle
+1007,CT5,Combined cycle
+1012,2,Dry bottom wall-fired boiler
+1012,3,Dry bottom wall-fired boiler
+1016,GT-1,Combined cycle
+1016,GT-2,Combined cycle
+1016,GT-3,Combined cycle
+1016,GT-4,Combustion turbine
+1016,GT-5,Combustion turbine
+1016,GT-6,Combined cycle
+1016,GT-7,Combined cycle
+1016,GT-8,Combined cycle
+1040,1,Dry bottom wall-fired boiler
+1040,2,Tangentially-fired
+1068,1A,Combustion turbine
+1068,1B,Combustion turbine
+1068,2A,Combustion turbine
+1068,2B,Combustion turbine
+1068,3A,Combustion turbine
+1068,3B,Combustion turbine
+1073,3,Dry bottom wall-fired boiler
+1073,4,Dry bottom wall-fired boiler
+1082,3,Dry bottom wall-fired boiler
+1082,4,Dry bottom wall-fired boiler
+1091,3,Dry bottom wall-fired boiler
+1104,1,Tangentially-fired
+1122,7,Tangentially-fired
+1122,8,Dry bottom wall-fired boiler
+1131,7,Dry bottom wall-fired boiler
+1167,8,Cyclone boiler
+1167,9,Tangentially-fired
+1206,1G,Combustion turbine
+1206,2G,Combustion turbine
+1217,1,Dry bottom wall-fired boiler
+1217,2,Combustion turbine
+1230,1,Dry bottom wall-fired boiler
+1233,4,Dry bottom wall-fired boiler
+1235,3,Dry bottom wall-fired boiler
+1239,12,Combined cycle
+1240,E1CT,Combustion turbine
+1240,E2CT,Combustion turbine
+1240,E3CT,Combustion turbine
+1241,1,Cyclone boiler
+1241,2,Dry bottom wall-fired boiler
+1248,CT-1,Combustion turbine
+1248,CT-2,Combustion turbine
+1248,CT-3,Combustion turbine
+1248,CT-4,Combustion turbine
+1250,4,Tangentially-fired
+1250,5,Tangentially-fired
+1268,14,Combustion turbine
+1271,4,Dry bottom wall-fired boiler
+1295,CT2,Combustion turbine
+1295,CT3,Combustion turbine
+1305,GT1,Combustion turbine
+1305,GT2,Combustion turbine
+1305,GT3,Combustion turbine
+1336,S-2,Tangentially-fired
+1336,S-4,Combustion turbine
+1336,S-5,Combustion turbine
+1353,BSU1,Dry bottom wall-fired boiler
+1355,10,Combustion turbine
+1355,11,Combustion turbine
+1355,3,Tangentially-fired
+1355,5,Combustion turbine
+1355,6,Combustion turbine
+1355,7,Combustion turbine
+1355,8,Combustion turbine
+1355,9,Combustion turbine
+1356,1,Tangentially-fired
+1356,2,Tangentially-fired
+1356,3,Dry bottom wall-fired boiler
+1356,4,Dry bottom wall-fired boiler
+1363,7A,Combined cycle
+1363,7B,Combined cycle
+1364,2,Tangentially-fired
+1364,3,Dry bottom wall-fired boiler
+1364,4,Dry bottom wall-fired boiler
+1366,12,Combustion turbine
+1366,13,Combustion turbine
+1378,PCC1,Combined cycle
+1378,PCC2,Combined cycle
+1378,PCC3,Combined cycle
+1378,PCC5,Combustion turbine
+1378,PCC6,Combustion turbine
+1378,PCC7,Combustion turbine
+1379,1,Dry bottom wall-fired boiler
+1379,2,Dry bottom wall-fired boiler
+1379,3,Dry bottom wall-fired boiler
+1379,4,Dry bottom wall-fired boiler
+1379,5,Dry bottom wall-fired boiler
+1379,6,Dry bottom wall-fired boiler
+1379,7,Dry bottom wall-fired boiler
+1379,8,Dry bottom wall-fired boiler
+1379,9,Dry bottom wall-fired boiler
+1383,RT,Combustion turbine
+1384,1,Dry bottom wall-fired boiler
+1384,2,Dry bottom wall-fired boiler
+1391,1A,Tangentially-fired
+1391,2A,Tangentially-fired
+1391,3A,Tangentially-fired
+1391,4A,Combined cycle
+1391,5A,Combined cycle
+1393,6,Tangentially-fired
+1396,6-1,Combined cycle
+1396,7-1,Combined cycle
+1396,7-2,Combined cycle
+1400,4,Combustion turbine
+1402,2,Dry bottom wall-fired boiler
+1402,3,Dry bottom wall-fired boiler
+1403,4,Tangentially-fired
+1403,5,Tangentially-fired
+1403,6A,Combined cycle
+1403,6B,Combined cycle
+1404,7AB,Combined cycle
+1416,5A,Tangentially-fired
+1416,CTG-6A,Combined cycle
+1416,CTG-6B,Combined cycle
+1417,3,Tangentially-fired
+1417,4,Tangentially-fired
+1439,15,Dry bottom wall-fired boiler
+1439,16,Tangentially-fired
+1464,1B1,Dry bottom wall-fired boiler
+1464,1B2,Dry bottom wall-fired boiler
+1464,CTG1,Combustion turbine
+1464,CTG2,Combustion turbine
+1507,3,Tangentially-fired
+1507,4,Dry bottom wall-fired boiler
+1554,1,Dry bottom wall-fired boiler
+1554,2,Dry bottom wall-fired boiler
+1554,3,Dry bottom wall-fired boiler
+1554,4,Dry bottom wall-fired boiler
+1556,**51,Combustion turbine
+1556,6-1,Combustion turbine
+1556,6-2,Combustion turbine
+1556,CT1,Combustion turbine
+1556,CT3,Combustion turbine
+1556,CT4,Combustion turbine
+1564,8,Tangentially-fired
+1571,3,Tangentially-fired
+1571,4,Tangentially-fired
+1571,GT2,Combustion turbine
+1571,**GT3,Combustion turbine
+1571,**GT4,Combustion turbine
+1571,**GT5,Combustion turbine
+1571,**GT6,Combustion turbine
+1571,SMECO,Combustion turbine
+1572,GT2,Combustion turbine
+1572,GT3,Combustion turbine
+1573,GT3,Combustion turbine
+1573,GT4,Combustion turbine
+1573,GT5,Combustion turbine
+1573,GT6,Combustion turbine
+1586,FJ-1,Combustion turbine
+1586,FJ-2,Combustion turbine
+1586,FJ-3,Combustion turbine
+1592,J1T1,Combustion turbine
+1592,J1T2,Combustion turbine
+1592,J2T1,Combustion turbine
+1592,J2T2,Combustion turbine
+1592,J3T1,Combustion turbine
+1592,J3T2,Combustion turbine
+1594,11,Dry bottom wall-fired boiler
+1594,12,Dry bottom wall-fired boiler
+1595,2,Dry bottom wall-fired boiler
+1595,3,Dry bottom wall-fired boiler
+1595,4,Combined cycle
+1595,S6,Combustion turbine
+1599,1,Dry bottom wall-fired boiler
+1599,2,Dry bottom wall-fired boiler
+1599,3,Combustion turbine
+1660,4,Combustion turbine
+1660,5,Combustion turbine
+1678,1,Combustion turbine
+1678,2,Combustion turbine
+1682,9,Other boiler
+1702,3,Dry bottom wall-fired boiler
+1702,4,Dry bottom wall-fired boiler
+1702,A,Dry bottom wall-fired boiler
+1702,B,Dry bottom wall-fired boiler
+1710,1,Tangentially-fired
+1710,2,Cell burner boiler
+1710,3,Dry bottom wall-fired boiler
+1728,CTG111,Combustion turbine
+1728,CTG121,Combustion turbine
+1730,CTG121,Combustion turbine
+1730,CTG122,Combustion turbine
+1733,1,Cell burner boiler
+1733,2,Cell burner boiler
+1733,3,Cell burner boiler
+1733,4,Cell burner boiler
+1866,5,Stoker
+1866,7,Dry bottom wall-fired boiler
+1891,1,Tangentially-fired
+1891,2,Tangentially-fired
+1893,3,Tangentially-fired
+1893,4,Tangentially-fired
+1897,3,Stoker
+1897,4,Stoker
+1904,5,Combined cycle
+1904,6,Combustion turbine
+1912,7,Combined cycle
+1912,8,Combined cycle
+1913,1,Combustion turbine
+1913,2,Combustion turbine
+1913,3,Combustion turbine
+1913,4,Combustion turbine
+1913,5,Combustion turbine
+1913,6,Combustion turbine
+1915,1,Cyclone boiler
+1927,10,Combined cycle
+1927,9,Combined cycle
+2001,7,Combustion turbine
+2038,1,Combustion turbine
+2038,2,Combustion turbine
+2039,ERPS11,Combustion turbine
+2042,1,Combustion turbine
+2047,5,Combustion turbine
+2048,CTA,Combustion turbine
+2048,CTB,Combustion turbine
+2049,4,Dry bottom wall-fired boiler
+2049,5,Dry bottom wall-fired boiler
+2049,CTA,Combustion turbine
+2049,CTB,Combustion turbine
+2070,3,Dry bottom wall-fired boiler
+2070,**4,Combustion turbine
+2070,5,Combustion turbine
+2070,6,Combined cycle
+2070,7,Combined cycle
+2079,5A,Dry bottom wall-fired boiler
+2079,6,Combustion turbine
+2079,7,Combustion turbine
+2079,8,Combustion turbine
+2079,9,Combined cycle
+2081,11,Combustion turbine
+2081,12,Combustion turbine
+2081,13,Combustion turbine
+2081,14,Combustion turbine
+2081,15,Combustion turbine
+2081,16,Combustion turbine
+2081,17,Combustion turbine
+2081,18,Combustion turbine
+2082,CT01,Combustion turbine
+2092,3,Combustion turbine
+2098,6,Cyclone boiler
+2098,GT5,Combustion turbine
+2103,1,Tangentially-fired
+2103,2,Tangentially-fired
+2103,3,Tangentially-fired
+2103,4,Tangentially-fired
+2107,1,Cyclone boiler
+2107,2,Cyclone boiler
+2122,GT1A,Combustion turbine
+2122,GT1B,Combustion turbine
+2122,GT2A,Combustion turbine
+2122,GT2B,Combustion turbine
+2123,6,Stoker
+2123,7,Stoker
+2123,8,Dry bottom wall-fired boiler
+2131,4A,Combustion turbine
+2131,4B,Combustion turbine
+2161,**GT1,Combustion turbine
+2161,**GT2,Combustion turbine
+2167,1,Cyclone boiler
+2167,2,Cyclone boiler
+2168,MB1,Cyclone boiler
+2168,MB2,Cyclone boiler
+2168,MB3,Dry bottom wall-fired boiler
+2176,GT-2,Combustion turbine
+2226,1,Tangentially-fired
+2240,50T,Combustion turbine
+2240,8,Dry bottom wall-fired boiler
+2241,GT-2,Combustion turbine
+2241,GT-3,Combustion turbine
+2250,1,Combustion turbine
+2265,1A,Combustion turbine
+2265,1B,Combustion turbine
+2266,1A,Combustion turbine
+2266,1B,Combustion turbine
+2271,1A,Combustion turbine
+2271,1B,Combustion turbine
+2277,1,Cyclone boiler
+2277,2,Cyclone boiler
+2290,1,Combustion turbine
+2290,2,Combustion turbine
+2291,1,Tangentially-fired
+2291,2,Tangentially-fired
+2291,3,Tangentially-fired
+2291,4,Tangentially-fired
+2291,5,Dry bottom wall-fired boiler
+2292,1,Combustion turbine
+2292,2,Combustion turbine
+2292,CT3,Combustion turbine
+2292,CT4A,Combustion turbine
+2292,CT4B,Combustion turbine
+2292,CT5A,Combustion turbine
+2292,CT5B,Combustion turbine
+2322,11A,Combustion turbine
+2322,11B,Combustion turbine
+2322,12A,Combustion turbine
+2322,12B,Combustion turbine
+2322,13A,Combustion turbine
+2322,13B,Combustion turbine
+2322,14A,Combustion turbine
+2322,14B,Combustion turbine
+2322,15A,Combustion turbine
+2322,15B,Combustion turbine
+2322,16A,Combustion turbine
+2322,16B,Combustion turbine
+2322,17A,Combustion turbine
+2322,17B,Combustion turbine
+2322,18A,Combustion turbine
+2322,18B,Combustion turbine
+2322,19A,Combustion turbine
+2322,19B,Combustion turbine
+2322,20A,Combustion turbine
+2322,20B,Combustion turbine
+2322,21A,Combustion turbine
+2322,21B,Combustion turbine
+2322,22A,Combustion turbine
+2322,22B,Combustion turbine
+2330,1,Dry bottom wall-fired boiler
+2330,2,Dry bottom wall-fired boiler
+2336,3,Dry bottom wall-fired boiler
+2336,4,Combustion turbine
+2336,5,Combustion turbine
+2336,6,Combined cycle
+2336,8,Combined cycle
+2336,9,Combined cycle
+2362,CT1,Combustion turbine
+2364,1,Cyclone boiler
+2364,2,Cyclone boiler
+2364,CT1,Combustion turbine
+2364,CT2,Combustion turbine
+2367,4,Dry bottom wall-fired boiler
+2367,5,Circulating fluidized bed boiler
+2367,6,Dry bottom wall-fired boiler
+2367,CT1,Combustion turbine
+2369,CT1,Combustion turbine
+2390,012001,Combustion turbine
+2390,014001,Combustion turbine
+2390,015001,Combustion turbine
+2390,016001,Combustion turbine
+2393,04,Combined cycle
+2393,05,Combined cycle
+2393,06,Combined cycle
+2393,07,Combined cycle
+2393,9,Combustion turbine
+2398,1101,Combined cycle
+2398,1201,Combined cycle
+2398,1301,Combined cycle
+2398,1401,Combined cycle
+2398,2101,Combined cycle
+2398,2201,Combined cycle
+2399,121,Combustion turbine
+2399,122,Combustion turbine
+2399,123,Combustion turbine
+2399,124,Combustion turbine
+2404,121,Combustion turbine
+2404,122,Combustion turbine
+2404,123,Combustion turbine
+2404,124,Combustion turbine
+2404,131,Combustion turbine
+2404,132,Combustion turbine
+2404,133,Combustion turbine
+2404,134,Combustion turbine
+2404,141,Combustion turbine
+2404,142,Combustion turbine
+2406,1101,Combined cycle
+2406,1201,Combined cycle
+2406,2101,Combined cycle
+2406,2201,Combined cycle
+2406,5,Combustion turbine
+2406,6,Combustion turbine
+2406,7,Combustion turbine
+2406,8,Combustion turbine
+2410,2001,Combustion turbine
+2411,7,Combined cycle
+2434,U11,Combustion turbine
+2442,4,Cell burner boiler
+2442,5,Cell burner boiler
+2444,6,Dry bottom wall-fired boiler
+2444,7,Dry bottom wall-fired boiler
+2444,8,Dry bottom wall-fired boiler
+2444,9,Combustion turbine
+2446,051B,Tangentially-fired
+2450,1,Dry bottom wall-fired boiler
+2450,2,Dry bottom wall-fired boiler
+2450,3,Dry bottom wall-fired boiler
+2454,121B,Tangentially-fired
+2454,122B,Tangentially-fired
+2454,123T,Combustion turbine
+2454,124T,Combustion turbine
+2480,1,Tangentially-fired
+2480,2,Tangentially-fired
+2480,3,Tangentially-fired
+2480,4,Tangentially-fired
+2490,20,Dry bottom wall-fired boiler
+2490,30,Tangentially-fired
+2490,CT0001,Combustion turbine
+2493,1,Combined cycle
+2493,2,Combined cycle
+2493,60,Dry bottom wall-fired boiler
+2493,70,Dry bottom wall-fired boiler
+2494,CT02-1,Combustion turbine
+2494,CT02-2,Combustion turbine
+2494,CT02-3,Combustion turbine
+2494,CT02-4,Combustion turbine
+2494,CT02-5,Combustion turbine
+2494,CT02-6,Combustion turbine
+2494,CT02-7,Combustion turbine
+2494,CT02-8,Combustion turbine
+2494,CT03-1,Combustion turbine
+2494,CT03-2,Combustion turbine
+2494,CT03-3,Combustion turbine
+2494,CT03-4,Combustion turbine
+2494,CT03-5,Combustion turbine
+2494,CT03-6,Combustion turbine
+2494,CT03-7,Combustion turbine
+2494,CT03-8,Combustion turbine
+2499,CT01-1,Combustion turbine
+2499,CT01-2,Combustion turbine
+2499,CT01-3,Combustion turbine
+2499,CT01-4,Combustion turbine
+2499,CT01-5,Combustion turbine
+2499,CT01-6,Combustion turbine
+2499,CT01-7,Combustion turbine
+2499,CT01-8,Combustion turbine
+2499,CT02-1,Combustion turbine
+2499,CT02-2,Combustion turbine
+2499,CT02-3,Combustion turbine
+2499,CT02-4,Combustion turbine
+2499,CT02-5,Combustion turbine
+2499,CT02-6,Combustion turbine
+2499,CT02-7,Combustion turbine
+2499,CT02-8,Combustion turbine
+2500,10,Tangentially-fired
+2500,20,Tangentially-fired
+2500,30,Tangentially-fired
+2500,UCC001,Combined cycle
+2503,BLR114,Tangentially-fired
+2503,BLR115,Tangentially-fired
+2503,BLR116,Dry bottom wall-fired boiler
+2503,BLR117,Dry bottom wall-fired boiler
+2503,BLR118,Dry bottom wall-fired boiler
+2503,CT0001,Combustion turbine
+2504,120,Tangentially-fired
+2504,121,Tangentially-fired
+2504,122,Tangentially-fired
+2504,CT0001,Combustion turbine
+2504,CT0002,Combustion turbine
+2511,10,Tangentially-fired
+2511,20,Tangentially-fired
+2511,U00004,Combustion turbine
+2511,U00005,Combustion turbine
+2511,U00006,Combustion turbine
+2511,U00007,Combustion turbine
+2511,U00008,Combustion turbine
+2511,U00009,Combustion turbine
+2511,U00011,Combustion turbine
+2511,U00012,Combustion turbine
+2511,U00013,Combustion turbine
+2511,U00014,Combustion turbine
+2511,U00015,Combustion turbine
+2511,U00016,Combustion turbine
+2511,U00017,Combustion turbine
+2511,U00018,Combustion turbine
+2511,U00019,Combustion turbine
+2512,UGT001,Combustion turbine
+2514,U00020,Combustion turbine
+2514,U00021,Combustion turbine
+2516,1,Tangentially-fired
+2516,2,Tangentially-fired
+2516,3,Tangentially-fired
+2516,4,Tangentially-fired
+2516,UGT001,Combustion turbine
+2517,3,Tangentially-fired
+2517,4,Tangentially-fired
+2517,UGT001,Combustion turbine
+2517,UGT002,Combustion turbine
+2517,UGT003,Combustion turbine
+2521,UGT001,Combustion turbine
+2527,6,Tangentially-fired
+2539,10001,Combined cycle
+2539,10002,Combined cycle
+2539,10003,Combined cycle
+2594,5,Dry bottom wall-fired boiler
+2594,6,Dry bottom wall-fired boiler
+2625,1,Tangentially-fired
+2625,2,Dry bottom wall-fired boiler
+2628,001,Combustion turbine
+2632,1,Combustion turbine
+2679,5,Combustion turbine
+2679,CT3,Combustion turbine
+2682,10,Dry bottom wall-fired boiler
+2682,20,Combined cycle
+2682,9,Dry bottom wall-fired boiler
+2706,3,Combustion turbine
+2706,4,Combustion turbine
+2706,CT5,Combined cycle
+2706,CT7,Combined cycle
+2707,1,Combustion turbine
+2707,2,Combustion turbine
+2707,3,Combustion turbine
+2707,4,Combustion turbine
+2709,01A,Combined cycle
+2709,01B,Combined cycle
+2709,01C,Combined cycle
+2709,10,Combustion turbine
+2709,11,Combustion turbine
+2709,12,Combustion turbine
+2709,13,Combustion turbine
+2709,14,Combustion turbine
+2712,1,Dry bottom wall-fired boiler
+2712,2,Tangentially-fired
+2712,3A,Dry bottom wall-fired boiler
+2712,3B,Dry bottom wall-fired boiler
+2712,4A,Dry bottom wall-fired boiler
+2712,4B,Dry bottom wall-fired boiler
+2713,01A,Combined cycle
+2713,01B,Combined cycle
+2713,4,Combustion turbine
+2713,5,Combustion turbine
+2716,4,Combustion turbine
+2716,5,Combustion turbine
+2716,6,Combustion turbine
+2716,7,Combustion turbine
+2720,11C,Combined cycle
+2720,12C,Combined cycle
+2721,5,Tangentially-fired
+2721,6,Dry bottom wall-fired boiler
+2723,8C,Combined cycle
+2723,9C,Combined cycle
+2727,1,Tangentially-fired
+2727,2,Tangentially-fired
+2727,3,Tangentially-fired
+2727,4,Tangentially-fired
+2790,12,Combustion turbine
+2790,CT6,Combustion turbine
+2817,1,Dry bottom wall-fired boiler
+2817,2,Cyclone boiler
+2823,B1,Cyclone boiler
+2823,B2,Cyclone boiler
+2828,1,Cell burner boiler
+2828,2,Cell burner boiler
+2828,3,Dry bottom wall-fired boiler
+2828,B008,Other boiler
+2828,B010,Other boiler
+2831,1,Combustion turbine
+2832,6,Tangentially-fired
+2832,7,Cell burner boiler
+2832,8,Dry bottom wall-fired boiler
+2847,1,Combustion turbine
+2847,2,Combustion turbine
+2847,3,Combustion turbine
+2848,H-7,Combustion turbine
+2861,CTA,Combustion turbine
+2869,1A,Combustion turbine
+2869,1B,Combustion turbine
+2869,2,Combustion turbine
+2869,3,Combustion turbine
+2869,4,Combustion turbine
+2869,5,Combustion turbine
+2869,6,Combustion turbine
+2876,1,Wet bottom wall-fired boiler
+2876,2,Wet bottom wall-fired boiler
+2876,3,Wet bottom wall-fired boiler
+2876,4,Wet bottom wall-fired boiler
+2876,5,Wet bottom wall-fired boiler
+2878,1,Circulating fluidized bed boiler
+2880,CTG4,Combustion turbine
+2880,CTG5,Combustion turbine
+2880,CTG6,Combustion turbine
+2951,10,Combustion turbine
+2951,8,Tangentially-fired
+2951,9,Combustion turbine
+2952,4,Tangentially-fired
+2952,5,Tangentially-fired
+2952,6,Tangentially-fired
+2953,T10,Combustion turbine
+2953,T11,Combustion turbine
+2953,T12,Combustion turbine
+2953,T6,Combustion turbine
+2953,T7,Combustion turbine
+2953,T8,Combustion turbine
+2953,T9,Combustion turbine
+2956,1,Dry bottom wall-fired boiler
+2956,2,Dry bottom wall-fired boiler
+2956,3,Dry bottom wall-fired boiler
+2963,3301A,Combined cycle
+2963,3301B,Combined cycle
+2963,3302,Cell burner boiler
+2963,3313,Tangentially-fired
+2964,8002,Dry bottom wall-fired boiler
+2964,8003,Cell burner boiler
+2964,8004,Combustion turbine
+2964,8005,Combustion turbine
+2964,801N,Dry bottom wall-fired boiler
+2964,801S,Dry bottom wall-fired boiler
+2965,1402,Dry bottom wall-fired boiler
+2965,1404,Dry bottom wall-fired boiler
+2966,4,Combustion turbine
+2966,5,Combustion turbine
+3006,10,Combustion turbine
+3006,11,Combustion turbine
+3006,3,Dry bottom wall-fired boiler
+3006,4,Combined cycle
+3006,5,Combined cycle
+3006,6,Combined cycle
+3006,7,Combustion turbine
+3006,8,Combustion turbine
+3006,9,Combustion turbine
+3008,1,Dry bottom wall-fired boiler
+3008,2,Dry bottom wall-fired boiler
+3008,3,Dry bottom wall-fired boiler
+3096,1A,Combustion turbine
+3096,2A,Combined cycle
+3096,2B,Combined cycle
+3096,3,Combined cycle
+3111,031,Combustion turbine
+3111,032,Combustion turbine
+3113,5,Combustion turbine
+3116,031,Combustion turbine
+3116,032,Combustion turbine
+3118,1,Tangentially-fired
+3118,2,Tangentially-fired
+3130,1,Circulating fluidized bed boiler
+3130,2,Circulating fluidized bed boiler
+3131,1,Dry bottom wall-fired boiler
+3131,2,Dry bottom wall-fired boiler
+3131,3,Tangentially-fired
+3131,4,Tangentially-fired
+3132,005,Combustion turbine
+3136,1,Tangentially-fired
+3136,2,Tangentially-fired
+3138,3,Dry bottom wall-fired boiler
+3138,4,Dry bottom wall-fired boiler
+3138,5,Dry bottom wall-fired boiler
+3140,1,Tangentially-fired
+3140,2,Tangentially-fired
+3140,3,Tangentially-fired
+3148,3,Tangentially-fired
+3148,4,Tangentially-fired
+3149,1,Tangentially-fired
+3149,2,Tangentially-fired
+3161,3,Tangentially-fired
+3161,4,Tangentially-fired
+3168,91,Combustion turbine
+3168,92,Combustion turbine
+3176,CT5,Combined cycle
+3176,CT6,Combined cycle
+3236,10,Combined cycle
+3236,11,Combined cycle
+3236,9,Combined cycle
+3250,12,Combustion turbine
+3250,13,Combustion turbine
+3264,11,Combined cycle
+3264,12,Combined cycle
+3264,7C,Combustion turbine
+3264,8C,Combustion turbine
+3285,HAG4,Combustion turbine
+3287,MCM1,Tangentially-fired
+3287,MCM2,Tangentially-fired
+3291,CT5,"Combustion turbine (Started Aug 13, 2025)"
+3291,CT6,"Combustion turbine (Started Aug 28, 2025)"
+3295,URQ3,Tangentially-fired
+3295,URQ4,Combustion turbine
+3295,URQ5,Combined cycle
+3295,URQ6,Combined cycle
+3297,WAT1,Dry bottom wall-fired boiler
+3297,WAT2,Dry bottom wall-fired boiler
+3298,WIL1,Tangentially-fired
+3318,CT1,Combustion turbine
+3318,CT2,Combustion turbine
+3318,CT3,Combustion turbine
+3320,CT3,Combustion turbine
+3320,CT4,Combustion turbine
+3320,CT5,Combustion turbine
+3338,2A,Combustion turbine
+3338,2B,Combustion turbine
+3393,ACC1,Combined cycle
+3393,ACC2,Combined cycle
+3393,ACT17,Combustion turbine
+3393,ACT18,Combustion turbine
+3393,ACT19,Combustion turbine
+3393,ACT20,Combustion turbine
+3399,1,Cell burner boiler
+3399,2,Cell burner boiler
+3399,A1,Dry bottom wall-fired boiler
+3399,B1,Dry bottom wall-fired boiler
+3403,1,Tangentially-fired
+3403,2,Tangentially-fired
+3403,3,Tangentially-fired
+3403,4,Tangentially-fired
+3403,GCT1,Combustion turbine
+3403,GCT2,Combustion turbine
+3403,GCT3,Combustion turbine
+3403,GCT4,Combustion turbine
+3403,GCT5,Combustion turbine
+3403,GCT6,Combustion turbine
+3403,GCT7,Combustion turbine
+3403,GCT8,Combustion turbine
+3405,JCC1,Combined cycle
+3405,JCC2,Combined cycle
+3405,JCC3,Combined cycle
+3406,AUX1,Dry bottom wall-fired boiler
+3406,AUX2,Dry bottom wall-fired boiler
+3406,JCT1,Combustion turbine
+3406,JCT10,Combustion turbine
+3406,JCT11,Combustion turbine
+3406,JCT12,Combustion turbine
+3406,JCT13,Combustion turbine
+3406,JCT14,Combustion turbine
+3406,JCT15,Combustion turbine
+3406,JCT16,Combustion turbine
+3406,JCT17,Combustion turbine
+3406,JCT18,Combustion turbine
+3406,JCT19,Combustion turbine
+3406,JCT2,Combustion turbine
+3406,JCT20,Combustion turbine
+3406,JCT21,"Combustion turbine (Started Mar 18, 2025)"
+3406,JCT22,"Combustion turbine (Started Mar 22, 2025)"
+3406,JCT23,"Combustion turbine (Started Feb 25, 2025)"
+3406,JCT24,"Combustion turbine (Started Feb 15, 2025)"
+3406,JCT25,Combustion turbine
+3406,JCT26,Combustion turbine
+3406,JCT27,Combustion turbine
+3406,JCT28,Combustion turbine
+3406,JCT29,"Combustion turbine (Started Jan 18, 2025)"
+3406,JCT3,Combustion turbine
+3406,JCT30,"Combustion turbine (Started Jan 26, 2025)"
+3406,JCT4,Combustion turbine
+3406,JCT5,Combustion turbine
+3406,JCT6,Combustion turbine
+3406,JCT7,Combustion turbine
+3406,JCT8,Combustion turbine
+3406,JCT9,Combustion turbine
+3407,1,Tangentially-fired
+3407,2,Tangentially-fired
+3407,3,Tangentially-fired
+3407,4,Tangentially-fired
+3407,5,Tangentially-fired
+3407,6,Tangentially-fired
+3407,7,Tangentially-fired
+3407,8,Tangentially-fired
+3407,9,Tangentially-fired
+3439,4,Combustion turbine
+3439,5,Combustion turbine
+3441,8,Combined cycle
+3441,9,Combined cycle
+3443,9,Combined cycle
+3452,1,Dry bottom wall-fired boiler
+3452,2,Dry bottom wall-fired boiler
+3453,6,Dry bottom wall-fired boiler
+3453,7,Dry bottom wall-fired boiler
+3453,8,Tangentially-fired
+3456,1,Dry bottom wall-fired boiler
+3456,2,Dry bottom wall-fired boiler
+3456,3,Dry bottom wall-fired boiler
+3456,**4,Combined cycle
+3456,**5,Combined cycle
+3456,GT-6A,Combined cycle
+3456,GT-6B,Combined cycle
+3456,SC-7,Combustion turbine
+3457,1,Dry bottom wall-fired boiler
+3457,2,Dry bottom wall-fired boiler
+3459,1,Tangentially-fired
+3459,3,Tangentially-fired
+3459,4,Dry bottom wall-fired boiler
+3459,5,Tangentially-fired
+3460,CBY1,Dry bottom wall-fired boiler
+3460,CBY2,Dry bottom wall-fired boiler
+3464,GBY73,Combustion turbine
+3464,GBY74,Combustion turbine
+3464,GBY81,Combustion turbine
+3464,GBY82,Combustion turbine
+3464,GBY83,Combustion turbine
+3464,GBY84,Combustion turbine
+3469,THW31,Combined cycle
+3469,THW32,Combined cycle
+3469,THW33,Combined cycle
+3469,THW34,Combined cycle
+3469,THW41,Combined cycle
+3469,THW42,Combined cycle
+3469,THW43,Combined cycle
+3469,THW44,Combined cycle
+3469,THW51,Combustion turbine
+3469,THW52,Combustion turbine
+3469,THW53,Combustion turbine
+3469,THW54,Combustion turbine
+3469,THW55,Combustion turbine
+3469,THW56,Combustion turbine
+3470,WAP1,Dry bottom wall-fired boiler
+3470,WAP2,Dry bottom wall-fired boiler
+3470,WAP3,Dry bottom wall-fired boiler
+3470,WAP4,Tangentially-fired
+3470,WAP5,Dry bottom wall-fired boiler
+3470,WAP6,Dry bottom wall-fired boiler
+3470,WAP7,Tangentially-fired
+3470,WAP8,Tangentially-fired
+3476,5,Tangentially-fired
+3478,1,Tangentially-fired
+3478,2,Dry bottom wall-fired boiler
+3478,3,Dry bottom wall-fired boiler
+3482,151B,Tangentially-fired
+3482,152B,Tangentially-fired
+3482,153T,Combustion turbine
+3482,154T,Combustion turbine
+3484,141B,Tangentially-fired
+3484,142B,Tangentially-fired
+3484,143B,Tangentially-fired
+3485,111B,Dry bottom wall-fired boiler
+3485,112B,Tangentially-fired
+3485,114B,Tangentially-fired
+3490,1,Dry bottom wall-fired boiler
+3490,2,Dry bottom wall-fired boiler
+3491,3,Dry bottom wall-fired boiler
+3491,4,Dry bottom wall-fired boiler
+3491,5,Dry bottom wall-fired boiler
+3492,CT1,Combustion turbine
+3492,CT2,Combustion turbine
+3492,CT3,Combustion turbine
+3492,CT4,Combustion turbine
+3492,CT5,Combustion turbine
+3492,CT6,Combustion turbine
+3494,CT1,Combustion turbine
+3494,CT2,Combustion turbine
+3494,CT3,Combustion turbine
+3494,CT4,Combustion turbine
+3494,CT5,Combustion turbine
+3504,1,Dry bottom wall-fired boiler
+3504,2,Tangentially-fired
+3507,9,Tangentially-fired
+3548,GT-1A,Combustion turbine
+3548,GT-1B,Combustion turbine
+3548,GT-2A,Combustion turbine
+3548,GT-2B,Combustion turbine
+3548,GT-3A,Combustion turbine
+3548,GT-3B,Combustion turbine
+3548,GT-4A,Combustion turbine
+3548,GT-4B,Combustion turbine
+3559,10,Combustion turbine
+3559,9,Combined cycle
+3576,BW2,Dry bottom wall-fired boiler
+3576,BW3,Dry bottom wall-fired boiler
+3576,CE1,Tangentially-fired
+3576,GE4,Combustion turbine
+3601,1,Dry bottom wall-fired boiler
+3601,2,Dry bottom wall-fired boiler
+3601,3,Tangentially-fired
+3604,GT1,Combined cycle
+3609,CGT1,Combustion turbine
+3609,CGT2,Combustion turbine
+3609,CGT3,Combustion turbine
+3609,CGT4,Combustion turbine
+3611,1,Tangentially-fired
+3611,2,Tangentially-fired
+3612,1,Tangentially-fired
+3612,2,Tangentially-fired
+3612,3,Tangentially-fired
+3612,CGT5,Combustion turbine
+3612,CGT6,Combustion turbine
+3612,CGT7,Combustion turbine
+3612,CGT8,Combustion turbine
+3612,CT01,Combined cycle
+3612,CT02,Combined cycle
+3628,1,Dry bottom wall-fired boiler
+3628,2,Dry bottom wall-fired boiler
+3628,3,Dry bottom wall-fired boiler
+3628,**4,Combustion turbine
+3628,**5,Combustion turbine
+3631,CT7,Combined cycle
+3631,CT8,Combined cycle
+3631,CT9,Combined cycle
+3648,1,Dry bottom wall-fired boiler
+3648,2,Dry bottom wall-fired boiler
+3648,3,Tangentially-fired
+3648,4,Combustion turbine
+3648,5,Combustion turbine
+3648,6,Combustion turbine
+3734,A,Combustion turbine
+3734,B,Combustion turbine
+3754,CT1,Combustion turbine
+3754,CT2,Combustion turbine
+3775,1,Dry bottom vertically-fired boiler
+3775,2,Dry bottom vertically-fired boiler
+3785,TA10,Combustion turbine
+3797,7,Combined cycle
+3797,**8A,Combined cycle
+3804,6A,Combined cycle
+3804,6B,Combined cycle
+3845,BW22,Tangentially-fired
+3935,1,Dry bottom wall-fired boiler
+3935,2,Dry bottom wall-fired boiler
+3935,3,Cell burner boiler
+3935,AUX1,Other boiler
+3935,AUX3,Other boiler
+3943,1,Tangentially-fired
+3943,2,Cell burner boiler
+3944,1,Dry bottom wall-fired boiler
+3944,2,Dry bottom wall-fired boiler
+3944,3,Dry bottom wall-fired boiler
+3946,1,Dry bottom vertically-fired boiler
+3946,2,Cyclone boiler
+3948,1,Dry bottom wall-fired boiler
+3948,2,Dry bottom wall-fired boiler
+3948,AUX1,Other boiler
+3954,1,Tangentially-fired
+3954,2,Tangentially-fired
+3954,3,Tangentially-fired
+3982,1,Stoker
+3982,2,Stoker
+3991,1,Combustion turbine
+3991,2,Combustion turbine
+3992,8,Dry bottom wall-fired boiler
+3992,9,Dry bottom wall-fired boiler
+4005,3,Combustion turbine
+4005,4,Combustion turbine
+4014,1,Combustion turbine
+4014,2,Combustion turbine
+4014,3,Combustion turbine
+4014,4,Combustion turbine
+4040,11,Combined cycle
+4040,12,Combined cycle
+4040,21,Combined cycle
+4040,22,Combined cycle
+4041,7,Tangentially-fired
+4041,8,Tangentially-fired
+4042,1,Dry bottom wall-fired boiler
+4042,2,Dry bottom wall-fired boiler
+4042,3,Dry bottom wall-fired boiler
+4042,4,Dry bottom wall-fired boiler
+4050,5,Dry bottom wall-fired boiler
+4072,32,Combustion turbine
+4076,31A,Combustion turbine
+4076,31B,Combustion turbine
+4076,32A,Combustion turbine
+4076,32B,Combustion turbine
+4076,**33,Combustion turbine
+4076,**34,Combustion turbine
+4078,3,Tangentially-fired
+4078,4,Dry bottom wall-fired boiler
+4125,8,Circulating fluidized bed boiler
+4125,9,Circulating fluidized bed boiler
+4158,BW41,Dry bottom wall-fired boiler
+4158,BW42,Dry bottom wall-fired boiler
+4158,BW43,Dry bottom wall-fired boiler
+4158,BW44,Tangentially-fired
+4162,1,Tangentially-fired
+4162,2,Tangentially-fired
+4162,3,Tangentially-fired
+4195,2,Dry bottom wall-fired boiler
+4195,3,Dry bottom wall-fired boiler
+4266,4,Dry bottom wall-fired boiler
+4266,5,Dry bottom wall-fired boiler
+4271,B1,Dry bottom turbo-fired boiler
+4937,CT-1,Combined cycle
+4937,CT-2,Combined cycle
+4939,1,Tangentially-fired
+4939,3,Combined cycle
+4939,4,Combined cycle
+4940,1501,Dry bottom wall-fired boiler
+4940,1502,Dry bottom wall-fired boiler
+4940,1503,Combustion turbine
+4940,1504,Combustion turbine
+5083,004001,Combustion turbine
+5083,05001,Combustion turbine
+6002,1,Dry bottom wall-fired boiler
+6002,2,Dry bottom wall-fired boiler
+6002,3,Dry bottom wall-fired boiler
+6002,4,Dry bottom wall-fired boiler
+6004,1,Dry bottom wall-fired boiler
+6004,2,Dry bottom wall-fired boiler
+6009,1,Tangentially-fired
+6009,2,Tangentially-fired
+6013,01,Dry bottom wall-fired boiler
+6013,02,Dry bottom wall-fired boiler
+6017,1,Tangentially-fired
+6018,2,Dry bottom wall-fired boiler
+6021,C1,Dry bottom wall-fired boiler
+6021,C2,Dry bottom wall-fired boiler
+6021,C3,Dry bottom wall-fired boiler
+6030,1,Tangentially-fired
+6030,2,Tangentially-fired
+6034,1,Dry bottom wall-fired boiler
+6034,2,Dry bottom wall-fired boiler
+6034,CTG121,Combustion turbine
+6034,CTG122,Combustion turbine
+6034,CTG131,Combustion turbine
+6035,1,Dry bottom wall-fired boiler
+6035,CTG111,Combustion turbine
+6035,CTG112,Combustion turbine
+6035,CTG121,Combustion turbine
+6041,1,Dry bottom wall-fired boiler
+6041,2,Tangentially-fired
+6041,3,Circulating fluidized bed boiler
+6041,4,Circulating fluidized bed boiler
+6042,MTCT3A,Combined cycle
+6042,MTCT3B,Combined cycle
+6042,MTCT3C,Combined cycle
+6042,MTCT3D,Combined cycle
+6042,PMT1,Dry bottom wall-fired boiler
+6042,PMT2,Dry bottom wall-fired boiler
+6043,HRSG3A,Combined cycle
+6043,HRSG3B,Combined cycle
+6043,HRSG4A,Combined cycle
+6043,HRSG4B,Combined cycle
+6043,PMR8A,Combined cycle
+6043,PMR8B,Combined cycle
+6043,PMR8C,Combined cycle
+6043,PMR8D,Combined cycle
+6046,**10,Combustion turbine
+6046,**7,Combustion turbine
+6046,**8,Combustion turbine
+6046,**9,Combustion turbine
+6055,2B1,Dry bottom wall-fired boiler
+6055,2B2,Dry bottom wall-fired boiler
+6055,2B3,Dry bottom wall-fired boiler
+6058,CT1,Combustion turbine
+6058,CT2,Combustion turbine
+6058,CT3,Combustion turbine
+6061,3,Combined cycle
+6063,1,Combustion turbine
+6063,2,Combustion turbine
+6063,3,Combustion turbine
+6064,CT4,Combustion turbine
+6064,N1,Dry bottom wall-fired boiler
+6065,1,Dry bottom wall-fired boiler
+6065,2,Dry bottom wall-fired boiler
+6068,1,Tangentially-fired
+6068,2,Tangentially-fired
+6068,3,Tangentially-fired
+6071,1,Tangentially-fired
+6071,10,Combustion turbine
+6071,2,Dry bottom wall-fired boiler
+6071,5,Combustion turbine
+6071,6,Combustion turbine
+6071,7,Combustion turbine
+6071,8,Combustion turbine
+6071,9,Combustion turbine
+6073,1,Tangentially-fired
+6073,2,Tangentially-fired
+6073,3A,Combined cycle
+6073,3B,Combined cycle
+6073,4A,Combined cycle
+6073,4B,Combined cycle
+6074,1,Combustion turbine
+6074,2,Combustion turbine
+6074,3,Combustion turbine
+6074,4,Combustion turbine
+6076,3,Tangentially-fired
+6076,4,Tangentially-fired
+6077,1,Dry bottom wall-fired boiler
+6077,2,Dry bottom wall-fired boiler
+6081,001,Combined cycle
+6081,002,Combined cycle
+6081,003,Combined cycle
+6081,004,Combustion turbine
+6081,005,Combustion turbine
+6085,16A,Combustion turbine
+6085,16B,Combustion turbine
+6085,17,Tangentially-fired
+6085,18,Tangentially-fired
+6090,1,Tangentially-fired
+6090,3,Dry bottom wall-fired boiler
+6095,1,Tangentially-fired
+6095,2,Tangentially-fired
+6096,1,Dry bottom wall-fired boiler
+6096,2,Dry bottom wall-fired boiler
+6098,1,Cyclone boiler
+6101,BW91,Dry bottom wall-fired boiler
+6112,2,Combined cycle
+6112,3,Combined cycle
+6112,4,Combined cycle
+6112,5,Combustion turbine
+6112,6,Combustion turbine
+6113,1,Dry bottom wall-fired boiler
+6113,2,Dry bottom wall-fired boiler
+6113,3,Dry bottom wall-fired boiler
+6113,4,Dry bottom wall-fired boiler
+6113,5,Dry bottom wall-fired boiler
+6124,CT1,Combustion turbine
+6124,CT2,Combustion turbine
+6124,CT3,Combustion turbine
+6124,CT4,Combustion turbine
+6124,CT5,Combustion turbine
+6124,CT6,Combustion turbine
+6124,CT7,Combustion turbine
+6124,CT8,Combustion turbine
+6137,3,Combustion turbine
+6137,4,Combustion turbine
+6137,5,"Combustion turbine (Started Jul 28, 2025)"
+6137,6,"Combustion turbine (Started May 07, 2025)"
+6138,1,Dry bottom wall-fired boiler
+6139,1,Dry bottom wall-fired boiler
+6139,3,Dry bottom wall-fired boiler
+6146,1,Tangentially-fired
+6146,2,Tangentially-fired
+6146,3,Tangentially-fired
+6156,NHB1,Tangentially-fired
+6156,NHHS2,Combustion turbine
+6156,NHHS3,Combustion turbine
+6156,NHHS4,Combustion turbine
+6165,1,Tangentially-fired
+6165,2,Tangentially-fired
+6165,3,Dry bottom wall-fired boiler
+6166,AB1,Other boiler
+6166,AB2,Other boiler
+6166,MB1,Dry bottom wall-fired boiler
+6166,MB2,Dry bottom wall-fired boiler
+6177,U1B,Dry bottom turbo-fired boiler
+6177,U2B,Dry bottom turbo-fired boiler
+6178,1,Tangentially-fired
+6179,1,Tangentially-fired
+6179,2,Tangentially-fired
+6179,3,Tangentially-fired
+6180,1,Tangentially-fired
+6180,2,Dry bottom wall-fired boiler
+6183,SM-1,Dry bottom wall-fired boiler
+6190,1,Dry bottom wall-fired boiler
+6190,2,Dry bottom wall-fired boiler
+6190,3-1,Circulating fluidized bed boiler
+6190,3-2,Circulating fluidized bed boiler
+6193,061B,Tangentially-fired
+6193,062B,Tangentially-fired
+6193,063B,Tangentially-fired
+6194,171B,Tangentially-fired
+6194,172B,Tangentially-fired
+6195,1,Dry bottom wall-fired boiler
+6195,2,Dry bottom wall-fired boiler
+6195,CT1A,Combustion turbine
+6195,CT1B,Combustion turbine
+6195,CT2A,Combustion turbine
+6195,CT2B,Combustion turbine
+6204,1,Dry bottom wall-fired boiler
+6204,2,Dry bottom wall-fired boiler
+6204,3,Dry bottom wall-fired boiler
+6213,1SG1,Dry bottom turbo-fired boiler
+6213,2SG1,Dry bottom turbo-fired boiler
+6223,1,Combustion turbine
+6223,2,Combustion turbine
+6223,3A,Combustion turbine
+6223,3B,Combustion turbine
+6223,4A,Combustion turbine
+6223,4B,Combustion turbine
+6243,1,Dry bottom wall-fired boiler
+6243,2,Combustion turbine
+6243,3,Combustion turbine
+6248,1,Dry bottom wall-fired boiler
+6249,1,Dry bottom wall-fired boiler
+6249,2,Dry bottom turbo-fired boiler
+6249,3,Dry bottom turbo-fired boiler
+6249,4,Dry bottom turbo-fired boiler
+6250,1A,Dry bottom wall-fired boiler
+6250,1B,Dry bottom wall-fired boiler
+6253,**5,Combustion turbine
+6253,P30,Combustion turbine
+6253,P31,Combustion turbine
+6253,P32,Combustion turbine
+6253,P33,Combustion turbine
+6253,P34,Combustion turbine
+6253,P35,Combustion turbine
+6253,P36,Combustion turbine
+6253,P37,Combustion turbine
+6254,1,Tangentially-fired
+6257,1,Tangentially-fired
+6257,2,Tangentially-fired
+6257,3,Tangentially-fired
+6258,1A,Combustion turbine
+6258,1B,Combustion turbine
+6258,1C,Combustion turbine
+6258,1D,Combustion turbine
+6258,1E,Combustion turbine
+6258,1F,Combustion turbine
+6264,1,Dry bottom wall-fired boiler
+6264,AUX1,Other boiler
+6264,AUX2,Other boiler
+6288,1,Dry bottom wall-fired boiler
+6288,2,Dry bottom wall-fired boiler
+6358,1,Combined cycle
+6373,1,Combustion turbine
+6373,2,Combustion turbine
+6373,3,Combustion turbine
+6463,GT2,Combustion turbine
+6469,B1,Tangentially-fired
+6469,B2,Tangentially-fired
+6481,1SGA,Dry bottom wall-fired boiler
+6481,2SGA,Dry bottom wall-fired boiler
+6481,3SGA,"Combined cycle (Started Oct 10, 2025)"
+6481,4SGA,"Combined cycle (Started Nov 23, 2025)"
+6584,CT4,Combustion turbine
+6635,AP-1,Combustion turbine
+6639,G1,Dry bottom wall-fired boiler
+6639,G2,Dry bottom wall-fired boiler
+6641,1,Tangentially-fired
+6641,2,Tangentially-fired
+6650,CT01,Combustion turbine
+6651,CT01,Combustion turbine
+6652,CT01,Combustion turbine
+6664,101,Dry bottom wall-fired boiler
+6705,1,Dry bottom wall-fired boiler
+6705,2,Dry bottom wall-fired boiler
+6705,3,Dry bottom wall-fired boiler
+6705,4,Cell burner boiler
+6741,1,Combustion turbine
+6761,101,Tangentially-fired
+6761,A,Combustion turbine
+6761,B,Combustion turbine
+6761,C,Combustion turbine
+6761,D,Combustion turbine
+6761,F,Combustion turbine
+6768,1,Dry bottom wall-fired boiler
+6772,1,Dry bottom wall-fired boiler
+6823,W1,Dry bottom wall-fired boiler
+6824,1,Combustion turbine
+6824,2,Combustion turbine
+7013,4,Dry bottom wall-fired boiler
+7030,U1,Circulating fluidized bed boiler
+7030,U2,Circulating fluidized bed boiler
+7032,3,Combustion turbine
+7032,4,Combustion turbine
+7032,5,Combustion turbine
+7032,6,Combustion turbine
+7063,**1,Other turbine
+7063,**2,Combustion turbine
+7063,**3,Combustion turbine
+7063,**4,Combustion turbine
+7063,**5,Combustion turbine
+7082,**3,Combustion turbine
+7082,**4,Combustion turbine
+7082,**5,Combined cycle
+7082,**6,Combined cycle
+7097,**1,Tangentially-fired
+7097,**2,Tangentially-fired
+7138,002001,Combustion turbine
+7138,003001,Combustion turbine
+7145,1,Combustion turbine
+7145,2,Combustion turbine
+7145,3,Combustion turbine
+7146,UGT007,Combustion turbine
+7146,UGT008,Combustion turbine
+7146,UGT009,Combustion turbine
+7146,UGT013,Combustion turbine
+7146,UGT014,Combustion turbine
+7153,1,Combined cycle
+7153,2,Combined cycle
+7153,**3,Combined cycle
+7153,5,Combined cycle
+7153,6,Combined cycle
+7153,7,Combined cycle
+7155,**1,Combustion turbine
+7155,**2,Combustion turbine
+7158,**GT1,Combustion turbine
+7158,**GT2,Combustion turbine
+7158,**GT3,Combustion turbine
+7158,**GT4,Combustion turbine
+7158,**GT5,Combustion turbine
+7158,**GT6,Combustion turbine
+7159,**1,Combustion turbine
+7159,**2,Combustion turbine
+7159,**3,Combustion turbine
+7159,**4,Combustion turbine
+7203,**CT1,Combustion turbine
+7203,**CT2,Combustion turbine
+7203,**CT3,Combustion turbine
+7203,**CT4,Combustion turbine
+7210,COP1,Tangentially-fired
+7212,1,Combustion turbine
+7212,2,Combustion turbine
+7212,3,Combustion turbine
+7212,4,Combustion turbine
+7213,1,Tangentially-fired
+7213,2,Tangentially-fired
+7237,2,Combustion turbine
+7237,3,Combustion turbine
+7237,4,Combustion turbine
+7238,**1,Combustion turbine
+7238,2,Combined cycle
+7238,3,Combined cycle
+7238,4,Combined cycle
+7242,**1,"Integrated gasification combined cycle (Ended Jun 07, 2025), Combustion turbine (Started Jun 07, 2025)"
+7242,**2,Combined cycle
+7242,**3,Combined cycle
+7242,**4,Combined cycle
+7242,**5,Combined cycle
+7258,**7,Combustion turbine
+7258,**8,Combustion turbine
+7258,9,Combustion turbine
+7266,1,Combustion turbine
+7266,2,Combined cycle
+7270,**1,Combustion turbine
+7270,**2,Combustion turbine
+7270,**3,Combustion turbine
+7270,**4,Combustion turbine
+7277,1,Combustion turbine
+7277,10,Combustion turbine
+7277,11,Combustion turbine
+7277,12,Combustion turbine
+7277,13,Combustion turbine
+7277,14,Combustion turbine
+7277,15,Combustion turbine
+7277,16,Combustion turbine
+7277,17,Combustion turbine
+7277,2,Combustion turbine
+7277,3,Combustion turbine
+7277,4,Combustion turbine
+7277,5,Combustion turbine
+7277,6,Combustion turbine
+7277,7,Combustion turbine
+7277,8,Combustion turbine
+7277,9,Combustion turbine
+7288,1,Combustion turbine
+7296,1,Combustion turbine
+7296,2-1,Combined cycle
+7296,2-2,Combined cycle
+7302,1A,Combined cycle
+7302,1B,Combined cycle
+7302,2A,Combined cycle
+7302,2B,Combined cycle
+7302,3A,Combined cycle
+7302,3B,Combined cycle
+7302,4A,Combined cycle
+7302,4B,Combined cycle
+7307,5,Combined cycle
+7307,6,Combustion turbine
+7314,001,Combined cycle
+7315,1,Combustion turbine
+7315,2,Combustion turbine
+7315,3,Combustion turbine
+7315,4,Combustion turbine
+7318,**11,Combustion turbine
+7325,SJS1,Combustion turbine
+7325,SJS2,Combustion turbine
+7335,RCT1,Combustion turbine
+7335,RCT2,Combustion turbine
+7336,ACT1,Combustion turbine
+7336,ACT2,Combustion turbine
+7336,ACT3,Combustion turbine
+7343,4,Dry bottom wall-fired boiler
+7345,1,Combined cycle
+7348,CT1,Combustion turbine
+7348,CT2,Combustion turbine
+7350,CTG1,Combined cycle
+7350,CTG2,Combined cycle
+7380,1,Combined cycle
+7380,2,Combined cycle
+7380,4A,Combustion turbine
+7380,4B,Combustion turbine
+7380,5A,Combustion turbine
+7380,5B,Combustion turbine
+7380,6A,Combustion turbine
+7380,6B,Combustion turbine
+7380,7A,Combustion turbine
+7380,7B,Combustion turbine
+7380,8B,Combustion turbine
+7425,1,Combustion turbine
+7449,NA1,Combustion turbine
+7456,1,Combustion turbine
+7456,2,Combustion turbine
+7504,001,Dry bottom wall-fired boiler
+7504,CT1,Combustion turbine
+7515,1,Combustion turbine
+7527,1,Combined cycle
+7527,2,Combustion turbine
+7551,1A,Combined cycle
+7551,1B,Combined cycle
+7551,1C,Combustion turbine
+7552,1,Combined cycle
+7604,1,Combined cycle
+7604,2,Combined cycle
+7605,1,Combined cycle
+7697,CC1,Combined cycle
+7698,CC1,Combined cycle
+7699,1,Combined cycle
+7710,1A,Combined cycle
+7710,1B,Combined cycle
+7710,2A,Combined cycle
+7710,2B,Combined cycle
+7710,3A,Combined cycle
+7710,3B,Combined cycle
+7721,CC1,Combined cycle
+7749,1,Combustion turbine
+7754,1,Combustion turbine
+7754,2,Combustion turbine
+7757,1,Combined cycle
+7757,2,Combined cycle
+7757,3,Combined cycle
+7757,4,Combined cycle
+7759,GT1,Combustion turbine
+7759,GT2,Combustion turbine
+7759,GT3,Combustion turbine
+7759,GT4,Combustion turbine
+7760,1,Combustion turbine
+7760,2,Combustion turbine
+7760,3,Combustion turbine
+7760,4,Combustion turbine
+7762,HRSG1,Combined cycle
+7762,HRSG2,Combined cycle
+7763,1,Combustion turbine
+7763,2,Combustion turbine
+7763,3,Combustion turbine
+7764,1,Combustion turbine
+7764,2,Combustion turbine
+7765,1,Combustion turbine
+7765,10,Combustion turbine
+7765,2,Combustion turbine
+7765,3,Combustion turbine
+7765,4,Combustion turbine
+7765,5,Combustion turbine
+7765,6,Combustion turbine
+7765,7,Combustion turbine
+7765,8,Combustion turbine
+7765,9,Combustion turbine
+7768,CT2,Combustion turbine
+7768,CT3,Combustion turbine
+7782,P001,Combustion turbine
+7783,P001,Combustion turbine
+7790,1-1,Dry bottom wall-fired boiler
+7805,1,Combustion turbine
+7805,10,Combined cycle
+7805,2,Combustion turbine
+7805,3,Combustion turbine
+7805,4,Combustion turbine
+7805,6,Combustion turbine
+7805,7,Combined cycle
+7805,8,Combined cycle
+7805,9,Combined cycle
+7813,1,Combustion turbine
+7813,2,Combustion turbine
+7813,3,Combustion turbine
+7813,4,Combustion turbine
+7818,ACT1,Combustion turbine
+7818,ACT2,Combustion turbine
+7818,ACT5,Combustion turbine
+7818,ACT6,Combustion turbine
+7825,CT1,Combustion turbine
+7826,1,Combustion turbine
+7826,2,Combustion turbine
+7826,3,Combustion turbine
+7826,4,Combined cycle
+7826,5,Combined cycle
+7829,1,Combustion turbine
+7829,2,Combustion turbine
+7834,CT1A,Combined cycle
+7834,CT1B,Combined cycle
+7834,CT2A,Combustion turbine
+7834,CT2B,Combustion turbine
+7834,CT3,Combustion turbine
+7834,CT4,Combustion turbine
+7834,CT5,Combustion turbine
+7835,1,Combustion turbine
+7835,2,Combustion turbine
+7835,3,Combustion turbine
+7835,4,Combustion turbine
+7836,EU1,Combustion turbine
+7836,EU2,Combustion turbine
+7836,EU3,Combustion turbine
+7837,EU1,Combustion turbine
+7837,EU2,Combustion turbine
+7837,EU3,Combustion turbine
+7837,EU4,Combustion turbine
+7837,EU5,Combustion turbine
+7838,1,Combustion turbine
+7838,2,Combustion turbine
+7838,3,Combustion turbine
+7838,4,Combustion turbine
+7839,1,Combustion turbine
+7839,2,Combustion turbine
+7839,3,Combustion turbine
+7839,4,Combustion turbine
+7839,5,Combustion turbine
+7843,11,Combustion turbine
+7843,12,Combustion turbine
+7843,13,Combustion turbine
+7844,U001,Combustion turbine
+7845,LCC1,Combined cycle
+7845,LCC2,Combined cycle
+7845,LCT1,Combustion turbine
+7845,LCT10,Combustion turbine
+7845,LCT11,Combustion turbine
+7845,LCT12,Combustion turbine
+7845,LCT2,Combustion turbine
+7845,LCT3,Combustion turbine
+7845,LCT4,Combustion turbine
+7845,LCT5,Combustion turbine
+7845,LCT6,Combustion turbine
+7845,LCT7,Combustion turbine
+7845,LCT8,Combustion turbine
+7845,LCT9,Combustion turbine
+7846,1,Combustion turbine
+7846,2,Combined cycle
+7846,3,Combined cycle
+7848,1,Combustion turbine
+7848,2,Combustion turbine
+7848,3,Combustion turbine
+7863,1,Combustion turbine
+7863,2,Combustion turbine
+7869,UGT011,Combustion turbine
+7869,UGT012,Combustion turbine
+7869,UGT013,Combustion turbine
+7870,CT1,Combined cycle
+7870,CT2,Combined cycle
+7870,CT3,Combined cycle
+7872,1,Combustion turbine
+7872,2,Combustion turbine
+7872,3,Combustion turbine
+7873,CT1A,Combined cycle
+7873,CT1B,Combined cycle
+7873,CT1C,Combined cycle
+7873,CT2A,Combined cycle
+7873,CT2B,Combined cycle
+7873,CT2C,Combined cycle
+7873,CT2D,Combined cycle
+7873,CT3A,Combustion turbine
+7873,CT3B,Combustion turbine
+7873,CT4A,Combustion turbine
+7873,CT4B,Combustion turbine
+7873,CT5A,Combustion turbine
+7873,CT5B,Combustion turbine
+7873,CT6A,Combustion turbine
+7873,CT6B,Combustion turbine
+7887,SVGS2,Combined cycle
+7887,SVGS3,Combined cycle
+7887,SVGS4,Combustion turbine
+7897,1A,Combined cycle
+7897,1B,Combined cycle
+7897,2A,Combined cycle
+7897,2B,Combined cycle
+7900,SH1,Combustion turbine
+7900,SH2,Combustion turbine
+7900,SH3,Combustion turbine
+7900,SH4,Combustion turbine
+7900,SH5,Combined cycle
+7900,SH6,Combustion turbine
+7900,SH7,Combustion turbine
+7903,MGS1A,Combustion turbine
+7903,MGS1B,Combustion turbine
+7903,MGS2A,Combustion turbine
+7903,MGS2B,Combustion turbine
+7909,VB01,Combustion turbine
+7909,VB02,Combustion turbine
+7910,2301,Combustion turbine
+7910,2302,Combustion turbine
+7912,BW01,Combustion turbine
+7913,HG01,Combustion turbine
+7913,HG02,Combustion turbine
+7914,HR01,Combustion turbine
+7914,HR02,Combustion turbine
+7915,NO1,Combustion turbine
+7916,1,Combustion turbine
+7916,2,Combustion turbine
+7916,3,Combustion turbine
+7916,4,Combustion turbine
+7916,5,Combustion turbine
+7916,6,Combustion turbine
+7917,8A,Combined cycle
+7917,8B,Combined cycle
+7925,CT01,Combustion turbine
+7925,CT02,Combustion turbine
+7925,CT03,Combustion turbine
+7925,CT04,Combustion turbine
+7925,CT05,Combustion turbine
+7925,CT06,Combustion turbine
+7928,1,Combustion turbine
+7929,1,Combustion turbine
+7929,2,Combustion turbine
+7929,3,Combustion turbine
+7929,4,Combustion turbine
+7946,CT9A,Combined cycle
+7946,CT9B,Combined cycle
+7947,1,Combustion turbine
+7948,1,Combustion turbine
+7948,2,Combustion turbine
+7948,3,Combustion turbine
+7948,4,Combustion turbine
+7948,5,Combustion turbine
+7948,6,Combustion turbine
+7953,CT1,Combustion turbine
+7953,CT2,Combustion turbine
+7953,CT3,Combustion turbine
+7960,KCT1,Combustion turbine
+7960,KCT2,Combustion turbine
+7960,KCT3,Combustion turbine
+7960,KCT4,Combustion turbine
+7962,1,Combustion turbine
+7962,2,Combustion turbine
+7964,CT1A,Combustion turbine
+7964,CT1B,Combustion turbine
+7964,CT2A,Combustion turbine
+7964,CT2B,Combustion turbine
+7964,CT3A,Combustion turbine
+7964,CT3B,Combustion turbine
+7964,CT4A,Combustion turbine
+7964,CT4B,Combustion turbine
+7967,1,Combustion turbine
+7967,2,Combustion turbine
+7972,1,Combustion turbine
+7972,2,Combustion turbine
+7972,3,Combustion turbine
+7972,4,Combustion turbine
+7975,1,Combustion turbine
+7975,2,Combustion turbine
+7975,3,Combustion turbine
+7975,4,Combustion turbine
+7981,1,Combustion turbine
+7981,2,Combustion turbine
+7981,3,Combustion turbine
+7981,4,Combustion turbine
+7981,5,Combustion turbine
+7981,6,Combustion turbine
+7981,7,Combustion turbine
+7981,8,Combustion turbine
+7984,1A,Combustion turbine
+7984,1B,Combustion turbine
+7985,1,Combined cycle
+7985,2,Combined cycle
+7987,01,Combustion turbine
+7988,1,Combustion turbine
+7988,2,Combustion turbine
+7988,3,Combustion turbine
+7989,1,Combustion turbine
+7989,2,Combustion turbine
+7989,3,Combustion turbine
+7991,U1,Combined cycle
+7991,U2,Combined cycle
+7999,1,Combined cycle
+7999,2,Combined cycle
+8000,1,Combined cycle
+8000,2,Combined cycle
+8002,1,Tangentially-fired
+8006,1,Tangentially-fired
+8006,2,Tangentially-fired
+8007,U00001,Combustion turbine
+8007,U00002,Combustion turbine
+8007,U00003,Combustion turbine
+8007,U00004,Combustion turbine
+8007,U00005,Combustion turbine
+8007,U00006,Combustion turbine
+8007,U00007,Combustion turbine
+8007,U00008,Combustion turbine
+8007,U00009,Combustion turbine
+8007,U00010,Combustion turbine
+8007,U00011,Combustion turbine
+8007,U00012,Combustion turbine
+8007,U00013,Combustion turbine
+8007,U00014,Combustion turbine
+8007,U00015,Combustion turbine
+8007,U00016,Combustion turbine
+8007,U00017,Combustion turbine
+8007,U00018,Combustion turbine
+8007,U00019,Combustion turbine
+8007,U00020,Combustion turbine
+8012,11,Combustion turbine
+8012,12,Combustion turbine
+8012,21,Combustion turbine
+8012,22,Combustion turbine
+8012,31,Combustion turbine
+8012,32,Combustion turbine
+8012,41,Combustion turbine
+8012,42,Combustion turbine
+8016,2,Combustion turbine
+8023,1,Tangentially-fired
+8023,2,Tangentially-fired
+8027,1,Combustion turbine
+8027,2,Combustion turbine
+8027,3,Combustion turbine
+8027,4,Combustion turbine
+8027,7,Combustion turbine
+8027,8,Combustion turbine
+8029,1,Combustion turbine
+8029,2,Combustion turbine
+8031,11,Combined cycle
+8031,12,Combined cycle
+8037,CL1,Combustion turbine
+8042,1,Cell burner boiler
+8042,2,Cell burner boiler
+8048,1,Tangentially-fired
+8048,2,Tangentially-fired
+8049,**10,Combustion turbine
+8049,**11,Combustion turbine
+8049,**12,Combustion turbine
+8049,**13,Combustion turbine
+8049,**14,Combustion turbine
+8049,**7,Combustion turbine
+8049,**8,Combustion turbine
+8049,**9,Combustion turbine
+8053,PT01,Combustion turbine
+8054,1,Dry bottom wall-fired boiler
+8056,1,Dry bottom wall-fired boiler
+8056,2,Dry bottom wall-fired boiler
+8056,4,Combustion turbine
+8059,7251,Combined cycle
+8059,7252,Combined cycle
+8063,CT1,Combustion turbine
+8063,CT2,Combustion turbine
+8063,CT3,Combustion turbine
+8063,CT4,Combustion turbine
+8066,BW71,Tangentially-fired
+8066,BW72,Tangentially-fired
+8066,BW73,Tangentially-fired
+8066,BW74,Tangentially-fired
+8068,5A,Combined cycle
+8068,5B,Combined cycle
+8068,6A,Combined cycle
+8069,1,Tangentially-fired
+8069,2,Tangentially-fired
+8102,1,Cell burner boiler
+8102,2,Cell burner boiler
+8102,B001,Other boiler
+8102,B002,Other boiler
+8219,1,Dry bottom wall-fired boiler
+8219,2,Combustion turbine
+8219,3,Combustion turbine
+8222,B1,Cyclone boiler
+8223,1,Tangentially-fired
+8223,2,Tangentially-fired
+8223,4,Dry bottom wall-fired boiler
+8223,TS3,Dry bottom wall-fired boiler
+8224,1,Dry bottom wall-fired boiler
+8224,2,Dry bottom wall-fired boiler
+8906,20,Dry bottom wall-fired boiler
+8906,31RH,Dry bottom wall-fired boiler
+8906,32SH,Dry bottom wall-fired boiler
+8906,51RH,Tangentially-fired
+8906,52SH,Tangentially-fired
+8906,CT0001,Combustion turbine
+10017,002,Tangentially-fired
+10025,4B,Tangentially-fired
+10030,2,Combined cycle
+10030,3,Combustion turbine
+10034,S-100,Combined cycle
+10113,031,Circulating fluidized bed boiler
+10113,032,Circulating fluidized bed boiler
+10143,AAB01,Circulating fluidized bed boiler
+10151,1A,Circulating fluidized bed boiler
+10151,1B,Circulating fluidized bed boiler
+10156,GEN1,Combined cycle
+10169,D1,Combined cycle
+10176,A,Combustion turbine
+10176,B,Combustion turbine
+10190,1,Combined cycle
+10244,B002,Tangentially-fired
+10244,B003,Wet bottom wall-fired boiler
+10294,2,Combustion turbine
+10294,GTG,Combined cycle
+10298,CG801,Combustion turbine
+10298,CG802,Combustion turbine
+10298,CG802A,Combustion turbine
+10298,CG803,Combustion turbine
+10298,CG804,Combustion turbine
+10307,1,Combined cycle
+10307,2,Combined cycle
+10308,1001,Combined cycle
+10308,1002,Combined cycle
+10328,UNIT1,Dry bottom wall-fired boiler
+10328,UNIT2,Dry bottom wall-fired boiler
+10328,UNIT3,Dry bottom wall-fired boiler
+10328,UNIT4,Circulating fluidized bed boiler
+10343,SG-101,Circulating fluidized bed boiler
+10349,2,Combustion turbine
+10350,CTGA,Combustion turbine
+10350,CTGB,Combustion turbine
+10405,1,Combined cycle
+10525,ES5A,Stoker
+10567,GT1,Combined cycle
+10603,031,Circulating fluidized bed boiler
+10617,1,Combined cycle
+10619,00001,Combined cycle
+10620,1,Combined cycle
+10621,1,Combined cycle
+10633,1,Combined cycle
+10633,2,Combined cycle
+10633,3,Combined cycle
+10649,GT1,Combustion turbine
+10650,GT1,Combustion turbine
+10671,1A,Circulating fluidized bed boiler
+10671,1B,Circulating fluidized bed boiler
+10671,2A,Circulating fluidized bed boiler
+10671,2B,Circulating fluidized bed boiler
+10682,GT2,Combustion turbine
+10682,GT4,Combined cycle
+10682,GT5,Combined cycle
+10725,CTG101,Combined cycle
+10725,CTG201,Combined cycle
+10725,CTG301,Combined cycle
+10726,1,Combined cycle
+10726,2,Combined cycle
+10743,CFB1,Circulating fluidized bed boiler
+10743,CFB2,Circulating fluidized bed boiler
+10745,003,Combined cycle
+10745,004,Combined cycle
+10745,005,Combined cycle
+10745,006,Combined cycle
+10745,007,Combined cycle
+10745,008,Combined cycle
+10745,009,Combined cycle
+10745,010,Combined cycle
+10745,011,Combined cycle
+10745,012,Combined cycle
+10745,013,Combined cycle
+10745,014,Combined cycle
+10745,016,Other boiler
+10745,017,Other boiler
+10745,018,Other boiler
+10745,019,Other boiler
+10745,020,Other boiler
+10745,021,Other boiler
+10751,002001,Combined cycle
+10761,1,Combined cycle
+10761,2,Combined cycle
+10761,3,Combined cycle
+10761,4,Combined cycle
+10761,5,Combined cycle
+10771,1,Stoker
+10771,2,Stoker
+10773,1,Stoker
+10773,2,Stoker
+10774,1,Stoker
+10774,2,Stoker
+10776,GTG,Combustion turbine
+10784,CBLR,Circulating fluidized bed boiler
+10788,612,Dry bottom wall-fired boiler
+10803,1,Combined cycle
+10803,2,Combined cycle
+10805,002001,Combined cycle
+10822,1,Stoker
+10823,S42,Combustion turbine
+10823,S43,Combustion turbine
+10849,PB1,Dry bottom wall-fired boiler
+10849,PB2,Dry bottom wall-fired boiler
+10865,FBC1,Circulating fluidized bed boiler
+10865,FBC2,Circulating fluidized bed boiler
+10865,FBC3,Circulating fluidized bed boiler
+10865,FBC4,Circulating fluidized bed boiler
+10865,FBC5,Circulating fluidized bed boiler
+10865,FBC6,Circulating fluidized bed boiler
+10865,FBC7,Circulating fluidized bed boiler
+10865,FBC8,Circulating fluidized bed boiler
+10865,FBC9,Circulating fluidized bed boiler
+10865,GB1,Other boiler
+10865,GB2,Other boiler
+10866,13,Dry bottom wall-fired boiler
+10866,14,Dry bottom wall-fired boiler
+10870,TURB2,Combustion turbine
+10870,TURB3,Combustion turbine
+10870,TURB4,Combustion turbine
+10870,TURBIN,Combustion turbine
+50002,1,Combined cycle
+50002,2,Combined cycle
+50002,3,Combined cycle
+50006,004001,Combined cycle
+50006,005001,Combined cycle
+50006,006001,Combined cycle
+50006,007001,Combined cycle
+50006,008001,Combined cycle
+50006,009001,Combined cycle
+50030,1A,Circulating fluidized bed boiler
+50030,2A,Circulating fluidized bed boiler
+50044,B132,Other boiler
+50109,HRSG1,Combined cycle
+50109,HRSG2,Combined cycle
+50137,1,Combustion turbine
+50151,B26,Other boiler
+50151,B27,Other boiler
+50188,105,Dry bottom wall-fired boiler
+50188,6,Dry bottom wall-fired boiler
+50240,2,Dry bottom wall-fired boiler
+50240,3,Other boiler
+50240,5,Circulating fluidized bed boiler
+50240,7,Other boiler
+50243,GEN4,Combined cycle
+50254,001,Tangentially-fired
+50279,2,Combustion turbine
+50292,GT1,Combined cycle
+50292,GT2,Combined cycle
+50292,GT3,Combustion turbine
+50292,GT4,Combined cycle
+50368,CT1,Combined cycle
+50368,CT2,Combined cycle
+50397,036,Circulating fluidized bed boiler
+50397,038,Other boiler
+50397,039,Other boiler
+50449,1,Combined cycle
+50450,1,Combined cycle
+50451,1,Combined cycle
+50458,1,Combined cycle
+50463,328001,Combustion turbine
+50463,328002,Combustion turbine
+50472,BLR05,Dry bottom wall-fired boiler
+50472,R1B01,Dry bottom wall-fired boiler
+50472,R1B02,Dry bottom wall-fired boiler
+50479,6,Other boiler
+50481,253-25,Tangentially-fired
+50481,253-26,Tangentially-fired
+50481,253-27,Tangentially-fired
+50481,253-28,Tangentially-fired
+50481,253-29,Tangentially-fired
+50481,325-30,Tangentially-fired
+50481,325-31,Dry bottom wall-fired boiler
+50481,83-23,Stoker
+50481,83-24,Stoker
+50491,001,Dry bottom wall-fired boiler
+50491,002,Dry bottom wall-fired boiler
+50491,003,Dry bottom wall-fired boiler
+50555,1,Combined cycle
+50555,2,Combined cycle
+50558,CC01,Combined cycle
+50561,0001,Combined cycle
+50561,0002,Combined cycle
+50607,23,Tangentially-fired
+50607,26,Dry bottom wall-fired boiler
+50607,RSB1,Dry bottom wall-fired boiler
+50607,RSB2,Dry bottom wall-fired boiler
+50611,031,Circulating fluidized bed boiler
+50612,GT1,Combustion turbine
+50625,61STK1,Combined cycle
+50625,61STK2,Combined cycle
+50625,61STK3,Combined cycle
+50627,20B1,Combined cycle
+50627,55B100,Dry bottom wall-fired boiler
+50628,748001,Dry bottom wall-fired boiler
+50628,749001,Combined cycle
+50628,751001,Dry bottom wall-fired boiler
+50628,752001,Dry bottom wall-fired boiler
+50628,780001,Process Heater
+50707,S001,Combined cycle
+50707,S002,Combined cycle
+50707,S003,Combined cycle
+50707,S004,Combined cycle
+50707,S005,Combined cycle
+50729,CLBLR1,Cyclone boiler
+50729,CLBLR2,Dry bottom wall-fired boiler
+50732,ETBLR1,Dry bottom wall-fired boiler
+50732,ETBLR2,Dry bottom wall-fired boiler
+50732,ETBLR3,Dry bottom wall-fired boiler
+50733,701B1,Dry bottom wall-fired boiler
+50733,701B2,Dry bottom wall-fired boiler
+50733,701B3,Dry bottom wall-fired boiler
+50733,701B5,Dry bottom wall-fired boiler
+50733,701B6,Dry bottom wall-fired boiler
+50733,720B1,Dry bottom wall-fired boiler
+50733,720B2,Dry bottom wall-fired boiler
+50733,720B3,Dry bottom wall-fired boiler
+50744,00001,Combined cycle
+50776,1,Circulating fluidized bed boiler
+50776,2,Circulating fluidized bed boiler
+50815,ENG101,Combined cycle
+50815,ENG201,Combined cycle
+50815,ENG301,Combined cycle
+50815,ENG401,Combined cycle
+50815,ENG501,Combined cycle
+50815,ENG601,Combined cycle
+50835,1,Stoker
+50835,2,Stoker
+50865,1,Combustion turbine
+50888,NGC01,Circulating fluidized bed boiler
+50900,001,Dry bottom wall-fired boiler
+50900,004,Tangentially-fired
+50900,005,Dry bottom wall-fired boiler
+50900,011,Dry bottom wall-fired boiler
+50931,BLR1,Circulating fluidized bed boiler
+50931,BLR2,Circulating fluidized bed boiler
+50949,CT2B,Combustion turbine
+50951,1,Circulating fluidized bed boiler
+50974,1,Circulating fluidized bed boiler
+50974,2,Circulating fluidized bed boiler
+50978,A,Combined cycle
+50978,B,Combined cycle
+51026,1,Stoker
+51030,1,Combined cycle
+51030,2,Combined cycle
+52019,501,Combined cycle
+52019,502,Combined cycle
+52019,601,Combined cycle
+52019,602,Combined cycle
+52019,CT1,Combustion turbine
+52019,CT2,Combustion turbine
+52019,CT3,Combustion turbine
+52026,1,Combined cycle
+52026,2,Combustion turbine
+52087,CT-1,Combustion turbine
+52087,CT-2,Combustion turbine
+52087,CT-3,Combustion turbine
+52088,GT-A,Combined cycle
+52088,GT-B,Combined cycle
+52088,GT-C,Combined cycle
+52089,BLR010,Other boiler
+52089,BLR011,Other boiler
+52089,BLR012,Other boiler
+52089,BLR013,Other boiler
+52089,BLR014,Other boiler
+52130,3SPS31,Dry bottom wall-fired boiler
+52130,3SPS32,Dry bottom wall-fired boiler
+52130,3SPS33,Dry bottom wall-fired boiler
+52130,3SPS34,Dry bottom wall-fired boiler
+52130,3SPS36,Dry bottom wall-fired boiler
+52149,039,Combustion turbine
+52149,040,Combustion turbine
+52168,00001,Dry bottom wall-fired boiler
+52168,00004,Combined cycle
+52168,00006,Combined cycle
+52168,0003HP,Other boiler
+52168,HPB02,Other boiler
+52176,1,Combustion turbine
+52176,2,Combustion turbine
+52193,21H1,Process Heater
+52193,21H701,Other boiler
+52193,37H1,Other boiler
+52193,42H123,Other boiler
+52193,CATCOB,Other boiler
+52193,COKCOB,Other boiler
+52193,DCPP1,Dry bottom wall-fired boiler
+52193,DCPP2,Dry bottom wall-fired boiler
+52193,DCPP3,Dry bottom wall-fired boiler
+52193,DCPP4,Dry bottom wall-fired boiler
+52193,MECCU1,Combined cycle
+52193,MECCU2,Combined cycle
+54034,1GTDBS,Combined cycle
+54041,011854,Combined cycle
+54041,011855,Combined cycle
+54041,011856,Combined cycle
+54076,1,Combined cycle
+54081,BLR03A,Stoker
+54081,BLR03B,Stoker
+54081,BLR04A,Stoker
+54081,BLR04B,Stoker
+54099,000044,Dry bottom wall-fired boiler
+54114,GT1,Combined cycle
+54114,GT2,Combined cycle
+54131,NTCT1,Combined cycle
+54149,1,Combustion turbine
+54238,BIOMS1,Stoker
+54271,A01,Combined cycle
+54271,A02,Combined cycle
+54276,ES001,Circulating fluidized bed boiler
+54276,ES002,Circulating fluidized bed boiler
+54276,ES003,Dry bottom wall-fired boiler
+54324,3,Combined cycle
+54324,4,Combined cycle
+54350,A001,Combined cycle
+54350,A002,Combined cycle
+54350,A003,Combined cycle
+54365,1,Combined cycle
+54365,2,Combined cycle
+54415,EUBLR,Stoker
+54426,1,Combined cycle
+54466,1,Combined cycle
+54476,CT-1,Combined cycle
+54537,CT-1A,Combined cycle
+54537,CT-1B,Combined cycle
+54547,1,Combined cycle
+54547,2,Combined cycle
+54547,3,Combined cycle
+54547,4,Combined cycle
+54556,B06,Other boiler
+54556,B07,Other boiler
+54556,B08,Other boiler
+54556,B10,Circulating fluidized bed boiler
+54574,00001,Combined cycle
+54574,00002,Combined cycle
+54592,001,Combined cycle
+54593,1,Combined cycle
+54605,001,Combustion turbine
+54634,1,Circulating fluidized bed boiler
+54638,040,Dry bottom wall-fired boiler
+54638,041,Dry bottom wall-fired boiler
+54640,001001,Combined cycle
+54640,002001,Combined cycle
+54676,GT81,Combined cycle
+54676,GT82,Combined cycle
+54676,GT83,Combined cycle
+54694,4101,Combined cycle
+54748,GT1,Combustion turbine
+54749,1,Combined cycle
+54751,01,Stoker
+54761,1,Combined cycle
+54761,2,Combined cycle
+54768,GT1,Combustion turbine
+54785,2,Combined cycle
+54785,25,Dry bottom wall-fired boiler
+54795,C6,Dry bottom wall-fired boiler
+54805,1,Combined cycle
+54817,EAST,Combined cycle
+54832,1,Combined cycle
+54832,2,Combined cycle
+54844,1,Combined cycle
+54844,2,Combined cycle
+54854,3,Combustion turbine
+54854,4,Combustion turbine
+54854,5,Combustion turbine
+54914,1,Combined cycle
+54914,2,Combined cycle
+54915,1,Combined cycle
+55010,01,Combined cycle
+55011,01,Combined cycle
+55015,1,Combustion turbine
+55015,2,Combustion turbine
+55015,3,Combustion turbine
+55015,4,Combustion turbine
+55026,1,Combined cycle
+55029,B01,Combustion turbine
+55039,GT-1,Combustion turbine
+55040,1,Combined cycle
+55040,2,Combined cycle
+55041,1,Combined cycle
+55042,BE1,Combined cycle
+55042,BE2,Combined cycle
+55043,CCCP1,Combined cycle
+55047,CG-1,Combined cycle
+55047,CG-2,Combined cycle
+55047,CG-3,Combined cycle
+55048,1,Combined cycle
+55061,CT1,Combustion turbine
+55061,CT2,Combustion turbine
+55061,CT3,Combustion turbine
+55061,CT4,Combustion turbine
+55061,CT5,Combustion turbine
+55061,CT6,Combustion turbine
+55062,1,Combined cycle
+55062,2,Combined cycle
+55062,3,Combined cycle
+55063,1,Combined cycle
+55063,2,Combined cycle
+55063,3,Combined cycle
+55064,001,Combustion turbine
+55064,002,Combustion turbine
+55065,1,Combined cycle
+55065,2,Combined cycle
+55068,1,Combined cycle
+55068,2,Combined cycle
+55075,CT-1,Combined cycle
+55076,AA001,Circulating fluidized bed boiler
+55076,AA002,Circulating fluidized bed boiler
+55077,EDE1,Combined cycle
+55077,EDE2,Combined cycle
+55079,1,Combined cycle
+55081,AA-001,Combustion turbine
+55081,AA-002,Combustion turbine
+55081,AA-003,Combustion turbine
+55081,AA-004,Combustion turbine
+55086,101,Combined cycle
+55086,102,Combined cycle
+55087,CC1,Combustion turbine
+55087,CC2,Combustion turbine
+55087,CC3,Combined cycle
+55087,CC4,Combined cycle
+55088,BL1100,Other boiler
+55088,BL2100,Other boiler
+55088,BL3100,Other boiler
+55088,GT2100,Combined cycle
+55088,GT3100,Combined cycle
+55088,GTP1,Combustion turbine
+55089,CT1,Combined cycle
+55089,CT2,Combined cycle
+55089,CT3,Combined cycle
+55091,STK1,Combined cycle
+55091,STK2,Combined cycle
+55091,STK3,Combined cycle
+55091,STK4,Combined cycle
+55091,STK5,Combined cycle
+55091,STK6,Combined cycle
+55096,BLR1,Other boiler
+55096,BLR2,Other boiler
+55096,CT,Combustion turbine
+55097,1,Combined cycle
+55097,2,Combined cycle
+55097,3,Combined cycle
+55097,4,Combined cycle
+55098,1,Combined cycle
+55098,2,Combined cycle
+55100,1,Combined cycle
+55101,1,Combustion turbine
+55102,1,Combustion turbine
+55102,2,Combustion turbine
+55102,3,Combustion turbine
+55102,4,Combustion turbine
+55103,CT1,Combined cycle
+55103,CT2,Combined cycle
+55107,RISEP1,Combined cycle
+55107,RISEP2,Combined cycle
+55109,T1,Combustion turbine
+55109,T2,Combustion turbine
+55109,T3,Combustion turbine
+55109,T4,Combustion turbine
+55110,1,Combustion turbine
+55110,2,Combustion turbine
+55110,3,Combustion turbine
+55110,4,Combustion turbine
+55110,5,Combustion turbine
+55110,6,Combustion turbine
+55110,7,Combustion turbine
+55110,8,Combustion turbine
+55111,1,Combustion turbine
+55111,2,Combustion turbine
+55111,3,Combustion turbine
+55111,4,Combustion turbine
+55111,5,Combustion turbine
+55111,6,Combustion turbine
+55111,7,Combustion turbine
+55111,8,Combustion turbine
+55112,CT01,Combined cycle
+55112,CT02,Combined cycle
+55116,CT1,Combustion turbine
+55116,CT2,Combustion turbine
+55116,CT3,Combustion turbine
+55116,CT4,Combustion turbine
+55116,CT5,Combustion turbine
+55117,RS-5,Combined cycle
+55117,RS-6,Combined cycle
+55120,CTG-1,Combined cycle
+55120,CTG-2,Combined cycle
+55122,N-20A,Combustion turbine
+55122,N-20B,Combustion turbine
+55123,CTG-1,Combined cycle
+55123,CTG-2,Combined cycle
+55124,P1,Combined cycle
+55124,P2,Combined cycle
+55126,CT01,Combined cycle
+55126,CT02,Combined cycle
+55127,CT1,Combustion turbine
+55127,CT2,Combustion turbine
+55128,T1,Combustion turbine
+55128,T2,Combustion turbine
+55128,T3,Combustion turbine
+55129,DBG1,Combined cycle
+55129,DBG2,Combined cycle
+55129,DBG4,Combustion turbine
+55129,DBG5,Combustion turbine
+55131,GTG-1,Combined cycle
+55131,GTG-2,Combined cycle
+55131,GTG-3,Combined cycle
+55131,GTG-4,Combined cycle
+55132,OGTDB1,Combined cycle
+55132,OGTDB2,Combined cycle
+55132,OGTDB3,Combined cycle
+55135,CT01,Combustion turbine
+55135,CT02,Combustion turbine
+55137,CTG-1,Combined cycle
+55137,CTG-2,Combined cycle
+55137,CTG-3,Combined cycle
+55138,1A,Combustion turbine
+55138,1B,Combustion turbine
+55138,2A,Combustion turbine
+55138,2B,Combustion turbine
+55139,CTG1,Combined cycle
+55139,CTG2,Combined cycle
+55141,CT1,Combustion turbine
+55141,CT2,Combustion turbine
+55141,CT3,Combustion turbine
+55144,STK1,Combined cycle
+55144,STK2,Combined cycle
+55144,STK3,Combined cycle
+55144,STK4,Combined cycle
+55146,CTGEN1,Combined cycle
+55146,CTGEN2,Combined cycle
+55146,CTGEN3,Combined cycle
+55148,1,Combustion turbine
+55148,2,Combustion turbine
+55148,3,Combustion turbine
+55148,4,Combustion turbine
+55149,LRG1,Combined cycle
+55149,LRG2,Combined cycle
+55149,LRG3,Combined cycle
+55151,CTG-1,Combined cycle
+55151,CTG-2,Combined cycle
+55151,CTG-3,Combined cycle
+55151,CTG-4,Combined cycle
+55153,CTG-1,Combined cycle
+55153,CTG-2,Combined cycle
+55153,CTG-3,Combined cycle
+55153,CTG-4,Combined cycle
+55154,1,Combined cycle
+55154,2,Combined cycle
+55164,GTG1,Combustion turbine
+55164,GTG2,Combustion turbine
+55164,GTG3,Combustion turbine
+55165,GTG1,Combustion turbine
+55165,GTG2,Combustion turbine
+55166,CT-1,Combustion turbine
+55166,CT-2,Combustion turbine
+55166,CT-3,Combustion turbine
+55166,CT-4,Combustion turbine
+55166,CT-5,Combustion turbine
+55168,CTG-1A,Combined cycle
+55168,CTG-1B,Combined cycle
+55170,0001,Combined cycle
+55170,0002,Combined cycle
+55172,GT-1,Combined cycle
+55172,GT-2,Combined cycle
+55172,GT-3,Combined cycle
+55173,CT1,Combined cycle
+55173,CT2,Combined cycle
+55173,CT3,Combined cycle
+55173,CT4,Combined cycle
+55176,1,Combined cycle
+55176,2,Combined cycle
+55177,A,Combined cycle
+55177,B,Combined cycle
+55178,CT-1,Combined cycle
+55178,CT-2,Combined cycle
+55179,CTGEN1,Combined cycle
+55182,CTG1,Combined cycle
+55182,CTG2,Combined cycle
+55183,1,Combined cycle
+55183,2,Combined cycle
+55187,CHV1,Combined cycle
+55187,CHV2,Combined cycle
+55187,CHV3,Combined cycle
+55187,CHV4,Combined cycle
+55188,1,Combined cycle
+55188,2,Combined cycle
+55192,OSC1,Combustion turbine
+55192,OSC2,Combustion turbine
+55192,OSC3,Combustion turbine
+55193,CT1,Combined cycle
+55193,CT2,Combined cycle
+55196,1,Combustion turbine
+55196,2,Combustion turbine
+55197,AA-001,Combined cycle
+55197,AA-002,Combined cycle
+55197,AA-003,Combined cycle
+55198,GTG101,Combustion turbine
+55198,GTG201,Combustion turbine
+55198,GTG301,Combustion turbine
+55198,GTG401,Combustion turbine
+55198,GTG501,Combustion turbine
+55199,1,Combustion turbine
+55199,2,Combustion turbine
+55199,3,Combustion turbine
+55199,4,Combustion turbine
+55199,5,Combustion turbine
+55199,6,Combustion turbine
+55199,7,Combustion turbine
+55199,8,Combustion turbine
+55199,9,Combustion turbine
+55200,CT5,Combined cycle
+55200,CT6,Combined cycle
+55201,GCTG1,Combustion turbine
+55201,GCTG2,Combustion turbine
+55202,CT01,Combustion turbine
+55202,CT02,Combustion turbine
+55202,CT03,Combustion turbine
+55202,CT04,Combustion turbine
+55202,CT05,Combustion turbine
+55202,CT06,Combustion turbine
+55202,CT07,Combustion turbine
+55202,CT08,Combustion turbine
+55204,KCTG1,Combustion turbine
+55204,KCTG2,Combustion turbine
+55206,CU1,Combined cycle
+55206,CU2,Combined cycle
+55207,CT7,Combustion turbine
+55207,CT8,Combustion turbine
+55210,0001,Combined cycle
+55211,1,Combined cycle
+55211,2,Combined cycle
+55212,1,Combined cycle
+55212,2,Combined cycle
+55215,GT1,Combined cycle
+55215,GT2,Combined cycle
+55215,GT3,Combined cycle
+55215,GT4,Combined cycle
+55216,B-5,Dry bottom wall-fired boiler
+55216,B-6,Dry bottom wall-fired boiler
+55216,CTG1,Combined cycle
+55216,CTG2,Combined cycle
+55216,CTG3,Combined cycle
+55217,X724,Combined cycle
+55217,X725,Combined cycle
+55218,2,Combustion turbine
+55218,H01,Combined cycle
+55218,H02,Combined cycle
+55220,A01,Combined cycle
+55220,A02,Combined cycle
+55221,G1,Combined cycle
+55221,G2,Combined cycle
+55221,G3,Combined cycle
+55221,G4,Combined cycle
+55221,G5,Combined cycle
+55221,G6,Combined cycle
+55221,G7,Combined cycle
+55222,CTG-1,Combustion turbine
+55222,CTG-2,Combustion turbine
+55222,CTG-3,Combustion turbine
+55222,CTG-4,Combustion turbine
+55222,CTG-5,Combustion turbine
+55222,CTG-6,Combustion turbine
+55222,CTG-7,Combustion turbine
+55222,CTG-8,Combustion turbine
+55223,GT-1,Combined cycle
+55224,EU-01,Combustion turbine
+55224,EU-02,Combustion turbine
+55224,EU-03,Combustion turbine
+55224,EU-04,Combustion turbine
+55225,CTG-1,Combined cycle
+55225,CTG-2,Combined cycle
+55225,CTG-3,Combined cycle
+55225,CTG-4,Combined cycle
+55226,GT1,Combined cycle
+55226,GT2,Combined cycle
+55226,GT3,Combined cycle
+55226,GT4,Combined cycle
+55228,G1CT1,Combustion turbine
+55228,G1CT2,Combustion turbine
+55228,G2CT1,Combustion turbine
+55228,G2CT2,Combustion turbine
+55228,G3CT1,Combustion turbine
+55228,G3CT2,Combustion turbine
+55228,G4CT1,Combustion turbine
+55228,G4CT2,Combustion turbine
+55229,G1CT1,Combustion turbine
+55229,G1CT2,Combustion turbine
+55229,G2CT1,Combustion turbine
+55229,G2CT2,Combustion turbine
+55229,G3CT1,Combustion turbine
+55229,G3CT2,Combustion turbine
+55229,G4CT1,Combustion turbine
+55229,G4CT2,Combustion turbine
+55230,CT-1,Combined cycle
+55230,CT-2,Combined cycle
+55230,CT-3,Combined cycle
+55230,CT-4,Combined cycle
+55231,0001,Combined cycle
+55231,0002,Combined cycle
+55232,CT1,Combustion turbine
+55232,CT2,Combustion turbine
+55232,CT3,Combustion turbine
+55232,CT4,Combustion turbine
+55232,CT5,Combustion turbine
+55232,CT6,Combustion turbine
+55232,CT7,Combustion turbine
+55232,CT8,Combustion turbine
+55233,EU-1A,Combustion turbine
+55233,EU-1B,Combustion turbine
+55233,EU-2A,Combustion turbine
+55233,EU-2B,Combustion turbine
+55233,EU-3A,Combustion turbine
+55233,EU-3B,Combustion turbine
+55233,EU-4A,Combustion turbine
+55233,EU-4B,Combustion turbine
+55233,EU-5A,Combustion turbine
+55233,EU-5B,Combustion turbine
+55234,CT1,Combustion turbine
+55234,CT2,Combustion turbine
+55234,CT3,Combustion turbine
+55234,CT4,Combustion turbine
+55234,CT5,Combustion turbine
+55234,CT6,Combustion turbine
+55234,CT7,Combustion turbine
+55234,CT8,Combustion turbine
+55236,CT1,Combustion turbine
+55236,CT2,Combustion turbine
+55236,CT3,Combustion turbine
+55236,CT4,Combustion turbine
+55236,CT5,Combustion turbine
+55236,CT6,Combustion turbine
+55236,CT7,Combustion turbine
+55236,CT8,Combustion turbine
+55237,SCE1,Combustion turbine
+55237,SCE2,Combustion turbine
+55237,SCE3,Combustion turbine
+55237,SCE4,Combustion turbine
+55237,SCE5,Combustion turbine
+55237,SCE6,Combustion turbine
+55237,SCE7,Combustion turbine
+55237,SCE8,Combustion turbine
+55238,0001,Combustion turbine
+55238,0002,Combustion turbine
+55239,1,Combined cycle
+55239,2,Combined cycle
+55239,3,Combined cycle
+55241,COG01,Combined cycle
+55242,CT-1,Combined cycle
+55244,CTG-2,Combustion turbine
+55244,CTG-3,Combustion turbine
+55244,CTG-4,Combustion turbine
+55244,CTG-5,Combustion turbine
+55247,CT1,Combustion turbine
+55247,CT2,Combustion turbine
+55247,CT3,Combustion turbine
+55247,CT4,Combustion turbine
+55247,CT5,Combustion turbine
+55247,CT6,Combustion turbine
+55248,CT4,Combustion turbine
+55248,CT5,Combustion turbine
+55248,CT6,Combustion turbine
+55248,CT7,Combustion turbine
+55250,UP1,Combustion turbine
+55250,UP10,Combustion turbine
+55250,UP11,Combustion turbine
+55250,UP12,Combustion turbine
+55250,UP2,Combustion turbine
+55250,UP3,Combustion turbine
+55250,UP4,Combustion turbine
+55250,UP5,Combustion turbine
+55250,UP6,Combustion turbine
+55250,UP7,Combustion turbine
+55250,UP8,Combustion turbine
+55250,UP9,Combustion turbine
+55251,CTG-1,Combustion turbine
+55251,CTG-2,Combustion turbine
+55251,CTG-3,Combustion turbine
+55253,GT1,Combustion turbine
+55253,GT2,Combustion turbine
+55253,GT3,Combustion turbine
+55253,GT4,Combustion turbine
+55259,CT1,Combined cycle
+55259,CT2,Combined cycle
+55262,CT1,Combustion turbine
+55263,CT1,Combustion turbine
+55264,CT1,Combustion turbine
+55267,1,Combustion turbine
+55267,2,Combustion turbine
+55267,3,Combustion turbine
+55267,4,Combustion turbine
+55269,AA-001,Combined cycle
+55269,AA-002,Combined cycle
+55269,AA-003,Combined cycle
+55270,7EA,Combined cycle
+55270,LM1,Combined cycle
+55270,LM2,Combined cycle
+55270,LM3,Combined cycle
+55270,LM4,Combined cycle
+55270,LM5,Combined cycle
+55270,LM6,Combined cycle
+55271,CT1,Combined cycle
+55271,CT2,Combined cycle
+55271,CT3,Combined cycle
+55276,01,Combustion turbine
+55276,02,Combustion turbine
+55276,03,Combustion turbine
+55276,04,Combustion turbine
+55276,05,Combustion turbine
+55276,06,Combustion turbine
+55279,AGS01,Combustion turbine
+55279,AGS02,Combustion turbine
+55279,AGS03,Combustion turbine
+55279,AGS04,Combustion turbine
+55279,AGS05,Combustion turbine
+55279,AGS06,Combustion turbine
+55279,AGS07,Combustion turbine
+55279,AGS08,Combustion turbine
+55279,AGS09,Combustion turbine
+55279,AGS10,Combustion turbine
+55282,CTG1,Combined cycle
+55282,CTG2,Combined cycle
+55283,1,Combined cycle
+55283,2,Combined cycle
+55284,GS01,Combustion turbine
+55284,GS02,Combustion turbine
+55284,GS03,Combustion turbine
+55284,GS04,Combustion turbine
+55284,GS05,Combustion turbine
+55284,GS06,Combustion turbine
+55284,GS07,Combustion turbine
+55284,GS08,Combustion turbine
+55284,GS09,Combustion turbine
+55284,GS10,Combustion turbine
+55284,GS11,Combustion turbine
+55284,GS12,Combustion turbine
+55285,WH01,Combustion turbine
+55285,WH02,Combustion turbine
+55285,WH03,Combustion turbine
+55285,WH04,Combustion turbine
+55285,WH05,Combustion turbine
+55285,WH06,Combustion turbine
+55285,WH07,Combustion turbine
+55285,WH08,Combustion turbine
+55285,WH09,Combustion turbine
+55285,WH10,Combustion turbine
+55286,O-1,Combustion turbine
+55286,O-2,Combustion turbine
+55286,O-3,Combustion turbine
+55286,O-4,Combustion turbine
+55286,O-5,Combustion turbine
+55292,CTG-1,Combined cycle
+55292,CTG-2,Combined cycle
+55292,CTG-3,Combined cycle
+55293,CT-1,Combined cycle
+55293,CT-2,Combined cycle
+55293,CT-3,Combined cycle
+55294,1,Combined cycle
+55294,2,Combined cycle
+55295,1,Combined cycle
+55295,2,Combined cycle
+55296,**1,Combustion turbine
+55296,**2,Combustion turbine
+55297,001,Combined cycle
+55297,002,Combined cycle
+55297,003,Combined cycle
+55298,1A,Combined cycle
+55298,1B,Combined cycle
+55298,2A,Combined cycle
+55298,2B,Combined cycle
+55299,CTG1,Combined cycle
+55299,CTG2,Combined cycle
+55299,CTG3,Combined cycle
+55304,CT1,Combustion turbine
+55304,CT5,Combustion turbine
+55306,1CTGA,Combined cycle
+55306,1CTGB,Combined cycle
+55306,2CTGA,Combined cycle
+55306,2CTGB,Combined cycle
+55306,3CTGA,Combined cycle
+55306,3CTGB,Combined cycle
+55306,4CTGA,Combined cycle
+55306,4CTGB,Combined cycle
+55308,A,Other boiler
+55308,B,Other boiler
+55308,C,Combustion turbine
+55317,11,Combined cycle
+55317,12,Combined cycle
+55320,GT-1,Combined cycle
+55320,GT-2,Combined cycle
+55322,CTG-1,Combined cycle
+55322,CTG-2,Combined cycle
+55322,CTG-3,Combined cycle
+55322,CTG-4,Combined cycle
+55327,CTG-1,Combined cycle
+55327,CTG-2,Combined cycle
+55327,CTG-3,Combined cycle
+55328,CTG-1,Combined cycle
+55328,CTG-2,Combined cycle
+55332,T1,Combustion turbine
+55332,T2,Combustion turbine
+55332,T3,Combustion turbine
+55332,T4,Combustion turbine
+55333,1,Combined cycle
+55333,2,Combined cycle
+55333,3,Combined cycle
+55334,CTG1,Combined cycle
+55334,CTG2,Combined cycle
+55337,0001,Combined cycle
+55337,0002,Combined cycle
+55340,1,Combined cycle
+55340,2,Combined cycle
+55343,CTG1,Combined cycle
+55343,CTG2,Combined cycle
+55345,CTG-1,Combined cycle
+55345,CTG-2,Combined cycle
+55347,1,Combustion turbine
+55347,2,Combustion turbine
+55347,3,Combustion turbine
+55347,4,Combustion turbine
+55348,1,Combustion turbine
+55348,2,Combustion turbine
+55348,3,Combustion turbine
+55348,4,Combustion turbine
+55349,1,Combustion turbine
+55349,2,Combustion turbine
+55350,1A,Combined cycle
+55350,1B,Combined cycle
+55357,CTG1,Combined cycle
+55357,CTG2,Combined cycle
+55358,CT1,Combined cycle
+55358,CT2,Combined cycle
+55358,CT3,Combined cycle
+55358,CT4,Combined cycle
+55364,CT11,Combined cycle
+55364,CT12,Combined cycle
+55365,GT-1,Combustion turbine
+55365,GT-2,Combustion turbine
+55365,GT-3,Combustion turbine
+55365,GT-4,Combustion turbine
+55372,CTG1,Combined cycle
+55372,CTG2,Combined cycle
+55372,CTG3,Combined cycle
+55375,CT1,Combined cycle
+55375,CT2,Combined cycle
+55375,CT3,Combined cycle
+55375,CT4,Combined cycle
+55377,8,Combustion turbine
+55377,9,Combustion turbine
+55380,CTG-1,Combined cycle
+55380,CTG-2,Combined cycle
+55380,CTG-3,Combined cycle
+55380,CTG-4,Combined cycle
+55380,CTG-5,Combined cycle
+55380,CTG-6,Combined cycle
+55380,CTG-7,Combined cycle
+55380,CTG-8,Combined cycle
+55381,CT-001,Combustion turbine
+55381,CT-002,Combustion turbine
+55381,CT-003,Combustion turbine
+55381,CT-004,Combustion turbine
+55381,CT-005,Combustion turbine
+55381,CT-006,Combustion turbine
+55381,CT-007,Combustion turbine
+55382,CCCT1,Combined cycle
+55382,CCCT2,Combined cycle
+55382,CCCT3,Combined cycle
+55382,CCCT4,Combined cycle
+55386,B-1,Dry bottom wall-fired boiler
+55386,B-2,Dry bottom wall-fired boiler
+55386,B-3,Dry bottom wall-fired boiler
+55386,CT-1,Combined cycle
+55386,CT-2,Combined cycle
+55391,CT-1,Combustion turbine
+55391,CT-2,Combustion turbine
+55391,CT-3,Combustion turbine
+55392,CT-1,Combustion turbine
+55392,CT-2,Combustion turbine
+55392,CT-3,Combustion turbine
+55393,1,Combined cycle
+55393,2,Combined cycle
+55395,CT01,Combustion turbine
+55395,CT02,Combustion turbine
+55395,CT03,Combustion turbine
+55395,CT04,Combustion turbine
+55397,CT1,Combined cycle
+55397,CT2,Combined cycle
+55400,CTG-1,Combined cycle
+55400,CTG-2,Combined cycle
+55401,CT-1,Combustion turbine
+55401,CT-2,Combustion turbine
+55401,CT-3,Combustion turbine
+55401,CT-4,Combustion turbine
+55401,CT-5,Combustion turbine
+55402,CT1,Combustion turbine
+55402,CT2,Combustion turbine
+55402,CT3,Combustion turbine
+55402,CT4,Combustion turbine
+55404,COG01,Combined cycle
+55404,COG02,Combined cycle
+55405,1,Combined cycle
+55405,2,Combined cycle
+55405,3,Combined cycle
+55406,1,Combined cycle
+55406,2,Combined cycle
+55409,CT1,Combustion turbine
+55409,CT2,Combustion turbine
+55409,CT3,Combustion turbine
+55409,CT4,Combustion turbine
+55411,CT1,Combined cycle
+55411,CT2,Combined cycle
+55412,CT1,Combined cycle
+55412,CT2,Combined cycle
+55414,GT101,Combustion turbine
+55414,GT201,Combustion turbine
+55414,GT301,Combustion turbine
+55415,GT101,Combustion turbine
+55415,GT201,Combustion turbine
+55415,GT301,Combustion turbine
+55415,GT401,Combustion turbine
+55417,CT-01,Combustion turbine
+55417,CT-02,Combustion turbine
+55417,CT-03,Combustion turbine
+55417,CT-04,Combustion turbine
+55418,CT-1,Combined cycle
+55418,CT-2,Combined cycle
+55419,500,Combined cycle
+55419,600,Combined cycle
+55419,700,Combined cycle
+55419,800,Combined cycle
+55433,CTG-1,Combustion turbine
+55433,CTG-2,Combustion turbine
+55433,CTG-3,Combustion turbine
+55433,CTG-4,Combustion turbine
+55438,CT01,Combustion turbine
+55438,CT02,Combustion turbine
+55438,CT03,Combustion turbine
+55438,CT04,Combustion turbine
+55439,CTGDB1,Combined cycle
+55439,CTGDB2,Combined cycle
+55439,CTGDB3,Combined cycle
+55440,CTGDB1,Combined cycle
+55440,CTGDB2,Combined cycle
+55440,CTGDB3,Combined cycle
+55447,CT01,Combustion turbine
+55447,CT02,Combustion turbine
+55447,CT03,Combustion turbine
+55447,CT04,Combustion turbine
+55451,CTG-1,Combined cycle
+55451,CTG-2,Combined cycle
+55451,CTG-3,Combined cycle
+55453,1,Combustion turbine
+55453,2,Combustion turbine
+55453,3,Combustion turbine
+55453,4,Combustion turbine
+55453,5,Combustion turbine
+55453,6,Combustion turbine
+55455,CC1A,Combined cycle
+55455,CC1B,Combined cycle
+55455,CC2A,Combined cycle
+55455,CC2B,Combined cycle
+55457,CT1,Combined cycle
+55457,CT2,Combined cycle
+55460,EUCT1,Combined cycle
+55460,EUCT2,Combined cycle
+55463,CT-01,Combined cycle
+55463,CT-02,Combined cycle
+55463,CT-03,Combined cycle
+55463,CT-04,Combined cycle
+55464,CTG1,Combined cycle
+55464,CTG2,Combined cycle
+55464,CTG3,Combined cycle
+55464,CTG4,Combined cycle
+55464,CTG5,Combined cycle
+55467,CTGEN1,Combined cycle
+55467,CTGEN2,Combined cycle
+55467,CTGEN3,Combined cycle
+55470,EPN801,Combined cycle
+55470,EPN802,Combined cycle
+55470,EPN803,Combined cycle
+55477,CT2,Combustion turbine
+55478,CT1,Combustion turbine
+55479,001,Dry bottom wall-fired boiler
+55480,U1,Combined cycle
+55480,U2,Combined cycle
+55480,U3,Combined cycle
+55480,U4,Combined cycle
+55480,U5,Combined cycle
+55480,U6,Combined cycle
+55481,1,Combined cycle
+55481,2,Combined cycle
+55481,5,Combined cycle
+55481,6,Combined cycle
+55482,CT-1,Combined cycle
+55486,CTG01,Combustion turbine
+55486,CTG02,Combustion turbine
+55496,CT-01,Combustion turbine
+55496,CT-02,Combustion turbine
+55496,CT-03,Combustion turbine
+55496,CT-04,Combustion turbine
+55496,CT-05,Combustion turbine
+55496,CT-06,Combustion turbine
+55499,GT-1,Combustion turbine
+55499,GT-2,Combustion turbine
+55501,CTGDB1,Combined cycle
+55501,CTGDB2,Combined cycle
+55501,CTGDB3,Combined cycle
+55501,CTGDB4,Combined cycle
+55502,1,Combined cycle
+55502,2,Combined cycle
+55502,3,Combined cycle
+55502,4,Combined cycle
+55503,1,Combined cycle
+55503,2,Combined cycle
+55503,3,Combined cycle
+55504,L1,Combustion turbine
+55504,L2,Combustion turbine
+55505,BR1,Combustion turbine
+55505,BR2,Combustion turbine
+55508,GT-1,Combustion turbine
+55508,GT-2,Combustion turbine
+55510,GT-1,Combustion turbine
+55510,GT-2,Combustion turbine
+55512,GT-1,Combustion turbine
+55512,GT-2,Combustion turbine
+55513,GT-1,Combustion turbine
+55513,GT-2,Combustion turbine
+55514,CTG01,Combined cycle
+55514,CTG02,Combined cycle
+55516,CTG1,Combined cycle
+55516,CTG2,Combined cycle
+55517,CT01,Combustion turbine
+55517,CT02,Combustion turbine
+55517,CT03,Combustion turbine
+55517,CT04,Combustion turbine
+55517,CT05,Combustion turbine
+55517,CT06,Combustion turbine
+55517,CT07,Combustion turbine
+55518,CTG1,Combined cycle
+55518,CTG2,Combined cycle
+55518,CTG3,Combined cycle
+55522,CT01,Combustion turbine
+55522,CT02,Combustion turbine
+55522,CT03,Combustion turbine
+55522,CT04,Combustion turbine
+55522,CT05,Combustion turbine
+55522,CT06,Combustion turbine
+55522,CT07,Combustion turbine
+55522,CT08,Combustion turbine
+55522,CT09,Combustion turbine
+55522,CT10,Combustion turbine
+55522,CT11,"Combustion turbine (Started Oct 24, 2025)"
+55522,CT12,"Combustion turbine (Started Nov 07, 2025)"
+55524,1,Combined cycle
+55524,2,Combined cycle
+55524,3,Combined cycle
+55524,5,Combined cycle
+55524,6,Combined cycle
+55538,CTG1,Combustion turbine
+55540,1A,Combustion turbine
+55540,1B,Combustion turbine
+55541,1,Combustion turbine
+55541,2,Combustion turbine
+55541,3,Combustion turbine
+55542,1,Combustion turbine
+55542,2,Combustion turbine
+55544,GT1,Combustion turbine
+55544,GT2,Combustion turbine
+55544,GT3,Combustion turbine
+55544,GT4,Combustion turbine
+55558,B06,Combined cycle
+55620,1-1,Combined cycle
+55620,1-2,Combined cycle
+55620,2-1,Combustion turbine
+55622,U1,Combustion turbine
+55622,U2,Combustion turbine
+55622,U3,Combustion turbine
+55622,U4,Combustion turbine
+55622,U5,Combustion turbine
+55625,UNIT1,Combustion turbine
+55626,UNIT1,Combustion turbine
+55627,UNIT1,Combustion turbine
+55640,CT01,Combustion turbine
+55640,CT02,Combustion turbine
+55640,CT03,Combustion turbine
+55640,CT04,Combustion turbine
+55640,CT05,Combustion turbine
+55640,CT06,Combustion turbine
+55640,CT07,Combustion turbine
+55640,CT08,Combustion turbine
+55640,CT09,Combustion turbine
+55640,CT10,Combustion turbine
+55640,CT11,Combustion turbine
+55640,CT12,Combustion turbine
+55641,CT-01,Combined cycle
+55641,CT-02,Combined cycle
+55641,CT-03,Combined cycle
+55641,CT-04,Combined cycle
+55645,CT-01,Combustion turbine
+55645,CT-02,Combustion turbine
+55651,CT-01,Combustion turbine
+55651,CT-02,Combustion turbine
+55651,CT-03,Combustion turbine
+55651,CT-04,Combustion turbine
+55654,12,Combustion turbine
+55654,13,Combustion turbine
+55656,CT001,Combined cycle
+55656,CT002,Combined cycle
+55656,CT004,Combined cycle
+55661,1,Combined cycle
+55661,2,Combined cycle
+55662,CT1,Combined cycle
+55662,CT2,Combined cycle
+55664,GT-1,Combined cycle
+55664,GT-2,Combined cycle
+55667,CT01,Combined cycle
+55667,CT02,Combined cycle
+55672,CT1,Combustion turbine
+55672,CT2,Combustion turbine
+55672,CT3,Combustion turbine
+55672,CT4,Combustion turbine
+55672,CT5,Combustion turbine
+55672,CT6,Combustion turbine
+55672,CT7,Combustion turbine
+55672,CT8,Combustion turbine
+55687,BHG1,Combined cycle
+55687,BHG2,Combined cycle
+55690,1,Combined cycle
+55690,2,Combined cycle
+55690,3,Combined cycle
+55690,5,Combined cycle
+55690,6,Combined cycle
+55690,7,Combined cycle
+55694,AA-001,Combined cycle
+55694,AA-002,Combined cycle
+55698,HEP1,Combustion turbine
+55698,HEP2,Combustion turbine
+55699,1,Combustion turbine
+55699,2,Combustion turbine
+55700,CTG1,Combined cycle
+55701,CT01,Combined cycle
+55701,CT02,Combined cycle
+55703,P049,Other boiler
+55706,CTG1,Combined cycle
+55706,CTG2,Combined cycle
+55706,CTG3,Combined cycle
+55708,BFB-1,Bubbling fluidized bed boiler
+55710,3,Combined cycle
+55710,4,Combined cycle
+55714,SN-01,Combined cycle
+55714,SN-02,Combined cycle
+55718,1,Combustion turbine
+55718,2,Combustion turbine
+55718,3,Combustion turbine
+55718,4,Combustion turbine
+55733,CT01,Combustion turbine
+55736,CTG1,Combined cycle
+55736,CTG2,Combined cycle
+55736,CTG3,Combined cycle
+55736,CTG4,Combined cycle
+55738,1,Combustion turbine
+55738,2,Combustion turbine
+55748,CTG1,Combined cycle
+55748,CTG2,Combined cycle
+55748,CTG3,Combined cycle
+55748,CTG4,Combined cycle
+55749,U1,Dry bottom wall-fired boiler
+55786,CT01,Combustion turbine
+55786,CT02,Combustion turbine
+55787,CT01,Combustion turbine
+55787,CT02,Combustion turbine
+55799,0024,Combustion turbine
+55799,0025,Combustion turbine
+55801,0001,Combined cycle
+55801,0002,Combined cycle
+55801,0003,Combined cycle
+55802,CTG1,Combustion turbine
+55807,HPP1,Combustion turbine
+55807,HPP2,Combustion turbine
+55810,S-3,Combustion turbine
+55810,S-4,Combustion turbine
+55810,S-5,Combustion turbine
+55818,F1CT,Combined cycle
+55821,25,Combined cycle
+55821,26,Combined cycle
+55835,1,Combined cycle
+55835,2,Combined cycle
+55836,1A,Combustion turbine
+55836,1B,Combustion turbine
+55841,A01,Combined cycle
+55841,A03,Combined cycle
+55841,A09,Combustion turbine
+55841,A10,Combustion turbine
+55847,UNIT1,Combustion turbine
+55855,UNIT1,Combustion turbine
+55856,01,Dry bottom wall-fired boiler
+55856,02,Dry bottom wall-fired boiler
+55927,CT01,Combined cycle
+55927,CT02,Combined cycle
+55927,CT03,Combined cycle
+55933,TPP1,Combined cycle
+55933,TPP2,Combined cycle
+55936,U1,Combustion turbine
+55938,OPP3,Combustion turbine
+55938,OPP4,Combustion turbine
+55939,1A,Combined cycle
+55939,1B,Combined cycle
+55939,1C,Combined cycle
+55951,AMP-1,Combustion turbine
+55963,1,Combustion turbine
+55965,6A,Combined cycle
+55965,6B,Combined cycle
+55965,7A,Combined cycle
+55965,7B,Combined cycle
+55969,U-01,Combustion turbine
+55970,2,Combined cycle
+55970,3,Combined cycle
+55972,CT1,Combustion turbine
+55972,CT2,Combustion turbine
+55976,CT101,Combined cycle
+55976,CT201,Combined cycle
+55976,CT301,Combined cycle
+55977,CTG-1,Combined cycle
+55985,CTG1,Combined cycle
+55985,CTG2,Combined cycle
+56013,U-1,Combustion turbine
+56013,U-2,Combustion turbine
+56013,U-3,Combustion turbine
+56015,P1A,Combustion turbine
+56015,P1B,Combustion turbine
+56015,P2A,Combustion turbine
+56015,P2B,Combustion turbine
+56018,1,Combustion turbine
+56018,2,Combustion turbine
+56026,PCT1,Combined cycle
+56026,PCT2,Combined cycle
+56031,CTG-1,Combined cycle
+56031,CTG-2,Combined cycle
+56032,0001,Combustion turbine
+56041,M1,Combined cycle
+56041,M2,Combined cycle
+56046,1,Combined cycle
+56047,1,Combined cycle
+56047,2,Combined cycle
+56068,1,Dry bottom wall-fired boiler
+56068,2,Dry bottom wall-fired boiler
+56078,1,Combined cycle
+56078,2,Combined cycle
+56102,CTG1A,Combined cycle
+56102,CTG1B,Combined cycle
+56104,CT-1,Combined cycle
+56104,CT-2,Combined cycle
+56108,U-1,Combustion turbine
+56108,U-2,Combustion turbine
+56135,1,Combustion turbine
+56135,2,Combustion turbine
+56143,1,Combustion turbine
+56143,2,Combustion turbine
+56143,3,Combustion turbine
+56143,4,Combustion turbine
+56150,10A,Combined cycle
+56150,10B,Combined cycle
+56150,11A,Combined cycle
+56150,11B,Combined cycle
+56151,1,Combustion turbine
+56151,2,Combustion turbine
+56151,3,Combustion turbine
+56164,EU006,Combined cycle
+56166,1,Combustion turbine
+56166,2,Combustion turbine
+56177,U1,Combined cycle
+56188,00001,Combined cycle
+56189,4,Combustion turbine
+56189,5,Combustion turbine
+56189,7,Combustion turbine
+56196,CTG7A,Combined cycle
+56196,CTG7B,Combined cycle
+56224,001,Dry bottom wall-fired boiler
+56227,PWEU1,Combined cycle
+56232,1,Combustion turbine
+56232,2,Combustion turbine
+56234,0001,Combined cycle
+56237,CT01,Combined cycle
+56237,CT02,Combined cycle
+56237,CT03,Combined cycle
+56237,CT04,Combined cycle
+56238,CT001,Combustion turbine
+56238,CT002,Combustion turbine
+56239,GT-1,Combustion turbine
+56239,GT-2,Combustion turbine
+56241,CT-01,Combustion turbine
+56241,CT-02,Combustion turbine
+56249,ES1-A,Combustion turbine
+56249,ES1-B,Combustion turbine
+56249,ES2-A,Combustion turbine
+56249,ES2-B,Combustion turbine
+56249,ES3-A,Combustion turbine
+56249,ES3-B,Combustion turbine
+56249,ES4-A,Combustion turbine
+56249,ES4-B,Combustion turbine
+56249,ES5-A,Combustion turbine
+56249,ES5-B,Combustion turbine
+56249,ES6-A,Combustion turbine
+56249,ES6-B,Combustion turbine
+56253,MC-1,Combustion turbine
+56253,MC-2,Combustion turbine
+56259,CT-1,Combined cycle
+56259,CT-2,Combined cycle
+56283,U-1,Combustion turbine
+56283,U-2,Combustion turbine
+56292,ES1-A,Combustion turbine
+56292,ES1-B,Combustion turbine
+56292,ES2-A,Combustion turbine
+56292,ES2-B,Combustion turbine
+56292,ES3-A,Combustion turbine
+56292,ES3-B,Combustion turbine
+56292,ES4-A,Combustion turbine
+56292,ES4-B,Combustion turbine
+56292,ES5-A,Combustion turbine
+56292,ES5-B,Combustion turbine
+56292,ES6-A,Combustion turbine
+56292,ES6-B,Combustion turbine
+56298,CT001,Combined cycle
+56298,CT002,Combined cycle
+56298,CT005,Combustion turbine
+56298,CT006,Combustion turbine
+56319,001,Dry bottom wall-fired boiler
+56326,GEN1,Combustion turbine
+56326,GEN2,Combustion turbine
+56326,GEN3,Combustion turbine
+56328,1,Combustion turbine
+56328,2,Combustion turbine
+56328,3,Combustion turbine
+56328,4,Combustion turbine
+56349,CT1A,Combined cycle
+56349,CT1B,Combined cycle
+56349,CT2A,Combined cycle
+56349,CT2B,Combined cycle
+56350,CT1A,Combined cycle
+56350,CT1B,Combined cycle
+56350,CT2A,Combined cycle
+56350,CT2B,Combined cycle
+56350,CT-4A,Combustion turbine
+56350,CT-4B,Combustion turbine
+56397,4,Combustion turbine
+56400,1,Combined cycle
+56407,WCCT1A,Combined cycle
+56407,WCCT1B,Combined cycle
+56407,WCCT1C,Combined cycle
+56407,WCCT2A,Combined cycle
+56407,WCCT2B,Combined cycle
+56407,WCCT2C,Combined cycle
+56407,WCCT3A,Combined cycle
+56407,WCCT3B,Combined cycle
+56407,WCCT3C,Combined cycle
+56445,CT-01,Combustion turbine
+56445,CT-02,Combustion turbine
+56456,1,Dry bottom wall-fired boiler
+56458,HOBB1,Combined cycle
+56458,HOBB2,Combined cycle
+56467,CT1,Combined cycle
+56467,CT2,Combined cycle
+56471,CT1,Combustion turbine
+56472,CT1,Combustion turbine
+56473,CT1,Combustion turbine
+56474,CT1,Combustion turbine
+56475,CT1,Combustion turbine
+56476,GT1,Combined cycle
+56476,GT2,Combined cycle
+56480,1A,Combustion turbine
+56480,1B,Combustion turbine
+56482,1,Combustion turbine
+56482,2,Combustion turbine
+56502,EEC1,Combustion turbine
+56502,EEC2,Combustion turbine
+56502,EEC3,Combustion turbine
+56502,EEC4,Combustion turbine
+56502,EEC5,Combustion turbine
+56502,EEC6,Combustion turbine
+56502,EEC7,Combustion turbine
+56505,SN04,Combustion turbine
+56505,SN06,Combustion turbine
+56505,SN07,Combustion turbine
+56532,CT1,Combined cycle
+56532,CT2,Combined cycle
+56556,EU01A,Combustion turbine
+56556,EU01B,Combustion turbine
+56556,EU02A,Combustion turbine
+56556,EU02B,Combustion turbine
+56564,SN-01,Dry bottom wall-fired boiler
+56569,1,Combustion turbine
+56569,2,Combustion turbine
+56596,001,Dry bottom wall-fired boiler
+56603,SJCCT1,Combustion turbine
+56603,SJCCT2,Combustion turbine
+56604,HCCT1,Combustion turbine
+56604,HCCT2,Combustion turbine
+56606,CT01,Combustion turbine
+56609,01,Dry bottom wall-fired boiler
+56610,01,Combined cycle
+56611,S01,Dry bottom wall-fired boiler
+56629,10,Combustion turbine
+56639,1,Combustion turbine
+56639,2,Combustion turbine
+56668,CGTC,Combustion turbine
+56671,001,Dry bottom wall-fired boiler
+56674,1,Combustion turbine
+56674,2,Combustion turbine
+56674,3,Combustion turbine
+56674,4,Combustion turbine
+56786,001,Circulating fluidized bed boiler
+56798,U1,Combined cycle
+56798,U2,Combined cycle
+56799,1,Combustion turbine
+56799,2,Combustion turbine
+56803,1,Combustion turbine
+56803,2,Combustion turbine
+56803,3,Combustion turbine
+56803,4,Combustion turbine
+56806,CBY41,Combined cycle
+56806,CBY42,Combined cycle
+56807,1A,Combined cycle
+56807,1B,Combined cycle
+56808,1,Circulating fluidized bed boiler
+56808,2,Circulating fluidized bed boiler
+56846,GT1,Combined cycle
+56846,GT2,Combined cycle
+56908,1A,Combustion turbine
+56908,1B,Combustion turbine
+56908,2A,Combustion turbine
+56908,2B,Combustion turbine
+56908,3A,Combustion turbine
+56908,3B,Combustion turbine
+56914,CTG1,Combustion turbine
+56914,CTG2,Combustion turbine
+56940,1,Combined cycle
+56940,2,Combined cycle
+56948,CT01,Combustion turbine
+56948,CT02,Combustion turbine
+56948,CT03,Combustion turbine
+56948,CT04,Combustion turbine
+56948,CT05,Combustion turbine
+56948,CT06,Combustion turbine
+56948,CT07,Combustion turbine
+56948,CT08,Combustion turbine
+56948,CT09,Combustion turbine
+56948,CT10,Combustion turbine
+56948,CT11,Combustion turbine
+56948,CT12,Combustion turbine
+56963,E101,Combined cycle
+56963,E102,Combined cycle
+56964,GT1,Combustion turbine
+56964,GT10,Combustion turbine
+56964,GT2,Combustion turbine
+56964,GT3,Combustion turbine
+56964,GT4,Combustion turbine
+56964,GT5,Combustion turbine
+56964,GT6,Combustion turbine
+56964,GT7,Combustion turbine
+56964,GT8,Combustion turbine
+56964,GT9,Combustion turbine
+56998,CT01,Combustion turbine
+56998,CT02,Combustion turbine
+56998,CT04,Combined cycle
+56998,CT05,Combined cycle
+56998,CT06,Combined cycle
+56998,CT07,Combined cycle
+56998,CT08,Combustion turbine
+57001,1,Combustion turbine
+57027,1,Combustion turbine
+57027,2,Combustion turbine
+57027,3,Combustion turbine
+57027,4,Combustion turbine
+57028,CT1,Combined cycle
+57029,ES1,Combustion turbine
+57029,ES2,Combustion turbine
+57029,ES3,Combustion turbine
+57029,ES4,Combustion turbine
+57037,AB-001,Combined cycle
+57037,AB-002,Combined cycle
+57073,BLR1,Other boiler
+57074,BLR1,Other boiler
+57075,BLR1,Other boiler
+57185,U001,Combined cycle
+57185,U002,Combined cycle
+57185,U003,Combined cycle
+57241,BFB1,Bubbling fluidized bed boiler
+57267,1,Combustion turbine
+57267,2,Combustion turbine
+57267,3,Combustion turbine
+57267,4,Combustion turbine
+57349,1,Combined cycle
+57482,1,Combustion turbine
+57482,2,Combustion turbine
+57482,3,Combustion turbine
+57482,4,Combustion turbine
+57482,5,Combustion turbine
+57482,6,Combustion turbine
+57482,7,Combustion turbine
+57482,8,Combustion turbine
+57483,GT-1,Combustion turbine
+57483,GT-2,Combustion turbine
+57483,GT-3,Combustion turbine
+57483,GT-4,Combustion turbine
+57515,GT1,Combustion turbine
+57515,GT2,Combustion turbine
+57515,GT3,Combustion turbine
+57515,GT4,Combustion turbine
+57515,GT5,Combustion turbine
+57555,CTG1,Combustion turbine
+57555,CTG2,Combustion turbine
+57555,CTG3,Combustion turbine
+57564,8,Combined cycle
+57703,CT01,Combined cycle
+57703,CT02,Combined cycle
+57703,CT03,Combustion turbine
+57794,CTG01A,Combined cycle
+57794,CTG01B,Combined cycle
+57839,0001,Combined cycle
+57839,0002,Combined cycle
+57842,1,Combustion turbine
+57865,1,Combustion turbine
+57865,2,Combustion turbine
+57865,3,Combustion turbine
+57881,CT1,Combustion turbine
+57881,CT2,Combustion turbine
+57881,CT3,Combustion turbine
+57881,CT4,"Combustion turbine (Started Jun 22, 2025)"
+57881,CT5,"Combustion turbine (Started Apr 19, 2025)"
+57943,CT1,Combustion turbine
+57943,CT2,Combustion turbine
+57943,CT3,Combustion turbine
+57943,CT4,Combustion turbine
+57943,CT5,Combustion turbine
+57943,CT6,Combustion turbine
+57978,CT1,Combined cycle
+58001,CTG1,Combined cycle
+58001,CTG2,Combined cycle
+58001,CTG3,Combined cycle
+58001,CTG4,Combined cycle
+58005,CTG1,Combined cycle
+58005,CTG2,Combined cycle
+58054,ST01,Bubbling fluidized bed boiler
+58079,U001,Combined cycle
+58079,U002,Combined cycle
+58122,GEN1,Combustion turbine
+58124,1,Circulating fluidized bed boiler
+58235,U1,Combustion turbine
+58236,CT1,Combined cycle
+58236,CT2,Combined cycle
+58260,1A,Combined cycle
+58260,1B,Combined cycle
+58260,1C,Combined cycle
+58284,1,Combustion turbine
+58325,1,Combustion turbine
+58378,CTHRSG,Combustion turbine
+58413,SCCT1,Combustion turbine
+58413,SCCT2,Combustion turbine
+58420,CT1,Combined cycle
+58420,CT2,Combined cycle
+58426,CT1,Combined cycle
+58426,CT2,Combined cycle
+58427,100,Combined cycle
+58427,200,Combined cycle
+58471,CT-1,Combustion turbine
+58471,CT-2,Combustion turbine
+58478,CC01,Combined cycle
+58503,CTEU1,Combined cycle
+58562,GT-1,Combustion turbine
+58562,GT-2,Combustion turbine
+58562,GT-3,Combustion turbine
+58562,GT-4,Combustion turbine
+58933,101,Combined cycle
+58933,102,Combined cycle
+58933,103,Combined cycle
+59004,CT1,Combined cycle
+59004,CT2,Combined cycle
+59073,214JA,Combustion turbine
+59073,214JB,Combustion turbine
+59073,B921A,Other boiler
+59073,B921B,Other boiler
+59073,GT501A,Combustion turbine
+59073,GT501B,Combustion turbine
+59093,10,Combined cycle
+59093,11,Combined cycle
+59220,CT1,Combined cycle
+59220,CT2,Combined cycle
+59325,ES-1,Combined cycle
+59326,1,Combined cycle
+59764,01,Combined cycle
+59764,02,Combined cycle
+59773,1,Combined cycle
+59773,2,Combined cycle
+59812,CGT4,Combined cycle
+59812,CGT5,Combined cycle
+59882,J4,Combustion turbine
+59882,J5,Combustion turbine
+59906,201,Combined cycle
+59906,202,Combined cycle
+59913,1A,Combined cycle
+59913,1B,Combined cycle
+59913,1C,Combined cycle
+59926,AL1,Combustion turbine
+59926,AL2,Combustion turbine
+60122,CT7,Combined cycle
+60122,CT8,Combined cycle
+60264,BCGT1,Combustion turbine
+60264,BCGT2,Combustion turbine
+60264,BCGT3,Combustion turbine
+60264,BCGT4,Combustion turbine
+60264,BCGT5,Combustion turbine
+60264,BCGT6,Combustion turbine
+60302,11,Combined cycle
+60302,12,Combined cycle
+60340,B0004,Circulating fluidized bed boiler
+60345,OCEC1A,Combined cycle
+60345,OCEC1B,Combined cycle
+60345,OCEC1C,Combined cycle
+60356,1,Combined cycle
+60356,2,Combined cycle
+60357,1,Combined cycle
+60357,2,Combined cycle
+60357,3,Combined cycle
+60368,CT1,Combined cycle
+60368,CT2,Combined cycle
+60368,CT3,Combined cycle
+60376,1,Combined cycle
+60376,2,Combined cycle
+60387,3,Combustion turbine
+60387,4,Combustion turbine
+60459,CT1,Combustion turbine
+60459,CT2,Combustion turbine
+60460,CT1,Combustion turbine
+60460,CT2,Combustion turbine
+60464,101,Combined cycle
+60464,102,Combined cycle
+60468,CT-1,Combustion turbine
+60589,CT-1,Combined cycle
+60589,CT-2,Combined cycle
+60698,D1,Combustion turbine
+60698,D7,Combustion turbine
+60903,1,Combined cycle
+60903,2,Combined cycle
+60910,1GT,Combustion turbine
+60925,CT1,Combined cycle
+60925,CT2,Combined cycle
+60926,1A,Combined cycle
+60926,1B,Combined cycle
+60927,1A,Combined cycle
+60927,1B,Combined cycle
+61028,CT1,Combined cycle
+61028,CT2,Combined cycle
+61035,01,Combined cycle
+61144,1,Combustion turbine
+61241,CT1,Combustion turbine
+61241,CT2,Combustion turbine
+61242,CT1,Combustion turbine
+61242,CT2,Combustion turbine
+61322,CC1,Combined cycle
+61966,CT1,Combustion turbine
+61966,CT2,Combustion turbine
+62192,11,Combined cycle
+62192,12,Combined cycle
+62548,CT1,Combustion turbine
+62548,CT2,Combustion turbine
+62565,01,Combined cycle
+62926,CTG-01,Combined cycle
+62926,CTG-02,Combined cycle
+62949,P001,Combined cycle
+62949,P002,Combined cycle
+62949,P003,Combined cycle
+63259,DEPC2,Combined cycle
+63259,DEPC3,Combined cycle
+63259,DEPS1,Combustion turbine
+63335,CT-1,Combustion turbine
+63335,CT-2,Combustion turbine
+63335,CT-3,Combustion turbine
+63335,CT-4,Combustion turbine
+63335,CT-5,Combustion turbine
+63335,CT-6,Combustion turbine
+63335,CT-7,Combustion turbine
+63335,CT-8,Combustion turbine
+63559,1,Combustion turbine
+63628,5A-1,Combustion turbine
+63628,5A-2,Combustion turbine
+63628,5B-1,Combustion turbine
+63628,5B-2,Combustion turbine
+63688,CT-1,Combustion turbine
+63688,CT-10,Combustion turbine
+63688,CT-2,Combustion turbine
+63688,CT-3,Combustion turbine
+63688,CT-4,Combustion turbine
+63688,CT-5,Combustion turbine
+63688,CT-6,Combustion turbine
+63688,CT-7,Combustion turbine
+63688,CT-8,Combustion turbine
+63688,CT-9,Combustion turbine
+63931,1,Combined cycle
+63931,2,Combined cycle
+64383,CT-1,Combustion turbine
+64383,CT-2,Combustion turbine
+64383,CT-3,Combustion turbine
+64383,CT-4,Combustion turbine
+64383,CT-5,Combustion turbine
+64383,CT-6,Combustion turbine
+64383,CT-7,Combustion turbine
+64383,CT-8,Combustion turbine
+64547,CT-1,Combustion turbine
+64547,CT-2,Combustion turbine
+64854,CT1,Combustion turbine
+64854,CT2,Combustion turbine
+65372,CT-1,Combustion turbine
+65372,CT-2,Combustion turbine
+65372,CT-3,Combustion turbine
+65372,CT-4,Combustion turbine
+65372,CT-5,Combustion turbine
+65372,CT-6,Combustion turbine
+65372,CT-7,Combustion turbine
+65372,CT-8,Combustion turbine
+65373,CT-1,Combustion turbine
+65373,CT-2,Combustion turbine
+65373,CT-3,Combustion turbine
+65373,CT-4,Combustion turbine
+65373,CT-5,Combustion turbine
+65373,CT-6,Combustion turbine
+65373,CT-7,Combustion turbine
+65373,CT-8,Combustion turbine
+66600,CT3,Combustion turbine
+66604,CT-1,Combustion turbine
+66604,CT-2,Combustion turbine
+66604,CT-3,Combustion turbine
+66604,CT-4,Combustion turbine
+66604,CT-5,Combustion turbine
+66604,CT-6,Combustion turbine
+66604,CT-7,Combustion turbine
+66604,CT-8,Combustion turbine
+66918,GT11,"Combined cycle (Started Dec 12, 2025)"
+66918,GT12,"Combined cycle (Started Dec 12, 2025)"
+68386,CT-1,"Combustion turbine (Started May 13, 2025)"
+68386,CT-2,"Combustion turbine (Started May 24, 2025)"
+68386,CT-3,"Combustion turbine (Started Jun 02, 2025)"
+68386,CT-4,"Combustion turbine (Started Jun 05, 2025)"
+68386,CT-5,"Combustion turbine (Started Jun 25, 2025)"
+68386,CT-6,"Combustion turbine (Started Jul 15, 2025)"
+70454,MAG1,Combustion turbine
+70454,MAG2,Combustion turbine
+880004,3,Dry bottom wall-fired boiler
+880004,4,Dry bottom wall-fired boiler
+880004,5C,Combustion turbine
+880006,1,Dry bottom wall-fired boiler
+880006,2,Dry bottom wall-fired boiler
+880006,3,Dry bottom wall-fired boiler
+880006,4,Dry bottom wall-fired boiler
+880007,052,Other boiler
+880023,K1,Dry bottom wall-fired boiler
+880023,K2,Dry bottom wall-fired boiler
+880023,K3,Dry bottom wall-fired boiler
+880023,K4,Dry bottom wall-fired boiler
+880024,U28006,Tangentially-fired
+880025,034,Dry bottom vertically-fired boiler
+880025,035,Other boiler
+880025,053,Other boiler
+880029,0002,Dry bottom wall-fired boiler
+880030,B034,Other boiler
+880030,B035,Other boiler
+880031,0401,Other boiler
+880031,0402,Other boiler
+880038,B026,Other boiler
+880041,X015,Dry bottom wall-fired boiler
+880042,P009,Other boiler
+880042,P010,Other boiler
+880042,P011,Other boiler
+880042,P012,Other boiler
+880045,260-03,Other boiler
+880045,260-04,Other boiler
+880045,260-06,Other boiler
+880053,B016,Other boiler
+880053,B017,Other boiler
+880065,01,Dry bottom wall-fired boiler
+880065,02,Dry bottom wall-fired boiler
+880067,BLR15,Dry bottom wall-fired boiler
+880067,BLR16,Dry bottom wall-fired boiler
+880067,BLR17,Tangentially-fired
+880067,BLR19,Other boiler
+880071,31301,Combustion turbine
+880072,31601,Combustion turbine
+880076,430B-1,Dry bottom wall-fired boiler
+880076,430B24,Other boiler
+880076,431B25,Other boiler
+880079,34,Stoker
+880079,35,Stoker
+880079,37,Combustion turbine
+880079,38,Combustion turbine
+880083,B026,Dry bottom wall-fired boiler
+880086,6,Other boiler
+880086,UNITE,Other boiler
+880086,UNITF,Other boiler
+880088,59F-3,Other boiler
+880088,59F-4,Other boiler
+880089,CB706,Tangentially-fired
+880093,10D,Dry bottom wall-fired boiler
+880093,10E,Other boiler
+880093,10F,Other boiler
+880099,01,Other boiler
+880100,BLR001,Dry bottom wall-fired boiler
+880100,BLR002,Dry bottom wall-fired boiler
+880100,BLR003,Dry bottom wall-fired boiler
+880100,BLR004,Dry bottom wall-fired boiler
+880102,1,Circulating fluidized bed boiler
+880102,2,Circulating fluidized bed boiler
+880103,PS1,Tangentially-fired
+880103,PS2,Tangentially-fired
+880103,PS3,Tangentially-fired
+880103,PS4,Tangentially-fired
+880104,COS3,Tangentially-fired
+880104,COS4,Tangentially-fired
+880104,COS5,Tangentially-fired
+880104,COS6,Tangentially-fired
+880105,AG1,Tangentially-fired
+880105,AG2,Tangentially-fired
+880106,SJ10,Tangentially-fired
+880106,SJ7,Tangentially-fired
+880106,SJ8,Tangentially-fired
+880106,SJ9,Tangentially-fired
+880107,AB01,Dry bottom wall-fired boiler
+880107,AB03,Dry bottom wall-fired boiler
+880107,AB04,Dry bottom wall-fired boiler
+880108,BLR1,Other boiler
+880108,BLR2,Other boiler
+880109,B001,Other boiler
+880110,1,Other boiler
+880110,2,Other boiler
+880110,3,Other boiler
+880110,4,Other boiler
