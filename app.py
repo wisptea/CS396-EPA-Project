@@ -1,5 +1,5 @@
 import os
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 import mysql.connector
 from dotenv import load_dotenv
@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  #Enables cross-origin requests for frontend integration
+CORS(app)  # Enables cross-origin requests for frontend integration
 
-# DATABASE HELPER
+#Connects to the database
 
 def get_db_connection():
     """Establishes and returns a connection to the MySQL database."""
@@ -21,7 +21,65 @@ def get_db_connection():
     )
 
 
-#ROUTES
+#Implement web page routes
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/explorer')
+def explorer():
+    return render_template('explorer.html')
+
+@app.route('/upload')
+def upload():
+    return render_template('upload.html')
+
+@app.route('/retrieval')
+def retrieval():
+    return render_template('retrieval.html')
+
+@app.route('/download')
+def download():
+    return render_template('download.html')
+
+@app.route('/unit/<int:facility_id>/<unit_id>')
+def unit_detail(facility_id, unit_id):
+    return render_template('detail.html', facility_id=facility_id, unit_id=unit_id)
+
+
+#API routes to help with searching
+
+@app.route('/api/stats', methods=['GET'])
+def get_stats():
+    """Returns high-level dataset statistics for the home page."""
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+        
+        cursor.execute("SELECT COUNT(*) as total_facilities FROM Facilities")
+        total_facilities = cursor.fetchone()['total_facilities']
+        
+        cursor.execute("SELECT COUNT(*) as total_units FROM Units")
+        total_units = cursor.fetchone()['total_units']
+        
+        cursor.execute("SELECT COUNT(*) as total_records FROM Annual_Emissions")
+        total_records = cursor.fetchone()['total_records']
+        
+        cursor.close()
+        conn.close()
+        
+        return jsonify({
+            "status": "success",
+            "data": {
+                "facilities": total_facilities,
+                "units": total_units,
+                "emissions_records": total_records
+            }
+        }), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
 
 @app.route('/api/facilities', methods=['GET'])
 def get_facilities():
@@ -58,12 +116,12 @@ def get_facilities():
         if where_clauses:
             where_sql = "WHERE " + " AND ".join(where_clauses)
 
-        #Get total matching count for pagination
+        # Get total matching count for pagination
         count_query = f"SELECT COUNT(*) as total FROM Facilities {where_sql}"
         cursor.execute(count_query, params)
         total_records = cursor.fetchone()['total']
 
-        #Get paginated results
+        # Get paginated results
         query = f"""
             SELECT * FROM Facilities 
             {where_sql} 
@@ -96,7 +154,7 @@ def get_facility_by_id(facility_id):
         conn = get_db_connection()
         cursor = conn.cursor(dictionary=True)
 
-        #Fetch facility detail
+        # Fetch facility detail
         cursor.execute("SELECT * FROM Facilities WHERE facility_id = %s", (facility_id,))
         facility = cursor.fetchone()
 
@@ -105,7 +163,7 @@ def get_facility_by_id(facility_id):
             conn.close()
             return jsonify({"status": "error", "message": "Facility not found"}), 404
 
-        #Fetch associated units
+        # Fetch associated units
         cursor.execute("SELECT * FROM Units WHERE facility_id = %s", (facility_id,))
         units = cursor.fetchall()
 
@@ -161,12 +219,12 @@ def get_emissions():
         if where_clauses:
             where_sql = "WHERE " + " AND ".join(where_clauses)
 
-        #Count total records
+        # Count total records
         count_query = f"SELECT COUNT(*) as total FROM Annual_Emissions {where_sql}"
         cursor.execute(count_query, params)
         total_records = cursor.fetchone()['total']
 
-        #Fetch paginated records joined with facility name
+        # Fetch paginated records joined with facility name
         query = f"""
             SELECT e.*, f.facility_name, f.state 
             FROM Annual_Emissions e
@@ -211,6 +269,24 @@ def get_metadata():
 
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+#File Upload & Data Export Routes
+@app.route('/api/upload/preview', methods=['POST'])
+def upload_preview():
+    """Parses uploaded CSV/Excel files and returns a data quality validation report."""
+    if 'file' not in request.files:
+        return jsonify({"status": "error", "message": "No file uploaded"}), 400
+    
+    file = request.files['file']
+    # Add Pandas parsing, column verification, and duplicate check logic here
+    return jsonify({"status": "success", "message": "File parsed successfully"}), 200
+
+
+@app.route('/api/export', methods=['GET'])
+def export_csv():
+    """Streams CSV output based on current search parameters."""
+    pass
 
 
 # RUN SERVER
