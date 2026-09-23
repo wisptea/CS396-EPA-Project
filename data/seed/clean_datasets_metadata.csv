@@ -1,3 +1,5 @@
 dataset_name,data_source,reporting_year,processed_date,original_filename,raw_records_count,accepted_records_count,rejected_records_count,notes
-CAMPD Facility & Unit Attributes,EPA CAMPD,2025,2026-09-06 15:26:39,facility-2025.csv,4058,4058,0,Facilities and unit capacity attributes processed successfully.
-CAMPD Annual Emissions & Operating Data,EPA CAMPD,2025,2026-09-06 15:26:39,emissions-2025.csv,3989,3989,0,"Annual emissions, operating hours, and generation processed successfully."
+CAMPD Facility & Unit Attributes,EPA CAMPD,2025,2026-09-23 02:00:42,facility-2025.csv,4058,4058,0,Facilities and unit capacity attributes processed successfully.
+CAMPD Annual Emissions & Operating Data,EPA CAMPD,2025,2026-09-23 02:00:42,emissions-2025.csv,3989,3989,0,"Annual emissions, operating hours, and generation processed successfully."
+CAMPD Hourly CEMS Emissions 2025 (Q1-Q4),EPA CAMPD,2025,2026-09-23 02:00:45,emissions-hourly-2025-q1..q4.csv,166440,166440,0,Streamed Q1-Q4 hourly files in chunks to clean_hourly_emissions.csv successfully.
+CAMPD Daily CEMS Emissions 2025 (Q1-Q4),EPA CAMPD,2025,2026-09-23 02:00:46,emissions-daily-2025-q1..q4.csv,31393,31393,0,Streamed Q1-Q4 daily files in chunks to clean_daily_emissions.csv successfully.

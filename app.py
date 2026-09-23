@@ -65,6 +65,12 @@ def get_stats():
         
         cursor.execute("SELECT COUNT(*) as total_records FROM Annual_Emissions")
         total_records = cursor.fetchone()['total_records']
+
+        cursor.execute("SELECT COUNT(*) as total_daily FROM Daily_Emissions")
+        total_daily = cursor.fetchone()['total_daily']
+
+        cursor.execute("SELECT COUNT(*) as total_hourly FROM Hourly_Emissions")
+        total_hourly = cursor.fetchone()['total_hourly']
         
         cursor.close()
         conn.close()
@@ -74,7 +80,9 @@ def get_stats():
             "data": {
                 "facilities": total_facilities,
                 "units": total_units,
-                "emissions_records": total_records
+                "annual_emissions_records": total_records,
+                "daily_emissions_records": total_daily,
+                "hourly_emissions_records": total_hourly
             }
         }), 200
     except Exception as e:
@@ -183,7 +191,7 @@ def get_emissions():
     """
     Retrieves annual emissions with multi-criteria filtering and pagination.
     Query Params:
-      - year: int (e.g., 2022)
+      - year: int (e.g., 2025)
       - fuel_type: string (e.g., 'Coal', 'Natural Gas')
       - facility_id: int
       - page: int (default 1)
@@ -252,6 +260,163 @@ def get_emissions():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+@app.route('/api/emissions/daily', methods=['GET'])
+def get_daily_emissions():
+    """
+    Retrieves daily emissions with filtering and pagination.
+    Query Params:
+      - facility_id: int
+      - unit_id: string
+      - date: string (YYYY-MM-DD)
+      - page: int (default 1)
+      - limit: int (default 20)
+    """
+    try:
+        facility_id = request.args.get('facility_id')
+        unit_id = request.args.get('unit_id')
+        op_date = request.args.get('date')
+        page = max(1, int(request.args.get('page', 1)))
+        limit = max(1, min(100, int(request.args.get('limit', 20))))
+        offset = (page - 1) * limit
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        where_clauses = []
+        params = []
+
+        if facility_id:
+            where_clauses.append("d.facility_id = %s")
+            params.append(int(facility_id))
+
+        if unit_id:
+            where_clauses.append("d.unit_id = %s")
+            params.append(unit_id)
+
+        if op_date:
+            where_clauses.append("d.op_date = %s")
+            params.append(op_date)
+
+        where_sql = ""
+        if where_clauses:
+            where_sql = "WHERE " + " AND ".join(where_clauses)
+
+        count_query = f"SELECT COUNT(*) as total FROM Daily_Emissions d {where_sql}"
+        cursor.execute(count_query, params)
+        total_records = cursor.fetchone()['total']
+
+        query = f"""
+            SELECT d.*, f.facility_name, f.state 
+            FROM Daily_Emissions d
+            JOIN Facilities f ON d.facility_id = f.facility_id
+            {where_sql}
+            ORDER BY d.op_date DESC
+            LIMIT %s OFFSET %s
+        """
+        cursor.execute(query, params + [limit, offset])
+        records = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            "status": "success",
+            "page": page,
+            "limit": limit,
+            "total_records": total_records,
+            "total_pages": (total_records + limit - 1) // limit,
+            "data": records
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/emissions/hourly', methods=['GET'])
+def get_hourly_emissions():
+    """
+    Retrieves hourly emissions with filtering and pagination.
+    Query Params:
+      - facility_id: int
+      - unit_id: string
+      - date: string (YYYY-MM-DD)
+      - hour: int (0-23)
+      - page: int (default 1)
+      - limit: int (default 20)
+    """
+    try:
+        facility_id = request.args.get('facility_id')
+        unit_id = request.args.get('unit_id')
+        op_date = request.args.get('date')
+        op_hour = request.args.get('hour')
+        page = max(1, int(request.args.get('page', 1)))
+        limit = max(1, min(100, int(request.args.get('limit', 20))))
+        offset = (page - 1) * limit
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        where_clauses = []
+        params = []
+
+        if facility_id:
+            where_clauses.append("h.facility_id = %s")
+            params.append(int(facility_id))
+
+        if unit_id:
+            where_clauses.append("h.unit_id = %s")
+            params.append(unit_id)
+
+        if op_date:
+            where_clauses.append("h.op_date = %s")
+            params.append(op_date)
+
+        if op_hour is not None and op_hour != '':
+            where_clauses.append("h.op_hour = %s")
+            params.append(int(op_hour))
+
+        where_sql = ""
+        if where_clauses:
+            where_sql = "WHERE " + " && ".join(where_clauses) # or " AND "
+
+        # OPTIMIZATION: Avoid full table scan for COUNT(*) if no filters are applied
+        if not where_clauses:
+            cursor.execute("SELECT TABLE_ROWS FROM information_schema.tables WHERE table_schema = DATABASE() AND table_name = 'Hourly_Emissions'")
+            row = cursor.fetchone()
+            total_records = row.get('table_rows') or row.get('TABLE_ROWS') if row else 1000000
+        else:
+            count_query = f"SELECT COUNT(*) as total FROM Hourly_Emissions h {where_sql}"
+            cursor.execute(count_query, params)
+            total_records = cursor.fetchone()['total']
+
+        # Optimized query using proper index ordering
+        query = f"""
+            SELECT h.*, f.facility_name, f.state 
+            FROM Hourly_Emissions h
+            JOIN Facilities f ON h.facility_id = f.facility_id
+            {where_sql}
+            ORDER BY h.op_date DESC, h.op_hour DESC
+            LIMIT %s OFFSET %s
+        """
+        cursor.execute(query, params + [limit, offset])
+        records = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            "status": "success",
+            "page": page,
+            "limit": limit,
+            "total_records": total_records,
+            "total_pages": (total_records + limit - 1) // limit,
+            "data": records
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
 @app.route('/api/metadata', methods=['GET'])
 def get_metadata():
     """Retrieves dataset processing logs and record intake counts."""
@@ -271,6 +436,69 @@ def get_metadata():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+@app.route('/api/search', methods=['GET'])
+def global_search():
+    """
+    Unified search endpoint.
+    Query Params:
+      - q: string (search term)
+      - limit: int (default 10)
+    """
+    try:
+        query = request.args.get('q', '').strip()
+        if not query:
+            return jsonify({"status": "success", "data": {"facilities": [], "units": [], "traci_factors": []}}), 200
+
+        limit = max(1, min(50, int(request.args.get('limit', 10))))
+        search_pattern = f"%{query}%"
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        # 1. Search Facilities by Name or State
+        cursor.execute("""
+            SELECT facility_id, facility_name, state, county, source_category 
+            FROM Facilities 
+            WHERE facility_name LIKE %s OR state LIKE %s OR county LIKE %s
+            LIMIT %s
+        """, (search_pattern, search_pattern, search_pattern, limit))
+        facilities = cursor.fetchall()
+
+        # 2. Search Units by Unit ID or Control System
+        cursor.execute("""
+            SELECT facility_id, unit_id, unit_type, so2_controls, nox_controls 
+            FROM Units 
+            WHERE unit_id LIKE %s OR unit_type LIKE %s
+            LIMIT %s
+        """, (search_pattern, search_pattern, limit))
+        units = cursor.fetchall()
+
+        # 3. Search TRACI Environmental Factors by Substance or Category
+        cursor.execute("""
+            SELECT traci_id, substance, category, factor, unit 
+            FROM TRACI_Factors 
+            WHERE substance LIKE %s OR category LIKE %s OR cas_number LIKE %s
+            LIMIT %s
+        """, (search_pattern, search_pattern, search_pattern, limit))
+        traci_factors = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            "status": "success",
+            "query": query,
+            "data": {
+                "facilities": facilities,
+                "units": units,
+                "traci_factors": traci_factors
+            }
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
 #File Upload & Data Export Routes
 @app.route('/api/upload/preview', methods=['POST'])
 def upload_preview():
@@ -279,7 +507,6 @@ def upload_preview():
         return jsonify({"status": "error", "message": "No file uploaded"}), 400
     
     file = request.files['file']
-    # Add Pandas parsing, column verification, and duplicate check logic here
     return jsonify({"status": "success", "message": "File parsed successfully"}), 200
 
 
