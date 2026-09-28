@@ -371,25 +371,18 @@ def get_hourly_emissions():
             where_clauses.append("h.op_date = %s")
             params.append(op_date)
 
-        if op_hour is not None and op_hour != '':
+        if op_hour is not None:
             where_clauses.append("h.op_hour = %s")
             params.append(int(op_hour))
 
         where_sql = ""
         if where_clauses:
-            where_sql = "WHERE " + " && ".join(where_clauses) # or " AND "
+            where_sql = "WHERE " + " AND ".join(where_clauses)
 
-        # OPTIMIZATION: Avoid full table scan for COUNT(*) if no filters are applied
-        if not where_clauses:
-            cursor.execute("SELECT TABLE_ROWS FROM information_schema.tables WHERE table_schema = DATABASE() AND table_name = 'Hourly_Emissions'")
-            row = cursor.fetchone()
-            total_records = row.get('table_rows') or row.get('TABLE_ROWS') if row else 1000000
-        else:
-            count_query = f"SELECT COUNT(*) as total FROM Hourly_Emissions h {where_sql}"
-            cursor.execute(count_query, params)
-            total_records = cursor.fetchone()['total']
+        count_query = f"SELECT COUNT(*) as total FROM Hourly_Emissions h {where_sql}"
+        cursor.execute(count_query, params)
+        total_records = cursor.fetchone()['total']
 
-        # Optimized query using proper index ordering
         query = f"""
             SELECT h.*, f.facility_name, f.state 
             FROM Hourly_Emissions h
@@ -497,6 +490,209 @@ def global_search():
 
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+
+#ADVANCED SEARCH FEATURES
+@app.route('/api/search/advanced', methods=['GET'])
+def advanced_emissions_search():
+    """
+    Advanced multi-criteria, range, and sorting search for annual emissions.
+    Query Params:
+      - state: string (e.g., 'KY')
+      - year: int (e.g., 2025)
+      - fuel: string (e.g., 'coal')
+      - min_co2: float / max_co2: float
+      - min_so2: float / max_so2: float
+      - min_nox: float / max_nox: float
+      - min_op_time: float
+      - min_gross_load: float / max_gross_load: float
+      - sort_by: string ('co2_mass_short_tons', 'so2_mass_short_tons', 'gross_load_mwh', etc.)
+      - order: string ('ASC' or 'DESC')
+      - page: int (default 1)
+      - limit: int (default 20)
+    """
+    try:
+        # Extract filter parameters
+        state = request.args.get('state', '').strip()
+        year = request.args.get('year')
+        fuel = request.args.get('fuel', '').strip()
+        
+        min_co2 = request.args.get('min_co2')
+        max_co2 = request.args.get('max_co2')
+        min_so2 = request.args.get('min_so2')
+        max_so2 = request.args.get('max_so2')
+        min_nox = request.args.get('min_nox')
+        max_op_time = request.args.get('max_op_time')
+        min_op_time = request.args.get('min_op_time')
+        min_gross_load = request.args.get('min_gross_load')
+        
+        sort_by = request.args.get('sort_by', 'co2_mass_short_tons')
+        order = request.args.get('order', 'DESC').upper()
+        
+        page = max(1, int(request.args.get('page', 1)))
+        limit = max(1, min(100, int(request.args.get('limit', 20))))
+        offset = (page - 1) * limit
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        where_clauses = []
+        params = []
+
+        # Multi-criteria filters
+        if state:
+            where_clauses.append("f.state = %s")
+            params.append(state)
+            
+        if year:
+            where_clauses.append("e.reporting_year = %s")
+            params.append(int(year))
+            
+        if fuel:
+            where_clauses.append("e.primary_fuel_type LIKE %s")
+            params.append(f"%{fuel}%")
+
+        # Range filters
+        if min_co2:
+            where_clauses.append("e.co2_mass_short_tons >= %s")
+            params.append(float(min_co2))
+        if max_co2:
+            where_clauses.append("e.co2_mass_short_tons <= %s")
+            params.append(float(max_co2))
+            
+        if min_so2:
+            where_clauses.append("e.so2_mass_short_tons >= %s")
+            params.append(float(min_so2))
+        if max_so2:
+            where_clauses.append("e.so2_mass_short_tons <= %s")
+            params.append(float(max_so2))
+
+        if min_nox:
+            where_clauses.append("e.nox_mass_short_tons >= %s")
+            params.append(float(min_nox))
+            
+        if max_op_time:
+            where_clauses.append("e.sum_of_the_operating_time <= %s")
+            params.append(float(max_op_time))
+
+        if min_op_time:
+            where_clauses.append("e.sum_of_the_operating_time >= %s")
+            params.append(float(min_op_time))
+            
+        if min_gross_load:
+            where_clauses.append("e.gross_load_mwh >= %s")
+            params.append(float(min_gross_load))
+
+        where_sql = ""
+        if where_clauses:
+            where_sql = "WHERE " + " AND ".join(where_clauses)
+
+        # Whitelist columns for sorting safety against SQL injection
+        allowed_sorts = {
+            'co2_mass_short_tons': 'e.co2_mass_short_tons',
+            'so2_mass_short_tons': 'e.so2_mass_short_tons',
+            'nox_mass_short_tons': 'e.nox_mass_short_tons',
+            'gross_load_mwh': 'e.gross_load_mwh',
+            'sum_of_the_operating_time': 'e.sum_of_the_operating_time',
+            'reporting_year': 'e.reporting_year'
+        }
+        safe_sort = allowed_sorts.get(sort_by, 'e.co2_mass_short_tons')
+        safe_order = 'ASC' if order == 'ASC' else 'DESC'
+
+        # Count total records for pagination
+        count_query = f"""
+            SELECT COUNT(*) as total 
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            {where_sql}
+        """
+        cursor.execute(count_query, params)
+        total_records = cursor.fetchone()['total']
+
+        # Fetch filtered, sorted, paginated records
+        query = f"""
+            SELECT e.*, f.facility_name, f.state, f.county 
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            {where_sql}
+            ORDER BY {safe_sort} {safe_order}
+            LIMIT %s OFFSET %s
+        """
+        cursor.execute(query, params + [limit, offset])
+        records = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            "status": "success",
+            "page": page,
+            "limit": limit,
+            "total_records": total_records,
+            "total_pages": (total_records + limit - 1) // limit,
+            "data": records
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+@app.route('/api/search/ranking', methods=['GET'])
+def ranking_search():
+    """
+    Supports Top-N, Bottom-N, and Group-and-Rank searches as required by project specs.
+    Query Params:
+      - type: 'top_facilities', 'top_units', 'lowest_so2'
+      - metric: column to rank by
+      - limit: int (default 10)
+    """
+    try:
+        rank_type = request.args.get('type', 'top_facilities')
+        limit = max(1, min(50, int(request.args.get('limit', 10))))
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        if rank_type == 'top_facilities':
+            # Top N facilities by total CO2 emissions
+            query = """
+                SELECT f.facility_id, f.facility_name, f.state, SUM(e.co2_mass_short_tons) as total_co2
+                FROM Annual_Emissions e
+                JOIN Facilities f ON e.facility_id = f.facility_id
+                GROUP BY f.facility_id, f.facility_name, f.state
+                ORDER BY total_co2 DESC
+                LIMIT %s
+            """
+            cursor.execute(query, (limit,))
+            
+        elif rank_type == 'lowest_so2':
+            # Bottom N units by SO2 emissions
+            query = """
+                SELECT e.facility_id, f.facility_name, e.unit_id, e.reporting_year, e.so2_mass_short_tons, e.primary_fuel_type
+                FROM Annual_Emissions e
+                JOIN Facilities f ON e.facility_id = f.facility_id
+                WHERE e.so2_mass_short_tons IS NOT NULL
+                ORDER BY e.so2_mass_short_tons ASC
+                LIMIT %s
+            """
+            cursor.execute(query, (limit,))
+        else:
+            return jsonify({"status": "error", "message": "Invalid ranking type specified."}), 400
+
+        results = cursor.fetchall()
+        cursor.close()
+        conn.close()
+
+        return jsonify({
+            "status": "success",
+            "type": rank_type,
+            "data": results
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
 
 
 #File Upload & Data Export Routes
