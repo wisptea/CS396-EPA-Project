@@ -1,8 +1,14 @@
 import os
-from flask import Flask, jsonify, request, render_template
+import csv
+import io
+import pandas as pd
+from flask import Flask, jsonify, request, render_template, make_response
 from flask_cors import CORS
 import mysql.connector
 from dotenv import load_dotenv
+
+#Beginning of importing other files
+from NatLangSearch import parse_natural_language_query, build_where_clause, get_sorting_sql
 
 load_dotenv()
 
@@ -494,6 +500,7 @@ def global_search():
 
 
 #ADVANCED SEARCH FEATURES
+# ADVANCED SEARCH FEATURES
 @app.route('/api/search/advanced', methods=['GET'])
 def advanced_emissions_search():
     """
@@ -504,10 +511,10 @@ def advanced_emissions_search():
       - fuel: string (e.g., 'coal')
       - min_co2: float / max_co2: float
       - min_so2: float / max_so2: float
-      - min_nox: float / max_nox: float
-      - min_op_time: float
-      - min_gross_load: float / max_gross_load: float
-      - sort_by: string ('co2_mass_short_tons', 'so2_mass_short_tons', 'gross_load_mwh', etc.)
+      - min_nox: float
+      - min_op_time: float / max_op_time: float
+      - min_gross_load: float
+      - sort / sort_by: string
       - order: string ('ASC' or 'DESC')
       - page: int (default 1)
       - limit: int (default 20)
@@ -526,9 +533,6 @@ def advanced_emissions_search():
         max_op_time = request.args.get('max_op_time')
         min_op_time = request.args.get('min_op_time')
         min_gross_load = request.args.get('min_gross_load')
-        
-        sort_by = request.args.get('sort_by', 'co2_mass_short_tons')
-        order = request.args.get('order', 'DESC').upper()
         
         page = max(1, int(request.args.get('page', 1)))
         limit = max(1, min(100, int(request.args.get('limit', 20))))
@@ -588,17 +592,8 @@ def advanced_emissions_search():
         if where_clauses:
             where_sql = "WHERE " + " AND ".join(where_clauses)
 
-        # Whitelist columns for sorting safety against SQL injection
-        allowed_sorts = {
-            'co2_mass_short_tons': 'e.co2_mass_short_tons',
-            'so2_mass_short_tons': 'e.so2_mass_short_tons',
-            'nox_mass_short_tons': 'e.nox_mass_short_tons',
-            'gross_load_mwh': 'e.gross_load_mwh',
-            'sum_of_the_operating_time': 'e.sum_of_the_operating_time',
-            'reporting_year': 'e.reporting_year'
-        }
-        safe_sort = allowed_sorts.get(sort_by, 'e.co2_mass_short_tons')
-        safe_order = 'ASC' if order == 'ASC' else 'DESC'
+        # Get dynamic sorting SQL and metadata via helper function
+        order_sql, sorting_meta = get_sorting_sql(request)
 
         # Count total records for pagination
         count_query = f"""
@@ -616,7 +611,7 @@ def advanced_emissions_search():
             FROM Annual_Emissions e
             JOIN Facilities f ON e.facility_id = f.facility_id
             {where_sql}
-            ORDER BY {safe_sort} {safe_order}
+            {order_sql}
             LIMIT %s OFFSET %s
         """
         cursor.execute(query, params + [limit, offset])
@@ -631,6 +626,7 @@ def advanced_emissions_search():
             "limit": limit,
             "total_records": total_records,
             "total_pages": (total_records + limit - 1) // limit,
+            "sorting": sorting_meta,
             "data": records
         }), 200
 
@@ -694,6 +690,198 @@ def ranking_search():
         return jsonify({"status": "error", "message": str(e)}), 500
 
 
+# NATURAL LANGUAGE SEARCH SECTION
+@app.route('/api/search/natural', methods=['GET'])
+def natural_language_search():
+    """
+    Natural language search for annual emissions.
+    Query Params:
+      - text: string (e.g., "coal power plants in Kentucky with high co2")
+      - sort / sort_by: string
+      - order: string ('ASC' or 'DESC')
+      - page: int (default 1)
+      - limit: int (default 20)
+    """
+    try:
+        text = request.args.get('text', '').strip()
+        if not text:
+            return jsonify({"status": "error", "message": "No search description provided."}), 400
+
+        # 1. Parse filters using your separate module
+        filters = parse_natural_language_query(text)
+
+        # 2. Get pagination parameters from URL (defaults to page 1, limit 20)
+        page = max(1, int(request.args.get('page', 1)))
+        limit = max(1, min(100, int(request.args.get('limit', 20))))
+        offset = (page - 1) * limit
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        # Build where clause from natural language parser results
+        where_clauses = []
+        params = []
+        
+        if filters.get("state"):
+            where_clauses.append("f.state = %s")
+            params.append(filters["state"])
+            
+        if filters.get("fuel"):
+            where_clauses.append("e.primary_fuel_type LIKE %s")
+            params.append(f"%{filters['fuel']}%")
+            
+        if filters.get("year"):
+            where_clauses.append("e.reporting_year = %s")
+            params.append(int(filters["year"]))
+            
+        if filters.get("min_co2") is not None:
+            where_clauses.append("e.co2_mass_short_tons >= %s")
+            params.append(float(filters["min_co2"]))
+            
+        if filters.get("max_co2") is not None:
+            where_clauses.append("e.co2_mass_short_tons <= %s")
+            params.append(float(filters["max_co2"]))
+            
+        if filters.get("min_so2") is not None:
+            where_clauses.append("e.so2_mass_short_tons >= %s")
+            params.append(float(filters["min_so2"]))
+            
+        if filters.get("max_so2") is not None:
+            where_clauses.append("e.so2_mass_short_tons <= %s")
+            params.append(float(filters["max_so2"]))
+            
+        if filters.get("min_nox") is not None:
+            where_clauses.append("e.nox_mass_short_tons >= %s")
+            params.append(float(filters["min_nox"]))
+
+        where_sql = "WHERE " + " AND ".join(where_clauses) if where_clauses else ""
+
+        # 3. Get dynamic sorting SQL and metadata via helper function
+        order_sql, sorting_meta = get_sorting_sql(request)
+
+        # 4. Get total count of matching records for pagination math
+        count_query = f"""
+            SELECT COUNT(*) as total 
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            {where_sql}
+        """
+        cursor.execute(count_query, params)
+        total_records = cursor.fetchone()["total"]
+        total_pages = max(1, (total_records + limit - 1) // limit)
+
+        # 5. Fetch the paginated and sorted records using LIMIT, OFFSET, and dynamic order_sql
+        data_query = f"""
+            SELECT e.*, f.facility_name, f.state, f.county 
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            {where_sql}
+            {order_sql}
+            LIMIT %s OFFSET %s
+        """
+        cursor.execute(data_query, params + [limit, offset])
+        records = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        # 6. Return the full response containing pagination, interpreted filters, and sorting metadata
+        return jsonify({
+            "status": "success",
+            "page": page,
+            "limit": limit,
+            "total_records": total_records,
+            "total_pages": total_pages,
+            "interpreted_filters": filters,
+            "sorting": sorting_meta,
+            "data": records
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
+
+#EXPORT SEARCH FILTERS
+@app.route('/api/search/export', methods=['GET'])
+def export_csv():
+    """
+    Consolidated export route. Handles both Advanced Search parameters 
+    and Natural Language text queries, with support for dynamic sorting.
+    """
+    try:
+        text_query = request.args.get('text', '').strip()
+        
+        # Scenario A: User passed a natural language text string
+        if text_query:
+            filters = parse_natural_language_query(text_query)
+        
+        # Scenario B: User passed individual advanced search parameters
+        else:
+            filters = {
+                "state": request.args.get('state'),
+                "fuel": request.args.get('fuel'),
+                "year": request.args.get('year', type=int),
+                "min_co2": request.args.get('min_co2', type=float),
+                "max_co2": request.args.get('max_co2', type=float),
+                "min_so2": request.args.get('min_so2', type=float),
+                "max_so2": request.args.get('max_so2', type=float),
+                "min_op_time": request.args.get('min_op_time', type=float),
+                "min_gross_load": request.args.get('min_gross_load', type=float)
+            }
+
+        where_sql, params = build_where_clause(filters)
+        
+        # Integrate dynamic sorting helper so the exported CSV matches user view sorting
+        order_sql, _ = get_sorting_sql(request)
+
+        conn = get_db_connection()
+        cursor = conn.cursor(dictionary=True)
+
+        query = f"""
+            SELECT e.facility_id, f.facility_name, f.state, f.county, 
+                   e.reporting_year, e.primary_fuel_type, 
+                   e.co2_mass_short_tons, e.so2_mass_short_tons, 
+                   e.sum_of_the_operating_time
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            {where_sql}
+            {order_sql}
+            LIMIT 5000
+        """
+        cursor.execute(query, params)
+        records = cursor.fetchall()
+
+        cursor.close()
+        conn.close()
+
+        # Build CSV in memory
+        output = io.StringIO()
+        writer = csv.writer(output)
+
+        writer.writerow([
+            "Facility ID", "Facility Name", "State", "County", 
+            "Reporting Year", "Fuel Type", "CO2 (tons)", "SO2 (tons)", "Operating Time (hrs)"
+        ])
+
+        for row in records:
+            writer.writerow([
+                row.get("facility_id"), row.get("facility_name"), row.get("state"),
+                row.get("county"), row.get("reporting_year"), row.get("primary_fuel_type"),
+                row.get("co2_mass_short_tons"), row.get("so2_mass_short_tons"),
+                row.get("sum_of_the_operating_time")
+            ])
+
+        output.seek(0)
+
+        response = make_response(output.getvalue())
+        response.headers["Content-Disposition"] = "attachment; filename=emissions_export.csv"
+        response.headers["Content-Type"] = "text/csv"
+
+        return response
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+
 
 #File Upload & Data Export Routes
 @app.route('/api/upload/preview', methods=['POST'])
@@ -703,14 +891,57 @@ def upload_preview():
         return jsonify({"status": "error", "message": "No file uploaded"}), 400
     
     file = request.files['file']
+    if file.filename == '':
+        return jsonify({"status": "error", "message": "No selected file"}), 400
+
+    try:
+        # Read file based on extension
+        filename = file.filename.lower()
+        if filename.endswith('.csv'):
+            df = pd.read_csv(file)
+        elif filename.endswith(('.xls', '.xlsx')):
+            df = pd.read_excel(file)
+        else:
+            return jsonify({"status": "error", "message": "Invalid file format. Please upload a CSV or Excel file."}), 400
+
+        total_rows = len(df)
+
+        # 1. Field Validation: Check for required columns
+        required_cols = ['facility_id', 'reporting_year', 'co2_mass_short_tons']
+        missing_cols = [col for col in required_cols if col not in df.columns]
+        
+        if missing_cols:
+            return jsonify({
+                "status": "error",
+                "message": f"Validation failed. Missing required columns: {missing_cols}"
+            }), 400
+
+        # 2. Row-Level Quality Checks
+        # Identify valid rows (e.g., CO2 cannot be negative, facility_id must not be null)
+        valid_mask = (df['co2_mass_short_tons'] >= 0) & (df['facility_id'].notna())
+        
+        valid_df = df[valid_mask]
+        invalid_df = df[~valid_mask]
+
+        valid_count = len(valid_df)
+        invalid_count = len(invalid_df)
+
+        return jsonify({
+            "status": "success",
+            "filename": file.filename,
+            "data_quality_report": {
+                "total_rows": total_rows,
+                "valid_rows": valid_count,
+                "invalid_rows": invalid_count,
+                "validation_passed": invalid_count == 0
+            },
+            # Optional: Preview the first few valid rows
+            "preview_data": valid_df.head(5).to_dict(orient='records')
+        }), 200
+
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
     return jsonify({"status": "success", "message": "File parsed successfully"}), 200
-
-
-@app.route('/api/export', methods=['GET'])
-def export_csv():
-    """Streams CSV output based on current search parameters."""
-    pass
-
 
 # RUN SERVER
 
