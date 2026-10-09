@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Data Explorer | epaData</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+
+
+        /* =========================
+           PAGE HEADER
+        ========================== */
+
+        .page-header {
+
+            background: linear-gradient(
+                110deg,
+                #123524,
+                #275940
+            );
+
+            color: white;
+            padding: 60px 8%;
+        }
+
+
+        .header-content {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+
+        .page-label {
+            color: #b9d7b5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+
+        .page-header p {
+            max-width: 700px;
+            color: #e1eee0;
+        }
+
+
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            width: 86%;
+            max-width: 1150px;
+            margin: 45px auto;
+        }
+
+
+        .panel {
+            background-color: white;
+            border: 1px solid #e1e8df;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+
+            box-shadow:
+                0 3px 12px rgba(18,53,36,0.06);
+        }
+
+
+        .panel-header {
+            margin-bottom: 25px;
+        }
+
+
+        .panel-header h2 {
+            color: #123524;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+
+        .panel-header p {
+            color: #6b7971;
+            font-size: 14px;
+        }
+
+
+
+        /* =========================
+           SEARCH
+        ========================== */
+
+        .search-row {
+            display: flex;
+            gap: 12px;
+        }
+
+
+        .search-input {
+            flex: 1;
+
+            padding: 13px;
+
+            border:
+                1px solid #cbd5cb;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+
+            outline: none;
+        }
+
+
+        .search-input:focus {
+            border-color: #4f805e;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(79,128,94,0.12);
+        }
+
+
+        .search-button {
+
+            background-color: #1f5b3b;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 25px;
+
+            border-radius: 6px;
+
+            font-size: 15px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+
+        .search-button:hover {
+            background-color: #123524;
+        }
+
+
+
+
+        /* =========================
+           FILTERS
+        ========================== */
+
+        .filter-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        label {
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            color: #415148;
+
+            margin-bottom: 7px;
+        }
+
+
+        select {
+
+            padding: 11px;
+
+            border:
+                1px solid #cbd5cb;
+
+            border-radius: 6px;
+
+            background-color: white;
+
+            font-size: 14px;
+
+            outline: none;
+        }
+
+
+        select:focus {
+            border-color: #4f805e;
+        }
+
+
+        .filter-actions {
+
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+
+        .apply-button {
+
+            background-color: #1f5b3b;
+
+            color: white;
+
+            border: none;
+
+            padding: 11px 22px;
+
+            border-radius: 6px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+
+        .apply-button:hover {
+            background-color: #123524;
+        }
+
+
+        .clear-button {
+
+            background-color: #edf2ec;
+
+            color: #34463d;
+
+            border:
+                1px solid #d6dfd4;
+
+            padding: 11px 22px;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+        }
+
+
+
+        /* =========================
+           RESULTS
+        ========================== */
+
+        .results-header {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .results-header h2 {
+            color: #123524;
+        }
+
+
+        .results-count {
+
+            background-color: #dcebd8;
+
+            color: #174c32;
+
+            padding: 7px 13px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+        }
+
+
+
+        /* =========================
+           TABLE
+        ========================== */
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+
+        th {
+
+            background-color: #edf3ea;
+
+            color: #174c32;
+
+            text-align: left;
+
+            padding: 14px;
+
+            font-size: 13px;
+
+            border-bottom:
+                2px solid #d6e1d4;
+        }
+
+
+        td {
+
+            padding: 14px;
+
+            border-bottom:
+                1px solid #e4e9e3;
+
+            color: #536158;
+
+            font-size: 14px;
+        }
+
+
+        tbody tr:hover {
+            background-color: #f8faf7;
+        }
+
+
+        .facility-name {
+
+            color: #174c32;
+
+            font-weight: bold;
+        }
+
+
+        .pollutant {
+
+            display: inline-block;
+
+            background-color: #e7f0e5;
+
+            color: #275940;
+
+            padding: 4px 9px;
+
+            border-radius: 12px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+        }
+
+
+
+        /* =========================
+           PAGINATION INFO
+        ========================== */
+
+        .pagination-area {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items: center;
+
+            margin-top: 25px;
+        }
+
+
+        .pagination-info {
+
+            color: #6c7871;
+
+            font-size: 14px;
+        }
+
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            background-color: #0d2b1c;
+
+            color: #d7e4da;
+
+            padding: 30px 8%;
+
+            margin-top: 60px;
+        }
+
+
+        .footer-content {
+
+            max-width: 1150px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content:
+                space-between;
+        }
+
+
+        footer strong {
+            color: white;
+        }
+
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+
+            main {
+                width: 92%;
+            }
+
+
+            .search-row {
+                flex-direction: column;
+            }
+
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================== -->
+
+<nav>
+
+    <div class="logo">
+        EPA Data
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="{{ url_for('home') }}">
+            Home
+        </a>
+
+        <a href="{{ url_for('retrieval') }}">
+            Retrieve Data
+        </a>
+
+        <a href="{{ url_for('explorer') }}">
+            Data Explorer
+        </a>
+
+        <a href="{{ url_for('upload') }}">
+            Upload Data
+        </a>
+
+        <a href="{{ url_for('facility') }}">
+            Facility Details
+        </a>
+
+        <a href="{{ url_for('download') }}">
+            Download
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="page-header">
+
+    <div class="header-content">
+
+        <div class="page-label">
+            Environmental Records
+        </div>
+
+        <h1>
+            Data Explorer
+        </h1>
+
+        <p>
+            Search, filter, and explore environmental
+            and power-sector records stored in the
+            epaData system.
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN CONTENT
+========================== -->
+
+<main>
+
+
+    <!-- =====================
+         SEARCH
+    ====================== -->
+
+    <div class="panel">
+
+        <div class="panel-header">
+
+            <h2>
+                Search Environmental Data
+            </h2>
+
+            <p>
+                Search by facility name or facility ID.
+            </p>
+
+        </div>
+
+
+        <div class="search-row">
+
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search by facility name or ID..."
+            >
+
+
+            <button
+                type="button"
+                class="search-button"
+                onclick="searchData()"
+            >
+                Search
+            </button>
+
+        </div>
+
+    </div>
+<!-- NATURAL LANGUAGE SEARCH -->
+<div class="panel">
+
+    <div class="panel-header">
+        <h2>Natural Language Search</h2>
+        <p>
+            Describe the environmental records you want to find.
+        </p>
+    </div>
+
+    <div class="search-row">
+
+        <input
+            type="text"
+            id="naturalSearchInput"
+            class="search-input"
+            placeholder="Example: coal plants in Kentucky in 2025 with CO2 greater than 500000"
+        >
+
+        <button
+            type="button"
+            class="search-button"
+            onclick="naturalSearch()"
+        >
+            Search
+        </button>
+
+    </div>
+
+</div>
+
+
+    <!-- =====================
+         FILTERS
+    ====================== -->
+
+    <div class="panel">
+
+        <div class="panel-header">
+
+            <h2>
+                Filters
+            </h2>
+
+            <p>
+                Narrow the displayed records using
+                the filters below.
+            </p>
+
+        </div>
+
+
+        <div class="filter-grid">
+
+
+            <!-- STATE -->
+
+            <div class="form-group">
+
+                <label for="stateFilter">
+                    State
+                </label>
+
+                <select id="stateFilter">
+
+                    <option value="">
+                        All States
+                    </option>
+
+                    <option value="KY">
+                        Kentucky
+                    </option>
+
+                    <option value="TN">
+                        Tennessee
+                    </option>
+
+                    <option value="OH">
+                        Ohio
+                    </option>
+
+                    <option value="NY">
+                        New York
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- YEAR -->
+
+            <div class="form-group">
+
+                <label for="yearFilter">
+                    Year
+                </label>
+
+                <select id="yearFilter">
+
+                    <option value="">
+                        All Years
+                    </option>
+
+                    <option value="2025">
+                        2025
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- POLLUTANT -->
+
+            <div class="form-group">
+
+                <label for="pollutantFilter">
+                    Pollutant
+                </label>
+
+                <select id="pollutantFilter">
+
+                    <option value="">
+                        All Pollutants
+                    </option>
+
+                    <option value="CO2">
+                        CO₂
+                    </option>
+
+                    <option value="SO2">
+                        SO₂
+                    </option>
+
+                    <option value="NOX">
+                        NOₓ
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- DATA SOURCE -->
+
+            <div class="form-group">
+
+                <label for="sourceFilter">
+                    Data Source
+                </label>
+
+                <select id="sourceFilter">
+
+                    <option value="">
+                        All Sources
+                    </option>
+
+                    <option value="EPA CAMPD">
+                        EPA CAMPD
+                    </option>
+
+                    <option value="EPA TRACI">
+                        EPA TRACI
+                    </option>
+
+                    <option value="User Upload">
+                        User Upload
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="filter-actions">
+
+            <button
+                type="button"
+                class="apply-button"
+                onclick="applyFilters()"
+            >
+                Apply Filters
+            </button>
+
+
+            <button
+                type="button"
+                class="clear-button"
+                onclick="clearFilters()"
+            >
+                Clear Filters
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================
+         RESULTS
+    ====================== -->
+
+    <div class="panel">
+
+        <div class="results-header">
+
+            <div>
+
+                <h2>
+                    Search Results
+                </h2>
+
+                <p>
+                    Environmental records matching
+                    your search criteria.
+                </p>
+
+            </div>
+
+
+            <div
+                class="results-count"
+                id="resultsCount"
+            >
+                0 records
+            </div>
+
+        </div>
+
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Facility ID</th>
+<th>Facility Name</th>
+<th>Unit ID</th>
+<th>State</th>
+<th>Year</th>
+<th>Pollutant</th>
+<th>Emissions</th>
+<th>Source</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="resultsBody">
+
+                    <tr>
+
+                        <td colspan="8">
+                            Select filters or search
+                            to display records.
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+
+        <div class="pagination-area">
+
+            <div
+                class="pagination-info"
+                id="paginationInfo"
+            >
+                Showing 0 records
+            </div>
+<div>
+    <button
+        type="button"
+        class="clear-button"
+        id="previousPage"
+        onclick="changeNaturalPage(-1)"
+        disabled>
+        Previous Page
+    </button>
+
+    <button
+        type="button"
+        class="apply-button"
+        id="nextPage"
+        onclick="changeNaturalPage(1)"
+        disabled>
+        Next Page
+    </button>
+</div>
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <p>
+            <strong>EPA Data</strong>
+            <br>
+            Data Management, Evaluation,
+            and Visualization System
+        </p>
+
+
+        <p>
+            Environmental & Power-Sector Data
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+
+// =====================================
+// SEARCH AND FILTER DATA
+// =====================================
+
+async function searchData() {
+
+
+    // Get values from page
+
+    const search =
+        document
+            .getElementById("searchInput")
+            .value
+            .trim();
+
+
+    const state =
+        document
+            .getElementById("stateFilter")
+            .value;
+
+
+    const year =
+        document
+            .getElementById("yearFilter")
+            .value;
+
+
+    const pollutant =
+        document
+            .getElementById("pollutantFilter")
+            .value;
+
+
+    const source =
+        document
+            .getElementById("sourceFilter")
+            .value;
+
+
+
+    // =====================================
+    // CHOOSE API
+    // =====================================
+
+    let url;
+
+
+    /*
+        Annual emissions data contains:
+
+        reporting_year
+        CO2
+        SO2
+        NOX
+
+        Therefore, use the advanced endpoint
+        whenever Year or Pollutant is selected.
+    */
+
+    if (
+        year !== "" ||
+        pollutant !== ""
+    ) {
+
+        url =
+            "/api/search/advanced?limit=100";
+
+
+        // STATE
+
+        if (state !== "") {
+
+            url +=
+                "&state=" +
+                encodeURIComponent(state);
+        }
+
+
+        // YEAR
+
+        if (year !== "") {
+
+            url +=
+                "&year=" +
+                encodeURIComponent(year);
+        }
+
+    }
+
+
+    // =====================================
+    // FACILITY SEARCH
+    // =====================================
+
+    else {
+
+        url =
+            "/api/facilities?limit=100";
+
+
+        // STATE
+
+        if (state !== "") {
+
+            url +=
+                "&state=" +
+                encodeURIComponent(state);
+        }
+
+
+        // SEARCH
+
+        if (search !== "") {
+
+            url +=
+                "&search=" +
+                encodeURIComponent(search);
+        }
+
+    }
+
+
+
+    console.log(
+        "Request URL:",
+        url
+    );
+
+
+    console.log(
+        "Selected State:",
+        state
+    );
+
+
+    console.log(
+        "Selected Year:",
+        year
+    );
+
+
+    console.log(
+        "Selected Pollutant:",
+        pollutant
+    );
+
+
+
+    // =====================================
+    // GET DATA FROM FLASK
+    // =====================================
+
+    try {
+
+
+        const response =
+            await fetch(url);
+
+
+        const result =
+            await response.json();
+
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                result.message ||
+                "Could not load data."
+            );
+        }
+
+
+
+        let records =
+            result.data || [];
+
+
+
+        // =====================================
+        // SEARCH ANNUAL RECORDS
+        // =====================================
+
+        /*
+            When Annual_Emissions is being used,
+            search the returned records by
+            facility name or facility ID.
+        */
+
+        if (
+            (
+                year !== "" ||
+                pollutant !== ""
+            )
+            &&
+            search !== ""
+        ) {
+
+
+            const searchLower =
+                search.toLowerCase();
+
+
+            records =
+                records.filter(record => {
+
+
+                    const facilityName =
+                        String(
+                            record.facility_name ?? ""
+                        )
+                        .toLowerCase();
+
+
+                    const facilityId =
+                        String(
+                            record.facility_id ?? ""
+                        )
+                        .toLowerCase();
+
+
+                    return (
+
+                        facilityName
+                            .includes(searchLower)
+
+                        ||
+
+                        facilityId
+                            .includes(searchLower)
+
+                    );
+
+                });
+
+        }
+
+
+
+        // =====================================
+        // DATA SOURCE
+        // =====================================
+
+        /*
+            Current Annual_Emissions records
+            come from EPA CAMPD.
+
+            Until TRACI/User Upload are connected,
+            selecting those sources returns
+            no records.
+        */
+
+        if (
+            source !== "" &&
+            source !== "EPA CAMPD"
+        ) {
+
+            records = [];
+        }
+
+
+
+        console.log(
+            "Records returned:",
+            records.length
+        );
+
+
+
+        // VERY IMPORTANT:
+        // Pass pollutant to displayFacilities
+
+        displayFacilities(
+            records,
+            pollutant
+        );
+
+
+    }
+
+
+    catch (error) {
+
+
+        console.error(
+            "Error:",
+            error
+        );
+
+
+        alert(
+            "Could not load facility data."
+        );
+
+    }
+
+}
+
+
+
+// =====================================
+// DISPLAY RESULTS
+// =====================================
+
+function displayFacilities(
+    facilities,
+    pollutant
+) {
+
+
+    const tableBody =
+        document
+            .getElementById(
+                "resultsBody"
+            );
+
+
+    const resultsCount =
+        document
+            .getElementById(
+                "resultsCount"
+            );
+
+
+    const paginationInfo =
+        document
+            .getElementById(
+                "paginationInfo"
+            );
+
+
+
+    // Clear previous rows
+
+    tableBody.innerHTML = "";
+
+
+
+    // =====================================
+    // RESULTS COUNT
+    // =====================================
+
+    if (facilities.length === 1) {
+
+        resultsCount.textContent =
+            "1 record";
+
+    }
+
+    else {
+
+        resultsCount.textContent =
+            facilities.length +
+            " records";
+
+    }
+
+
+
+    // =====================================
+    // NO RESULTS
+    // =====================================
+
+    if (facilities.length === 0) {
+
+
+        paginationInfo.textContent =
+            "Showing 0 records";
+
+
+        tableBody.innerHTML = `
+
+            <tr>
+
+                <td colspan="7">
+                    No facilities found.
+                </td>
+
+            </tr>
+
+        `;
+
+
+        return;
+
+    }
+
+
+
+    // =====================================
+    // PAGINATION INFORMATION
+    // =====================================
+
+    paginationInfo.textContent =
+
+        `Showing 1–${facilities.length} of ${facilities.length} records`;
+
+
+
+    // =====================================
+    // CREATE TABLE ROWS
+    // =====================================
+
+    facilities.forEach(
+        facility => {
+
+
+            const row =
+                document
+                    .createElement("tr");
+
+
+
+            // Default values
+
+            let pollutantName = "—";
+
+            let emissions = "—";
+
+
+
+            // =================================
+            // CO2
+            // =================================
+
+            if (pollutant === "CO2") {
+
+
+                pollutantName =
+                    "CO₂";
+
+
+                emissions =
+                    facility
+                        .co2_mass_short_tons
+                    ?? "—";
+
+            }
+
+
+
+            // =================================
+            // SO2
+            // =================================
+
+            else if (
+                pollutant === "SO2"
+            ) {
+
+
+                pollutantName =
+                    "SO₂";
+
+
+                emissions =
+                    facility
+                        .so2_mass_short_tons
+                    ?? "—";
+
+            }
+
+
+
+            // =================================
+            // NOX
+            // =================================
+
+            else if (
+                pollutant === "NOX"
+            ) {
+
+
+                pollutantName =
+                    "NOₓ";
+
+
+                emissions =
+                    facility
+                        .nox_mass_short_tons
+                    ?? "—";
+
+            }
+
+
+
+            // =================================
+            // FORMAT EMISSIONS
+            // =================================
+
+            if (
+                emissions !== "—"
+                &&
+                !isNaN(
+                    Number(emissions)
+                )
+            ) {
+
+
+                emissions =
+                    Number(emissions)
+                        .toLocaleString(
+                            undefined,
+                            {
+                                maximumFractionDigits: 3
+                            }
+                        );
+
+            }
+
+
+
+            // =================================
+            // CREATE TABLE HTML
+            // =================================
+
+            row.innerHTML = `
+
+
+                <td>
+
+                    ${
+                        facility.facility_id
+                        ?? ""
+                    }
+
+                </td>
+
+
+
+                <td class="facility-name">
+                   <a href="/facility-detail?facility_id=${facility.facility_id}&unit_id=${encodeURIComponent(facility.unit_id ?? '')}&year=${facility.reporting_year ?? ''}">
+                    ${ facility.facility_name   ?? ""  }
+                   <a/>
+                </td>
+
+                <td>
+                       ${facility.unit_id ?? "—"}
+
+                </td>
+
+                    <td>
+                    ${
+                        facility.state
+                        ?? ""
+                    }
+
+                </td>
+
+
+
+                <td>
+
+                    ${
+                        facility.reporting_year
+                        ?? "—"
+                    }
+
+                </td>
+
+
+
+                <td>
+
+                    ${
+                        pollutantName !== "—"
+
+                        ?
+
+                        `<span class="pollutant">
+                            ${pollutantName}
+                        </span>`
+
+                        :
+
+                        "—"
+                    }
+
+                </td>
+
+
+
+                <td>
+
+                    ${emissions}
+
+                </td>
+
+
+
+                <td>
+
+                    EPA CAMPD
+
+                </td>
+
+
+            `;
+
+
+
+            tableBody
+                .appendChild(row);
+
+
+        }
+    );
+
+}
+
+
+
+// =====================================
+// APPLY FILTERS
+// =====================================
+
+function applyFilters() {
+
+    searchData();
+
+}
+
+
+
+// =====================================
+// CLEAR FILTERS
+// =====================================
+
+function clearFilters() {
+
+
+    document
+        .getElementById(
+            "stateFilter"
+        )
+        .value = "";
+
+
+    document
+        .getElementById(
+            "yearFilter"
+        )
+        .value = "";
+
+
+    document
+        .getElementById(
+            "pollutantFilter"
+        )
+        .value = "";
+
+
+    document
+        .getElementById(
+            "sourceFilter"
+        )
+        .value = "";
+
+
+    document
+        .getElementById(
+            "searchInput"
+        )
+        .value = "";
+
+
+
+    searchData();
+
+}
+
+
+
+// =====================================
+// ENTER KEY SEARCH
+// =====================================
+
+document
+    .getElementById(
+        "searchInput"
+    )
+    .addEventListener(
+        "keydown",
+        function(event) {
+
+            if (
+                event.key === "Enter"
+            ) {
+
+                searchData();
+
+            }
+
+        }
+    );
+
+let naturalPage = 1;
+let naturalTotalPages = 1;
+let naturalSearchText = "";
+
+// NATURAL LANGUAGE SEARCH
+async function naturalSearch() {
+
+    const text = document
+        .getElementById("naturalSearchInput")
+        .value.trim();
+    if (text !== naturalSearchText) {
+    naturalPage = 1;
+    naturalSearchText = text;
+}
+    if (!text) {
+        alert("Please enter a search description.");
+        return;
+    }
+
+   const url = "/api/search/natural?text=" +
+    encodeURIComponent(text) +
+    "&page=" + naturalPage +
+    "&limit=20";
+
+    try {
+        const response = await fetch(url);
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message || "Search failed.");
+        }
+
+        const records = result.data || [];
+        naturalTotalPages = result.total_pages;
+
+        document.getElementById("previousPage").disabled =
+        naturalPage <= 1;
+
+        document.getElementById("nextPage").disabled =
+        naturalPage >= naturalTotalPages;
+        // Display results in the existing table
+        displayFacilities(records, "CO2");
+
+        // Show server-side pagination information
+        document.getElementById("resultsCount").textContent =
+            result.total_records + " matching records";
+
+        document.getElementById("paginationInfo").textContent =
+            "Page " + result.page + " of " + result.total_pages +
+            " — showing " + records.length +
+            " of " + result.total_records + " matching records";
+
+    } catch (error) {
+        console.error("Natural language search error:", error);
+        alert("Natural language search failed: " + error.message);
+    }
+}
+
+// SEARCH WHEN ENTER IS PRESSED
+document.getElementById("naturalSearchInput")
+    .addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            naturalSearch();
+        }
+    });
+function changeNaturalPage(direction) {
+    const newPage = naturalPage + direction;
+
+    if (newPage < 1 || newPage > naturalTotalPages) {
+        return;
+    }
+
+    naturalPage = newPage;
+    naturalSearch();
+}
+
+
+</script>
+
+
+</body>
+
+</html>

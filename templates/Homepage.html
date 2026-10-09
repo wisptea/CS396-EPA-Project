@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EPA Data Management System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 510px;
+            background:
+                linear-gradient(
+                    110deg,
+                    rgba(18, 53, 36, 0.97),
+                    rgba(39, 89, 64, 0.92)
+                );
+            color: white;
+            padding: 90px 10%;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero-label {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.13);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .hero h2 {
+            color: #d8ead4;
+            font-size: 22px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 680px;
+            color: #edf4eb;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-button,
+        .secondary-button {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s ease;
+        }
+
+        .primary-button {
+            background-color: #8fbc8f;
+            color: #123524;
+        }
+
+        .primary-button:hover {
+            background-color: #a8cfa3;
+        }
+
+        .secondary-button {
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+        }
+
+        .secondary-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* =========================
+           GENERAL SECTION
+        ========================== */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 45px;
+        }
+
+        .section-header h2 {
+            color: #123524;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .section-header p {
+            color: #60736a;
+        }
+
+        /* =========================
+           DATA SOURCES
+        ========================== */
+
+        .source-section {
+            background-color: #ffffff;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #f9fbf8;
+            border: 1px solid #e1e9df;
+            border-radius: 12px;
+            padding: 30px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(18, 53, 36, 0.12);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background-color: #dcebd8;
+            color: #1f5b3b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #174c32;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #5c6d64;
+            font-size: 15px;
+        }
+
+        /* =========================
+           DATA COVERAGE
+        ========================== */
+
+        .coverage {
+            background-color: #edf3ea;
+        }
+
+        .coverage-container {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+        }
+
+        .coverage-item {
+            text-align: center;
+            padding: 35px 20px;
+            border-right: 1px solid #e2e9df;
+        }
+
+        .coverage-item:last-child {
+            border-right: none;
+        }
+
+        .coverage-item h3 {
+            color: #174c32;
+            font-size: 24px;
+            margin-bottom: 7px;
+        }
+
+        .coverage-item p {
+            color: #687970;
+            font-size: 14px;
+        }
+
+        /* =========================
+           MAJOR FUNCTIONS
+        ========================== */
+
+        .functions {
+            background-color: #f6f8f5;
+        }
+
+        .function-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .function-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            border: 1px solid #e3e9e1;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .function-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 22px rgba(18, 53, 36, 0.1);
+        }
+
+        .function-number {
+            color: #7ba77a;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .function-card h3 {
+            color: #123524;
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .function-card p {
+            color: #66756d;
+            margin-bottom: 20px;
+            min-height: 48px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #1f5b3b;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #123524;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background-color: #0d2b1c;
+            color: #d7e4da;
+            padding: 35px 8%;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           RESPONSIVE DESIGN
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .coverage-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .function-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .coverage-item {
+                border-bottom: 1px solid #e2e9df;
+            }
+        }
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 70px 7%;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+
+            .coverage-container,
+            .function-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coverage-item {
+                border-right: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+ <!-- NAVIGATION -->
+<nav>
+    <div class="logo">
+        EPA Data
+    </div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+        <a href="{{ url_for('explorer') }}">Data Explorer</a>
+        <a href="{{ url_for('upload') }}">Upload Data</a>
+        <a href="{{ url_for('facility') }}">Facility Details</a>
+        <a href="{{ url_for('download') }}">Download</a>
+    </div>
+</nav>
+       
+    
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                Environmental Data Management
+            </div>
+
+            <h1>
+                Explore Environmental Data With Confidence
+            </h1>
+
+            <h2>
+                EPA Data Management, Evaluation, and Visualization System
+            </h2>
+
+            <p>
+                A database-driven platform for collecting, storing, managing,
+                analyzing, and visualizing environmental and power-sector data.
+                Explore EPA facilities, generating units, emissions records,
+                and environmental datasets from one centralized system.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#functions" class="primary-button">
+                    Explore Data
+                </a>
+
+                <a href="#sources" class="secondary-button">
+                    View Data Sources
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DATA SOURCES -->
+    <section class="source-section" id="sources">
+
+        <div class="section-header">
+            <h2>Data Sources</h2>
+
+            <p>
+                The system combines trusted EPA datasets with
+                user-provided environmental data.
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">♻</div>
+
+                <h3>EPA CAMPD</h3>
+
+                <p>
+                    Clean Air Markets Program Data provides information
+                    about power-sector facilities, generating units,
+                    operations, and reported emissions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🌿</div>
+
+                <h3>EPA TRACI</h3>
+
+                <p>
+                    TRACI provides environmental impact characterization
+                    factors used to evaluate the environmental effects
+                    of reported emissions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">↑</div>
+
+                <h3>User-Uploaded Data</h3>
+
+                <p>
+                    Upload CSV or Excel environmental datasets that
+                    follow the required epaData format for validation,
+                    storage, and analysis.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CURRENT DATA COVERAGE -->
+    <section class="coverage" id="coverage">
+
+        <div class="section-header">
+
+            <h2>Current Data Coverage</h2>
+
+            <p>
+                Explore the environmental and power-sector information
+                currently managed by the system.
+            </p>
+
+        </div>
+
+
+        <div class="coverage-container">
+
+            <div class="coverage-item">
+                <h3>Facilities</h3>
+                <p>EPA power-sector facilities</p>
+            </div>
+
+            <div class="coverage-item">
+                <h3>Generating Units</h3>
+                <p>Facility generating-unit records</p>
+            </div>
+
+            <div class="coverage-item">
+                <h3>CO₂ · SO₂ · NOₓ</h3>
+                <p>Major emissions tracked</p>
+            </div>
+
+            <div class="coverage-item">
+                <h3>Annual Records</h3>
+                <p>Environmental and emissions data</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAJOR FUNCTIONS -->
+    <section class="functions" id="functions">
+
+        <div class="section-header">
+
+            <h2>Explore Environmental Data</h2>
+
+            <p>
+                Access the major data management, search, analysis,
+                and download functions of the epaData system.
+            </p>
+
+        </div>
+
+
+        <div class="function-grid">
+
+            <div class="function-card">
+
+                <div class="function-number">01</div>
+
+                <h3>Facilities</h3>
+
+                <p>
+                    Browse EPA power-sector facilities and facility information.
+                </p>
+
+               <a class="button" href="{{ url_for('explorer') }}">
+    View Facilities
+</a>
+                </a>
+
+            </div>
+
+
+            <div class="function-card">
+
+                <div class="function-number">02</div>
+
+                <h3>Generating Units</h3>
+
+                <p>
+                    Explore generating units associated with EPA facilities.
+                </p>
+
+             <a class="button" href="{{ url_for('explorer') }}">
+                    View Units
+                </a>
+
+            </div>
+
+
+            <div class="function-card">
+
+                <div class="function-number">03</div>
+
+                <h3>Search Data</h3>
+
+                <p>
+                    Search and filter environmental records using selected criteria.
+                </p>
+
+                <a class="button" href="{{ url_for('explorer') }}">
+                    Search Data
+                </a>
+
+            </div>
+
+
+            <div class="function-card">
+
+                <div class="function-number">04</div>
+
+                <h3>Upload Data</h3>
+
+                <p>
+                    Upload CSV or Excel environmental datasets for validation.
+                </p>
+
+                <a class="button" href="{{ url_for('upload') }}">
+                    Upload Data
+                </a>
+
+            </div>
+
+
+            <div class="function-card">
+
+                <div class="function-number">05</div>
+
+                <h3>Analyze Data</h3>
+
+                <p>
+                    Analyze emissions and visualize environmental information.
+                </p>
+
+                <a class="button" href="{{ url_for('retrieval') }}">
+                    Analyze
+                </a>
+
+            </div>
+
+
+            <div class="function-card">
+
+                <div class="function-number">06</div>
+
+                <h3>Download Data</h3>
+
+                <p>
+                    Export environmental datasets and filtered search results.
+                </p>
+
+                <a class="button" href="{{ url_for('download') }}">
+                    Download
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                <strong>EPA Data</strong><br>
+                Data Management, Evaluation, and Visualization System
+            </p>
+
+            <p>
+                Environmental & Power-Sector Data
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
