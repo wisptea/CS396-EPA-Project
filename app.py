@@ -1243,38 +1243,6 @@ def import_uploaded_data():
         if connection and connection.is_connected():
             connection.close()
 
-
-def parse_natural_language_query(text):
-    text = text.lower()
-    filters = {}
-
-    states = {
-        "kentucky": "KY", "ohio": "OH", "tennessee": "TN", "indiana": "IN",
-        "illinois": "IL", "texas": "TX", "california": "CA", "florida": "FL"
-    }
-
-    for state_name, abbreviation in states.items():
-        if re.search(r"\b" + state_name + r"\b", text):
-            filters["state"] = abbreviation
-            break
-
-    fuels = ["coal", "natural gas", "oil", "diesel"]
-    for fuel in fuels:
-        if fuel in text:
-            filters["fuel"] = fuel
-            break
-
-    year_match = re.search(r"\b(20\d{2})\b", text)
-    if year_match:
-        filters["year"] = int(year_match.group(1))
-
-    co2_match = re.search(r"co2.*?(?:greater than|more than|over|above)\s*([\d,]+)", text)
-    if co2_match:
-        filters["min_co2"] = float(co2_match.group(1).replace(",", ""))
-
-    return filters
-
-
 def get_sorting_sql(request):
     allowed_columns = {
         "year": "e.reporting_year",
@@ -1299,6 +1267,62 @@ def get_sorting_sql(request):
     sorting_meta = {"sort_by": sort_by, "order": order}
 
     return order_sql, sorting_meta
+
+
+def parse_natural_language_query(text):
+    text = text.lower()
+    filters = {}
+
+    # Comprehensive state dictionary (names and abbreviations)
+    states = {
+        "kentucky": "KY", "ky": "KY",
+        "ohio": "OH", "oh": "OH",
+        "tennessee": "TN", "tn": "TN",
+        "indiana": "IN", "in": "IN",
+        "illinois": "IL", "il": "IL",
+        "texas": "TX", "tx": "TX",
+        "california": "CA", "ca": "CA",
+        "florida": "FL", "fl": "FL",
+        "new york": "NY", "ny": "NY"
+    }
+
+    for state_name, abbreviation in states.items():
+        if re.search(r"\b" + state_name + r"\b", text):
+            filters["state"] = abbreviation
+            break
+
+    # Expanded fuel types
+    fuels = ["coal", "natural gas", "gas", "oil", "diesel", "petroleum"]
+    for fuel in fuels:
+        if fuel in text:
+            filters["fuel"] = "natural gas" if fuel == "gas" else fuel
+            break
+
+    # Extract Year
+    year_match = re.search(r"\b(20\d{2})\b", text)
+    if year_match:
+        filters["year"] = int(year_match.group(1))
+
+    # Generalized Pollutant & Threshold Parsing (CO2, SO2, NOx)
+    # Matches patterns like: "co2 > 500000", "so2 greater than 100", "nox under 500"
+    pollutant_mapping = {
+        "co2": ("min_co2", "max_co2"),
+        "so2": ("min_so2", "max_so2"),
+        "nox": ("min_nox", "max_nox")
+    }
+
+    for pollutant, (min_key, max_key) in pollutant_mapping.items():
+        # Match greater than / over / above
+        high_match = re.search(rf"\b{pollutant}\b.*?(?:greater than|more than|over|above|>)\s*([\d,]+)", text)
+        if high_match:
+            filters[min_key] = float(high_match.group(1).replace(",", ""))
+
+        # Match less than / under / below
+        low_match = re.search(rf"\b{pollutant}\b.*?(?:less than|under|below|<)\s*([\d,]+)", text)
+        if low_match:
+            filters[max_key] = float(low_match.group(1).replace(",", ""))
+
+    return filters
 
 
 @app.route('/api/search/natural', methods=['GET'])
