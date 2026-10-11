@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download Data | epaData</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================== */
+
+        .page-header {
+            background: linear-gradient(
+                110deg,
+                #123524,
+                #275940
+            );
+
+            color: white;
+            padding: 60px 8%;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .page-label {
+            color: #b9d7b5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            max-width: 700px;
+            color: #e1eee0;
+        }
+
+        /* =========================
+           MAIN
+        ========================== */
+
+        main {
+            width: 86%;
+            max-width: 1100px;
+            margin: 45px auto;
+        }
+
+        .panel {
+            background-color: white;
+            border: 1px solid #e1e8df;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px rgba(18,53,36,0.06);
+        }
+
+        .panel-header {
+            margin-bottom: 25px;
+        }
+
+        .panel-header h2 {
+            color: #123524;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .panel-header p {
+            color: #6b7971;
+            font-size: 14px;
+        }
+
+        /* =========================
+           STEP
+        ========================== */
+
+        .step {
+            display: inline-block;
+            background-color: #dcebd8;
+            color: #174c32;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           DATASET CARDS
+        ========================== */
+
+        .dataset-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .dataset-card {
+            border: 2px solid #e0e7de;
+            border-radius: 9px;
+            padding: 22px;
+            cursor: pointer;
+            background-color: #fafcfa;
+            transition: 0.2s ease;
+        }
+
+        .dataset-card:hover {
+            border-color: #7fa083;
+            transform: translateY(-2px);
+        }
+
+        .dataset-card.selected {
+            border-color: #1f5b3b;
+            background-color: #edf5eb;
+        }
+
+        .dataset-card h3 {
+            color: #174c32;
+            margin-bottom: 7px;
+        }
+
+        .dataset-card p {
+            color: #68776e;
+            font-size: 14px;
+        }
+
+        .dataset-type {
+            display: inline-block;
+            background-color: #dcebd8;
+            color: #174c32;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           FILTERS
+        ========================== */
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #405147;
+            margin-bottom: 7px;
+        }
+
+        select,
+        input {
+            padding: 12px;
+            border: 1px solid #cbd5cb;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        select:focus,
+        input:focus {
+            border-color: #4f805e;
+            box-shadow: 0 0 0 3px rgba(79,128,94,0.10);
+        }
+
+        /* =========================
+           FILE FORMAT
+        ========================== */
+
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .format-option {
+            position: relative;
+        }
+
+        .format-option input {
+            position: absolute;
+            opacity: 0;
+        }
+
+        .format-card {
+            display: block;
+            border: 2px solid #e0e7de;
+            border-radius: 9px;
+            padding: 22px;
+            cursor: pointer;
+            background-color: #fafcfa;
+            transition: 0.2s ease;
+        }
+
+        .format-card:hover {
+            border-color: #7fa083;
+        }
+
+        .format-option input:checked + .format-card {
+            border-color: #1f5b3b;
+            background-color: #edf5eb;
+        }
+
+        .format-name {
+            color: #174c32;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .format-description {
+            color: #6c7971;
+            font-size: 14px;
+        }
+
+        /* =========================
+           DOWNLOAD SUMMARY
+        ========================== */
+
+        .summary-panel {
+            background-color: #edf3ea;
+            border: 1px solid #d7e3d4;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .summary-label {
+            display: block;
+            color: #718078;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-bottom: 4px;
+        }
+
+        .summary-value {
+            color: #174c32;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .button-area {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .download-button {
+            background-color: #1f5b3b;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .download-button:hover {
+            background-color: #123524;
+        }
+
+        .clear-button {
+            background-color: white;
+            color: #405147;
+            border: 1px solid #cfd8cd;
+            padding: 13px 22px;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .clear-button:hover {
+            background-color: #f1f4f0;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background-color: #0d2b1c;
+            color: #d7e4da;
+            padding: 30px 8%;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .dataset-grid,
+            .filter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            main {
+                width: 92%;
+            }
+
+            .page-header h1 {
+                font-size: 34px;
+            }
+
+            .dataset-grid,
+            .filter-grid,
+            .format-grid,
+            .summary-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-area {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+ <nav>
+    <div class="logo">
+        EPA Data
+    </div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+        <a href="{{ url_for('explorer') }}">Data Explorer</a>
+        <a href="{{ url_for('upload') }}">Upload Data</a>
+        <a href="{{ url_for('facility') }}">Facility Details</a>
+        <a href="{{ url_for('download') }}">Download</a>
+    </div>
+</nav>
+
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <div class="header-content">
+
+            <div class="page-label">
+                Data Export
+            </div>
+
+            <h1>
+                Download Environmental Data
+            </h1>
+
+            <p>
+                Select an environmental dataset, apply optional
+                filters, and choose a file format to export data
+                from the epaData system.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             STEP 1
+             DATASET SELECTION
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 1
+                </span>
+
+                <h2>
+                    Select Dataset
+                </h2>
+
+                <p>
+                    Choose the type of environmental data
+                    you want to download.
+                </p>
+
+            </div>
+
+
+            <div class="dataset-grid">
+
+
+                <div
+                    class="dataset-card"
+                    onclick="selectDataset(this, 'Facilities')">
+
+                    <div class="dataset-type">
+                        FACILITY DATA
+                    </div>
+
+                    <h3>
+                        Facilities
+                    </h3>
+
+                    <p>
+                        Download EPA facility identification,
+                        location, and source-category information.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="dataset-card"
+                    onclick="selectDataset(this, 'Generating Units')">
+
+                    <div class="dataset-type">
+                        UNIT DATA
+                    </div>
+
+                    <h3>
+                        Generating Units
+                    </h3>
+
+                    <p>
+                        Download generating-unit records
+                        associated with EPA facilities.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="dataset-card"
+                    onclick="selectDataset(this, 'Annual Records')">
+
+                    <div class="dataset-type">
+                        EMISSIONS DATA
+                    </div>
+
+                    <h3>
+                        Annual Records
+                    </h3>
+
+                    <p>
+                        Download annual operating and
+                        emissions records.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             STEP 2
+             FILTER SELECTION
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 2
+                </span>
+
+                <h2>
+                    Select Filters
+                </h2>
+
+                <p>
+                    Filters are optional. Leave them unchanged
+                    to download all available records.
+                </p>
+
+            </div>
+
+
+            <div class="filter-grid">
+
+
+                <!-- STATE -->
+
+                <div class="form-group">
+
+                    <label for="state">
+                        State
+                    </label>
+
+                  <select id="state" onchange="updateSummary()">
+    <option value="">All States</option>
+    <option value="KY">Kentucky</option>
+    <option value="TN">Tennessee</option>
+    <option value="OH">Ohio</option>
+    <option value="IN">Indiana</option>
+</select>
+
+                </div>
+
+
+                <!-- YEAR -->
+
+                <div class="form-group">
+
+                    <label for="year">
+                        Reporting Year
+                    </label>
+
+                    <select id="year" onchange="updateSummary()">
+    <option value="">All Years</option>
+    <option value="2025">2025</option>
+</select>
+
+                </div>
+
+
+                <!-- POLLUTANT -->
+
+                <div class="form-group">
+
+                    <label for="pollutant">
+                        Pollutant
+                    </label>
+
+                    <select
+                        id="pollutant"
+                        onchange="updateSummary()">
+
+                        <option value="">
+                            All Pollutants
+                        </option>
+
+                        <option>CO₂</option>
+                        <option>SO₂</option>
+                        <option>NOₓ</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- FACILITY -->
+
+                <div class="form-group">
+
+                    <label for="facility">
+                        Facility Name or ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="facility"
+                        placeholder="Optional"
+                        oninput="updateSummary()"
+                    >
+
+                </div>
+
+
+                <!-- SOURCE -->
+
+                <div class="form-group">
+
+                    <label for="source">
+                        Data Source
+                    </label>
+
+                    <select
+                        id="source"
+                        onchange="updateSummary()">
+
+                        <option value="">
+                            All Sources
+                        </option>
+
+                        <option>EPA CAMPD</option>
+                        <option>EPA TRACI</option>
+                        <option>User Upload</option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             STEP 3
+             FILE FORMAT
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 3
+                </span>
+
+                <h2>
+                    Select File Format
+                </h2>
+
+                <p>
+                    Choose the format for the exported dataset.
+                </p>
+
+            </div>
+
+
+            <div class="format-grid">
+
+
+                <!-- CSV -->
+
+                <div class="format-option">
+
+                    <input
+                        type="radio"
+                        id="csv"
+                        name="fileFormat"
+                        value="CSV"
+                        checked
+                        onchange="updateSummary()"
+                    >
+
+                    <label
+                        for="csv"
+                        class="format-card">
+
+                        <div class="format-name">
+                            CSV
+                        </div>
+
+                        <div class="format-description">
+                            Comma-separated file suitable for
+                            spreadsheets, databases, and data analysis.
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+                <!-- EXCEL -->
+
+                <div class="format-option">
+
+                    <input
+                        type="radio"
+                        id="excel"
+                        name="fileFormat"
+                        value="Excel"
+                        onchange="updateSummary()"
+                    >
+
+                    <label
+                        for="excel"
+                        class="format-card">
+
+                        <div class="format-name">
+                            Excel
+                        </div>
+
+                        <div class="format-description">
+                            Microsoft Excel workbook for viewing
+                            and analyzing environmental records.
+                        </div>
+
+                    </label>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DOWNLOAD SUMMARY
+        ========================== -->
+
+        <div class="panel summary-panel">
+
+            <div class="panel-header">
+
+                <h2>
+                    Download Summary
+                </h2>
+
+                <p>
+                    Review your selections before downloading.
+                </p>
+
+            </div>
+
+
+            <div class="summary-grid">
+
+
+                <div>
+
+                    <span class="summary-label">
+                        Dataset
+                    </span>
+
+                    <div
+                        class="summary-value"
+                        id="datasetSummary">
+
+                        Not selected
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <span class="summary-label">
+                        Filters
+                    </span>
+
+                    <div
+                        class="summary-value"
+                        id="filterSummary">
+
+                        All Records
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <span class="summary-label">
+                        File Format
+                    </span>
+
+                    <div
+                        class="summary-value"
+                        id="formatSummary">
+
+                        CSV
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="button-area">
+
+                <button
+                    class="clear-button"
+                    onclick="clearSelections()">
+
+                    Clear Selections
+
+                </button>
+
+
+                <button
+                    class="download-button"
+                    onclick="downloadData()">
+
+                    Download Dataset
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                <strong>EPA Data</strong><br>
+                Data Management, Evaluation,
+                and Visualization System
+            </p>
+
+            <p>
+                Environmental & Power-Sector Data
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        let selectedDataset = "";
+
+
+        /*
+        ====================================
+        SELECT DATASET
+        ====================================
+        */
+
+        function selectDataset(card, dataset) {
+
+            const cards =
+                document.querySelectorAll(
+                    ".dataset-card"
+                );
+
+
+            cards.forEach(function(item) {
+
+                item.classList.remove(
+                    "selected"
+                );
+
+            });
+
+
+            card.classList.add(
+                "selected"
+            );
+
+
+            selectedDataset =
+                dataset;
+
+            updateDatasetFilters();
+            updateSummary();
+            document
+                .getElementById(
+                    "datasetSummary"
+                )
+                .textContent =
+                dataset;
+
+        }
+       
+       
+        function updateDatasetFilters() {
+    const year = document.getElementById("year");
+    const pollutant = document.getElementById("pollutant");
+
+    const isAnnual = selectedDataset === "Annual Records";
+
+    if (!isAnnual) {
+        year.value = "";
+        pollutant.value = "";
+    }
+
+    year.disabled = !isAnnual;
+    pollutant.disabled = !isAnnual;
+
+    year.style.opacity = isAnnual ? "1" : "0.5";
+    pollutant.style.opacity = isAnnual ? "1" : "0.5";
+
+    updateSummary();
+}
+
+        /*
+        ====================================
+        UPDATE SUMMARY
+        ====================================
+        */
+
+        function updateSummary() {
+
+            const state =
+                document
+                .getElementById("state")
+                .value;
+
+            const year =
+                document
+                .getElementById("year")
+                .value;
+
+            const pollutant =
+                document
+                .getElementById("pollutant")
+                .value;
+
+            const facility =
+                document
+                .getElementById("facility")
+                .value;
+
+            const source =
+                document
+                .getElementById("source")
+                .value;
+
+
+            const filters = [];
+
+
+            if (state)
+                filters.push(state);
+
+            if (year)
+                filters.push(year);
+
+            if (pollutant)
+                filters.push(pollutant);
+
+            if (facility)
+                filters.push(facility);
+
+            if (source)
+                filters.push(source);
+
+
+            document
+                .getElementById(
+                    "filterSummary"
+                )
+                .textContent =
+                filters.length > 0
+                ? filters.join(", ")
+                : "All Records";
+
+
+            const format =
+                document.querySelector(
+                    'input[name="fileFormat"]:checked'
+                ).value;
+
+
+            document
+                .getElementById(
+                    "formatSummary"
+                )
+                .textContent =
+                format;
+
+        }
+
+
+        /*
+        ====================================
+        DOWNLOAD
+        ====================================
+
+        Later Flask will:
+
+        1. Receive these selections
+        2. Query MySQL
+        3. Generate CSV/Excel
+        4. Return the file
+        ====================================
+        */
+
+
+async function downloadData() {
+    if (selectedDataset === "") {
+        alert("Please select a dataset before downloading.");
+        return;
+    }
+
+    const datasetMap = {
+        "Facilities": "facilities",
+        "Generating Units": "units",
+        "Annual Records": "annual"
+    };
+
+    const pollutantMap = {
+        "CO₂": "CO2",
+        "SO₂": "SO2",
+        "NOₓ": "NOX"
+    };
+
+    const dataset = datasetMap[selectedDataset];
+    const state = document.getElementById("state").value;
+    const year = document.getElementById("year").value;
+    const pollutant =
+        pollutantMap[document.getElementById("pollutant").value] || "";
+    const facility = document.getElementById("facility").value.trim();
+    const source = document.getElementById("source").value;
+
+    const format = document.querySelector(
+        'input[name="fileFormat"]:checked'
+    ).value.toLowerCase();
+
+    if (dataset !== "annual" && (year || pollutant)) {
+        alert("Year and pollutant filters apply only to Annual Records.");
+        return;
+    }
+
+    const params = new URLSearchParams({
+        dataset,
+        state,
+        year,
+        pollutant,
+        facility,
+        source,
+        format
+    });
+
+    try {
+        const response = await fetch("/api/export?" + params.toString());
+
+        if (!response.ok) {
+            const error = await response.json();
+            throw new Error(error.message || "Download failed.");
+        }
+
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+
+        const link = document.createElement("a");
+        link.href = url;
+        link.download =
+            "epa_" + dataset + (format === "csv" ? ".csv" : ".xlsx");
+
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+
+        URL.revokeObjectURL(url);
+
+    } catch (error) {
+        alert(error.message);
+        console.error("Download error:", error);
+    }
+}
+
+
+
+        /*
+        ====================================
+        CLEAR
+        ====================================
+        */
+
+        function clearSelections() {
+
+            selectedDataset = "";
+
+
+            document
+                .querySelectorAll(
+                    ".dataset-card"
+                )
+                .forEach(function(card) {
+
+                    card.classList.remove(
+                        "selected"
+                    );
+
+                });
+
+
+            document
+                .getElementById("state")
+                .value = "";
+
+            document
+                .getElementById("year")
+                .value = "";
+
+            document
+                .getElementById("pollutant")
+                .value = "";
+
+            document
+                .getElementById("facility")
+                .value = "";
+
+            document
+                .getElementById("source")
+                .value = "";
+
+            document
+                .getElementById("csv")
+                .checked = true;
+
+
+            document
+                .getElementById(
+                    "datasetSummary"
+                )
+                .textContent =
+                "Not selected";
+
+
+            updateSummary();
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

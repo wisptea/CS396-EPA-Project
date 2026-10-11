@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EPA Data Retrieval | epaData</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================== */
+
+        .page-header {
+            background:
+                linear-gradient(
+                    110deg,
+                    #123524,
+                    #275940
+                );
+
+            color: white;
+            padding: 60px 8%;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .page-label {
+            color: #b9d7b5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            max-width: 700px;
+            color: #e1eee0;
+            font-size: 16px;
+        }
+
+        /* =========================
+           MAIN LAYOUT
+        ========================== */
+
+        main {
+            width: 86%;
+            max-width: 1150px;
+            margin: 45px auto;
+        }
+
+        .retrieval-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            align-items: start;
+        }
+
+        /* =========================
+           PANELS
+        ========================== */
+
+        .panel {
+            background-color: white;
+            border: 1px solid #e1e8df;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 3px 12px rgba(18, 53, 36, 0.06);
+        }
+
+        .panel-header {
+            margin-bottom: 25px;
+        }
+
+        .panel-header h2 {
+            color: #123524;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .panel-header p {
+            color: #6b7971;
+            font-size: 14px;
+        }
+
+        /* =========================
+           STEP LABEL
+        ========================== */
+
+        .step {
+            display: inline-block;
+            background-color: #dcebd8;
+            color: #174c32;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           FORM
+        ========================== */
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            color: #34463d;
+            font-weight: bold;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        select,
+        input {
+            width: 100%;
+            padding: 12px 13px;
+            border: 1px solid #cbd5cb;
+            border-radius: 6px;
+            background-color: #ffffff;
+            font-size: 15px;
+            color: #333;
+            outline: none;
+            transition: border 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        select:focus,
+        input:focus {
+            border-color: #4f805e;
+            box-shadow: 0 0 0 3px rgba(79, 128, 94, 0.12);
+        }
+
+        /* =========================
+           DIVIDER
+        ========================== */
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e5ebe4;
+            margin: 28px 0;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .button-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 28px;
+        }
+
+        .retrieve-button {
+            background-color: #1f5b3b;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .retrieve-button:hover {
+            background-color: #123524;
+        }
+
+        .clear-button {
+            background-color: #edf2ec;
+            color: #34463d;
+            border: 1px solid #d6dfd4;
+            padding: 12px 22px;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .clear-button:hover {
+            background-color: #e1e9df;
+        }
+
+        /* =========================
+           STATUS SIDEBAR
+        ========================== */
+
+        .status-panel {
+            position: sticky;
+            top: 25px;
+        }
+
+        .status-heading {
+            color: #123524;
+            margin-bottom: 20px;
+        }
+
+        .status-item {
+            padding: 18px 0;
+            border-bottom: 1px solid #e4e9e2;
+        }
+
+        .status-item:last-child {
+            border-bottom: none;
+        }
+
+        .status-item h3 {
+            font-size: 12px;
+            color: #7a877f;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 5px;
+        }
+
+        .status-value {
+            color: #174c32;
+            font-size: 21px;
+            font-weight: bold;
+        }
+
+        /* STATUS BADGE */
+
+        .status-badge {
+            display: inline-block;
+            background-color: #e5f2e2;
+            color: #216438;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* =========================
+           RESULTS
+        ========================== */
+
+        .results-panel {
+            margin-top: 25px;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px;
+        }
+
+        .results-header h2 {
+            color: #123524;
+        }
+
+        .results-count {
+            background-color: #edf3ea;
+            color: #174c32;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* TABLE */
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #edf3ea;
+            color: #174c32;
+            text-align: left;
+            padding: 13px;
+            font-size: 13px;
+            border-bottom: 2px solid #d6e1d4;
+        }
+
+        td {
+            padding: 13px;
+            border-bottom: 1px solid #e5eae4;
+            font-size: 14px;
+            color: #536158;
+        }
+
+        tbody tr:hover {
+            background-color: #f8faf7;
+        }
+
+        .empty-results {
+            text-align: center;
+            padding: 45px 20px;
+            color: #7b877f;
+        }
+
+        .empty-results h3 {
+            color: #4f6056;
+            margin-bottom: 5px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background-color: #0d2b1c;
+            color: #d7e4da;
+            padding: 30px 8%;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 850px) {
+
+            .retrieval-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .status-panel {
+                position: static;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .page-header h1 {
+                font-size: 34px;
+            }
+
+            main {
+                width: 92%;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .full-width {
+                grid-column: auto;
+            }
+
+            .button-row {
+                flex-direction: column;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+  <nav>
+    <div class="logo">
+        EPA Data
+    </div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+        <a href="{{ url_for('explorer') }}">Data Explorer</a>
+        <a href="{{ url_for('upload') }}">Upload Data</a>
+        <a href="{{ url_for('facility') }}">Facility Details</a>
+        <a href="{{ url_for('download') }}">Download</a>
+    </div>
+</nav>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <div class="header-content">
+
+            <div class="page-label">
+                Environmental Data
+            </div>
+
+            <h1>
+                EPA Data Retrieval
+            </h1>
+
+            <p>
+                Select an EPA data source and apply filters to retrieve
+                environmental and power-sector records for analysis.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <div class="retrieval-layout">
+
+
+            <!-- =====================
+                 LEFT SIDE
+            ====================== -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <span class="step">
+                        STEP 1
+                    </span>
+
+                    <h2>
+                        Select Data Source
+                    </h2>
+
+                    <p>
+                        Choose where the environmental records
+                        should be retrieved from.
+                    </p>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="method">
+                        Retrieval Method
+                    </label>
+
+                    <select id="method">
+
+                        <option value="">
+                            Choose a data source
+                        </option>
+
+                        <option value="EPA CAMPD">
+                            EPA CAMPD
+                        </option>
+
+                        <option value="EPA TRACI">
+                            EPA TRACI
+                        </option>
+
+                        <option value="Stored epaData Records">
+                            Stored epaData Records
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <hr class="divider">
+
+
+                <!-- FILTERS -->
+
+                <div class="panel-header">
+
+                    <span class="step">
+                        STEP 2
+                    </span>
+
+                    <h2>
+                        Apply Filters
+                    </h2>
+
+                    <p>
+                        Narrow the retrieved records using one or
+                        more optional filters.
+                    </p>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <!-- STATE -->
+
+                    <div class="form-group">
+
+                        <label for="state">
+                            State
+                        </label>
+
+                        <select id="state">
+
+                            <option value="">
+                                All States
+                            </option>
+
+                            <option value="KY">Kentucky</option>
+                            <option value="TN">Tennessee</option>
+                            <option value ="OH">Ohio </option>
+                            <option value="IN">Indiana</option>
+                            <option value="AL">Alabama</option>
+                            <option value="CA">California</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="TX">Texas</option>
+                        </select>
+
+                    </div>
+
+
+                    <!-- YEAR -->
+
+                    <div class="form-group">
+
+                        <label for="year">
+                            Year
+                        </label>
+
+                        <select id="year">
+
+                            <option value="">
+                                All Years
+                            </option>
+
+                            <option>2025</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                            <option>2022</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- POLLUTANT -->
+
+                    <div class="form-group">
+
+                        <label for="pollutant">
+                            Pollutant
+                        </label>
+
+                        <select id="pollutant">
+
+                            <option value="">
+                                All Pollutants
+                            </option>
+
+                            <option>CO₂</option>
+                            <option>SO₂</option>
+                            <option>NOₓ</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- FACILITY -->
+
+                    <div class="form-group">
+
+                        <label for="facility">
+                            Facility Name or ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="facility"
+                            placeholder="Example: Paradise"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="button-row">
+
+                    <button
+                        class="retrieve-button"
+                        onclick="retrieveData()">
+
+                        Retrieve Data
+
+                    </button>
+
+
+                    <button
+                        class="clear-button"
+                        onclick="clearFilters()">
+
+                        Clear Filters
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 RIGHT STATUS PANEL
+            ====================== -->
+
+            <div class="panel status-panel">
+
+                <h2 class="status-heading">
+                    Retrieval Summary
+                </h2>
+
+
+                <div class="status-item">
+
+                    <h3>Status</h3>
+
+                    <span
+                        class="status-badge"
+                        id="status">
+
+                        Ready
+
+                    </span>
+
+                </div>
+
+
+                <div class="status-item">
+
+                    <h3>Data Source</h3>
+
+                    <div
+                        class="status-value"
+                        id="source">
+
+                        —
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-item">
+
+                    <h3>Records Retrieved</h3>
+
+                    <div
+                        class="status-value"
+                        id="recordCount">
+
+                        0
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-item">
+
+                    <h3>Selected State</h3>
+
+                    <div
+                        class="status-value"
+                        id="selectedState">
+
+                        All
+
+                    </div>
+
+                </div>
+
+
+                <div class="status-item">
+
+                    <h3>Selected Year</h3>
+
+                    <div
+                        class="status-value"
+                        id="selectedYear">
+
+                        All
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             RESULTS SECTION
+        ========================== -->
+
+        <div class="panel results-panel">
+
+            <div class="results-header">
+
+                <div>
+
+                    <h2>
+                        Retrieved Records
+                    </h2>
+
+                    <p>
+                        Environmental records matching your selected filters.
+                    </p>
+
+                </div>
+
+                <div
+                    class="results-count"
+                    id="resultsBadge">
+
+                    0 records
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="empty-results"
+                id="emptyResults">
+
+                <h3>
+                    No data retrieved yet
+                </h3>
+
+                <p>
+                    Select a data source and filters above,
+                    then click Retrieve Data.
+                </p>
+
+            </div>
+
+
+            <!--
+            This table can later be populated
+            using data returned from Flask/MySQL.
+            -->
+
+            <div
+                class="table-container"
+                id="resultsTable"
+                style="display: none;">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Facility ID
+                            </th>
+
+                            <th>
+                                Facility Name
+                            </th>
+
+                            <th>
+                                State
+                            </th>
+
+                            <th>
+                                Year
+                            </th>
+
+                            <th>
+                                Pollutant
+                            </th>
+
+                            <th>
+                                Emissions
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tableBody">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                <strong>EPA Data</strong><br>
+                Data Management, Evaluation,
+                and Visualization System
+            </p>
+
+            <p>
+                Environmental & Power-Sector Data
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+    
+async function retrieveData() {
+    const method = document.getElementById("method").value;
+    const state = document.getElementById("state").value;
+    const year = document.getElementById("year").value;
+    const pollutant = document.getElementById("pollutant").value;
+    const facility = document.getElementById("facility").value.trim();
+
+    if (!method) {
+        alert("Please select a data source.");
+        return;
+    }
+
+    const status = document.getElementById("status");
+    status.textContent = "Retrieving...";
+
+    document.getElementById("source").textContent = method;
+    document.getElementById("selectedState").textContent = state || "All";
+    document.getElementById("selectedYear").textContent = year || "All";
+
+    try {
+        const params = new URLSearchParams();
+
+        if (state) params.set("state", state);
+        if (year) params.set("year", year);
+        if (pollutant) params.set("pollutant", pollutant);
+        if (facility) params.set("facility", facility);
+
+        const response = await fetch(
+            "/api/search/advanced?" + params.toString()
+        );
+
+        if (!response.ok) {
+            throw new Error("Server returned " + response.status);
+        }
+
+        const data = await response.json();
+        console.log("Retrieval response:", data);
+
+        // We will connect the returned records to the
+        // results table after confirming the response format.
+      const records = Array.isArray(data.data) ? data.data : [];
+
+console.log("Records found:", records.length);
+console.log("First record:", records[0]);
+
+document.getElementById("recordCount").textContent =
+    data.total ?? records.length;
+
+document.getElementById("resultsBadge").textContent =
+    (data.total ?? records.length) + " records";
+
+status.textContent = "Completed";
+
+const tableBody = document.getElementById("tableBody");
+const resultsTable = document.getElementById("resultsTable");
+const emptyResults = document.getElementById("emptyResults");
+
+tableBody.innerHTML = "";
+
+if (records.length > 0) {
+    emptyResults.style.display = "none";
+    resultsTable.style.display = "block";
+
+    const pollutantColumns = {
+        "CO₂": "co2_mass_short_tons",
+        "SO₂": "so2_mass_short_tons",
+        "NOₓ": "nox_mass_short_tons"
+    };
+
+    const emissionColumn =
+        pollutantColumns[pollutant] || "co2_mass_short_tons";
+
+    records.forEach(record => {
+        const row = document.createElement("tr");
+
+        const values = [
+            record.facility_id,
+            record.facility_name,
+            record.state,
+            record.reporting_year,
+            pollutant || "CO₂",
+            record[emissionColumn]
+        ];
+
+        values.forEach(value => {
+            const cell = document.createElement("td");
+            cell.textContent = value ?? "N/A";
+            row.appendChild(cell);
+        });
+
+        tableBody.appendChild(row);
+    });
+
+} else {
+    emptyResults.style.display = "block";
+    resultsTable.style.display = "none";
+    emptyResults.innerHTML =
+        "<h3>No matching records found</h3>" +
+        "<p>Try changing your filters.</p>";
+}
+
+
+    } catch (error) {
+        console.error("Retrieval error:", error);
+        status.textContent = "Failed";
+        alert("Unable to retrieve data: " + error.message);
+    }
+}
+
+
+
+        function clearFilters() {
+
+            document.getElementById("method").value = "";
+            document.getElementById("state").value = "";
+            document.getElementById("year").value = "";
+            document.getElementById("pollutant").value = "";
+            document.getElementById("facility").value = "";
+
+            document.getElementById("status").textContent =
+                "Ready";
+
+            document.getElementById("source").textContent =
+                "—";
+
+            document.getElementById("recordCount").textContent =
+                "0";
+
+            document.getElementById("selectedState").textContent =
+                "All";
+
+            document.getElementById("selectedYear").textContent =
+                "All";
+
+            document.getElementById("resultsBadge").textContent =
+                "0 records";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

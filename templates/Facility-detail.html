@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facility Details | epaData</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7f3;
+            color: #18352a;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            background-color: #0c3b2b;
+            color: white;
+            padding: 16px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================= */
+
+        .page-header {
+            background: linear-gradient(90deg, #103e2d, #245f45);
+            color: white;
+            padding: 60px 8%;
+        }
+
+        .header-content {
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .page-label {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #b9d8bd;
+            margin-bottom: 12px;
+        }
+
+        .page-header h1 {
+            font-size: 46px;
+            margin-bottom: 8px;
+        }
+
+        .facility-subtitle {
+            font-size: 18px;
+        }
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+            width: 85%;
+            max-width: 1300px;
+            margin: 40px auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #145c3b;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        /* =========================
+           PANELS
+        ========================= */
+
+        .panel {
+            background-color: white;
+            border: 1px solid #dce5dc;
+            border-radius: 14px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+        }
+
+        .panel-header {
+            border-bottom: 1px solid #e1e7e1;
+            padding-bottom: 18px;
+            margin-bottom: 25px;
+        }
+
+        .panel-header h2 {
+            font-size: 24px;
+            color: #103e2d;
+            margin-bottom: 5px;
+        }
+
+        .panel-header p {
+            color: #68766d;
+        }
+
+        .overview-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .source-badge {
+            background-color: #dcebd8;
+            color: #145c3b;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* =========================
+           IDENTIFICATION
+        ========================= */
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .info-item {
+            min-width: 0;
+        }
+
+        .info-label {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #748077;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .info-value {
+            font-size: 17px;
+            font-weight: bold;
+            color: #18352a;
+            overflow-wrap: anywhere;
+        }
+
+        /* =========================
+           OPERATING DATA
+        ========================= */
+
+        .operating-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .metric-card {
+            background-color: #f7faf6;
+            border: 1px solid #e0e8df;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .metric-label {
+            color: #68766d;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .metric-value {
+            color: #103e2d;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .metric-unit {
+            color: #758078;
+            font-size: 13px;
+            margin-top: 3px;
+        }
+
+        /* =========================
+           EMISSIONS
+        ========================= */
+
+        .emissions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .emission-card {
+            border: 1px solid #dce6dc;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .pollutant-name {
+            font-weight: bold;
+            color: #145c3b;
+            margin-bottom: 8px;
+        }
+
+        .emission-value {
+            font-size: 27px;
+            font-weight: bold;
+            color: #18352a;
+        }
+
+        .emission-unit {
+            color: #748077;
+            font-size: 13px;
+        }
+
+        /* =========================
+           SOURCE INFORMATION
+        ========================= */
+
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        /* =========================
+           LOADING / ERROR
+        ========================= */
+
+        .status-message {
+            display: none;
+            background-color: #fff5e6;
+            border: 1px solid #ead4aa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #6b4c16;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background-color: #0c3b2b;
+            color: white;
+            margin-top: 50px;
+            padding: 30px 8%;
+        }
+
+        .footer-content {
+            max-width: 1300px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 850px) {
+            .nav-links {
+                gap: 12px;
+                flex-wrap: wrap;
+            }
+
+            .info-grid,
+            .operating-grid,
+            .emissions-grid,
+            .source-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-panel {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .page-header h1 {
+                font-size: 36px;
+            }
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+
+            main {
+                width: 92%;
+            }
+
+            .page-header {
+                padding-left: 4%;
+                padding-right: 4%;
+            }
+
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav>
+
+        <div class="logo">
+            EPA Data
+        </div>
+
+         <div class="nav-links">
+
+        <a href="{{ url_for('home') }}">
+            Home
+        </a>
+
+        <a href="{{ url_for('retrieval') }}">
+            Retrieve Data
+        </a>
+
+        <a href="{{ url_for('explorer') }}">
+                Data Explorer
+        </a>
+
+        <a href="{{ url_for('upload') }}">
+            Upload Data
+        </a>
+
+        <a href="{{ url_for('facility') }}">
+            Facility Details
+        </a>
+
+        <a href="{{ url_for('download') }}">
+            Download
+        </a>
+
+    </div>
+
+</nav>
+
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
+
+    <header class="page-header">
+
+        <div class="header-content">
+
+            <div class="page-label">
+                Facility Record
+            </div>
+
+            <h1 id="facilityName">
+                Loading...
+            </h1>
+
+            <div class="facility-subtitle">
+                Facility ID:
+                <span id="headerFacilityId">—</span>
+                •
+                <span id="headerState">—</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <a class="back-link" href="{{ url_for('explorer') }}">
+            ← Back to Data Explorer
+        </a>
+
+        <div id="statusMessage" class="status-message"></div>
+
+
+        <!-- FACILITY OVERVIEW -->
+
+        <div class="panel overview-panel">
+
+            <div>
+                <h2>Facility Details</h2>
+
+                <p>
+                    Environmental and operational information
+                    associated with this facility.
+                </p>
+            </div>
+
+            <div class="source-badge">
+                EPA CAMPD
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             IDENTIFICATION
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>Identification</h2>
+
+                <p>
+                    Facility and generating-unit identification information.
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Facility ID
+                    </span>
+
+                    <div class="info-value" id="facilityId">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Facility Name
+                    </span>
+
+                    <div class="info-value" id="facilityNameDetail">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Unit ID
+                    </span>
+
+                    <div class="info-value" id="unitId">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        State
+                    </span>
+
+                    <div class="info-value" id="state">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        County
+                    </span>
+
+                    <div class="info-value" id="county">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Source Category
+                    </span>
+
+                    <div class="info-value" id="sourceCategory">
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             OPERATING DATA
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>Operating Data</h2>
+
+                <p>
+                    Annual operational measurements for this generating unit.
+                </p>
+
+            </div>
+
+
+            <div class="operating-grid">
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Operating Time
+                    </div>
+
+                    <div class="metric-value" id="operatingTime">
+                        —
+                    </div>
+
+                    <div class="metric-unit">
+                        Hours
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Heat Input
+                    </div>
+
+                    <div class="metric-value" id="heatInput">
+                        —
+                    </div>
+
+                    <div class="metric-unit">
+                        MMBtu
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Gross Load
+                    </div>
+
+                    <div class="metric-value" id="grossLoad">
+                        —
+                    </div>
+
+                    <div class="metric-unit">
+                        MWh
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             EMISSIONS
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>Emissions</h2>
+
+                <p>
+                    Annual reported emissions for the selected unit.
+                </p>
+
+            </div>
+
+
+            <div class="emissions-grid">
+
+                <div class="emission-card">
+
+                    <div class="pollutant-name">
+                        CO₂
+                    </div>
+
+                    <div class="emission-value" id="co2Emissions">
+                        —
+                    </div>
+
+                    <div class="emission-unit">
+                        Short Tons
+                    </div>
+
+                </div>
+
+
+                <div class="emission-card">
+
+                    <div class="pollutant-name">
+                        SO₂
+                    </div>
+
+                    <div class="emission-value" id="so2Emissions">
+                        —
+                    </div>
+
+                    <div class="emission-unit">
+                        Short Tons
+                    </div>
+
+                </div>
+
+
+                <div class="emission-card">
+
+                    <div class="pollutant-name">
+                        NOₓ
+                    </div>
+
+                    <div class="emission-value" id="noxEmissions">
+                        —
+                    </div>
+
+                    <div class="emission-unit">
+                        Short Tons
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             FUEL AND CONTROL INFO
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>Fuel &amp; Control Information</h2>
+
+                <p>
+                    Fuel types and emissions-control information.
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Primary Fuel
+                    </span>
+
+                    <div class="info-value" id="primaryFuel">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Secondary Fuel
+                    </span>
+
+                    <div class="info-value" id="secondaryFuel">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        NOₓ Controls
+                    </span>
+
+                    <div class="info-value" id="noxControls">
+                        —
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Program Code
+                    </span>
+
+                    <div class="info-value" id="programCode">
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DATA SOURCE
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <h2>Data Source &amp; Reporting</h2>
+
+                <p>
+                    Information about the source and reporting period.
+                </p>
+
+            </div>
+
+
+            <div class="source-grid">
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Data Source
+                    </span>
+
+                    <div class="info-value">
+                        EPA CAMPD
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <span class="info-label">
+                        Reporting Year
+                    </span>
+
+                    <div class="info-value" id="reportingYear">
+                        —
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                <strong>EPA Data</strong><br>
+                Data Management, Evaluation,
+                and Visualization System
+            </p>
+
+            <p>
+                Environmental &amp; Power-Sector Data
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         FACILITY DATA JAVASCRIPT
+    ========================== -->
+
+    <script>
+
+        function formatNumber(value, decimals = 3) {
+
+            if (
+                value === null ||
+                value === undefined ||
+                value === ""
+            ) {
+                return "—";
+            }
+
+            const number = Number(value);
+
+            if (Number.isNaN(number)) {
+                return value;
+            }
+
+            return number.toLocaleString(
+                undefined,
+                {
+                    maximumFractionDigits: decimals
+                }
+            );
+        }
+
+
+        function displayValue(value) {
+
+            if (
+                value === null ||
+                value === undefined ||
+                value === ""
+            ) {
+                return "—";
+            }
+
+            return value;
+        }
+
+
+        async function loadFacilityDetails() {
+
+            const params =
+                new URLSearchParams(window.location.search);
+
+            const facilityId =
+                params.get("facility_id");
+
+            const unitId =
+                params.get("unit_id");
+
+            const year =
+                params.get("year");
+
+
+            if (!facilityId || !unitId || !year) {
+
+                document.getElementById("facilityName").textContent =
+                    "Facility Details";
+
+                document.getElementById("statusMessage").style.display =
+                    "block";
+
+                document.getElementById("statusMessage").textContent =
+                    "Select a facility from the Data Explorer to view its details.";
+
+                return;
+            }
+
+
+            const url =
+                `/api/facility-detail?facility_id=${encodeURIComponent(facilityId)}` +
+                `&unit_id=${encodeURIComponent(unitId)}` +
+                `&year=${encodeURIComponent(year)}`;
+
+
+            try {
+
+                const response = await fetch(url);
+
+                const result = await response.json();
+
+
+                if (!response.ok || result.status !== "success") {
+
+                    throw new Error(
+                        result.message ||
+                        "Facility could not be loaded."
+                    );
+                }
+
+
+                const facility = result.data;
+
+
+                /* =========================
+                   HEADER
+                ========================= */
+
+                document.getElementById("facilityName").textContent =
+                    displayValue(facility.facility_name);
+
+                document.getElementById("headerFacilityId").textContent =
+                    displayValue(facility.facility_id);
+
+                document.getElementById("headerState").textContent =
+                    displayValue(facility.state);
+
+
+                /* =========================
+                   IDENTIFICATION
+                ========================= */
+
+                document.getElementById("facilityId").textContent =
+                    displayValue(facility.facility_id);
+
+                document.getElementById("facilityNameDetail").textContent =
+                    displayValue(facility.facility_name);
+
+                document.getElementById("unitId").textContent =
+                    displayValue(facility.unit_id);
+
+                document.getElementById("state").textContent =
+                    displayValue(facility.state);
+
+                document.getElementById("county").textContent =
+                    displayValue(facility.county);
+
+                document.getElementById("sourceCategory").textContent =
+                    displayValue(facility.source_category);
+
+
+                /* =========================
+                   OPERATING DATA
+                ========================= */
+
+                document.getElementById("operatingTime").textContent =
+                    formatNumber(
+                        facility.sum_of_the_operating_time
+                    );
+
+                document.getElementById("heatInput").textContent =
+                    formatNumber(
+                        facility.heat_input_mmbtu
+                    );
+
+                document.getElementById("grossLoad").textContent =
+                    formatNumber(
+                        facility.gross_load_mwh
+                    );
+
+
+                /* =========================
+                   EMISSIONS
+                ========================= */
+
+                document.getElementById("co2Emissions").textContent =
+                    formatNumber(
+                        facility.co2_mass_short_tons
+                    );
+
+                document.getElementById("so2Emissions").textContent =
+                    formatNumber(
+                        facility.so2_mass_short_tons
+                    );
+
+                document.getElementById("noxEmissions").textContent =
+                    formatNumber(
+                        facility.nox_mass_short_tons
+                    );
+
+
+                /* =========================
+                   FUEL / CONTROLS
+                ========================= */
+
+                document.getElementById("primaryFuel").textContent =
+                    displayValue(
+                        facility.primary_fuel_type
+                    );
+
+                document.getElementById("secondaryFuel").textContent =
+                    displayValue(
+                        facility.secondary_fuel_type
+                    );
+
+                document.getElementById("noxControls").textContent =
+                    displayValue(
+                        facility.nox_controls
+                    );
+
+                document.getElementById("programCode").textContent =
+                    displayValue(
+                        facility.program_code
+                    );
+
+
+                /* =========================
+                   REPORTING
+                ========================= */
+
+                document.getElementById("reportingYear").textContent =
+                    displayValue(
+                        facility.reporting_year
+                    );
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Facility detail error:",
+                    error
+                );
+
+                document.getElementById("facilityName").textContent =
+                    "Facility Details";
+
+                document.getElementById("statusMessage").style.display =
+                    "block";
+
+                document.getElementById("statusMessage").textContent =
+                    "Could not load this facility record. Please return to the Data Explorer and try again.";
+            }
+
+        }
+
+
+        loadFacilityDetails();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+facility_id,facility_name,unit_id,reporting_year,state,co2_emissions,so2_emissions,nox_emissions
+1001,Paradise Fossil Plant,1,2025,KY,1250000.5,450.25,310.10
+1001,Paradise Fossil Plant,2,2025,KY,980000.75,320.10,215.50
+1002,Shawnee Fossil Plant,1,2025,KY,850000.00,210.80,180.40
+2001,Clifty Creek Power Plant,1,2025,IN,1100000.2,510.30,295.00
+3001,Gavin Power Plant,1,2025,OH,1450000.8,620.00,410.25

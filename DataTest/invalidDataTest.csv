@@ -1,0 +1,5 @@
+facility_id,facility_name,unit_id,reporting_year,state,co2_emissions,so2_emissions,nox_emissions
+1001,Paradise Fossil Plant,1,2025,KY,1250000.5,450.25,310.10
+1001,Paradise Fossil Plant,1,2025,KY,1250000.5,450.25,310.10
+1002,Shawnee Fossil Plant,2,INVALID_YEAR,KY,-500.0,210.80,180.40
+1003,E.W. Brown Generating Station,1,2025,KY,,110.50,95.20

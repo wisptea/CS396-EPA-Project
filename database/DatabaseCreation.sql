@@ -1,3 +1,4 @@
+CREATE DATABASE IF NOT EXISTS epadata;
 USE epadata;
 
 -- 1. DATASET METADATA TABLE (Batch & Provenance Tracking)
@@ -181,3 +182,13 @@ INSERT IGNORE INTO Measurement_Methods (method_code, method_name, data_tier, met
 ('APP_D', 'Appendix D Fuel Sampling', 'Calculated', 'Mass flow meter and fuel sampling protocol for oil/gas units.'),
 ('APP_E', 'Appendix E NOx Estimation', 'Calculated', 'NOx correlation curve method for gas-fired peaking units.'),
 ('DEFAULT', 'Default Emission Factor', 'Estimated', 'Standard default EPA emission factor applied based on fuel type.');
+
+CREATE TABLE IF NOT EXISTS Uploaded_Datasets (
+    upload_id INT AUTO_INCREMENT PRIMARY KEY,
+    file_name VARCHAR(255) NOT NULL,
+    file_type VARCHAR(50),
+    total_records INT,
+    status VARCHAR(50) DEFAULT 'Imported',
+    file_data LONGTEXT,
+    uploaded_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

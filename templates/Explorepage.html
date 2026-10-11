@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Explorer | epaData</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+        .page-header {
+            background: linear-gradient(110deg, #123524, #275940);
+            color: white;
+            padding: 60px 8%;
+        }
+
+        .header-content {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .page-label {
+            color: #b9d7b5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            max-width: 700px;
+            color: #e1eee0;
+        }
+
+        main {
+            width: 86%;
+            max-width: 1150px;
+            margin: 45px auto;
+        }
+
+        .panel {
+            background-color: white;
+            border: 1px solid #e1e8df;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px rgba(18,53,36,0.06);
+        }
+
+        .panel-header {
+            margin-bottom: 25px;
+        }
+
+        .panel-header h2 {
+            color: #123524;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .panel-header p {
+            color: #6b7971;
+            font-size: 14px;
+        }
+
+        .search-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 13px;
+            border: 1px solid #cbd5cb;
+            border-radius: 6px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .search-input:focus {
+            border-color: #4f805e;
+            box-shadow: 0 0 0 3px rgba(79,128,94,0.12);
+        }
+
+        .search-button {
+            background-color: #1f5b3b;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .search-button:hover {
+            background-color: #123524;
+        }
+
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: bold;
+            color: #415148;
+            margin-bottom: 7px;
+        }
+
+        select, input[type="number"] {
+            padding: 11px;
+            border: 1px solid #cbd5cb;
+            border-radius: 6px;
+            background-color: white;
+            font-size: 14px;
+            outline: none;
+        }
+
+        select:focus, input[type="number"]:focus {
+            border-color: #4f805e;
+        }
+
+        .filter-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .apply-button {
+            background-color: #1f5b3b;
+            color: white;
+            border: none;
+            padding: 11px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .apply-button:hover {
+            background-color: #123524;
+        }
+
+        .clear-button {
+            background-color: #edf2ec;
+            color: #34463d;
+            border: 1px solid #d6dfd4;
+            padding: 11px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 22px;
+        }
+
+        .results-header h2 {
+            color: #123524;
+        }
+
+        .results-count {
+            background-color: #dcebd8;
+            color: #174c32;
+            padding: 7px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #edf3ea;
+            color: #174c32;
+            text-align: left;
+            padding: 14px;
+            font-size: 13px;
+            border-bottom: 2px solid #d6e1d4;
+            user-select: none;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #e4e9e3;
+            color: #536158;
+            font-size: 14px;
+        }
+
+        tbody tr:hover {
+            background-color: #f8faf7;
+        }
+
+        .facility-name {
+            color: #174c32;
+            font-weight: bold;
+        }
+
+        .pollutant {
+            display: inline-block;
+            background-color: #e7f0e5;
+            color: #275940;
+            padding: 4px 9px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .pagination-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        .pagination-info {
+            color: #6c7871;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #0d2b1c;
+            color: #d7e4da;
+            padding: 30px 8%;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1150px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            main {
+                width: 92%;
+            }
+
+            .search-row {
+                flex-direction: column;
+            }
+
+            .filter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .results-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">EPA Data</div>
+    <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+        <a href="{{ url_for('explorer') }}">Data Explorer</a>
+        <a href="{{ url_for('upload') }}">Upload Data</a>
+        <a href="{{ url_for('facility') }}">Facility Details</a>
+        <a href="{{ url_for('download') }}">Download</a>
+    </div>
+</nav>
+
+<header class="page-header">
+    <div class="header-content">
+        <div class="page-label">Environmental Records</div>
+        <h1>Data Explorer</h1>
+        <p>Search, filter, and explore environmental and power-sector records stored in the epaData system.</p>
+    </div>
+</header>
+
+<main>
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Search Environmental Data</h2>
+            <p>Search by facility name or facility ID.</p>
+        </div>
+        <div class="search-row">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search by facility name or ID...">
+            <button type="button" class="search-button" onclick="searchData(1)">Search</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Natural Language Search</h2>
+            <p>Describe the environmental records you want to find.</p>
+        </div>
+        <div class="search-row">
+            <input type="text" id="naturalSearchInput" class="search-input" placeholder="Example: coal plants in Kentucky in 2025 with CO2 greater than 500000">
+            <button type="button" class="search-button" onclick="naturalSearch(1)">Search</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="panel-header">
+            <h2>Filters & Range Options</h2>
+            <p>Narrow the displayed records using the filters below.</p>
+        </div>
+        <div class="filter-grid">
+            <div class="form-group">
+                <label for="stateFilter">State</label>
+                <select id="stateFilter">
+                    <option value="">All States</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="TN">Tennessee</optio>
+                    <option value="OH">Ohio</option>
+                    <option value="IN">Indiana</option>
+                    <option value="NY">New York</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="yearFilter">Year</label>
+                <select id="yearFilter">
+                    <option value="">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+
+            <!-- RANGE FILTERS FOR ALL THREE POLLUTANTS -->
+            <div class="form-group">
+                <label for="minCo2Filter">Min CO₂ (Tons)</label>
+                <input type="number" id="minCo2Filter" placeholder="e.g. 1000">
+            </div>
+            <div class="form-group">
+                <label for="maxCo2Filter">Max CO₂ (Tons)</label>
+                <input type="number" id="maxCo2Filter" placeholder="e.g. 500000">
+            </div>
+
+            <div class="form-group">
+                <label for="minSo2Filter">Min SO₂ (Tons)</label>
+                <input type="number" id="minSo2Filter" placeholder="e.g. 10">
+            </div>
+            <div class="form-group">
+                <label for="maxSo2Filter">Max SO₂ (Tons)</label>
+                <input type="number" id="maxSo2Filter" placeholder="e.g. 5000">
+            </div>
+
+            <div class="form-group">
+                <label for="minNoxFilter">Min NOₓ (Tons)</label>
+                <input type="number" id="minNoxFilter" placeholder="e.g. 5">
+            </div>
+            <div class="form-group">
+                <label for="maxNoxFilter">Max NOₓ (Tons)</label>
+                <input type="number" id="maxNoxFilter" placeholder="e.g. 1000">
+            </div>
+
+            <!-- SORTING CONTROLS -->
+            <div class="form-group">
+                <label for="sortByFilter">Sort By Column</label>
+                <select id="sortByFilter">
+                    <option value="co2_mass_short_tons">CO₂ Emissions</option>
+                    <option value="so2_mass_short_tons">SO₂ Emissions</option>
+                    <option value="nox_mass_short_tons">NOₓ Emissions</option>
+                    <option value="gross_load_mwh">Gross Load</option>
+                    <option value="reporting_year">Reporting Year</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="sortOrderFilter">Sort Direction</label>
+                <select id="sortOrderFilter">
+                    <option value="DESC">Descending (High to Low)</option>
+                    <option value="ASC">Ascending (Low to High)</option>
+                </select>
+            </div>
+        </div>
+        <div class="filter-actions">
+            <button type="button" class="apply-button" onclick="applyFilters()">Apply Filters</button>
+            <button type="button" class="clear-button" onclick="clearFilters()">Clear Filters</button>
+        </div>
+    </div>
+
+    <div class="panel">
+        <div class="results-header">
+            <div>
+                <h2>Search Results</h2>
+                <p>Environmental records matching your search criteria.</p>
+            </div>
+            <div class="results-count" id="resultsCount">0 records</div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                        <tr>
+                        <th>Facility ID</th>
+                        <th>Facility Name</th>
+                        <th>Unit</th>
+                        <th>State</th>
+                        <th style="cursor: pointer;" onclick="toggleSort('reporting_year')">Year ↕</th>
+                        <th>Primary Fuel</th>
+                        <th style="cursor: pointer;" onclick="toggleSort('co2_mass_short_tons')">CO₂ (Tons) ↕</th>
+                        <th style="cursor: pointer;" onclick="toggleSort('so2_mass_short_tons')">SO₂ (Tons) ↕</th>
+                        <th style="cursor: pointer;" onclick="toggleSort('nox_mass_short_tons')">NOₓ (Tons) ↕</th>
+                        <th style="cursor: pointer;" onclick="toggleSort('gross_load_mwh')">Gross Load (MWh) ↕</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsBody">
+                    <tr>
+                        <td colspan="10">Select filters or search to display records.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination-area">
+            <div class="pagination-info" id="paginationInfo">Showing 0 records</div>
+            <div>
+                <button type="button" class="clear-button" id="previousPage" onclick="changePage(-1)" disabled>Previous Page</button>
+                <button type="button" class="apply-button" id="nextPage" onclick="changePage(1)" disabled>Next Page</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <p><strong>EPA Data</strong><br>Data Management, Evaluation, and Visualization System</p>
+        <p>Environmental & Power-Sector Data</p>
+    </div>
+</footer>
+
+<script>
+let currentPage = 1;
+let totalPages = 1;
+let currentSearchType = "standard";
+let lastNaturalText = "";
+
+async function searchData(page = 1) {
+    currentSearchType = "standard";
+    currentPage = page;
+
+    const search = document.getElementById("searchInput").value.trim();
+    const state = document.getElementById("stateFilter").value;
+    const year = document.getElementById("yearFilter").value;
+
+    const minCo2 = document.getElementById("minCo2Filter").value.trim();
+    const maxCo2 = document.getElementById("maxCo2Filter").value.trim();
+    const minSo2 = document.getElementById("minSo2Filter").value.trim();
+    const maxSo2 = document.getElementById("maxSo2Filter").value.trim();
+    const minNox = document.getElementById("minNoxFilter").value.trim();
+    const maxNox = document.getElementById("maxNoxFilter").value.trim();
+
+    const sortBy = document.getElementById("sortByFilter").value;
+    const order = document.getElementById("sortOrderFilter").value;
+
+    const limit = 20;
+
+    const params = new URLSearchParams({
+        page: currentPage,
+        limit: limit,
+        sort_by: sortBy,
+        order: order
+    });
+
+    if (search) params.append("search", search);
+    if (state) params.append("state", state);
+    if (year) params.append("year", year);
+    
+    if (minCo2) params.append("min_co2", minCo2);
+    if (maxCo2) params.append("max_co2", maxCo2);
+    if (minSo2) params.append("min_so2", minSo2);
+    if (maxSo2) params.append("max_so2", maxSo2);
+    if (minNox) params.append("min_nox", minNox);
+    if (maxNox) params.append("max_nox", maxNox);
+
+    const url = `/api/search/advanced?${params.toString()}`;
+
+    try {
+        const response = await fetch(url);
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message || "Could not load data.");
+        }
+
+        const records = result.data || [];
+        totalPages = result.total_pages || 1;
+        
+        updatePaginationUI(result.total_records || records.length, records.length);
+        displayFacilities(records);
+
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Could not load facility data.");
+    }
+}
+
+async function naturalSearch(page = 1) {
+    const text = document.getElementById("naturalSearchInput").value.trim();
+    if (!text) {
+        alert("Please enter a search description.");
+        return;
+    }
+
+    if (text !== lastNaturalText) {
+        currentPage = 1;
+        lastNaturalText = text;
+    } else {
+        currentPage = page;
+    }
+
+    currentSearchType = "natural";
+    const limit = 20;
+
+    // Pass sorting options to natural language query as well
+    const sortBy = document.getElementById("sortByFilter").value;
+    const order = document.getElementById("sortOrderFilter").value;
+
+    const params = new URLSearchParams({
+        text: text,
+        page: currentPage,
+        limit: limit,
+        sort_by: sortBy,
+        order: order
+    });
+
+    const url = `/api/search/natural?${params.toString()}`;
+
+    try {
+        const response = await fetch(url);
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message || "Search failed.");
+        }
+
+        const records = result.data || [];
+        totalPages = result.total_pages || 1;
+
+        updatePaginationUI(result.total_records, records.length);
+        displayFacilities(records, "CO2");
+
+    } catch (error) {
+        console.error("Natural language search error:", error);
+        alert("Natural language search failed: " + error.message);
+    }
+}
+
+function toggleSort(columnKey) {
+    const sortBySelect = document.getElementById("sortByFilter");
+    const sortOrderSelect = document.getElementById("sortOrderFilter");
+
+    if (sortBySelect.value === columnKey) {
+        sortOrderSelect.value = sortOrderSelect.value === "DESC" ? "ASC" : "DESC";
+    } else {
+        sortBySelect.value = columnKey;
+        sortOrderSelect.value = "DESC";
+    }
+
+    searchData(1);
+}
+
+function updatePaginationUI(totalRecords, pageRecordCount) {
+    document.getElementById("previousPage").disabled = currentPage <= 1;
+    document.getElementById("nextPage").disabled = currentPage >= totalPages;
+
+    document.getElementById("resultsCount").textContent = `${totalRecords} records`;
+    document.getElementById("paginationInfo").textContent = 
+        `Page ${currentPage} of ${totalPages} — showing ${pageRecordCount} of ${totalRecords} records`;
+}
+
+function changePage(direction) {
+    const newPage = currentPage + direction;
+
+    if (newPage < 1 || newPage > totalPages) {
+        return;
+    }
+
+    if (currentSearchType === "natural") {
+        naturalSearch(newPage);
+    } else {
+        searchData(newPage);
+    }
+}
+
+function displayFacilities(facilities) {
+    const tableBody = document.getElementById("resultsBody");
+    tableBody.innerHTML = "";
+
+    if (!facilities || facilities.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="10">No facilities found.</td></tr>`;
+        return;
+    }
+
+    facilities.forEach(facility => {
+        const row = document.createElement("tr");
+
+        const fmt = (val) => {
+            if (val === null || val === undefined || val === "") return "—";
+            const num = Number(val);
+            return isNaN(num) ? val : num.toLocaleString(undefined, { maximumFractionDigits: 2 });
+        };
+
+        row.innerHTML = `
+            <td>${facility.facility_id ?? ""}</td>
+            <td class="facility-name">
+                <a href="/facility-detail?facility_id=${facility.facility_id}&unit_id=${encodeURIComponent(facility.unit_id ?? '')}&year=${facility.reporting_year ?? ''}">
+                    ${facility.facility_name ?? ""}
+                </a>
+            </td>
+            <td>${facility.unit_id ?? "—"}</td>
+            <td>${facility.state ?? ""}</td>
+            <td>${facility.reporting_year ?? "—"}</td>
+            <td><span class="pollutant">${facility.primary_fuel_type ?? "N/A"}</span></td>
+            <td><strong>${fmt(facility.co2_mass_short_tons)}</strong></td>
+            <td>${fmt(facility.so2_mass_short_tons)}</td>
+            <td>${fmt(facility.nox_mass_short_tons)}</td>
+            <td>${fmt(facility.gross_load_mwh)}</td>
+        `;
+
+        tableBody.appendChild(row);
+    });
+}
+
+function applyFilters() {
+    searchData(1);
+}
+
+function clearFilters() {
+    document.getElementById("stateFilter").value = "";
+    document.getElementById("yearFilter").value = "";
+    document.getElementById("pollutantFilter").value = "";
+    document.getElementById("sourceFilter").value = "";
+    document.getElementById("searchInput").value = "";
+    document.getElementById("minCo2Filter").value = "";
+    document.getElementById("maxCo2Filter").value = "";
+    document.getElementById("sortByFilter").value = "co2_mass_short_tons";
+    document.getElementById("sortOrderFilter").value = "DESC";
+    searchData(1);
+}
+
+document.getElementById("searchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        searchData(1);
+    }
+});
+
+document.getElementById("naturalSearchInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        naturalSearch(1);
+    }
+});
+</script>
+
+</body>
+</html>

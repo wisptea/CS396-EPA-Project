@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Environmental Data | epaData</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f6f8f5;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           NAVIGATION
+        ========================== */
+
+        nav {
+            background-color: #123524;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #b7d7b0;
+        }
+
+        /* =========================
+           PAGE HEADER
+        ========================== */
+
+        .page-header {
+            background: linear-gradient(
+                110deg,
+                #123524,
+                #275940
+            );
+
+            color: white;
+            padding: 60px 8%;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .page-label {
+            color: #b9d7b5;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            color: #e1eee0;
+            max-width: 700px;
+        }
+
+        /* =========================
+           MAIN CONTENT
+        ========================== */
+
+        main {
+            width: 86%;
+            max-width: 1100px;
+            margin: 45px auto;
+        }
+
+        .panel {
+            background-color: white;
+            border: 1px solid #e1e8df;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 12px rgba(18,53,36,0.06);
+        }
+
+        .panel-header {
+            margin-bottom: 25px;
+        }
+
+        .panel-header h2 {
+            color: #123524;
+            font-size: 23px;
+            margin-bottom: 5px;
+        }
+
+        .panel-header p {
+            color: #6b7971;
+            font-size: 14px;
+        }
+
+        .step {
+            display: inline-block;
+            background-color: #dcebd8;
+            color: #174c32;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* =========================
+           UPLOAD AREA
+        ========================== */
+
+        .upload-area {
+            border: 2px dashed #9bb69d;
+            background-color: #f8faf7;
+            border-radius: 10px;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        .upload-icon {
+            font-size: 42px;
+            color: #4f805e;
+            margin-bottom: 10px;
+        }
+
+        .upload-area h3 {
+            color: #174c32;
+            margin-bottom: 6px;
+        }
+
+        .upload-area p {
+            color: #6d7a72;
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .choose-button {
+            display: inline-block;
+            background-color: #1f5b3b;
+            color: white;
+            padding: 11px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .choose-button:hover {
+            background-color: #123524;
+        }
+
+        .file-name {
+            margin-top: 15px;
+            color: #174c32;
+            font-weight: bold;
+        }
+
+        /* =========================
+           SUPPORTED FORMATS
+        ========================== */
+
+        .format-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .format-card {
+            background-color: #f7faf6;
+            border: 1px solid #dfe8dc;
+            border-radius: 8px;
+            padding: 22px;
+        }
+
+        .format-card h3 {
+            color: #174c32;
+            margin-bottom: 7px;
+        }
+
+        .format-type {
+            display: inline-block;
+            background-color: #dcebd8;
+            color: #174c32;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .format-card p {
+            color: #66756d;
+            font-size: 14px;
+        }
+
+        /* =========================
+           VALIDATION
+        ========================== */
+
+        .validation-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .validation-item {
+            background-color: #f7faf6;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e7de;
+        }
+
+        .validation-item h3 {
+            font-size: 13px;
+            color: #758078;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .validation-value {
+            font-size: 22px;
+            color: #174c32;
+            font-weight: bold;
+        }
+
+        .validation-message {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f1f5ef;
+            border-left: 4px solid #7ba77a;
+            border-radius: 4px;
+            color: #526058;
+        }
+
+        /* =========================
+           APPROVAL
+        ========================== */
+
+        .approval-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .approval-text h3 {
+            color: #123524;
+            margin-bottom: 5px;
+        }
+
+        .approval-text p {
+            color: #68766e;
+        }
+
+        .import-button {
+            background-color: #1f5b3b;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .import-button:hover {
+            background-color: #123524;
+        }
+
+        .import-button:disabled {
+            background-color: #aeb9af;
+            cursor: not-allowed;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background-color: #0d2b1c;
+            color: #d7e4da;
+            padding: 30px 8%;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 750px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .format-grid,
+            .validation-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .approval-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .page-header h1 {
+                font-size: 34px;
+            }
+
+            main {
+                width: 92%;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- NAVIGATION -->
+
+  <nav>
+    <div class="logo">
+        EPA Data
+    </div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+        <a href="{{ url_for('explorer') }}">Data Explorer</a>
+        <a href="{{ url_for('upload') }}">Upload Data</a>
+        <a href="{{ url_for('facility') }}">Facility Details</a>
+        <a href="{{ url_for('download') }}">Download</a>
+    </div>
+</nav>
+
+
+    <!-- PAGE HEADER -->
+
+    <header class="page-header">
+
+        <div class="header-content">
+
+            <div class="page-label">
+                Data Management
+            </div>
+
+            <h1>
+                Upload Environmental Data
+            </h1>
+
+            <p>
+                Upload environmental datasets for validation and
+                import into the epaData management system.
+            </p>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+        <!-- =========================
+             STEP 1 - FILE SELECTION
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 1
+                </span>
+
+                <h2>
+                    Select a File
+                </h2>
+
+                <p>
+                    Choose an environmental dataset from your computer.
+                </p>
+
+            </div>
+
+
+            <div class="upload-area">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h3>
+                    Select your environmental dataset
+                </h3>
+
+                <p>
+                    Choose a CSV or Excel file to begin validation.
+                </p>
+
+                <label
+                    for="fileInput"
+                    class="choose-button">
+
+                    Choose File
+
+                </label>
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".csv,.xlsx,.xls"
+                    onchange="fileSelected()"
+                >
+
+                <div
+                    class="file-name"
+                    id="fileName">
+
+                    No file selected
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             STEP 2 - SUPPORTED FORMATS
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 2
+                </span>
+
+                <h2>
+                    Supported Formats
+                </h2>
+
+                <p>
+                    Uploaded datasets must use one of the
+                    supported file formats.
+                </p>
+
+            </div>
+
+
+            <div class="format-grid">
+
+
+                <div class="format-card">
+
+                    <div class="format-type">
+                        .CSV
+                    </div>
+
+                    <h3>
+                        CSV Files
+                    </h3>
+
+                    <p>
+                        Comma-separated environmental datasets
+                        containing properly labeled columns.
+                    </p>
+
+                </div>
+
+
+                <div class="format-card">
+
+                    <div class="format-type">
+                        .XLSX / .XLS
+                    </div>
+
+                    <h3>
+                        Excel Files
+                    </h3>
+
+                    <p>
+                        Microsoft Excel environmental datasets
+                        following the required epaData structure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             STEP 3 - VALIDATION
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 3
+                </span>
+
+                <h2>
+                    Validation Results
+                </h2>
+
+                <p>
+                    The selected dataset will be checked before
+                    it can be imported into the database.
+                </p>
+
+            </div>
+
+
+            <div class="validation-grid">
+
+
+                <div class="validation-item">
+
+                    <h3>
+                        File Format
+                    </h3>
+
+                    <div
+                        class="validation-value"
+                        id="formatStatus">
+
+                        Pending
+
+                    </div>
+
+                </div>
+
+
+                <div class="validation-item">
+
+                    <h3>
+                        Required Fields
+                    </h3>
+
+                    <div
+                        class="validation-value"
+                        id="fieldStatus">
+
+                        Pending
+
+                    </div>
+
+                </div>
+
+
+                <div class="validation-item">
+
+                    <h3>
+                        Validation Status
+                    </h3>
+
+                    <div
+                        class="validation-value"
+                        id="validationStatus">
+
+                        Waiting
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="validation-message"
+                id="validationMessage">
+
+                Select a file to begin validation.
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             STEP 4 - IMPORT APPROVAL
+        ========================== -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <span class="step">
+                    STEP 4
+                </span>
+
+                <h2>
+                    Import Approval
+                </h2>
+
+            </div>
+
+
+            <div class="approval-box">
+
+                <div class="approval-text">
+
+                    <h3 id="approvalTitle">
+                        Waiting for validation
+                    </h3>
+
+                    <p id="approvalMessage">
+                        The dataset must pass validation before
+                        it can be imported into epaData.
+                    </p>
+
+                </div>
+
+
+                <button
+                    class="import-button"
+                    id="importButton"
+                    disabled
+                    onclick="importData()">
+
+                    Approve & Import
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+                <strong>EPA Data</strong><br>
+                Data Management, Evaluation,
+                and Visualization System
+            </p>
+
+            <p>
+                Environmental & Power-Sector Data
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+       async function fileSelected() {
+    const file = document.getElementById("fileInput").files[0];
+
+    if (!file) return;
+
+    document.getElementById("fileName").textContent = file.name;
+    document.getElementById("formatStatus").textContent = "Checking";
+    document.getElementById("fieldStatus").textContent = "Checking";
+    document.getElementById("validationStatus").textContent = "Validating";
+    document.getElementById("validationMessage").textContent =
+        "Checking the uploaded file...";
+    document.getElementById("importButton").disabled = true;
+    document.getElementById("approvalTitle").textContent =
+        "Waiting for validation";
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const response = await fetch("/api/upload/validate", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || result.status !== "success") {
+           const error = new Error(result.message || "Validation failed.");
+            error.validation_results = result.validation_results;
+            throw error;
+        }
+
+        document.getElementById("formatStatus").textContent = "Valid";
+        document.getElementById("fieldStatus").textContent = "Basic Check";
+        document.getElementById("validationStatus").textContent = "Passed";
+
+        document.getElementById("validationMessage").textContent =
+            `${result.total_records} records found. Columns: ${result.columns.join(", ")}`;
+
+        document.getElementById("approvalTitle").textContent =
+            "Basic validation completed";
+
+        document.getElementById("approvalMessage").textContent =
+    "The file passed basic validation. Review the dataset before approving import.";
+
+document.getElementById("importButton").disabled = false;
+document.getElementById("importButton").textContent = "Approve & Import";
+    } catch (error) {
+      
+    const validation = error.validation_results || {};
+    const missing = validation.missing_values || 0;
+    const duplicates = validation.duplicate_rows || 0;
+
+    const file = document.getElementById("fileInput").files[0];
+    const validFormat = file && /\.(csv|xlsx|xls)$/i.test(file.name);
+
+    document.getElementById("formatStatus").textContent =
+        validFormat ? "Valid" : "Check Failed";
+
+    document.getElementById("fieldStatus").textContent =
+        missing > 0 ? `${missing} Missing Values` :
+        duplicates > 0 ? `${duplicates} Duplicate Rows` :
+        "Not Verified";
+
+    document.getElementById("validationStatus").textContent = "Failed";
+
+    document.getElementById("validationMessage").textContent =
+        missing > 0 || duplicates > 0
+        ? `Dataset rejected: ${missing} missing values and ${duplicates} duplicate rows detected.`
+        : error.message;
+
+    document.getElementById("approvalTitle").textContent =
+        "Validation unsuccessful";
+
+    document.getElementById("approvalMessage").textContent =
+        "Please correct the file and try again.";
+}
+       }
+
+
+      async function importData() {
+    const file = document.getElementById("fileInput").files[0];
+    const button = document.getElementById("importButton");
+
+    if (!file) {
+        alert("Please select a file first.");
+        return;
+    }
+
+    const confirmed = confirm(
+        `Are you sure you want to import ${file.name} into MySQL?`
+    );
+
+    if (!confirmed) return;
+
+    button.disabled = true;
+    button.textContent = "Importing...";
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const response = await fetch("/api/upload/import", {
+            method: "POST",
+            body: formData
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || result.status !== "success") {
+            throw new Error(result.message || "Import failed.");
+        }
+
+        document.getElementById("approvalTitle").textContent =
+            "Dataset successfully imported!";
+
+        document.getElementById("approvalMessage").textContent =
+            `${result.total_records} records saved to MySQL. Upload ID: ${result.upload_id}`;
+
+        document.getElementById("validationMessage").textContent =
+            "Import completed successfully.";
+
+        document.getElementById("validationStatus").textContent =
+            "Imported";
+
+        button.textContent = "Imported";
+
+    } catch (error) {
+        document.getElementById("approvalTitle").textContent =
+            "Import failed";
+
+        document.getElementById("approvalMessage").textContent =
+            error.message;
+
+        button.textContent = "Approve & Import";
+        button.disabled = false;
+    }
+}
+
+    </script>
+
+</body>
+
+</html>
