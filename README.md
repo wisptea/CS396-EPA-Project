@@ -222,6 +222,7 @@ Open your web browser and navigate to:
 --------------------------------------------------------------------------------
 8. API ENDPOINTS
 --------------------------------------------------------------------------------
+```text
 WEB PAGE ROUTES:
   GET /                Renders the Homepage
   GET /explorer        Renders the Data Explorer & search page
@@ -242,7 +243,7 @@ RESTFUL API ENDPOINTS:
   POST /api/upload/validate     Spreadsheet validation (schema, nulls, duplicates)
   POST /api/upload/import       Ingests validated spreadsheet data into MySQL
   GET  /api/export              Generates dynamic dataset downloads (.csv or .xlsx)
-
+```
 
 --------------------------------------------------------------------------------
 9. FRONTEND & FEATURES
