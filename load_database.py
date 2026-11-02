@@ -377,6 +377,7 @@ print(f"Calculated {cursor.rowcount} TRACI environmental impact records.")
 # -----------------------------
 # FINISH
 # -----------------------------
+#Commit comment
 
 cursor.close()
 conn.close()
