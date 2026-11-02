@@ -4,11 +4,14 @@ import io
 import re
 import json
 import pandas as pd
+import numpy as np
 from flask import Flask, jsonify, request, render_template, send_file
 from flask_cors import CORS
 import mysql.connector
 from dotenv import load_dotenv
 from openpyxl import Workbook
+
+from analytics import calculate_derived_indicators, get_missing_value_summary
 
 # ============================================================
 # LOAD ENVIRONMENT VARIABLES
@@ -1416,6 +1419,84 @@ def natural_language_search():
 
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
+
+
+#PHASE 2 SECTIONS
+
+@app.route('/api/analytics/dataset', methods=['GET'])
+def get_analytical_dataset():
+    """
+    Builds a filtered analytical dataset complete with missing-value summaries,
+    record counts, and derived performance indicators.
+    """
+    connection = None
+    cursor = None
+    try:
+        state = request.args.get('state', '').strip()
+        year = request.args.get('year')
+        fuel = request.args.get('fuel', '').strip()
+        min_load = request.args.get('min_gross_load')
+
+        connection = get_db_connection()
+        
+        query = """
+            SELECT e.*, f.facility_name, f.state, f.county, u.unit_type, u.so2_controls, u.nox_controls
+            FROM Annual_Emissions e
+            JOIN Facilities f ON e.facility_id = f.facility_id
+            LEFT JOIN Units u ON e.facility_id = u.facility_id AND e.unit_id = u.unit_id
+            WHERE 1=1
+        """
+        params = []
+
+        if state:
+            query += " AND f.state = %s"
+            params.append(state)
+        if year:
+            query += " AND e.reporting_year = %s"
+            params.append(int(year))
+        if fuel:
+            query += " AND e.primary_fuel_type LIKE %s"
+            params.append(f"%{fuel}%")
+        if min_load:
+            query += " AND e.gross_load_mwh >= %s"
+            params.append(float(min_load))
+
+        # Load into pandas for analytical processing
+        df = pd.read_sql(query, connection, params=params)
+
+        if df.empty:
+            return jsonify({
+                "status": "success",
+                "record_count": 0,
+                "message": "No records match the selected analytical filters."
+            }), 200
+
+        # Apply derived indicators and missing-value analysis
+        df_processed = calculate_derived_indicators(df)
+        missing_summary = get_missing_value_summary(df_processed)
+
+        summary_stats = {
+            "total_records": len(df_processed),
+            "total_facilities": int(df_processed['facility_id'].nunique()),
+            "total_units": int(df_processed[['facility_id', 'unit_id']].drop_duplicates().shape[0]),
+            "reporting_years": sorted(df_processed['reporting_year'].dropna().unique().tolist()) if 'reporting_year' in df_processed.columns else []
+        }
+
+        return jsonify({
+            "status": "success",
+            "summary": summary_stats,
+            "missing_values": missing_summary,
+            "sample_data": df_processed.head(10).replace({np.nan: None}).to_dict(orient='records')
+        }), 200
+
+    except Exception as error:
+        print("Analytical dataset error:", error)
+        return jsonify({"status": "error", "message": str(error)}), 500
+
+    finally:
+        if cursor: cursor.close()
+        if connection and connection.is_connected(): connection.close()
+
 
 
 if __name__ == "__main__":

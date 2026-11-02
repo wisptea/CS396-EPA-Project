@@ -1,6 +1,9 @@
 CREATE DATABASE IF NOT EXISTS epadata;
 USE epadata;
 
+USE epadata;
+ALTER TABLE Emissions_TRACI_Impacts MODIFY COLUMN calculated_impact_value DECIMAL(24, 6) NOT NULL;
+
 -- 1. DATASET METADATA TABLE (Batch & Provenance Tracking)
 CREATE TABLE IF NOT EXISTS Dataset_Metadata (
     metadata_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -165,7 +168,7 @@ CREATE TABLE IF NOT EXISTS Emissions_TRACI_Impacts (
     daily_emission_id BIGINT NULL,  -- FK for daily calculations
     hourly_emission_id BIGINT NULL, -- FK for hourly calculations
     traci_id INT NOT NULL,          -- FK to TRACI_Factors
-    calculated_impact_value DECIMAL(18, 6) NOT NULL,
+    calculated_impact_value DECIMAL(24, 6) NOT NULL, -- Fixed precision to prevent out-of-range errors
     FOREIGN KEY (emission_id) REFERENCES Annual_Emissions(emission_id) ON DELETE CASCADE,
     FOREIGN KEY (daily_emission_id) REFERENCES Daily_Emissions(daily_emission_id) ON DELETE CASCADE,
     FOREIGN KEY (hourly_emission_id) REFERENCES Hourly_Emissions(hourly_emission_id) ON DELETE CASCADE,
