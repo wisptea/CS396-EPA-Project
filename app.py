@@ -1499,5 +1499,64 @@ def get_analytical_dataset():
 
 
 
+@app.route('/analysis')
+def analysis():
+    return render_template('Analysis.html')
+
+@app.route('/api/analysis', methods=['GET'])
+def api_analysis():
+    facility_id = request.args.get('facility_id')
+    year = request.args.get('year')
+    
+    conn = None
+    cursor = None
+    try:
+        conn = get_db_connection()  # Use your actual DB connection function
+        cursor = conn.cursor(dictionary=True)
+        
+        query = """
+            SELECT co2_mass_short_tons, so2_mass_short_tons, nox_mass_short_tons 
+            FROM Annual_Emissions 
+            WHERE facility_id = %s AND reporting_year = %s
+        """
+        cursor.execute(query, (facility_id, year))
+        row = cursor.fetchone()
+        
+        # CRITICAL: Consume any remaining results if multiple exist to clear the buffer
+        while cursor.nextset():
+            pass
+
+        if not row:
+            return jsonify({
+                "status": "error",
+                "message": "No records found for this facility and year."
+            }), 404
+
+        # Calculate TRACI impact metrics (converting tons to kg approx)
+        gwp = float(row.get('co2_mass_short_tons') or 0) * 907.185
+        ap = float(row.get('so2_mass_short_tons') or 0) * 907.185
+        sp = float(row.get('nox_mass_short_tons') or 0) * 907.185
+
+        return jsonify({
+            "status": "success",
+            "data": {
+                "gwp_total": gwp,
+                "ap_total": ap,
+                "sp_total": sp
+            }
+        })
+
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+        
+    finally:
+        if cursor:
+            cursor.close()
+        if conn:
+            conn.close()
+
 if __name__ == "__main__":
     app.run(debug=True)
