@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissions &amp; Impact Prediction | epaData</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, Helvetica, sans-serif; background-color: #f6f8f5; color: #263238; line-height: 1.6; }
+
+        nav {
+            background-color: #123524; color: white; padding: 18px 8%;
+            display: flex; justify-content: space-between; align-items: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+        .logo { font-size: 23px; font-weight: bold; }
+        .nav-links { display: flex; gap: 28px; }
+        nav a { color: white; text-decoration: none; font-size: 15px; }
+        nav a:hover { color: #b7d7b0; }
+
+        .page-header {
+            background: linear-gradient(110deg, #123524, #275940);
+            color: white; padding: 60px 8%;
+        }
+        .header-content { max-width: 1150px; margin: auto; }
+        .page-label { color: #b9d7b5; text-transform: uppercase; letter-spacing: 1.5px; font-size: 13px; font-weight: bold; margin-bottom: 10px; }
+        .page-header h1 { font-size: 42px; margin-bottom: 10px; }
+        .page-header p { max-width: 720px; color: #e1eee0; font-size: 16px; }
+
+        main { width: 86%; max-width: 1150px; margin: 45px auto; }
+        .panel {
+            background-color: white; border: 1px solid #e1e8df; border-radius: 12px;
+            padding: 30px; margin-bottom: 25px; box-shadow: 0 3px 12px rgba(18, 53, 36, 0.06);
+        }
+        .panel-header { margin-bottom: 25px; }
+        .panel-header h2 { color: #123524; font-size: 23px; margin-bottom: 5px; }
+        .panel-header p { color: #6b7971; font-size: 14px; }
+        .step {
+            display: inline-block; background-color: #dcebd8; color: #174c32;
+            font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 15px; margin-bottom: 10px;
+        }
+
+        .filter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+        .form-group { display: flex; flex-direction: column; }
+        label { font-size: 13px; font-weight: bold; color: #405147; margin-bottom: 7px; }
+        select, input[type="text"] {
+            padding: 12px; border: 1px solid #cbd5cb; border-radius: 6px; background-color: white; font-size: 14px; outline: none;
+        }
+        select:focus, input[type="text"]:focus { border-color: #4f805e; box-shadow: 0 0 0 3px rgba(79, 128, 94, 0.12); }
+
+        .button-row { display: flex; gap: 12px; margin-top: 25px; }
+        .primary-button {
+            background-color: #1f5b3b; color: white; border: none; padding: 12px 24px;
+            border-radius: 6px; font-size: 15px; font-weight: bold; cursor: pointer;
+        }
+        .primary-button:hover { background-color: #123524; }
+        .primary-button:disabled { background-color: #aeb9af; cursor: not-allowed; }
+        .clear-button {
+            background-color: #edf2ec; color: #34463d; border: 1px solid #d6dfd4;
+            padding: 12px 22px; border-radius: 6px; font-size: 15px; cursor: pointer;
+        }
+        .clear-button:hover { background-color: #e1e9df; }
+
+        .slider-box {
+            background-color: #f7faf6; border: 1px solid #dce6da; border-radius: 10px;
+            padding: 18px 22px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+        }
+        .slider-info strong { color: #123524; font-size: 15px; }
+        .slider-info span { color: #68766d; font-size: 13px; }
+        .slider-input-wrap { display: flex; align-items: center; gap: 15px; flex: 1; min-width: 240px; max-width: 420px; }
+        input[type="range"] {
+            -webkit-appearance: none; appearance: none; width: 100%; height: 8px; background: #dcebd8; border-radius: 5px; outline: none;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #1f5b3b; cursor: pointer; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .slider-badge { background-color: #1f5b3b; color: white; padding: 5px 12px; border-radius: 15px; font-size: 13px; font-weight: bold; white-space: nowrap; }
+
+        .summary-panel { background-color: #edf3ea; border: 1px solid #d7e3d4; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .metric-card { background-color: white; border: 1px solid #dce6da; border-radius: 10px; padding: 20px; }
+        .metric-label { color: #68766d; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+        .metric-value { color: #103e2d; font-size: 22px; font-weight: bold; }
+        .metric-sub { color: #758078; font-size: 13px; margin-top: 4px; }
+
+        .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+        .chart-box { background-color: #fafcfa; border: 1px solid #e1e8df; border-radius: 10px; padding: 20px; height: 360px; position: relative; }
+        .chart-box h3 { color: #123524; font-size: 16px; margin-bottom: 12px; }
+        .canvas-wrapper { position: relative; height: 290px; width: 100%; }
+
+        .results-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 22px; }
+        .results-count { background-color: #dcebd8; color: #174c32; padding: 7px 13px; border-radius: 20px; font-size: 13px; font-weight: bold; }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background-color: #edf3ea; color: #174c32; text-align: left; padding: 14px; font-size: 13px; border-bottom: 2px solid #d6e1d4; }
+        td { padding: 14px; border-bottom: 1px solid #e4e9e3; color: #536158; font-size: 14px; }
+        tbody tr:hover { background-color: #f8faf7; }
+        .model-badge { display: inline-block; background-color: #e7f0e5; color: #174c32; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
+        .best-badge { display: inline-block; background-color: #1f5b3b; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; margin-left: 8px; }
+        .facility-name { color: #174c32; font-weight: bold; }
+
+        footer { background-color: #0d2b1c; color: #d7e4da; padding: 30px 8%; margin-top: 60px; }
+        .footer-content { max-width: 1150px; margin: auto; display: flex; justify-content: space-between; }
+        footer strong { color: white; }
+        footer p { font-size: 14px; }
+
+        @media (max-width: 1000px) { .filter-grid { grid-template-columns: repeat(2, 1fr); } .charts-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 650px) { nav { flex-direction: column; gap: 15px; } .filter-grid, .metrics-grid { grid-template-columns: 1fr; } main { width: 92%; } }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">EPA Data</div>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('retrieval') }}">Retrieve Data</a>
+            <a href="{{ url_for('explorer') }}">Data Explorer</a>
+            <a href="{{ url_for('upload') }}">Upload Data</a>
+            <a href="{{ url_for('facility') }}">Facility Details</a>
+            <a href="{{ url_for('analysis') }}">Analysis</a>
+            <a href="{{ url_for('prediction') }}">Prediction</a>
+            <a href="{{ url_for('download') }}">Download</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="header-content">
+            <div class="page-label">Predictive Modeling</div>
+            <h1>Emissions &amp; Impact Prediction</h1>
+            <p>
+                Train machine learning models to forecast annual pollutant emissions, operating metrics,
+                or TRACI environmental impact potentials.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- STEP 1: CONFIGURATION -->
+        <div class="panel">
+            <div class="panel-header">
+                <span class="step">STEP 1</span>
+                <h2>Configure Prediction Target &amp; Filters</h2>
+                <p>Select what variable you want to predict and filter the training dataset as needed.</p>
+            </div>
+
+            <div class="filter-grid">
+                <div class="form-group">
+                    <label for="predictTarget">Prediction Target</label>
+                    <select id="predictTarget">
+                        <optgroup label="Direct Emissions">
+                            <option value="co2_mass_short_tons" selected>CO₂ Mass (Short Tons)</option>
+                            <option value="so2_mass_short_tons">SO₂ Mass (Short Tons)</option>
+                            <option value="nox_mass_short_tons">NOₓ Mass (Short Tons)</option>
+                        </optgroup>
+                        <optgroup label="Operating Metrics">
+                            <option value="gross_load_mwh">Gross Load (MWh)</option>
+                            <option value="heat_input_mmbtu">Heat Input (MMBtu)</option>
+                            <option value="sum_of_the_operating_time">Operating Time (Hours)</option>
+                        </optgroup>
+                        <optgroup label="TRACI Environmental Impacts">
+                            <option value="traci_global_warming">Global Warming Potential (kg CO₂ eq)</option>
+                            <option value="traci_acidification">Acidification Potential (kg SO₂ eq)</option>
+                            <option value="traci_smog_formation">Smog Formation Potential (kg O₃ eq)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="predictState">State</label>
+                    <select id="predictState">
+                        <option value="">All States</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="OH">Ohio</option>
+                        <option value="IN">Indiana</option>
+                        <option value="AL">Alabama</option>
+                        <option value="CA">California</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="TX">Texas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="predictFuel">Primary Fuel Type</label>
+                    <select id="predictFuel">
+                        <option value="">All Fuel Types</option>
+                        <option value="Coal">Coal</option>
+                        <option value="Natural Gas">Natural Gas</option>
+                        <option value="Pipeline Natural Gas">Pipeline Natural Gas</option>
+                        <option value="Diesel Oil">Diesel Oil</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="predictTestYear">Test Year</label>
+                    <select id="predictTestYear">
+                        <option value="">Auto (Latest Year / Split)</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <button type="button" class="primary-button" id="runPredictBtn" onclick="runPrediction()">
+                    Run Prediction Models
+                </button>
+                <button type="button" class="clear-button" onclick="resetPrediction()">
+                    Reset Filters
+                </button>
+            </div>
+        </div>
+
+        <!-- RESULTS CONTAINER -->
+        <div id="predictionOutput" style="display: none;">
+
+            <!-- SUMMARY OVERVIEW -->
+            <div class="panel summary-panel">
+                <div class="panel-header">
+                    <h2>Evaluation Overview</h2>
+                    <p id="featuresUsedText">Features used: —</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-label">Validation Strategy</div>
+                        <div class="metric-value" id="splitMethodValue" style="font-size: 17px;">—</div>
+                        <div class="metric-sub" id="recordCountsSub">—</div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-label">Top Performing Model</div>
+                        <div class="metric-value" id="bestModelName">—</div>
+                        <div class="metric-sub" id="bestModelR2">—</div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-label">Lowest RMSE Error</div>
+                        <div class="metric-value" id="bestModelRmse">—</div>
+                        <div class="metric-sub" id="targetUnitLabel">Units</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 2: CHARTS & SLIDER -->
+            <div class="panel">
+                <div class="panel-header">
+                    <span class="step">STEP 2</span>
+                    <h2>Performance Visualizations &amp; Forecasts</h2>
+                    <p>Compare error metrics and use the slider to inspect model predictions across test records.</p>
+                </div>
+
+                <div class="slider-box">
+                    <div class="slider-info">
+                        <strong>Test Sample Display Range</strong>
+                        <span>Slide to adjust how many test records are plotted and listed below</span>
+                    </div>
+                    <div class="slider-input-wrap">
+                        <input type="range" id="sampleSlider" min="5" max="25" value="10" oninput="updateSampleDisplay()">
+                        <span class="slider-badge" id="sliderValueBadge">10 Records</span>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-box">
+                        <h3>Model Error Comparison (MAE vs. RMSE)</h3>
+                        <div class="canvas-wrapper">
+                            <canvas id="errorComparisonChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-box">
+                        <h3 id="forecastChartTitle">Actual vs. Predicted Target</h3>
+                        <div class="canvas-wrapper">
+                            <canvas id="actualVsPredChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: METRICS TABLE -->
+            <div class="panel">
+                <div class="results-header">
+                    <div>
+                        <span class="step">STEP 3</span>
+                        <h2>Model Evaluation Metrics</h2>
+                        <p>Baseline mean predictor compared against Ridge Regression and Random Forest.</p>
+                    </div>
+                    <div class="results-count" id="targetBadgeLabel">Target: CO₂</div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Model</th>
+                                <th>MAE</th>
+                                <th>RMSE</th>
+                                <th>R² Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="metricsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- STEP 4: SAMPLE PREDICTIONS TABLE -->
+            <div class="panel">
+                <div class="results-header">
+                    <div>
+                        <span class="step">STEP 4</span>
+                        <h2>Test Set Sample Predictions</h2>
+                        <p>Comparison of actual values against model forecasts on held-out test records.</p>
+                    </div>
+                    <div class="results-count" id="sampleCountBadge">Showing 0 records</div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Facility ID</th>
+                                <th>Facility Name</th>
+                                <th>Unit</th>
+                                <th>Year</th>
+                                <th id="tableActualHeader">Actual Value</th>
+                                <th>Baseline Pred.</th>
+                                <th>Ridge Pred.</th>
+                                <th>Random Forest Pred.</th>
+                            </tr>
+                        </thead>
+                        <tbody id="samplePredictionsBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>EPA Data</strong><br>Data Management, Evaluation, and Visualization System</p>
+            <p>Environmental &amp; Power-Sector Data</p>
+        </div>
+    </footer>
+
+    <script>
+        let allSamples = [];
+        let errorChartInstance = null;
+        let forecastChartInstance = null;
+
+        function fmtNum(val, decimals = 2) {
+            if (val === null || val === undefined || val === "") return "—";
+            const num = Number(val);
+            return isNaN(num) ? val : num.toLocaleString(undefined, { maximumFractionDigits: decimals });
+        }
+
+        async function runPrediction() {
+            const btn = document.getElementById("runPredictBtn");
+            const target = document.getElementById("predictTarget").value;
+            const state = document.getElementById("predictState").value;
+            const fuel = document.getElementById("predictFuel").value;
+            const testYear = document.getElementById("predictTestYear").value;
+
+            btn.disabled = true;
+            btn.textContent = "Training & Evaluating...";
+
+            const params = new URLSearchParams({ target });
+            if (state) params.append("state", state);
+            if (fuel) params.append("fuel", fuel);
+            if (testYear) params.append("test_year", testYear);
+
+            try {
+                const response = await fetch(`/api/predict?${params.toString()}`);
+                const result = await response.json();
+
+                if (!response.ok || result.status !== "success") {
+                    throw new Error(result.message || "Prediction pipeline failed.");
+                }
+
+                const data = result.data;
+                const targetLabel = document.getElementById("predictTarget").selectedOptions[0].text;
+
+                // Update UI Labels
+                document.getElementById("targetUnitLabel").textContent = targetLabel;
+                document.getElementById("targetBadgeLabel").textContent = `Target: ${targetLabel}`;
+                document.getElementById("forecastChartTitle").textContent = `Actual vs. Predicted (${targetLabel})`;
+                document.getElementById("tableActualHeader").textContent = `Actual (${targetLabel})`;
+
+                // Summary cards
+                document.getElementById("splitMethodValue").textContent = data.split_method;
+                document.getElementById("recordCountsSub").textContent =
+                    `Train: ${data.train_records.toLocaleString()} • Test: ${data.test_records.toLocaleString()}`;
+                document.getElementById("featuresUsedText").textContent =
+                    `Features used: ${data.features_used.join(", ")}`;
+
+                const metrics = data.model_metrics || [];
+                let bestModel = metrics[0];
+                metrics.forEach(m => {
+                    if (m.r2_score > bestModel.r2_score) bestModel = m;
+                });
+
+                if (bestModel) {
+                    document.getElementById("bestModelName").textContent = bestModel.model;
+                    document.getElementById("bestModelR2").textContent = `R² Score: ${bestModel.r2_score}`;
+                    document.getElementById("bestModelRmse").textContent = fmtNum(bestModel.rmse_short_tons);
+                }
+
+                renderErrorChart(metrics, targetLabel);
+
+                allSamples = data.sample_predictions || [];
+                const slider = document.getElementById("sampleSlider");
+                const maxSamples = Math.max(1, allSamples.length);
+                slider.min = Math.min(3, maxSamples);
+                slider.max = maxSamples;
+                slider.value = Math.min(10, maxSamples);
+
+                // Populate metrics table
+                const metricsBody = document.getElementById("metricsTableBody");
+                metricsBody.innerHTML = "";
+                metrics.forEach(m => {
+                    const isBest = bestModel && m.model === bestModel.model;
+                    metricsBody.innerHTML += `
+                        <tr>
+                            <td><span class="model-badge">${m.model}</span>${isBest ? '<span class="best-badge">BEST FIT</span>' : ''}</td>
+                            <td>${fmtNum(m.mae_short_tons)}</td>
+                            <td>${fmtNum(m.rmse_short_tons)}</td>
+                            <td><strong>${m.r2_score}</strong></td>
+                        </tr>
+                    `;
+                });
+
+                document.getElementById("predictionOutput").style.display = "block";
+                updateSampleDisplay();
+
+            } catch (error) {
+                alert("Error running prediction: " + error.message);
+                console.error("Prediction error:", error);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = "Run Prediction Models";
+            }
+        }
+
+        function renderErrorChart(metrics, label) {
+            const ctx = document.getElementById("errorComparisonChart").getContext("2d");
+            if (errorChartInstance) errorChartInstance.destroy();
+
+            errorChartInstance = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: metrics.map(m => m.model.split("(")[0].trim()),
+                    datasets: [
+                        { label: "MAE", data: metrics.map(m => m.mae_short_tons), backgroundColor: "#7ba77a", borderRadius: 5 },
+                        { label: "RMSE", data: metrics.map(m => m.rmse_short_tons), backgroundColor: "#123524", borderRadius: 5 }
+                    ]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: "top" } },
+                    scales: { y: { beginAtZero: true, title: { display: true, text: `Error Units (${label})` } } }
+                }
+            });
+        }
+
+        function updateSampleDisplay() {
+            const count = parseInt(document.getElementById("sampleSlider").value, 10);
+            document.getElementById("sliderValueBadge").textContent = `${count} Records`;
+            document.getElementById("sampleCountBadge").textContent = `Showing ${count} of ${allSamples.length} test samples`;
+
+            const subset = allSamples.slice(0, count);
+            renderForecastChart(subset);
+
+            const sampleBody = document.getElementById("samplePredictionsBody");
+            sampleBody.innerHTML = "";
+
+            if (subset.length === 0) {
+                sampleBody.innerHTML = `<tr><td colspan="8">No sample predictions returned.</td></tr>`;
+                return;
+            }
+
+            subset.forEach(s => {
+                sampleBody.innerHTML += `
+                    <tr>
+                        <td>${s.facility_id ?? "—"}</td>
+                        <td class="facility-name">${s.facility_name ?? "—"}</td>
+                        <td>${s.unit_id ?? "—"}</td>
+                        <td>${s.reporting_year ?? "—"}</td>
+                        <td><strong>${fmtNum(s.actual_co2)}</strong></td>
+                        <td>${fmtNum(s.baseline_pred)}</td>
+                        <td>${fmtNum(s.candidate_1_pred)}</td>
+                        <td><strong>${fmtNum(s.candidate_2_pred)}</strong></td>
+                    </tr>
+                `;
+            });
+        }
+
+        function renderForecastChart(samples) {
+            const ctx = document.getElementById("actualVsPredChart").getContext("2d");
+            if (forecastChartInstance) forecastChartInstance.destroy();
+
+            forecastChartInstance = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: samples.map(s => `${(s.facility_name || '').substring(0, 12)} (${s.unit_id || ''})`),
+                    datasets: [
+                        { label: "Actual", data: samples.map(s => s.actual_co2), backgroundColor: "#123524", borderRadius: 4 },
+                        { label: "Ridge", data: samples.map(s => s.candidate_1_pred), backgroundColor: "#8fbc8f", borderRadius: 4 },
+                        { label: "Random Forest", data: samples.map(s => s.candidate_2_pred), backgroundColor: "#2f7a53", borderRadius: 4 }
+                    ]
+                },
+                options: {
+                    responsive: true, maintainAspectRatio: false,
+                    plugins: { legend: { position: "top" } },
+                    scales: { y: { beginAtZero: true, title: { display: true, text: "Value" } } }
+                }
+            });
+        }
+
+        function resetPrediction() {
+            document.getElementById("predictTarget").value = "co2_mass_short_tons";
+            document.getElementById("predictState").value = "";
+            document.getElementById("predictFuel").value = "";
+            document.getElementById("predictTestYear").value = "";
+            document.getElementById("predictionOutput").style.display = "none";
+        }
+    </script>
+</body>
+</html>

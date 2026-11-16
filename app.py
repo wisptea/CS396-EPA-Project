@@ -11,7 +11,15 @@ import mysql.connector
 from dotenv import load_dotenv
 from openpyxl import Workbook
 
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.impute import SimpleImputer
+from sklearn.linear_model import Ridge
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+
 from analytics import calculate_derived_indicators, get_missing_value_summary
+from prediction import run_co2_prediction_pipeline
 
 # ============================================================
 # LOAD ENVIRONMENT VARIABLES
@@ -1557,6 +1565,94 @@ def api_analysis():
             cursor.close()
         if conn:
             conn.close()
+
+@app.route('/prediction')
+def prediction():
+    return render_template('Prediction.html')
+
+@app.route('/api/predict')
+def api_predict():
+  connection = None
+  cursor = None
+  try:
+    target = request.args.get('target', 'co2_mass_short_tons').strip()
+    state = request.args.get('state', '').strip()
+    fuel = request.args.get('fuel', '').strip()
+    test_year = request.args.get('test_year', '').strip()
+
+    connection = get_db_connection()
+
+    is_traci = target.startswith('traci_')
+    if is_traci:
+      traci_category = target.replace('traci_', '').replace('_', ' ').title()
+      sql = """
+                SELECT 
+                    f.facility_id, f.facility_name, f.state, 
+                    e.unit_id, e.reporting_year, e.primary_fuel_type,
+                    e.sum_of_the_operating_time, e.heat_input_mmbtu, e.gross_load_mwh,
+                    ti.calculated_impact_value AS target_val
+                FROM Annual_Emissions e
+                JOIN Facilities f ON e.facility_id = f.facility_id
+                JOIN Emissions_TRACI_Impacts ti ON e.emission_id = ti.emission_id
+                JOIN TRACI_Factors t ON ti.traci_id = t.traci_id
+                WHERE t.category = %s
+            """
+      params = [traci_category]
+    else:
+      allowed_targets = {
+          'co2_mass_short_tons': 'co2_mass_short_tons',
+          'so2_mass_short_tons': 'so2_mass_short_tons',
+          'nox_mass_short_tons': 'nox_mass_short_tons',
+          'gross_load_mwh': 'gross_load_mwh',
+          'heat_input_mmbtu': 'heat_input_mmbtu',
+          'sum_of_the_operating_time': 'sum_of_the_operating_time',
+      }
+      col_name = allowed_targets.get(target, 'co2_mass_short_tons')
+      sql = f"""
+                SELECT 
+                    f.facility_id, f.facility_name, f.state, 
+                    e.unit_id, e.reporting_year, e.primary_fuel_type,
+                    e.sum_of_the_operating_time, e.heat_input_mmbtu, e.gross_load_mwh,
+                    e.{col_name} AS target_val
+                FROM Annual_Emissions e
+                JOIN Facilities f ON e.facility_id = f.facility_id
+                WHERE e.{col_name} IS NOT NULL
+            """
+      params = []
+
+    if state:
+      sql += ' AND f.state = %s'
+      params.append(state)
+    if fuel:
+      sql += ' AND e.primary_fuel_type = %s'
+      params.append(fuel)
+
+    df = pd.read_sql(sql, connection, params=params)
+
+    if df.empty or len(df) < 10:
+      return jsonify({
+          'status': 'error',
+          'message': (
+              'Insufficient data records matching the selected filters to train'
+              ' models.'
+          ),
+      }), 400
+
+    # Call pipeline from prediction.py with the dynamic target column
+    result = run_co2_prediction_pipeline(
+        df, target_col='target_val', test_year=test_year
+    )
+    result['target_variable'] = target
+
+    return jsonify({'status': 'success', 'data': result}), 200
+
+  except Exception as error:
+    print('Prediction route error:', error)
+    return jsonify({'status': 'error', 'message': str(error)}), 500
+
+  finally:
+    if connection and connection.is_connected():
+      connection.close()
 
 if __name__ == "__main__":
     app.run(debug=True)
