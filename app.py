@@ -1573,12 +1573,12 @@ def prediction():
 @app.route('/api/predict')
 def api_predict():
   connection = None
-  cursor = None
   try:
     target = request.args.get('target', 'co2_mass_short_tons').strip()
     state = request.args.get('state', '').strip()
     fuel = request.args.get('fuel', '').strip()
     test_year = request.args.get('test_year', '').strip()
+    forecast_year = request.args.get('forecast_year', '').strip()
 
     connection = get_db_connection()
 
@@ -1638,9 +1638,11 @@ def api_predict():
           ),
       }), 400
 
-    # Call pipeline from prediction.py with the dynamic target column
     result = run_co2_prediction_pipeline(
-        df, target_col='target_val', test_year=test_year
+        df,
+        target_col='target_val',
+        test_year=test_year,
+        forecast_year=forecast_year,
     )
     result['target_variable'] = target
 

@@ -43,11 +43,11 @@
             font-size: 12px; font-weight: bold; padding: 5px 10px; border-radius: 15px; margin-bottom: 10px;
         }
 
-        .filter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+        .filter-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; }
         .form-group { display: flex; flex-direction: column; }
         label { font-size: 13px; font-weight: bold; color: #405147; margin-bottom: 7px; }
         select, input[type="text"] {
-            padding: 12px; border: 1px solid #cbd5cb; border-radius: 6px; background-color: white; font-size: 14px; outline: none;
+            padding: 11px; border: 1px solid #cbd5cb; border-radius: 6px; background-color: white; font-size: 14px; outline: none;
         }
         select:focus, input[type="text"]:focus { border-color: #4f805e; box-shadow: 0 0 0 3px rgba(79, 128, 94, 0.12); }
 
@@ -64,27 +64,57 @@
         }
         .clear-button:hover { background-color: #e1e9df; }
 
+        /* Sliders */
+        .controls-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 25px; }
         .slider-box {
             background-color: #f7faf6; border: 1px solid #dce6da; border-radius: 10px;
-            padding: 18px 22px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;
+            padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
         }
-        .slider-info strong { color: #123524; font-size: 15px; }
-        .slider-info span { color: #68766d; font-size: 13px; }
-        .slider-input-wrap { display: flex; align-items: center; gap: 15px; flex: 1; min-width: 240px; max-width: 420px; }
+        .slider-box.sensitivity-box { background-color: #f2f7f4; border-color: #b9d4c2; }
+        .slider-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+        .slider-info strong { display: block; color: #123524; font-size: 15px; margin-bottom: 2px; }
+        .slider-info span { display: block; color: #68766d; font-size: 12.5px; line-height: 1.4; }
+        .slider-input-wrap { display: flex; align-items: center; gap: 12px; width: 100%; }
         input[type="range"] {
             -webkit-appearance: none; appearance: none; width: 100%; height: 8px; background: #dcebd8; border-radius: 5px; outline: none;
         }
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #1f5b3b; cursor: pointer; border: 2px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
         }
-        .slider-badge { background-color: #1f5b3b; color: white; padding: 5px 12px; border-radius: 15px; font-size: 13px; font-weight: bold; white-space: nowrap; }
+        .slider-badge { background-color: #1f5b3b; color: white; padding: 4px 11px; border-radius: 15px; font-size: 12.5px; font-weight: bold; white-space: nowrap; }
+        .sensitivity-delta {
+            font-size: 12.5px; font-weight: bold; color: #174c32; background: #e1efe5;
+            padding: 6px 10px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .reset-mini-btn {
+            background: none; border: none; color: #1f5b3b; text-decoration: underline;
+            font-size: 12px; font-weight: bold; cursor: pointer;
+        }
 
+        /* Summary Overview */
         .summary-panel { background-color: #edf3ea; border: 1px solid #d7e3d4; }
-        .metrics-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .metric-card { background-color: white; border: 1px solid #dce6da; border-radius: 10px; padding: 20px; }
-        .metric-label { color: #68766d; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
-        .metric-value { color: #103e2d; font-size: 22px; font-weight: bold; }
-        .metric-sub { color: #758078; font-size: 13px; margin-top: 4px; }
+        .metrics-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .metric-card { background-color: white; border: 1px solid #dce6da; border-radius: 10px; padding: 18px; }
+        .metric-card.year-highlight {
+            background: linear-gradient(135deg, #123524, #1f5b3b);
+            color: white; border: none; box-shadow: 0 4px 12px rgba(18, 53, 36, 0.15);
+        }
+        .metric-card.year-highlight .metric-label { color: #b9d7b5; }
+        .metric-card.year-highlight .metric-value { color: #ffffff; font-size: 26px; }
+        .metric-card.year-highlight .metric-sub { color: #dcebd8; }
+
+        .metric-label { color: #68766d; font-size: 11.5px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+        .metric-value { color: #103e2d; font-size: 20px; font-weight: bold; }
+        .metric-sub { color: #758078; font-size: 12.5px; margin-top: 4px; }
+
+        /* Charts */
+        .trajectory-box {
+            background-color: #fafcfa; border: 1px solid #e1e8df; border-radius: 10px;
+            padding: 22px; margin-bottom: 25px; height: 370px;
+        }
+        .trajectory-box h3 { color: #123524; font-size: 17px; margin-bottom: 4px; }
+        .trajectory-box p { color: #6b7971; font-size: 13px; margin-bottom: 12px; }
+        .trajectory-canvas-wrap { position: relative; height: 275px; width: 100%; }
 
         .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
         .chart-box { background-color: #fafcfa; border: 1px solid #e1e8df; border-radius: 10px; padding: 20px; height: 360px; position: relative; }
@@ -101,14 +131,24 @@
         .model-badge { display: inline-block; background-color: #e7f0e5; color: #174c32; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: bold; }
         .best-badge { display: inline-block; background-color: #1f5b3b; color: white; padding: 3px 8px; border-radius: 10px; font-size: 11px; font-weight: bold; margin-left: 8px; }
         .facility-name { color: #174c32; font-weight: bold; }
+        .delta-up { color: #b43c2f; font-weight: bold; }
+        .delta-down { color: #1f5b3b; font-weight: bold; }
 
         footer { background-color: #0d2b1c; color: #d7e4da; padding: 30px 8%; margin-top: 60px; }
         .footer-content { max-width: 1150px; margin: auto; display: flex; justify-content: space-between; }
         footer strong { color: white; }
         footer p { font-size: 14px; }
 
-        @media (max-width: 1000px) { .filter-grid { grid-template-columns: repeat(2, 1fr); } .charts-grid { grid-template-columns: 1fr; } }
-        @media (max-width: 650px) { nav { flex-direction: column; gap: 15px; } .filter-grid, .metrics-grid { grid-template-columns: 1fr; } main { width: 92%; } }
+        @media (max-width: 1050px) {
+            .filter-grid { grid-template-columns: repeat(2, 1fr); }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+            .charts-grid, .controls-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 650px) {
+            nav { flex-direction: column; gap: 15px; }
+            .filter-grid, .metrics-grid { grid-template-columns: 1fr; }
+            main { width: 92%; }
+        }
     </style>
 </head>
 
@@ -130,11 +170,11 @@
 
     <header class="page-header">
         <div class="header-content">
-            <div class="page-label">Predictive Modeling</div>
+            <div class="page-label">Predictive Modeling &amp; Forecasting</div>
             <h1>Emissions &amp; Impact Prediction</h1>
             <p>
-                Train machine learning models to forecast annual pollutant emissions, operating metrics,
-                or TRACI environmental impact potentials.
+                Train machine learning models on historical EPA records to evaluate accuracy and forecast
+                future annual emissions, operating metrics, or TRACI environmental impacts.
             </p>
         </div>
     </header>
@@ -144,8 +184,8 @@
         <div class="panel">
             <div class="panel-header">
                 <span class="step">STEP 1</span>
-                <h2>Configure Prediction Target &amp; Filters</h2>
-                <p>Select what variable you want to predict and filter the training dataset as needed.</p>
+                <h2>Configure Prediction Target, Filters &amp; Horizon</h2>
+                <p>Select what variable to predict, filter the training dataset, and choose your target future forecast year.</p>
             </div>
 
             <div class="filter-grid">
@@ -198,19 +238,31 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="predictTestYear">Test Year</label>
+                    <label for="predictTestYear">Validation Holdout Year</label>
                     <select id="predictTestYear">
-                        <option value="">Auto (Latest Year / Split)</option>
+                        <option value="">Auto (Latest Known Year)</option>
                         <option value="2025">2025</option>
                         <option value="2024">2024</option>
                         <option value="2023">2023</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="predictForecastYear">Forecast Future Year</label>
+                    <select id="predictForecastYear">
+                        <option value="">Auto (+3 Years Ahead)</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028" selected>2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
                     </select>
                 </div>
             </div>
 
             <div class="button-row">
                 <button type="button" class="primary-button" id="runPredictBtn" onclick="runPrediction()">
-                    Run Prediction Models
+                    Run Prediction &amp; Future Forecast
                 </button>
                 <button type="button" class="clear-button" onclick="resetPrediction()">
                     Reset Filters
@@ -221,63 +273,103 @@
         <!-- RESULTS CONTAINER -->
         <div id="predictionOutput" style="display: none;">
 
-            <!-- SUMMARY OVERVIEW -->
+            <!-- SUMMARY OVERVIEW WITH PREDICTED YEAR SHOWCASE -->
             <div class="panel summary-panel">
                 <div class="panel-header">
-                    <h2>Evaluation Overview</h2>
+                    <h2>Forecast &amp; Evaluation Overview</h2>
                     <p id="featuresUsedText">Features used: —</p>
                 </div>
 
                 <div class="metrics-grid">
+                    <!-- YEAR PREDICTED SHOWCASE -->
+                    <div class="metric-card year-highlight">
+                        <div class="metric-label">Future Year Predicted</div>
+                        <div class="metric-value" id="predictedYearShowcase">—</div>
+                        <div class="metric-sub" id="predictedYearSub">Projected from historical data</div>
+                    </div>
+
                     <div class="metric-card">
                         <div class="metric-label">Validation Strategy</div>
-                        <div class="metric-value" id="splitMethodValue" style="font-size: 17px;">—</div>
+                        <div class="metric-value" id="splitMethodValue" style="font-size: 16px;">—</div>
                         <div class="metric-sub" id="recordCountsSub">—</div>
                     </div>
 
                     <div class="metric-card">
                         <div class="metric-label">Top Performing Model</div>
-                        <div class="metric-value" id="bestModelName">—</div>
+                        <div class="metric-value" id="bestModelName" style="font-size: 17px;">—</div>
                         <div class="metric-sub" id="bestModelR2">—</div>
                     </div>
 
                     <div class="metric-card">
-                        <div class="metric-label">Lowest RMSE Error</div>
+                        <div class="metric-label">Validation RMSE Error</div>
                         <div class="metric-value" id="bestModelRmse">—</div>
                         <div class="metric-sub" id="targetUnitLabel">Units</div>
                     </div>
                 </div>
             </div>
 
-            <!-- STEP 2: CHARTS & SLIDER -->
+            <!-- STEP 2: TRAJECTORY, CHARTS & SENSITIVITY SLIDER -->
             <div class="panel">
                 <div class="panel-header">
                     <span class="step">STEP 2</span>
-                    <h2>Performance Visualizations &amp; Forecasts</h2>
-                    <p>Compare error metrics and use the slider to inspect model predictions across test records.</p>
+                    <h2>Future Trajectory &amp; Sensitivity Simulation</h2>
+                    <p>Explore multi-year historical vs. projected trends and adjust the operational sensitivity slider to simulate future scenarios.</p>
                 </div>
 
-                <div class="slider-box">
-                    <div class="slider-info">
-                        <strong>Test Sample Display Range</strong>
-                        <span>Slide to adjust how many test records are plotted and listed below</span>
+                <div class="controls-grid">
+                    <!-- SAMPLE DISPLAY SLIDER -->
+                    <div class="slider-box">
+                        <div class="slider-header">
+                            <div class="slider-info">
+                                <strong>Facility Table Display Range</strong>
+                                <span>Adjust how many facilities are displayed in charts and tables</span>
+                            </div>
+                            <span class="slider-badge" id="sliderValueBadge">10 Records</span>
+                        </div>
+                        <div class="slider-input-wrap">
+                            <input type="range" id="sampleSlider" min="5" max="25" value="10" oninput="updateInteractiveViews()">
+                        </div>
                     </div>
-                    <div class="slider-input-wrap">
-                        <input type="range" id="sampleSlider" min="5" max="25" value="10" oninput="updateSampleDisplay()">
-                        <span class="slider-badge" id="sliderValueBadge">10 Records</span>
+
+                    <!-- WHAT-IF SENSITIVITY SLIDER -->
+                    <div class="slider-box sensitivity-box">
+                        <div class="slider-header">
+                            <div class="slider-info">
+                                <strong>Future Activity Sensitivity Slider</strong>
+                                <span>Simulate ±30% shift in future facility load &amp; heat input</span>
+                            </div>
+                            <span class="slider-badge" id="sensitivityBadge">0% (Baseline Trend)</span>
+                        </div>
+                        <div class="slider-input-wrap">
+                            <input type="range" id="sensitivitySlider" min="-30" max="30" step="1" value="0" oninput="updateInteractiveViews()">
+                        </div>
+                        <div class="sensitivity-delta">
+                            <span id="sensitivityImpactText">Projected Target Year Total: —</span>
+                            <button type="button" class="reset-mini-btn" onclick="resetSensitivity()">Reset (0%)</button>
+                        </div>
                     </div>
                 </div>
 
+                <!-- HISTORICAL + FUTURE TRAJECTORY CHART -->
+                <div class="trajectory-box" id="trajectoryBox">
+                    <h3 id="trajectoryChartTitle">Historical Actuals vs. Future Projected Trajectory</h3>
+                    <p id="trajectoryChartSub">Aggregate annual total across filtered facilities trained on all known historical years.</p>
+                    <div class="trajectory-canvas-wrap">
+                        <canvas id="trajectoryChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- VALIDATION CHARTS -->
                 <div class="charts-grid">
                     <div class="chart-box">
-                        <h3>Model Error Comparison (MAE vs. RMSE)</h3>
+                        <h3>Model Validation Error (MAE vs. RMSE)</h3>
                         <div class="canvas-wrapper">
                             <canvas id="errorComparisonChart"></canvas>
                         </div>
                     </div>
 
                     <div class="chart-box">
-                        <h3 id="forecastChartTitle">Actual vs. Predicted Target</h3>
+                        <h3 id="forecastChartTitle">Holdout Validation: Actual vs. Predicted</h3>
                         <div class="canvas-wrapper">
                             <canvas id="actualVsPredChart"></canvas>
                         </div>
@@ -285,13 +377,43 @@
                 </div>
             </div>
 
-            <!-- STEP 3: METRICS TABLE -->
-            <div class="panel">
+            <!-- STEP 3: FUTURE FACILITY FORECASTS TABLE -->
+            <div class="panel" id="futureForecastPanel">
                 <div class="results-header">
                     <div>
                         <span class="step">STEP 3</span>
-                        <h2>Model Evaluation Metrics</h2>
-                        <p>Baseline mean predictor compared against Ridge Regression and Random Forest.</p>
+                        <h2 id="futureTableTitle">Future Year Facility Forecasts</h2>
+                        <p>Projected target values for active facility units based on historical operational trends and sensitivity adjustment.</p>
+                    </div>
+                    <div class="results-count" id="futureCountBadge">Target Year: —</div>
+                </div>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Facility ID</th>
+                                <th>Facility Name</th>
+                                <th>Unit</th>
+                                <th>State</th>
+                                <th>Fuel</th>
+                                <th>Last Known Actual</th>
+                                <th id="futureColHeader">Projected Future Value</th>
+                                <th>Projected Change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="futureForecastBody"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- STEP 4: MODEL EVALUATION METRICS TABLE -->
+            <div class="panel">
+                <div class="results-header">
+                    <div>
+                        <span class="step">STEP 4</span>
+                        <h2>Historical Validation Metrics</h2>
+                        <p>Baseline mean predictor compared against Ridge Regression and Random Forest on held-out test data.</p>
                     </div>
                     <div class="results-count" id="targetBadgeLabel">Target: CO₂</div>
                 </div>
@@ -311,13 +433,13 @@
                 </div>
             </div>
 
-            <!-- STEP 4: SAMPLE PREDICTIONS TABLE -->
+            <!-- STEP 5: VALIDATION SAMPLE PREDICTIONS TABLE -->
             <div class="panel">
                 <div class="results-header">
                     <div>
-                        <span class="step">STEP 4</span>
-                        <h2>Test Set Sample Predictions</h2>
-                        <p>Comparison of actual values against model forecasts on held-out test records.</p>
+                        <span class="step">STEP 5</span>
+                        <h2>Holdout Test Set Sample Predictions</h2>
+                        <p>Comparison of actual values against model forecasts on held-out historical test records.</p>
                     </div>
                     <div class="results-count" id="sampleCountBadge">Showing 0 records</div>
                 </div>
@@ -354,6 +476,10 @@
 
     <script>
         let allSamples = [];
+        let futureForecastData = null;
+        let currentTargetLabel = "";
+
+        let trajectoryChartInstance = null;
         let errorChartInstance = null;
         let forecastChartInstance = null;
 
@@ -363,20 +489,27 @@
             return isNaN(num) ? val : num.toLocaleString(undefined, { maximumFractionDigits: decimals });
         }
 
+        function resetSensitivity() {
+            document.getElementById("sensitivitySlider").value = 0;
+            updateInteractiveViews();
+        }
+
         async function runPrediction() {
             const btn = document.getElementById("runPredictBtn");
             const target = document.getElementById("predictTarget").value;
             const state = document.getElementById("predictState").value;
             const fuel = document.getElementById("predictFuel").value;
             const testYear = document.getElementById("predictTestYear").value;
+            const forecastYear = document.getElementById("predictForecastYear").value;
 
             btn.disabled = true;
-            btn.textContent = "Training & Evaluating...";
+            btn.textContent = "Training & Forecasting...";
 
             const params = new URLSearchParams({ target });
             if (state) params.append("state", state);
             if (fuel) params.append("fuel", fuel);
             if (testYear) params.append("test_year", testYear);
+            if (forecastYear) params.append("forecast_year", forecastYear);
 
             try {
                 const response = await fetch(`/api/predict?${params.toString()}`);
@@ -387,13 +520,30 @@
                 }
 
                 const data = result.data;
-                const targetLabel = document.getElementById("predictTarget").selectedOptions[0].text;
+                currentTargetLabel = document.getElementById("predictTarget").selectedOptions[0].text;
+                allSamples = data.sample_predictions || [];
+                futureForecastData = data.future_forecast || null;
+
+                // Year Showcase Card
+                if (futureForecastData && futureForecastData.target_forecast_year) {
+                    const targetYr = futureForecastData.target_forecast_year;
+                    const baseYr = futureForecastData.base_year;
+                    document.getElementById("predictedYearShowcase").textContent = `${baseYr + 1} – ${targetYr}`;
+                    document.getElementById("predictedYearSub").textContent =
+                        `Trained on historical data through ${baseYr} (${futureForecastData.model_used.split("(")[0].trim()})`;
+                    document.getElementById("futureCountBadge").textContent = `Forecast Year: ${targetYr}`;
+                    document.getElementById("futureTableTitle").textContent = `Projected Facility Forecasts for ${targetYr}`;
+                    document.getElementById("futureColHeader").textContent = `Projected ${targetYr} (${currentTargetLabel})`;
+                } else {
+                    document.getElementById("predictedYearShowcase").textContent = testYear || "Latest Holdout";
+                    document.getElementById("predictedYearSub").textContent = data.split_method;
+                }
 
                 // Update UI Labels
-                document.getElementById("targetUnitLabel").textContent = targetLabel;
-                document.getElementById("targetBadgeLabel").textContent = `Target: ${targetLabel}`;
-                document.getElementById("forecastChartTitle").textContent = `Actual vs. Predicted (${targetLabel})`;
-                document.getElementById("tableActualHeader").textContent = `Actual (${targetLabel})`;
+                document.getElementById("targetUnitLabel").textContent = currentTargetLabel;
+                document.getElementById("targetBadgeLabel").textContent = `Target: ${currentTargetLabel}`;
+                document.getElementById("forecastChartTitle").textContent = `Holdout Validation: Actual vs. Predicted (${currentTargetLabel})`;
+                document.getElementById("tableActualHeader").textContent = `Actual (${currentTargetLabel})`;
 
                 // Summary cards
                 document.getElementById("splitMethodValue").textContent = data.split_method;
@@ -414,14 +564,19 @@
                     document.getElementById("bestModelRmse").textContent = fmtNum(bestModel.rmse_short_tons);
                 }
 
-                renderErrorChart(metrics, targetLabel);
+                renderErrorChart(metrics, currentTargetLabel);
 
-                allSamples = data.sample_predictions || [];
                 const slider = document.getElementById("sampleSlider");
-                const maxSamples = Math.max(1, allSamples.length);
-                slider.min = Math.min(3, maxSamples);
-                slider.max = maxSamples;
-                slider.value = Math.min(10, maxSamples);
+                const maxRecords = Math.max(
+                    allSamples.length,
+                    futureForecastData ? futureForecastData.facility_forecasts.length : 0,
+                    1
+                );
+                slider.min = Math.min(3, maxRecords);
+                slider.max = maxRecords;
+                slider.value = Math.min(10, maxRecords);
+
+                document.getElementById("sensitivitySlider").value = 0;
 
                 // Populate metrics table
                 const metricsBody = document.getElementById("metricsTableBody");
@@ -439,15 +594,174 @@
                 });
 
                 document.getElementById("predictionOutput").style.display = "block";
-                updateSampleDisplay();
+                updateInteractiveViews();
 
             } catch (error) {
                 alert("Error running prediction: " + error.message);
                 console.error("Prediction error:", error);
             } finally {
                 btn.disabled = false;
-                btn.textContent = "Run Prediction Models";
+                btn.textContent = "Run Prediction & Future Forecast";
             }
+        }
+
+        function updateInteractiveViews() {
+            const count = parseInt(document.getElementById("sampleSlider").value, 10);
+            const sensitivityPct = parseInt(document.getElementById("sensitivitySlider").value, 10);
+            const multiplier = 1 + (sensitivityPct / 100);
+
+            document.getElementById("sliderValueBadge").textContent = `${count} Records`;
+
+            const sign = sensitivityPct > 0 ? "+" : "";
+            document.getElementById("sensitivityBadge").textContent =
+                sensitivityPct === 0 ? "0% (Baseline Trend)" : `${sign}${sensitivityPct}% Activity`;
+
+            // 1. Update Future Trajectory Chart & Future Facility Forecasts
+            if (futureForecastData && futureForecastData.projected_series.length > 0) {
+                document.getElementById("trajectoryBox").style.display = "block";
+                document.getElementById("futureForecastPanel").style.display = "block";
+
+                const finalProj = futureForecastData.projected_series[futureForecastData.projected_series.length - 1];
+                const adjustedFinalTotal = finalProj.total_value * multiplier;
+                document.getElementById("sensitivityImpactText").textContent =
+                    `Projected ${finalProj.year} Aggregate Total: ${fmtNum(adjustedFinalTotal)}`;
+
+                renderTrajectoryChart(futureForecastData, multiplier, sensitivityPct);
+                renderFutureFacilityTable(futureForecastData.facility_forecasts.slice(0, count), multiplier);
+            } else {
+                document.getElementById("trajectoryBox").style.display = "none";
+                document.getElementById("futureForecastPanel").style.display = "none";
+            }
+
+            // 2. Update Holdout Validation Chart & Sample Table
+            const subset = allSamples.slice(0, count);
+            document.getElementById("sampleCountBadge").textContent = `Showing ${subset.length} of ${allSamples.length} test samples`;
+
+            renderForecastChart(subset);
+
+            const sampleBody = document.getElementById("samplePredictionsBody");
+            sampleBody.innerHTML = "";
+
+            if (subset.length === 0) {
+                sampleBody.innerHTML = `<tr><td colspan="8">No sample predictions returned.</td></tr>`;
+                return;
+            }
+
+            subset.forEach(s => {
+                const actualVal = s.actual_target !== undefined ? s.actual_target : s.actual_co2;
+                sampleBody.innerHTML += `
+                    <tr>
+                        <td>${s.facility_id ?? "—"}</td>
+                        <td class="facility-name">${s.facility_name ?? "—"}</td>
+                        <td>${s.unit_id ?? "—"}</td>
+                        <td>${s.reporting_year ?? "—"}</td>
+                        <td><strong>${fmtNum(actualVal)}</strong></td>
+                        <td>${fmtNum(s.baseline_pred)}</td>
+                        <td>${fmtNum(s.candidate_1_pred)}</td>
+                        <td><strong>${fmtNum(s.candidate_2_pred)}</strong></td>
+                    </tr>
+                `;
+            });
+        }
+
+        function renderTrajectoryChart(forecastData, multiplier, sensitivityPct) {
+            const ctx = document.getElementById("trajectoryChart").getContext("2d");
+            if (trajectoryChartInstance) trajectoryChartInstance.destroy();
+
+            const hist = forecastData.historical_series || [];
+            const proj = forecastData.projected_series || [];
+
+            const labels = [
+                ...hist.map(h => h.year.toString()),
+                ...proj.map(p => `${p.year} (Forecast)`)
+            ];
+
+            const histValues = [
+                ...hist.map(h => h.total_value),
+                ...proj.map(() => null)
+            ];
+
+            // Connect the last historical point seamlessly to the first future point
+            const projValues = hist.map((_, idx) =>
+                idx === hist.length - 1 ? hist[hist.length - 1].total_value : null
+            ).concat(proj.map(p => p.total_value * multiplier));
+
+            const sensLabel = sensitivityPct !== 0
+                ? `Projected Forecast (${sensitivityPct > 0 ? "+" : ""}${sensitivityPct}% Sensitivity)`
+                : "Projected Future Forecast";
+
+            trajectoryChartInstance = new Chart(ctx, {
+                type: "line",
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: "Historical Actuals",
+                            data: histValues,
+                            borderColor: "#123524",
+                            backgroundColor: "rgba(18, 53, 36, 0.12)",
+                            borderWidth: 3,
+                            pointRadius: 5,
+                            fill: true,
+                            tension: 0.25
+                        },
+                        {
+                            label: sensLabel,
+                            data: projValues,
+                            borderColor: "#2e8b57",
+                            backgroundColor: "rgba(46, 139, 87, 0.12)",
+                            borderWidth: 3,
+                            borderDash: [6, 6],
+                            pointRadius: 6,
+                            pointBackgroundColor: "#2e8b57",
+                            fill: true,
+                            tension: 0.25
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: "top" } },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: { display: true, text: `Total ${currentTargetLabel}` }
+                        }
+                    }
+                }
+            });
+        }
+
+        function renderFutureFacilityTable(rows, multiplier) {
+            const tbody = document.getElementById("futureForecastBody");
+            tbody.innerHTML = "";
+
+            if (!rows || rows.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="8">No future facility projections available.</td></tr>`;
+                return;
+            }
+
+            rows.forEach(r => {
+                const adjPred = r.predicted_value * multiplier;
+                const lastVal = r.last_actual_value;
+                const pctDiff = lastVal > 0 ? ((adjPred - lastVal) / lastVal) * 100 : 0;
+                const pctClass = pctDiff > 0.5 ? "delta-up" : (pctDiff < -0.5 ? "delta-down" : "");
+                const pctStr = `${pctDiff >= 0 ? "+" : ""}${pctDiff.toFixed(1)}%`;
+
+                tbody.innerHTML += `
+                    <tr>
+                        <td>${r.facility_id ?? "—"}</td>
+                        <td class="facility-name">${r.facility_name ?? "—"}</td>
+                        <td>${r.unit_id ?? "—"}</td>
+                        <td>${r.state ?? "—"}</td>
+                        <td>${r.primary_fuel_type ?? "—"}</td>
+                        <td>${fmtNum(lastVal)}</td>
+                        <td><strong>${fmtNum(adjPred)}</strong></td>
+                        <td class="${pctClass}">${pctStr}</td>
+                    </tr>
+                `;
+            });
         }
 
         function renderErrorChart(metrics, label) {
@@ -471,38 +785,6 @@
             });
         }
 
-        function updateSampleDisplay() {
-            const count = parseInt(document.getElementById("sampleSlider").value, 10);
-            document.getElementById("sliderValueBadge").textContent = `${count} Records`;
-            document.getElementById("sampleCountBadge").textContent = `Showing ${count} of ${allSamples.length} test samples`;
-
-            const subset = allSamples.slice(0, count);
-            renderForecastChart(subset);
-
-            const sampleBody = document.getElementById("samplePredictionsBody");
-            sampleBody.innerHTML = "";
-
-            if (subset.length === 0) {
-                sampleBody.innerHTML = `<tr><td colspan="8">No sample predictions returned.</td></tr>`;
-                return;
-            }
-
-            subset.forEach(s => {
-                sampleBody.innerHTML += `
-                    <tr>
-                        <td>${s.facility_id ?? "—"}</td>
-                        <td class="facility-name">${s.facility_name ?? "—"}</td>
-                        <td>${s.unit_id ?? "—"}</td>
-                        <td>${s.reporting_year ?? "—"}</td>
-                        <td><strong>${fmtNum(s.actual_co2)}</strong></td>
-                        <td>${fmtNum(s.baseline_pred)}</td>
-                        <td>${fmtNum(s.candidate_1_pred)}</td>
-                        <td><strong>${fmtNum(s.candidate_2_pred)}</strong></td>
-                    </tr>
-                `;
-            });
-        }
-
         function renderForecastChart(samples) {
             const ctx = document.getElementById("actualVsPredChart").getContext("2d");
             if (forecastChartInstance) forecastChartInstance.destroy();
@@ -512,9 +794,24 @@
                 data: {
                     labels: samples.map(s => `${(s.facility_name || '').substring(0, 12)} (${s.unit_id || ''})`),
                     datasets: [
-                        { label: "Actual", data: samples.map(s => s.actual_co2), backgroundColor: "#123524", borderRadius: 4 },
-                        { label: "Ridge", data: samples.map(s => s.candidate_1_pred), backgroundColor: "#8fbc8f", borderRadius: 4 },
-                        { label: "Random Forest", data: samples.map(s => s.candidate_2_pred), backgroundColor: "#2f7a53", borderRadius: 4 }
+                        {
+                            label: "Actual",
+                            data: samples.map(s => s.actual_target !== undefined ? s.actual_target : s.actual_co2),
+                            backgroundColor: "#123524",
+                            borderRadius: 4
+                        },
+                        {
+                            label: "Ridge",
+                            data: samples.map(s => s.candidate_1_pred),
+                            backgroundColor: "#8fbc8f",
+                            borderRadius: 4
+                        },
+                        {
+                            label: "Random Forest",
+                            data: samples.map(s => s.candidate_2_pred),
+                            backgroundColor: "#2f7a53",
+                            borderRadius: 4
+                        }
                     ]
                 },
                 options: {
@@ -530,6 +827,8 @@
             document.getElementById("predictState").value = "";
             document.getElementById("predictFuel").value = "";
             document.getElementById("predictTestYear").value = "";
+            document.getElementById("predictForecastYear").value = "2028";
+            document.getElementById("sensitivitySlider").value = 0;
             document.getElementById("predictionOutput").style.display = "none";
         }
     </script>
